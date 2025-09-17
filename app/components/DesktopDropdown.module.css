@@ -1,0 +1,47 @@
+/* app/components/DesktopDropdown.module.css (Versi Tailwind) */
+
+.dropdownMenu {
+  @apply absolute top-full left-0 z-50 mt-[29px] w-72;
+  @apply bg-gray-100 list-none p-0 m-0 shadow-lg border border-gray-200;
+}
+
+.dropdownMenu li {
+  @apply relative; /* Penting untuk posisi flyout */
+}
+
+.dropdownMenu li a {
+  @apply flex justify-between items-center px-5 py-3;
+  @apply text-gray-800 font-bold text-sm uppercase;
+  @apply border-b border-gray-200;
+  @apply transition-colors duration-200;
+}
+
+.dropdownMenu li:last-child a {
+  @apply border-b-0;
+}
+
+.dropdownMenu li a:hover {
+  @apply bg-yellow-500 text-gray-900;
+}
+
+.arrow {
+  @apply text-xs text-gray-400;
+}
+
+/* --- GAYA UNTUK FLYOUT MENU --- */
+
+.flyoutMenu {
+  @apply hidden absolute top-[-1px] left-full; /* Sembunyikan secara default */
+  @apply bg-gray-100 w-72 list-none p-0 ml-px;
+  @apply shadow-lg border border-gray-200;
+}
+
+/* Tampilkan flyout saat item induknya di-hover */
+.hasFlyout:hover > .flyoutMenu {
+  @apply block;
+}
+
+/* Gaya untuk item di dalam flyout */
+.flyoutMenu li a {
+  @apply font-normal normal-case; /* Tidak bold dan tidak uppercase */
+}
