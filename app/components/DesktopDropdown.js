@@ -10,28 +10,35 @@ export default function DesktopDropdown() {
       title: 'OWNER',
       href: '/produk/owner',
       subItems: [
-        { title: 'Hand & Power Tools | Perkakas Tangan & Listrik', href: '/produk' },
-        { title: 'Painting Tools | Perkakas Pengecatan', href: '/produk' },
-        { title: 'Layering Tools | Perkakas Pelapis', href: '/produk' },
-        { title: 'Door Lock Equipments | Peralatan Kunci Pintu', href: '/produk' },
-        { title: 'Sanitary Equipments | Peralatan Sanitasi', href: '/produk' },
-        { title: 'Safety Equipments | Peralatan Keselamatan', href: '/produk' },
+        { title: 'Hand & Power Tools | Perkakas Tangan & Listrik', href: '/produk/owner/hand-power-tools' },
+        { title: 'Painting Tools | Perkakas Pengecatan', href: '/produk/owner/painting-tools' },
+        { title: 'Layering Tools | Perkakas Pelapis', href: '/produk/owner/layering-tools' },
+        { title: 'Door Lock Equipments | Peralatan Kunci Pintu', href: '/produk/owner/door-lock-equipments' },
+        { title: 'Sanitary Equipments | Peralatan Sanitasi', href: '/produk/owner/sanitary-equipments' },
+        { title: 'Safety Equipments | Peralatan Keselamatan', href: '/produk/owner/safety-equipments' },
       ]
     },
     {
       title: 'YO-ZURI',
       href: '/produk/yozuri',
       subItems: [
+        { title: 'Power & Plumbing Tools | Peralatan Listrik & Perpipaan', href: '/produk/yozuri/power-plumbing-tools' },
+        { title: 'Diamond Wheels | Mata Gerinda', href: '/produk/yozuri/diamond-wheels' },
+        { title: 'Painting Tools | Peralatan Cat', href: '/produk/yozuri/painting-tools' },
+        { title: 'Drilling Tools | Peralatan Bor', href: '/produk/yozuri/drilling-tools' },
+        { title: 'Bricklayering & Plastering Tools | Peralatan Tukang Batu & Plester', href: '/produk/yozuri/bricklayering-plastering-tools' },
+        { title: 'Door Lock Equipments | Peralatan Kunci Pintu', href: '/produk/yozuri/door-lock-equipments' },
+        { title: 'Cutting Tools | Peralatan Potong', href: '/produk/yozuri/cutting-tools' },
+        { title: 'Measuring & Layout Tools | Peralatan Ukur & Tata Letak', href: '/produk/yozuri/measuring-layout-tools' },
+        { title: 'Sanitary Equipments | Peralatan Sanitasi', href: '/produk/yozuri/sanitary-equipments' },
+        { title: 'Safety Equipments | Peralatan Keselamatan', href: '/produk/yozuri/safety-equipments' },
+      ]
+    },
+    {
+      title: 'HELIOS',
+      href: '/produk/yozuri',
+      subItems: [
         { title: 'Power & Plumbing Tools | Peralatan Listrik & Perpipaan', href: '/produk' },
-        { title: 'Diamond Wheels | Mata Gerinda', href: '/produk' },
-        { title: 'Painting Tools | Peralatan Cat', href: '/produk' },
-        { title: 'Drilling Tools | Peralatan Bor', href: '/produk' },
-        { title: 'Bricklayering & Plastering Tools | Peralatan Tukang Batu & Plester', href: '/produk' },
-        { title: 'Door Lock Equipments | Peralatan Kunci Pintu', href: '/produk' },
-        { title: 'Cutting Tools | Peralatan Potong', href: '/produk' },
-        { title: 'Measuring & Layout Tools | Peralatan Ukur & Tata Letak', href: '/produk' },
-        { title: 'Sanitary Equipments | Peralatan Sanitasi', href: '/produk' },
-        { title: 'Safety Equipments | Peralatan Keselamatan', href: '/produk' },
       ]
     },
   ];
