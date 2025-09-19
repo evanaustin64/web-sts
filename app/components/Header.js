@@ -60,7 +60,7 @@ export default function Header() {
 
   return (
     <header className={`bg-white sticky top-0 z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : 'shadow-none'}`}>
-      <div className="container mx-auto flex justify-between items-center h-24 px-4">
+      <div className="container mx-auto flex justify-between items-center h-24 px-24">
 
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -68,10 +68,10 @@ export default function Header() {
             <Image
               src="/images/logo-sts.png"
               alt="Logo PT. Samudra Teknik Sejahtera"
-              width={60}
-              height={60}
+              width={80}
+              height={80}
             />
-            <span className="font-bold text-gray-800 text-xl whitespace-nowrap">
+            <span className="font-black text-gray-800 text-xl whitespace-nowrap">
               PT. SAMUDRA TEKNIK SEJAHTERA
             </span>
           </Link>

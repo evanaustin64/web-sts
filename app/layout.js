@@ -8,6 +8,14 @@ import Footer from './components/Footer'; // Pastikan Anda membuat komponen Foot
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+import { Lato } from 'next/font/google'
+
+const lato = Lato({
+  subsets: ['latin'],
+  variable: '--font-lato',
+  weight: ['300', '400', '700', '900'], // Light, Regular, Bold, Black
+})
+
 export const metadata = {
   title: 'PT. Samudra Teknik Sejahtera',
   description: 'Peralatan Teknik Profesional',
@@ -15,7 +23,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id">
+    <html lang="id" className={lato.variable}>
       {/* Tambahkan class Tailwind ke body untuk style dasar dan layout full-height */}
       <body className="bg-white text-gray-800 flex flex-col min-h-screen">
         <CartProvider>

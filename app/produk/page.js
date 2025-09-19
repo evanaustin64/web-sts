@@ -36,7 +36,7 @@ export default function ProdukUtamaPage() {
           <span>Merk</span>
         </div>
 
-        <h1 className="text-4xl font-extrabold text-gray-900 uppercase mb-10">
+        <h1 className="text-4xl font-black text-gray-900 uppercase mb-10">
           Merk Kami
         </h1>
 

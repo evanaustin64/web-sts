@@ -45,3 +45,4 @@
 .flyoutMenu li a {
   @apply font-normal normal-case; /* Tidak bold dan tidak uppercase */
 }
+
