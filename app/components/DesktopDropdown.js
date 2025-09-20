@@ -12,7 +12,7 @@ export default function DesktopDropdown() {
       subItems: [
         { title: 'Hand & Power Tools | Perkakas Tangan & Listrik', href: '/produk/owner/hand-power-tools' },
         { title: 'Painting Tools | Perkakas Pengecatan', href: '/produk/owner/painting-tools' },
-        { title: 'Layering Tools | Perkakas Pelapis', href: '/produk/owner/layering-tools' },
+        { title: 'Plastering & Layering Tools | Perkakas Pelapis', href: '/produk/owner/layering-tools' },
         { title: 'Door Lock Equipments | Peralatan Kunci Pintu', href: '/produk/owner/door-lock-equipments' },
         { title: 'Sanitary Equipments | Peralatan Sanitasi', href: '/produk/owner/sanitary-equipments' },
         { title: 'Safety Equipments | Peralatan Keselamatan', href: '/produk/owner/safety-equipments' },
@@ -36,9 +36,9 @@ export default function DesktopDropdown() {
     },
     {
       title: 'HELIOS',
-      href: '/produk/yozuri',
+      href: '/produk/helios',
       subItems: [
-        { title: 'Power & Plumbing Tools | Peralatan Listrik & Perpipaan', href: '/produk' },
+        { title: 'Safety Equipments | Peralatan Keselamatan', href: '/produk/helios/safety-equipments' },
       ]
     },
   ];

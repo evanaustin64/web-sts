@@ -58,8 +58,8 @@ function HeroSlider() {
   };
 
   const slides = [
-    { image: '/images/Banner-Utama1.png', title: 'TOOLS YOU CAN TRUST', subtitle: 'Hardware & Tools handal untuk kebutuhan Anda.', buttonText: 'Lihat Katalog    ', link: '/produk' },
-    { image: '/images/Banner-Utama2.png', title: 'YOUR PARTNER IN TOOLS', subtitle: 'Kualitas, presisi, dan daya tahan dalam setiap produk.', buttonText: 'Lihat Semua Produk', link: '/produk' }
+    { image: '/images/PT STS - Web Design - Header-02.png', title: 'TOOLS YOU CAN TRUST', subtitle: 'Hardware & Tools handal untuk kebutuhan Anda.', buttonText: 'Lihat Katalog    ', link: '/produk' },
+    { image: '/images/PT STS - Web Design - Header-01.png', title: 'YOUR PARTNER IN TOOLS', subtitle: 'Kualitas, presisi, dan daya tahan dalam setiap produk.', buttonText: 'Lihat Semua Produk', link: '/produk' }
   ];
 
   return (
@@ -68,12 +68,15 @@ function HeroSlider() {
         {slides.map((slide, index) => (
           <div key={index} className="relative h-[500px]">
             <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent flex items-center">
+            <div className="absolute inset-0  flex items-center">
               <div className="container mx-auto px-28">
                 <div className="max-w-xl text-white">
                   <h1 className="text-4xl md:text-6xl font-black uppercase mb-4">{slide.title}</h1>
                   <p className="text-lg md:text-xl mb-8">{slide.subtitle}</p>
-                  <Link href={slide.link} className="bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded hover:bg-yellow-600 transition-colors">
+                  <Link
+                    href={slide.link}
+                    className="bg-white text-gray-900 font-bold py-3 px-8 rounded hover:bg-gray-900 hover:text-white transition-all duration-300"
+                  >
                     {slide.buttonText}
                   </Link>
                 </div>

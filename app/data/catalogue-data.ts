@@ -29,7 +29,7 @@ export const catalogueData: Record<string, Category[]> = {
       products: [
         {
           id: 'own-001',
-          name: 'Palu Kambing Gerigi | Gagang Fiber',
+          name: 'Palu Kambing Gerigi - Gagang Fiber',
           image: '/images/own/Owner - Palu Kambing Gagang Fiber - Gerigi.png',
           description: 'Palu kambing OWNER PRO series dengan kepala gerigi dirancang untuk daya cengkeram paku maksimal. Gagang fiber anti-slip memberikan kenyamanan dan keamanan ekstra saat digunakan.',
           specifications: [{ key: 'Ukuran Kepala', value: '8oz' }, { key: 'Material Gagang', value: 'Fiberglass' }],
@@ -43,7 +43,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'own-002',
-          name: 'Palu Kambing | Gagang Fiber',
+          name: 'Palu Kambing - Gagang Fiber',
           image: '/images/own/Owner - Palu Kambing Gagang Fiber - Non-Gerigi.png',
           description: 'Palu kambing serbaguna dengan kepala rata, cocok untuk berbagai keperluan pertukangan dan proyek DIY. Gagang fiber yang ringan dan kuat.',
           specifications: [{ key: 'Ukuran Kepala', value: '8oz' }, { key: 'Material Gagang', value: 'Fiberglass' }],
@@ -56,7 +56,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'own-003',
-          name: 'Palu Bodam | Tanpa Gagang',
+          name: 'Palu Bodam - Tanpa Gagang',
           image: '/images/own/Owner - Palu Bodem Tanpa Gagang A.png',
           description: 'Palu bodam (sledgehammer) dari baja tempa berkualitas tinggi, ideal untuk pekerjaan penghancuran berat seperti membongkar beton dan dinding.',
           specifications: [{ key: 'Berat', value: '3 kg' }, { key: 'Material Kepala', value: 'Baja Tempa' }],
@@ -68,7 +68,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'own-004',
-          name: 'Kabel Ties | Hitam & Putih',
+          name: 'Kabel Ties - Hitam & Putih',
           image: '/images/own/Owner - Kabel Ties B.png',
           description: 'Kabel ties serbaguna berbahan nilon kuat untuk mengikat dan merapikan kabel, selang, atau keperluan lainnya. Tahan lama dan tidak mudah putus.',
           specifications: [{ key: 'Material', value: 'Nilon 66' }, { key: 'Warna', value: 'Hitam, Putih' }],
@@ -115,7 +115,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'own-008',
-          name: 'Lakban | Adhesive Tapes',
+          name: 'Lakban - Adhesive Tapes',
           image: '/images/own/Owner - Lakban A.png',
           description: 'Lakban perekat serbaguna dengan daya rekat kuat, ideal untuk pengepakan kardus, penyegelan, dan berbagai keperluan rumah tangga maupun industri.',
           specifications: [{ key: 'Warna', value: 'Coklat' }, { key: 'Lebar', value: '2 inch (48mm)' }],
@@ -438,7 +438,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'own-layer-010',
-          name: 'Sendok Semen (Gagang Kayu)',
+          name: 'Sendok Semen - Gagang Kayu',
           image: '/images/own/Owner - Sendok Semen Lancip - Gagang Kayu.png',
           description: 'Sendok semen (trowel) dengan gagang kayu yang nyaman. Terbuat dari plat baja yang kuat untuk mengaduk dan mengaplikasikan adukan semen.',
           specifications: [
@@ -455,7 +455,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'own-layer-011',
-          name: 'Kape (Gagang Kayu)',
+          name: 'Kape - Gagang Kayu',
           image: '/images/own/Owner - Kape - Gagang Kayu.png',
           description: 'Kape (scrapper) dengan gagang kayu, alat esensial untuk membersihkan permukaan, mengerok cat lama, atau meratakan dempul.',
           specifications: [
@@ -535,7 +535,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'own-door-004',
-          name: 'Engsel Pintu PVC (Thickness 2mm)',
+          name: 'Engsel Pintu PVC - Thickness 2mm',
           image: '/images/own/Owner - Engsel PVC Putih+Coklat+Baut A.png',
           description: 'Engsel berkualitas untuk pintu PVC atau pintu ringan lainnya. Ketebalan 2mm memberikan kekuatan ekstra dan anti-macet.',
           specifications: [
@@ -553,7 +553,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'own-door-005',
-          name: 'Gembok Nickel (Pendek & Panjang)',
+          name: 'Gembok Nickel - Pendek & Panjang',
           image: '/images/own/Owner - Gembok Leher Pendek+Panjang+Kunci 60mm A.png',
           description: 'Gembok dengan finishing nickel yang elegan dan tahan karat. Tersedia dalam varian leher pendek untuk keamanan maksimal dan leher panjang untuk fleksibilitas.',
           specifications: [
@@ -571,7 +571,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'own-door-006',
-          name: 'Gembok Segi (Rectangular Padlock)',
+          name: 'Gembok Segi - Rectangular Padlock',
           image: '/images/own/Owner - Gembok Segi+Kunci 94mm A.png',
           description: 'Gembok segi empat (rectangular) untuk keamanan ekstra pada pintu harmonika, pagar, dan gudang. Desain kokoh yang sulit dirusak.',
           specifications: [
@@ -726,7 +726,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'own-sanitary-008',
-          name: 'Lem Sealant Botol (Acetic)',
+          name: 'Lem Sealant Botol - Acetic',
           image: '/images/own/Owner - Lem Sealant Botol C.png',
           description: 'Lem sealant silikon tipe acetic serbaguna dalam kemasan botol. Cocok untuk mengisi celah pada kaca, keramik, dan berbagai material lainnya. Cepat kering dan kedap air.',
           specifications: [
@@ -770,7 +770,7 @@ export const catalogueData: Record<string, Category[]> = {
       products: [
         {
           id: 'own-safety-001',
-          name: 'Kacamata Proyek (Safety Glasses)',
+          name: 'Kacamata Proyek - Safety Glasses',
           image: '/images/own/Owner - Kacamata Safety - Bening+Hitam A.png',
           description: 'Kacamata pengaman untuk melindungi mata dari debu, serpihan, dan partikel berbahaya saat bekerja. Lensa polikarbonat jernih dan anti gores.',
           specifications: [
@@ -789,7 +789,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'own-safety-002',
-          name: 'Sepatu Boots Hitam (Safety Rubber Boots)',
+          name: 'Sepatu Boots Hitam - Safety Rubber Boots',
           image: '/images/own/Owner - Safety Rubber Boots.png',
           description: 'Sepatu boots pengaman berbahan karet tebal yang tahan air dan anti slip. Memberikan perlindungan dari genangan air, lumpur, dan benda tajam.',
           specifications: [
@@ -837,7 +837,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-002',
-          name: 'Palu Bodem (Gagang Fiber)',
+          name: 'Palu Bodem - Gagang Fiber',
           image: '/images/yozuri/Yo-Zuri - Palu Bodem - 6 Lbs B.png',
           description: 'Palu bodem Yo-Zuri dengan gagang fiberglass yang ringan namun sangat kuat, efektif meredam getaran saat digunakan untuk pekerjaan berat.',
           specifications: [
@@ -855,7 +855,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-003',
-          name: 'Palu Konde (Gagang Fiber)',
+          name: 'Palu Konde - Gagang Fiber',
           image: '/images/yozuri/Yo-Zuri - Palu Konde - Gagang Fiber.png',
           description: 'Palu konde (machinist hammer) dengan gagang fiberglass. Ujung bulat (konde) ideal untuk membentuk logam dan pekerjaan presisi lainnya.',
           specifications: [
@@ -873,7 +873,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-004',
-          name: 'Palu Kambing (Gagang Fiber)',
+          name: 'Palu Kambing - Gagang Fiber',
           image: '/images/yozuri/Yo-Zuri - Palu Kambing - Gagang Fiber.png',
           description: 'Palu kambing (claw hammer) Yo-Zuri dengan gagang fiber. Desain seimbang untuk memaku dan mencabut paku dengan efisien.',
           specifications: [
@@ -890,7 +890,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-005',
-          name: 'Palu Kambing Gerigi + Magnet (Gagang Fiber)',
+          name: 'Palu Kambing Gerigi & Magnet - Gagang Fiber',
           image: '/images/yozuri/Yo-Zuri - Palu Kambing - Gagang Fiber.png',
           description: 'Palu kambing inovatif dengan kepala gerigi dan magnet untuk menahan paku, memungkinkan pemakuan dengan satu tangan.',
           specifications: [
@@ -907,7 +907,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-006',
-          name: 'Palu Bodem (Gagang Kayu)',
+          name: 'Palu Bodem - Gagang Kayu',
           image: '/images/yozuri/Yo-Zuri - Palu Bodem - Gagang Kayu.png',
           description: 'Palu bodem tradisional dengan gagang kayu hickory pilihan yang kuat dan klasik, untuk pekerjaan penghancuran.',
           specifications: [
@@ -924,7 +924,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-007',
-          name: 'Palu Konde (Gagang Kayu)',
+          name: 'Palu Konde - Gagang Kayu',
           image: '/images/yozuri/Yo-Zuri - Palu Konde - Gagang Kayu.png',
           description: 'Palu konde dengan gagang kayu, memberikan feel tradisional dengan fungsionalitas modern untuk para pengrajin logam.',
           specifications: [
@@ -941,7 +941,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-008',
-          name: 'Palu Kambing (Gagang Kayu)',
+          name: 'Palu Kambing - Gagang Kayu',
           image: '/images/yozuri/Yo-Zuri - Palu Kambing - Gagang Kayu.png',
           description: 'Palu kambing klasik dengan gagang kayu yang dipernis untuk daya tahan ekstra. Pilihan favorit para tukang kayu.',
           specifications: [
@@ -958,7 +958,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-009',
-          name: 'Gunting Korea Serbaguna (다용도 가위)',
+          name: 'Gunting Korea Serbaguna - 다용도 가위',
           image: '/images/yozuri/Yo-Zuri - Gunting Korea Serbaguna.png',
           description: 'Gunting serbaguna model Korea (다용도 가위 - Dayongdo Gawi) yang sangat tajam, cocok untuk memotong seng, dahan, hingga bahan dapur.',
           specifications: [
@@ -975,7 +975,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-010',
-          name: 'Tang Potong (Gagang Fiber)',
+          name: 'Tang Potong - Gagang Fiber',
           image: '/images/yozuri/Yo-Zuri - Tang Potong.png',
           description: 'Tang potong (diagonal plier) dengan gagang fiber anti-slip. Didesain untuk memotong kawat dan kabel dengan mudah.',
           specifications: [
@@ -992,7 +992,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-011',
-          name: 'Tang Lancip (Gagang Fiber)',
+          name: 'Tang Lancip - Gagang Fiber',
           image: '/images/yozuri/Yo-Zuri - Tang Lancip.png',
           description: 'Tang lancip (long nose plier) dengan gagang fiber untuk menjangkau area sempit, membengkokkan kawat, dan memegang komponen kecil.',
           specifications: [
@@ -1009,7 +1009,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-012',
-          name: 'Tang Kombinasi (Gagang Fiber)',
+          name: 'Tang Kombinasi - Gagang Fiber',
           image: '/images/yozuri/Yo-Zuri - Tang Kombinasi.png',
           description: 'Tang kombinasi serbaguna (combination plier) dengan gagang fiber, menggabungkan fungsi memegang, memotong, dan memutar dalam satu alat.',
           specifications: [
@@ -1026,7 +1026,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-013',
-          name: 'Kikir Segitiga (Tanpa Gagang)',
+          name: 'Kikir Segitiga - Tanpa Gagang',
           image: '/images/yozuri/Yo-Zuri - Kikir Segitiga - Tanpa Gagang.png',
           description: 'Kikir segitiga (triangular file) berkualitas tinggi untuk menghaluskan sudut tajam dan celah pada material logam.',
           specifications: [
@@ -1043,7 +1043,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-014',
-          name: 'Kikir Segitiga (Gagang Karet)',
+          name: 'Kikir Segitiga - Gagang Karet',
           image: '/images/yozuri/Yo-Zuri - Kikir Segitiga - Gagang Karet.png',
           description: 'Kikir segitiga dengan gagang karet ergonomis yang nyaman dan anti-slip, memberikan kontrol lebih saat bekerja.',
           specifications: [
@@ -1060,7 +1060,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-015',
-          name: 'Kikir Segitiga (Gagang Kayu)',
+          name: 'Kikir Segitiga - Gagang Kayu',
           image: '/images/yozuri/Yo-Zuri - Kikir Segitiga - Gagang Kayu.png',
           description: 'Kikir segitiga dengan gagang kayu klasik untuk feel tradisional dan pegangan yang kokoh.',
           specifications: [
@@ -1077,7 +1077,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-016',
-          name: 'Gegep Heavy Duty (Gagang Karet)',
+          name: 'Gegep Heavy Duty - Gagang Karet',
           image: '/images/yozuri/Yo-Zuri - Gegep Heavy Duty 9 Inch A.png',
           description: 'Gegep (tower pincer) heavy duty untuk mencabut paku dan memotong kawat tebal. Gagang karet memberikan daya ungkit maksimal.',
           specifications: [
@@ -1094,7 +1094,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-plumb-017',
-          name: 'Kunci Pipa (Pipe Wrench)',
+          name: 'Kunci Pipa - Pipe Wrench',
           image: '/images/yozuri/Yo-Zuri - Kunci Pipa.png',
           description: 'Kunci pipa heavy duty dengan rahang bergerigi yang dapat mencengkeram pipa dengan kuat. Alat wajib untuk pekerjaan perpipaan.',
           specifications: [
@@ -1120,7 +1120,7 @@ export const catalogueData: Record<string, Category[]> = {
       products: [
         {
           id: 'yoz-diamond-001',
-          name: 'Diamond Wheel Turbo S (Wet & Dry Cutting)',
+          name: 'Diamond Wheel Turbo S - Wet & Dry Cutting',
           image: '/images/yozuri/Yo-Zuri - Diamond Wheel Turbo S A.png', // Ganti dengan path gambar Anda
           description: 'Mata gerinda potong serbaguna tipe Turbo S, dirancang untuk pemotongan basah dan kering yang cepat dan agresif pada beton, batu, dan keramik.',
           specifications: [
@@ -1138,7 +1138,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-diamond-002',
-          name: 'Porcelain Saw Blade (Hexagon | Wet & Dry Cutting)',
+          name: 'Porcelain Saw Blade - Hexagon - Wet & Dry Cutting',
           image: '/images/yozuri/Yo-Zuri - Porcelain Saw Blade (Hexagon) A.png',
           description: 'Mata potong khusus porselen dan keramik super keras dengan desain segmen Hexagon. Memberikan hasil potongan yang sangat halus dan bebas cuil.',
           specifications: [
@@ -1156,7 +1156,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-diamond-003',
-          name: 'Diamond Wheel Turbo Batik (Wet & Dry Cutting)',
+          name: 'Diamond Wheel Turbo Batik - Wet & Dry Cutting',
           image: '/images/yozuri/diamond-batik.png',
           description: 'Mata gerinda potong dengan desain segmen "Batik" yang unik untuk pendinginan optimal dan pemotongan yang stabil pada berbagai material bangunan.',
           specifications: [
@@ -1174,7 +1174,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-diamond-004',
-          name: 'Diamond Wheel Turbo Super Thin (Dry Cutting)',
+          name: 'Diamond Wheel Turbo Super Thin - Dry Cutting',
           image: '/images/yozuri/diamond-super-thin.png',
           description: 'Mata gerinda turbo super tipis untuk pemotongan kering yang sangat cepat dengan gesekan minimal. Ideal untuk pemotongan presisi.',
           specifications: [
@@ -1192,7 +1192,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-diamond-005',
-          name: 'Diamond Wheel (Dry Cutting)',
+          name: 'Diamond Wheel - Dry Cutting',
           image: '/images/yozuri/diamond-dry.png',
           description: 'Mata gerinda potong tipe segmented untuk pemotongan kering material bangunan secara umum. Memberikan durabilitas dan performa yang andal.',
           specifications: [
@@ -1210,7 +1210,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-diamond-006',
-          name: 'Circular Saw Blade "TCT Blade" (Wet & Dry Cutting)',
+          name: 'Circular Saw Blade "TCT Blade" - Wet & Dry Cutting',
           image: '/images/yozuri/Yo-Zuri - Circular Saw Blade - TCT Blade.png',
           description: 'Mata gergaji sirkular dengan ujung mata Tungsten Carbide Tipped (TCT) untuk pemotongan kayu, triplek, dan material non-besi lainnya. Bisa untuk pemotongan basah dan kering.',
           specifications: [
@@ -1263,7 +1263,233 @@ export const catalogueData: Record<string, Category[]> = {
       id: 'bricklayering-plastering-tools',
       name: 'Bricklayering & Plastering Tools | Peralatan Tukang Batu & Plester',
       image: '/images/layering yozuri.png ',
-      products: [],
+      // Di dalam catalogueData -> yozuri -> kategori 'layering-tools'
+      products: [
+        {
+          id: 'yoz-layer-001',
+          name: 'Sendok Semen Lancip - Gagang Fiber',
+          image: '/images/yozuri/sendok-semen-lancip.png', // Ganti dengan path gambar Anda
+          description: 'Sendok semen model lancip dengan gagang fiberglass anti-slip. Dirancang untuk presisi saat mengaplikasikan adukan di sudut dan area sempit.',
+          specifications: [
+            { key: 'Model', value: 'Lancip (Pointing Trowel)' },
+            { key: 'Material Gagang', value: 'Fiberglass' },
+          ],
+          features: [
+            { text: 'Ujung Presisi' },
+            { text: 'Gagang Fiber Anti-Slip' },
+          ],
+          packagingDetails: [
+            { size: '6"', innerBox: '12/box', outerBox: '120/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-layer-002',
+          name: 'Sendok Semen Bulat - Gagang Fiber',
+          image: '/images/yozuri/sendok-semen-bulat.png',
+          description: 'Sendok semen model bulat (finishing trowel) dengan gagang fiberglass. Ideal untuk mengambil, menyebar, dan menghaluskan plesteran.',
+          specifications: [
+            { key: 'Model', value: 'Bulat (Finishing Trowel)' },
+            { key: 'Material Gagang', value: 'Fiberglass' },
+          ],
+          features: [
+            { text: 'Untuk Menghaluskan Plester' },
+            { text: 'Gagang Fiber Nyaman' },
+          ],
+          packagingDetails: [
+            { size: '6"', innerBox: '12/box', outerBox: '120/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-layer-003',
+          name: 'Kape Karet - Gagang Fiber',
+          image: '/images/yozuri/kape-karet.png',
+          description: 'Kape dengan bilah karet fleksibel dan gagang fiber, cocok untuk aplikasi kompon atau nat pada drywall tanpa menggores permukaan.',
+          specifications: [
+            { key: 'Material Bilah', value: 'Karet (Rubber)' },
+            { key: 'Material Gagang', value: 'Fiberglass' },
+          ],
+          features: [
+            { text: 'Bilah Fleksibel' },
+            { text: 'Tidak Menggores' },
+          ],
+          packagingDetails: [
+            { size: '3 Inch', innerBox: '12/box', outerBox: '240/ctn' },
+            { size: '4 Inch', innerBox: '12/box', outerBox: '240/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-layer-004',
+          name: 'Raskam Besi - Gagang Fiber',
+          image: '/images/yozuri/raskam-besi.png',
+          description: 'Raskam besi (steel float) dengan gagang fiber untuk meratakan dan menghaluskan plesteran acian pada dinding atau lantai.',
+          specifications: [
+            { key: 'Material', value: 'Plat Besi' },
+            { key: 'Gagang', value: 'Fiberglass' },
+          ],
+          features: [
+            { text: 'Permukaan Rata Sempurna' },
+            { text: 'Gagang Ergonomis' },
+          ],
+          packagingDetails: [
+            { size: 'Standard', innerBox: '1/box', outerBox: '50/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-layer-005',
+          name: 'Raskam PVC Tebal - Thickness 5mm',
+          image: '/images/yozuri/raskam-pvc.png',
+          description: 'Raskam PVC dengan ketebalan 5mm yang sangat kuat dan tidak mudah melengkung. Ringan dan nyaman digunakan untuk waktu yang lama.',
+          specifications: [
+            { key: 'Material', value: 'PVC' },
+            { key: 'Ketebalan', value: '5 mm' },
+          ],
+          features: [
+            { text: 'Super Tebal & Kuat' },
+            { text: 'Ringan & Tahan Lama' },
+          ],
+          packagingDetails: [
+            { size: 'Standard', innerBox: '1/box', outerBox: '50/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-layer-006',
+          name: 'Siku Rak - Segi',
+          image: '/images/yozuri/siku-rak-segi.png',
+          description: 'Siku rak model segi dengan desain modern dan minimalis. Memberikan topangan yang kuat untuk ambalan dengan sentuhan gaya.',
+          specifications: [
+            { key: 'Material', value: 'Besi' },
+            { key: 'Model', value: 'Segi (Geometric)' },
+          ],
+          features: [
+            { text: 'Desain Modern' },
+            { text: 'Finishing Halus' },
+          ],
+          packagingDetails: [
+            { size: '8x10 Inch', innerBox: '12/box', outerBox: '144/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-layer-007',
+          name: 'Siku Lubang - Tebal',
+          image: '/images/yozuri/siku-lubang-tebal.png',
+          description: 'Besi siku lubang serbaguna Yo-Zuri dengan ketebalan premium untuk proyek rak heavy duty. Kuat, presisi, dan mudah dipasang.',
+          specifications: [
+            { key: 'Material', value: 'Besi' },
+            { key: 'Ketebalan', value: '2.0 mm' },
+          ],
+          features: [
+            { text: 'Ketebalan Premium' },
+            { text: 'Untuk Beban Berat' },
+          ],
+          packagingDetails: [
+            { size: '3M', innerBox: '10/pack', outerBox: '50/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-layer-008',
+          name: 'Pahat Topi Jumbo - Concrete Chisel',
+          image: '/images/yozuri/pahat-jumbo.png',
+          description: 'Pahat beton (concrete chisel) model topi heavy duty. Ditempa dari baja pilihan untuk kekuatan maksimal dalam menghancurkan beton.',
+          specifications: [
+            { key: 'Material', value: 'Baja Tempa' },
+            { key: 'Model', value: 'Topi (Jumbo)' },
+          ],
+          features: [
+            { text: 'Daya Hancur Maksimal' },
+            { text: 'Material Heavy Duty' },
+          ],
+          packagingDetails: [
+            { size: '1"', innerBox: '6/box', outerBox: '48/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-layer-009',
+          name: 'Lem Sealant Botol - Acetic Silicone Sealant',
+          image: '/images/yozuri/lem-sealant-botol.png',
+          description: 'Lem sealant silikon dalam kemasan botol (cartridge) untuk penggunaan dengan caulking gun. Kedap air dan fleksibel setelah kering.',
+          specifications: [
+            { key: 'Tipe', value: 'Acetic Silicone' },
+            { key: 'Volume', value: '300ml' },
+          ],
+          features: [
+            { text: 'Kedap Air & Fleksibel' },
+            { text: 'Untuk Caulking Gun' },
+          ],
+          packagingDetails: [
+            { size: '300ml', innerBox: '1/box', outerBox: '24/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-layer-010',
+          name: 'Lem Sealant Besar - Clear - Silicone Sealant',
+          image: '/images/yozuri/lem-sealant-besar.png',
+          description: 'Lem sealant silikon bening (clear) ukuran besar untuk berbagai aplikasi, mulai dari akuarium hingga pengisian celah kaca.',
+          specifications: [
+            { key: 'Tipe', value: 'Neutral Silicone' },
+            { key: 'Warna', value: 'Bening (Clear)' },
+            { key: 'Volume', value: '600ml' },
+          ],
+          features: [
+            { text: 'Ukuran Besar' },
+            { text: 'Bening & Tidak Berbau' },
+          ],
+          packagingDetails: [
+            { size: '600ml', innerBox: '1/box', outerBox: '12/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-layer-011',
+          name: 'Kabel Ties - Hitam & Putih',
+          image: '/images/yozuri/kabel-ties.png',
+          description: 'Kabel ties Yo-Zuri dengan material nilon premium, memiliki daya kunci yang sangat kuat dan tidak mudah getas.',
+          specifications: [
+            { key: 'Material', value: 'Nilon Premium' },
+            { key: 'Warna', value: 'Hitam & Putih' },
+          ],
+          features: [
+            { text: 'Material Premium' },
+            { text: 'Pengunci Kuat' },
+          ],
+          packagingDetails: [
+            { size: '250mm', innerBox: '10/pack', outerBox: '100/pack' },
+            { size: '300mm', innerBox: '10/pack', outerBox: '80/pack' },
+          ],
+        },
+        {
+          id: 'yoz-layer-012',
+          name: 'Gerobak Sorong - Bak PVC - 10kg',
+          image: '/images/yozuri/gerobak-pvc.png',
+          description: 'Gerobak sorong Yo-Zuri dengan bak PVC 10kg, dirancang seimbang untuk kemudahan manuver dan daya tahan di lingkungan proyek.',
+          specifications: [
+            { key: 'Material Bak', value: 'PVC' },
+            { key: 'Berat', value: '10 kg' },
+          ],
+          features: [
+            { text: 'Manuver Mudah' },
+            { text: 'Rangka Kokoh' },
+          ],
+          packagingDetails: [
+            { size: '10 KG', innerBox: '1/unit', outerBox: '1/unit' },
+          ],
+        },
+        {
+          id: 'yoz-layer-013',
+          name: 'Lakban - Adhesive Tapes',
+          image: '/images/yozuri/lakban.png',
+          description: 'Lakban perekat Yo-Zuri dengan daya rekat superior, tidak mudah sobek, dan ideal untuk semua kebutuhan pengepakan.',
+          specifications: [
+            { key: 'Warna', value: 'Coklat / Bening' },
+            { key: 'Lebar', value: '2 inch (48mm)' },
+          ],
+          features: [
+            { text: 'Daya Rekat Superior' },
+            { text: 'Tidak Mudah Sobek' },
+          ],
+          packagingDetails: [
+            { size: '2" x 100y', innerBox: '6/slop', outerBox: '72/ctn' },
+          ],
+        },
+      ],
     },
     {
       id: 'door-lock-equipments',
@@ -1275,15 +1501,198 @@ export const catalogueData: Record<string, Category[]> = {
       id: 'cutting-tools',
       name: 'Cutting Tools | Peralatan Potong',
       image: '/images/cutting yozuri.png',
+      // Di dalam catalogueData -> yozuri -> kategori 'cutting-tools'
       products: [
-        { id: 'yoz-001', name: 'Mata Gerinda Potong 4"', image: '/images/produk-matagerinda.jpg' },
+        {
+          id: 'yoz-cut-001',
+          name: 'Gergaji Kayu - Gagang Karet',
+          image: '/images/yozuri/gergaji-kayu.png', // Ganti dengan path gambar Anda
+          description: 'Gergaji tangan serbaguna dengan mata pisau baja yang diasah tiga sisi untuk pemotongan yang cepat dan bersih. Gagang karet ergonomis memberikan pegangan yang nyaman dan kuat.',
+          specifications: [
+            { key: 'Panjang Pisau', value: '18 Inch (450mm)' },
+            { key: 'Material Pisau', value: 'Baja SK-5' },
+            { key: 'Material Gagang', value: 'Karet (Rubber Grip)' },
+          ],
+          features: [
+            { text: 'Mata Asah 3 Sisi' },
+            { text: 'Potongan Cepat & Bersih' },
+            { text: 'Gagang Karet Ergonomis' },
+          ],
+          packagingDetails: [
+            { size: '18"', innerBox: '6/box', outerBox: '60/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-cut-002',
+          name: 'Gergaji Kayu Lancip - Gagang Karet',
+          image: '/images/yozuri/gergaji-lancip.png',
+          description: 'Gergaji dahan dengan ujung lancip (jab saw) untuk menjangkau area sulit dan memulai pemotongan dari tengah permukaan. Gagang karet memberikan kontrol penuh.',
+          specifications: [
+            { key: 'Panjang Pisau', value: '12 Inch (300mm)' },
+            { key: 'Material Pisau', value: 'Baja SK-5' },
+            { key: 'Fitur', value: 'Ujung Lancip' },
+          ],
+          features: [
+            { text: 'Menjangkau Area Sulit' },
+            { text: 'Ideal untuk Drywall & Kayu' },
+            { text: 'Kontrol Penuh' },
+          ],
+          packagingDetails: [
+            { size: '12"', innerBox: '12/box', outerBox: '120/ctn' },
+          ],
+        },
       ],
     },
     {
       id: 'measuring-layout-tools',
       name: 'Measuring & Layout Tools | Peralatan Ukur & Tata Letak',
       image: '/images/measuring yozuri.png',
-      products: [],
+      // Di dalam catalogueData -> yozuri -> kategori 'measuring-layout-tools'
+      products: [
+        {
+          id: 'yoz-measure-001',
+          name: 'Meteran New - Non Autostop',
+          image: '/images/yozuri/Yo-Zuri - Meteran - New 10m A.png', // Ganti dengan path gambar Anda
+          description: 'Meteran seri "New" dari Yo-Zuri dengan desain klasik dan bodi yang kokoh. Sistem penguncian manual yang andal untuk pengukuran akurat.',
+          specifications: [
+            { key: 'Fitur', value: 'Non-Autostop, Manual Lock' },
+            { key: 'Material Bodi', value: 'ABS Plastik' },
+          ],
+          features: [
+            { text: 'Desain Klasik & Kokoh' },
+            { text: 'Penguncian Manual Andal' },
+          ],
+          packagingDetails: [
+            { size: '5M', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '7.5M', innerBox: '12/box', outerBox: '96/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-measure-002',
+          name: 'Meteran Mars - Autostop',
+          image: '/images/yozuri/Yo-Zuri - Meteran - Mars 10m A.png',
+          description: 'Meteran seri "Mars" dilengkapi fitur Autostop yang menahan plat meteran secara otomatis saat ditarik, memudahkan pengukuran seorang diri.',
+          specifications: [
+            { key: 'Fitur', value: 'Autostop' },
+            { key: 'Material Bodi', value: 'ABS Lapis Karet' },
+          ],
+          features: [
+            { text: 'Fitur Autostop Praktis' },
+            { text: 'Grip Karet Anti Slip' },
+          ],
+          packagingDetails: [
+            { size: '5M', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '7.5M', innerBox: '12/box', outerBox: '96/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-measure-003',
+          name: 'Meteran Neptune - Autostop',
+          image: '/images/yozuri/Yo-Zuri - Meteran - Neptune 7,5m A.png',
+          description: 'Meteran premium seri "Neptune" dengan fitur Autostop dan desain futuristik. Bodi full-rubber untuk daya tahan benturan maksimal.',
+          specifications: [
+            { key: 'Fitur', value: 'Autostop' },
+            { key: 'Material Bodi', value: 'Full Rubber Body' },
+          ],
+          features: [
+            { text: 'Desain Premium' },
+            { text: 'Tahan Benturan' },
+          ],
+          packagingDetails: [
+            { size: '5M', innerBox: '6/box', outerBox: '60/ctn' },
+            { size: '7.5M', innerBox: '6/box', outerBox: '48/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-measure-004',
+          name: 'Meteran Tancap - Fiberglass',
+          image: '/images/yozuri/Yo-Zuri - Meteran Tancap - Fiberglass A.png',
+          description: 'Meteran roll (meteran tancap) dengan pita fiberglass yang tidak menghantarkan listrik, anti melar, dan tahan lama. Cocok untuk mengukur jarak jauh di area proyek.',
+          specifications: [
+            { key: 'Material Pita', value: 'Fiberglass' },
+            { key: 'Fitur', value: 'Gagang Putar, Ujung Tancap' },
+          ],
+          features: [
+            { text: 'Pita Fiberglass Anti Melar' },
+            { text: 'Aman untuk Area Listrik' },
+          ],
+          packagingDetails: [
+            { size: '50 Meter', innerBox: '1/box', outerBox: '20/ctn' },
+            { size: '100 Meter', innerBox: '1/box', outerBox: '10/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-measure-005',
+          name: 'Siku Lubang - Stainless Steel',
+          image: '/images/yozuri/Yo-Zuri - Siku Tukang.png',
+          description: 'Besi siku lubang serbaguna yang terbuat dari Stainless Steel murni, menjamin kekuatan dan ketahanan karat terbaik untuk jangka panjang.',
+          specifications: [
+            { key: 'Material', value: 'Stainless Steel' },
+            { key: 'Panjang', value: '3 Meter' },
+          ],
+          features: [
+            { text: '100% Anti Karat' },
+            { text: 'Kekuatan Superior' },
+          ],
+          packagingDetails: [
+            { size: '3M', innerBox: '10/pack', outerBox: '50/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-measure-006',
+          name: 'Lot Tukang - Plumb Bob',
+          image: '/images/yozuri/Yo-Zuri - Lot Tukang - Merah+Biru A.png',
+          description: 'Lot tukang (plumb bob) presisi untuk menentukan titik vertikal lurus dengan akurasi tinggi. Dilengkapi benang kuat dan ujung yang runcing.',
+          specifications: [
+            { key: 'Material', value: 'Besi' },
+            { key: 'Berat', value: '300g / 500g' },
+          ],
+          features: [
+            { text: 'Akurasi Vertikal Tinggi' },
+            { text: 'Desain Seimbang' },
+          ],
+          packagingDetails: [
+            { size: '300g', innerBox: '1/box', outerBox: '100/ctn' },
+            { size: '500g', innerBox: '1/box', outerBox: '80/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-measure-007',
+          name: 'Waterpass - Torpedo',
+          image: '/images/yozuri/Yo-Zuri - Waterpass Torpedo.png',
+          description: 'Waterpass mini model torpedo yang ringkas dan mudah dibawa. Dilengkapi magnet kuat di bagian bawah untuk menempel pada permukaan besi.',
+          specifications: [
+            { key: 'Model', value: 'Torpedo' },
+            { key: 'Fitur', value: 'Magnet' },
+            { key: 'Panjang', value: '9 Inch' },
+          ],
+          features: [
+            { text: 'Ukuran Ringkas' },
+            { text: 'Dasar Magnetik Kuat' },
+          ],
+          packagingDetails: [
+            { size: '9"', innerBox: '1/box', outerBox: '50/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-measure-008',
+          name: 'Waterpass Magnet - Heavy Duty',
+          image: '/images/yozuri/Yo-Zuri - Waterpass Magnet - 450mm A.png',
+          description: 'Waterpass heavy duty dengan rangka aluminium tebal dan magnet super kuat. Dirancang untuk akurasi dan daya tahan di lingkungan kerja yang ekstrem.',
+          specifications: [
+            { key: 'Material', value: 'Aluminium' },
+            { key: 'Fitur', value: 'Magnet Super Kuat' },
+          ],
+          features: [
+            { text: 'Rangka Aluminium Tebal' },
+            { text: 'Akurasi Terjamin' },
+          ],
+          packagingDetails: [
+            { size: '18 Inch', innerBox: '1/box', outerBox: '12/ctn' },
+            { size: '24 Inch', innerBox: '1/box', outerBox: '12/ctn' },
+          ],
+        },
+      ],
     },
     {
       id: 'sanitary-equipments',
@@ -1295,10 +1704,33 @@ export const catalogueData: Record<string, Category[]> = {
       id: 'safety-equipments',
       name: 'Safety Equipments | Peralatan Keselamatan',
       image: '/images/safety yozuri.png',
-      products: [],
+      products: [ {
+          id: 'yoz-safety-001',
+          name: 'Sepatu Karet Keselamatan',
+          image: '/images/yozuri/Yo-Zuri - Safety Rubber Boots.png',
+          description: 'Waterpass heavy duty dengan rangka aluminium tebal dan magnet super kuat. Dirancang untuk akurasi dan daya tahan di lingkungan kerja yang ekstrem.',
+          specifications: [
+            { key: 'Material', value: 'Aluminium' },
+            { key: 'Fitur', value: 'Magnet Super Kuat' },
+          ],
+          features: [
+            { text: 'Rangka Aluminium Tebal' },
+            { text: 'Akurasi Terjamin' },
+          ],
+          packagingDetails: [
+            { size: '18 Inch', innerBox: '1/box', outerBox: '12/ctn' },
+            { size: '24 Inch', innerBox: '1/box', outerBox: '12/ctn' },
+          ],
+        },
+      ],
     },
   ],
   helios: [
-    // Tambahkan data untuk HELIOS di sini
+    {
+      id: 'safety-equipments',
+      name: 'Safety Equipments | Peralatan Keselamatan',
+      image: '/images/safety yozuri.png',
+      products: [],
+    },
   ],
 };
