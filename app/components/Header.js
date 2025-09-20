@@ -12,7 +12,7 @@ export default function Header() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  
+   const [openAccordion, setOpenAccordion] = useState(null); 
   // --- State & Logika untuk Live Search ---
   const [searchTerm, setSearchTerm] = useState('');
   const [suggestions, setSuggestions] = useState([]);

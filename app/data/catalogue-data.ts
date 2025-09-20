@@ -1268,7 +1268,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-layer-001',
           name: 'Sendok Semen Lancip - Gagang Fiber',
-          image: '/images/yozuri/sendok-semen-lancip.png', // Ganti dengan path gambar Anda
+          image: '/images/yozuri/Yo-Zuri - Sendok Semen - Gagang Fiber Lancip.png', // Ganti dengan path gambar Anda
           description: 'Sendok semen model lancip dengan gagang fiberglass anti-slip. Dirancang untuk presisi saat mengaplikasikan adukan di sudut dan area sempit.',
           specifications: [
             { key: 'Model', value: 'Lancip (Pointing Trowel)' },
@@ -1285,7 +1285,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-layer-002',
           name: 'Sendok Semen Bulat - Gagang Fiber',
-          image: '/images/yozuri/sendok-semen-bulat.png',
+          image: '/images/yozuri/Yo-Zuri - Sendok Semen - Gagang Fiber Bulat.png',
           description: 'Sendok semen model bulat (finishing trowel) dengan gagang fiberglass. Ideal untuk mengambil, menyebar, dan menghaluskan plesteran.',
           specifications: [
             { key: 'Model', value: 'Bulat (Finishing Trowel)' },
@@ -1302,7 +1302,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-layer-003',
           name: 'Kape Karet - Gagang Fiber',
-          image: '/images/yozuri/kape-karet.png',
+          image: '/images/yozuri/Yo-Zuri - Kape Karet - Gagang Fiber.png',
           description: 'Kape dengan bilah karet fleksibel dan gagang fiber, cocok untuk aplikasi kompon atau nat pada drywall tanpa menggores permukaan.',
           specifications: [
             { key: 'Material Bilah', value: 'Karet (Rubber)' },
@@ -1319,8 +1319,8 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-layer-004',
-          name: 'Raskam Besi - Gagang Fiber',
-          image: '/images/yozuri/raskam-besi.png',
+          name: 'Raskam Besi - Gagang Kayu',
+          image: '/images/yozuri/Yo-Zuri - Raskam Besi - Gagang Kayu.png',
           description: 'Raskam besi (steel float) dengan gagang fiber untuk meratakan dan menghaluskan plesteran acian pada dinding atau lantai.',
           specifications: [
             { key: 'Material', value: 'Plat Besi' },
@@ -1337,7 +1337,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-layer-005',
           name: 'Raskam PVC Tebal - Thickness 5mm',
-          image: '/images/yozuri/raskam-pvc.png',
+          image: '/images/yozuri/Yo-Zuri - Raskam PVC - Hitam.png',
           description: 'Raskam PVC dengan ketebalan 5mm yang sangat kuat dan tidak mudah melengkung. Ringan dan nyaman digunakan untuk waktu yang lama.',
           specifications: [
             { key: 'Material', value: 'PVC' },
@@ -1354,7 +1354,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-layer-006',
           name: 'Siku Rak - Segi',
-          image: '/images/yozuri/siku-rak-segi.png',
+          image: '/images/yozuri/Yo-Zuri - Siku Rak - Putih.png',
           description: 'Siku rak model segi dengan desain modern dan minimalis. Memberikan topangan yang kuat untuk ambalan dengan sentuhan gaya.',
           specifications: [
             { key: 'Material', value: 'Besi' },
@@ -1371,7 +1371,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-layer-007',
           name: 'Siku Lubang - Tebal',
-          image: '/images/yozuri/siku-lubang-tebal.png',
+          image: '/images/yozuri/Owner - Siku Lubang 4 Warna A.png',
           description: 'Besi siku lubang serbaguna Yo-Zuri dengan ketebalan premium untuk proyek rak heavy duty. Kuat, presisi, dan mudah dipasang.',
           specifications: [
             { key: 'Material', value: 'Besi' },
@@ -1387,8 +1387,25 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-layer-008',
-          name: 'Pahat Topi Jumbo - Concrete Chisel',
-          image: '/images/yozuri/pahat-jumbo.png',
+          name: 'Pahat Topi Jumbo - Concrete Chisel Rata',
+          image: '/images/yozuri/Yo-Zuri - Pahat Topi Jumbo (-).png',
+          description: 'Pahat beton (concrete chisel) model topi heavy duty. Ditempa dari baja pilihan untuk kekuatan maksimal dalam menghancurkan beton.',
+          specifications: [
+            { key: 'Material', value: 'Baja Tempa' },
+            { key: 'Model', value: 'Topi (Jumbo)' },
+          ],
+          features: [
+            { text: 'Daya Hancur Maksimal' },
+            { text: 'Material Heavy Duty' },
+          ],
+          packagingDetails: [
+            { size: '1"', innerBox: '6/box', outerBox: '48/ctn' },
+          ],
+        },
+         {
+          id: 'yoz-layer-014',
+          name: 'Pahat Topi Jumbo - Concrete Chisel Lancip ',
+          image: '/images/yozuri/Yo-Zuri - Pahat Topi Jumbo (+).png',
           description: 'Pahat beton (concrete chisel) model topi heavy duty. Ditempa dari baja pilihan untuk kekuatan maksimal dalam menghancurkan beton.',
           specifications: [
             { key: 'Material', value: 'Baja Tempa' },
@@ -1405,7 +1422,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-layer-009',
           name: 'Lem Sealant Botol - Acetic Silicone Sealant',
-          image: '/images/yozuri/lem-sealant-botol.png',
+          image: '/images/yozuri/Yo-Zuri - Lem Sealant Botol.png',
           description: 'Lem sealant silikon dalam kemasan botol (cartridge) untuk penggunaan dengan caulking gun. Kedap air dan fleksibel setelah kering.',
           specifications: [
             { key: 'Tipe', value: 'Acetic Silicone' },
@@ -1422,7 +1439,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-layer-010',
           name: 'Lem Sealant Besar - Clear - Silicone Sealant',
-          image: '/images/yozuri/lem-sealant-besar.png',
+          image: '/images/yozuri/Yo-Zuri - Clear Silicone Sealant Tube - 85gr A.png',
           description: 'Lem sealant silikon bening (clear) ukuran besar untuk berbagai aplikasi, mulai dari akuarium hingga pengisian celah kaca.',
           specifications: [
             { key: 'Tipe', value: 'Neutral Silicone' },
@@ -1458,7 +1475,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-layer-012',
           name: 'Gerobak Sorong - Bak PVC - 10kg',
-          image: '/images/yozuri/gerobak-pvc.png',
+          image: '/images/yozuri/Yo-Zuri - Gerobak Sorong - Ban Hidup.png',
           description: 'Gerobak sorong Yo-Zuri dengan bak PVC 10kg, dirancang seimbang untuk kemudahan manuver dan daya tahan di lingkungan proyek.',
           specifications: [
             { key: 'Material Bak', value: 'PVC' },
@@ -1474,8 +1491,42 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-layer-013',
-          name: 'Lakban - Adhesive Tapes',
-          image: '/images/yozuri/lakban.png',
+          name: 'Lakban Bening - Adhesive Tapes',
+          image: '/images/yozuri/Yo-Zuri - Lakban Bening A.png',
+          description: 'Lakban perekat Yo-Zuri dengan daya rekat superior, tidak mudah sobek, dan ideal untuk semua kebutuhan pengepakan.',
+          specifications: [
+            { key: 'Warna', value: 'Coklat / Bening' },
+            { key: 'Lebar', value: '2 inch (48mm)' },
+          ],
+          features: [
+            { text: 'Daya Rekat Superior' },
+            { text: 'Tidak Mudah Sobek' },
+          ],
+          packagingDetails: [
+            { size: '2" x 100y', innerBox: '6/slop', outerBox: '72/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-layer-013',
+          name: 'Lakban Coklat - Adhesive Tapes',
+          image: '/images/yozuri/Yo-Zuri - Lakban Coklat A.png',
+          description: 'Lakban perekat Yo-Zuri dengan daya rekat superior, tidak mudah sobek, dan ideal untuk semua kebutuhan pengepakan.',
+          specifications: [
+            { key: 'Warna', value: 'Coklat / Bening' },
+            { key: 'Lebar', value: '2 inch (48mm)' },
+          ],
+          features: [
+            { text: 'Daya Rekat Superior' },
+            { text: 'Tidak Mudah Sobek' },
+          ],
+          packagingDetails: [
+            { size: '2" x 100y', innerBox: '6/slop', outerBox: '72/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-layer-013',
+          name: 'Lakban Hitam - Adhesive Tapes',
+          image: '/images/yozuri/Yo-Zuri - Lakban Hitam A.png',
           description: 'Lakban perekat Yo-Zuri dengan daya rekat superior, tidak mudah sobek, dan ideal untuk semua kebutuhan pengepakan.',
           specifications: [
             { key: 'Warna', value: 'Coklat / Bening' },
@@ -1506,7 +1557,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-cut-001',
           name: 'Gergaji Kayu - Gagang Karet',
-          image: '/images/yozuri/gergaji-kayu.png', // Ganti dengan path gambar Anda
+          image: '/images/yozuri/Yo-Zuri - Gergaji Kayu - Gagang Karet.png', // Ganti dengan path gambar Anda
           description: 'Gergaji tangan serbaguna dengan mata pisau baja yang diasah tiga sisi untuk pemotongan yang cepat dan bersih. Gagang karet ergonomis memberikan pegangan yang nyaman dan kuat.',
           specifications: [
             { key: 'Panjang Pisau', value: '18 Inch (450mm)' },
@@ -1525,7 +1576,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-cut-002',
           name: 'Gergaji Kayu Lancip - Gagang Karet',
-          image: '/images/yozuri/gergaji-lancip.png',
+          image: '/images/yozuri/Yo-Zuri - Gergaji Kayu Lancip - Gagang Karet.png',
           description: 'Gergaji dahan dengan ujung lancip (jab saw) untuk menjangkau area sulit dan memulai pemotongan dari tengah permukaan. Gagang karet memberikan kontrol penuh.',
           specifications: [
             { key: 'Panjang Pisau', value: '12 Inch (300mm)' },
@@ -1698,7 +1749,147 @@ export const catalogueData: Record<string, Category[]> = {
       id: 'sanitary-equipments',
       name: 'Sanitary Equipments | Peralatan Sanitasi',
       image: '/images/sanitary yozuri.png',
-      products: [],
+      // Di dalam catalogueData -> yozuri -> kategori 'sanitary-equipments'
+products: [
+  { 
+    id: 'yoz-sanitary-001', 
+    name: 'Seal Tape - 100% P.T.F.E.', 
+    image: '/images/yozuri/Yo-Zuri - Seal Tape - PTFE A.png', // Ganti dengan path gambar Anda
+    description: 'Seal tape premium dari 100% P.T.F.E murni, menjamin sambungan drat bebas bocor. Elastis, kuat, dan mudah diaplikasikan.',
+    specifications: [
+      { key: 'Material', value: '100% P.T.F.E' },
+      { key: 'Kepadatan', value: 'Tinggi' },
+    ],
+    features: [
+      { text: 'Kualitas P.T.F.E Murni' },
+      { text: 'Anti Bocor' },
+    ],
+    packagingDetails: [
+      { size: '12mm x 10m', innerBox: '12/box', outerBox: '288/ctn' },
+    ],
+  },
+  { 
+    id: 'yoz-sanitary-002', 
+    name: 'Kran Taman Jumbo - PVC', 
+    image: '/images/yozuri/Yo-Zuri - Kran Taman Jumbo - PVC.png',
+    description: 'Kran taman ukuran jumbo berbahan PVC tebal dan tahan cuaca. Ukuran drat 3/4 inch untuk aliran air yang lebih deras.',
+    specifications: [
+      { key: 'Material', value: 'PVC' },
+      { key: 'Ukuran Drat', value: '3/4 Inch' },
+    ],
+    features: [
+      { text: 'Ukuran Jumbo' },
+      { text: 'Tahan Cuaca & UV' },
+    ],
+    packagingDetails: [
+      { size: '3/4"', innerBox: '12/box', outerBox: '96/ctn' },
+    ],
+  },
+  { 
+    id: 'yoz-sanitary-003', 
+    name: 'Kran Tembok Jumbo - PVC', 
+    image: '/images/yozuri/Yo-Zuri - Kran Tembok Jumbo - PVC.png',
+    description: 'Kran tembok PVC ukuran jumbo dengan desain modern. Cocok untuk area cuci atau garasi yang membutuhkan daya tahan ekstra.',
+    specifications: [
+      { key: 'Material', value: 'PVC' },
+      { key: 'Ukuran Drat', value: '1/2 Inch' },
+    ],
+    features: [
+      { text: 'Desain Modern' },
+      { text: 'Bahan PVC Tebal' },
+    ],
+    packagingDetails: [
+      { size: '1/2"', innerBox: '12/box', outerBox: '120/ctn' },
+    ],
+  },
+  { 
+    id: 'yoz-sanitary-004', 
+    name: 'Kran Bening - PVC', 
+    image: '/images/yozuri/Yo-Zuri - Kran - Transparan PVC Engkol+Bulat+Topi A.png',
+    description: 'Kran dinding dengan bodi PVC transparan yang unik, memberikan sentuhan estetika modern pada kamar mandi atau dapur Anda.',
+    specifications: [
+      { key: 'Material', value: 'PVC Transparan' },
+      { key: 'Ukuran Drat', value: '1/2 Inch' },
+    ],
+    features: [
+      { text: 'Desain Transparan Estetik' },
+      { text: 'Anti Korosi' },
+    ],
+    packagingDetails: [
+      { size: '1/2"', innerBox: '12/box', outerBox: '144/ctn' },
+    ],
+  },
+  { 
+    id: 'yoz-sanitary-005', 
+    name: 'Kran Angsa Kepala Kecil - Stainless Steel', 
+    image: '/images/yozuri/Yo-Zuri - Kran - Angsa Kepala Kecil - Stainless Steel.png',
+    description: 'Kran wastafel model angsa dengan material full stainless steel. Kepala kecil menghasilkan aliran air lurus dan presisi.',
+    specifications: [
+      { key: 'Material', value: 'Stainless Steel' },
+      { key: 'Model Kepala', value: 'Kecil / Lurus' },
+    ],
+    features: [
+      { text: 'Full Stainless Steel' },
+      { text: 'Desain Elegan' },
+    ],
+    packagingDetails: [
+      { size: '1/2"', innerBox: '1/box', outerBox: '24/ctn' },
+    ],
+  },
+  { 
+    id: 'yoz-sanitary-006', 
+    name: 'Ball Valve - PVC', 
+    image: '/images/yozuri/Yo-Zuri - Ball Valve Putih+Biru - PVC.png',
+    description: 'Stop kran (ball valve) Yo-Zuri dengan material PVC tebal dan mekanisme bola yang presisi, memastikan aliran tertutup sempurna tanpa bocor.',
+    specifications: [
+      { key: 'Material', value: 'PVC' },
+      { key: 'Tipe', value: 'Ball Valve' },
+    ],
+    features: [
+      { text: 'Tidak Mudah Macet' },
+      { text: 'Tahan Tekanan' },
+    ],
+    packagingDetails: [
+      { size: '1/2"', innerBox: '12/box', outerBox: '120/ctn' },
+      { size: '3/4"', innerBox: '12/box', outerBox: '96/ctn' },
+    ],
+  },
+  { 
+    id: 'yoz-sanitary-007', 
+    name: 'Water Mur - PVC', 
+    image: '/images/yozuri/Yo-Zuri - Water Mur - Putih A.png',
+    description: 'Water mur (union socket) PVC untuk membuat sambungan pipa yang bisa dilepas-pasang dengan mudah tanpa perlu memotong pipa.',
+    specifications: [
+      { key: 'Material', value: 'PVC' },
+      { key: 'Tipe', value: 'Union Socket' },
+    ],
+    features: [
+      { text: 'Sambungan Lepas-Pasang' },
+      { text: 'Instalasi Praktis' },
+    ],
+    packagingDetails: [
+      { size: '1/2"', innerBox: '24/box', outerBox: '240/ctn' },
+      { size: '3/4"', innerBox: '12/box', outerBox: '120/ctn' },
+    ],
+  },
+  { 
+    id: 'yoz-sanitary-008', 
+    name: 'Saringan Kamar Mandi - Floor Drainer', 
+    image: '/images/yozuri/Yo-Zuri - Saringan Kamar Mandi - Hitam+Packaging A.png',
+    description: 'Saringan pembuangan lantai (floor drainer) dari stainless steel. Mencegah rambut dan kotoran masuk ke saluran pipa, serta anti-bau.',
+    specifications: [
+      { key: 'Material', value: 'Stainless Steel' },
+      { key: 'Ukuran', value: '4 Inch' },
+    ],
+    features: [
+      { text: 'Anti-Bau & Anti-Serangga' },
+      { text: 'Material Stainless Steel' },
+    ],
+    packagingDetails: [
+      { size: '4"', innerBox: '1/box', outerBox: '50/ctn' },
+    ],
+  },
+],
     },
     {
       id: 'safety-equipments',
