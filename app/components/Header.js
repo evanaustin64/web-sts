@@ -75,7 +75,7 @@ export default function Header() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-4">
               <Image
-                src="/images/logo-sts.png"
+                src="/Images/logo-sts.png"
                 alt="Logo PT. Samudra Teknik Sejahtera"
                 width={60}
                 height={60}

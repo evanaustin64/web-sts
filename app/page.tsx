@@ -59,7 +59,7 @@ function HeroSlider() {
 
   const slides = [
     { image: '/Images/PT STS - Web Design - Header-02.png', title: 'TOOLS YOU CAN TRUST', subtitle: 'Hardware & Tools handal untuk kebutuhan Anda.', buttonText: 'Lihat Katalog', link: '/produk' },
-    { image: '/Images/PT STS - Web Design - Header-01.png', title: 'YOUR PARTNER IN TOOLS', subtitle: 'Kualitas, presisi, dan daya tahan dalam setiap produk.', buttonText: 'Lihat Semua Produk', link: '/produk' },
+    { image: '/Images/PT STS - Web Design - Header-01.png', title: 'YOUR PARTNER IN TOOLS', subtitle: 'Kualitas, presisi, dan daya tahan dalam setiap produk.', buttonText: 'Lihat Katalog', link: '/produk' },
     { image: '/Images/PT STS - Web Design - Header-03.png', title: 'POWER IN SAFETY', subtitle: 'Kualitas dalam perlindungan.', buttonText: 'Telusuri', link: '/produk' }
   ];
 
@@ -111,9 +111,9 @@ function CatalogueSlider() {
   };
 
   const catalogueItems = [
-    { image: '/images/Yo-Zuri - Product Pages-84.jpg', link: '/produk' }, { image: '/images/Yo-Zuri - Product Pages-85.jpg', link: '/produk' },
-    { image: '/images/Yo-Zuri - Product Pages-86.jpg', link: '/produk' }, { image: '/images/Yo-Zuri - Product Pages-87.jpg', link: '/produk' },
-    { image: '/images/Yo-Zuri - Product Pages-88.jpg', link: '/produk' },
+    { image: '/Images/Yo-Zuri - Product Pages-84.jpg', link: '/produk' }, { image: '/Images/Yo-Zuri - Product Pages-85.jpg', link: '/produk' },
+    { image: '/Images/Yo-Zuri - Product Pages-86.jpg', link: '/produk' }, { image: '/Images/Yo-Zuri - Product Pages-87.jpg', link: '/produk' },
+    { image: '/Images/Yo-Zuri - Product Pages-88.jpg', link: '/produk' },
   ];
 
   return (
