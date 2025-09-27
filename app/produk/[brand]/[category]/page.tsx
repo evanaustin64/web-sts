@@ -4,16 +4,17 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { catalogueData } from '@/app/data/catalogue-data';
+import { use } from 'react';
 
 type CategoryProductsPageParams = {
-  params: {
+  params: Promise<{
     brand: string;
     category: string;
-  }
+  }>;
 }
 
 export default function CategoryProductsPage({ params }: CategoryProductsPageParams) {
-  const { brand, category } = params;
+  const { brand, category } = use(params);
 
   const brandCategories = catalogueData[brand] || [];
   const currentCategory = brandCategories.find(cat => cat.id === category);

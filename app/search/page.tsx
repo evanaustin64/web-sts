@@ -5,8 +5,10 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { catalogueData } from '@/app/data/catalogue-data';
+import { Suspense } from 'react';
 
-export default function SearchPage() {
+// Komponen yang menggunakan useSearchParams
+function SearchContent() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q'); // Mengambil kata kunci dari URL
 
@@ -60,5 +62,31 @@ export default function SearchPage() {
         )}
       </div>
     </div>
+  );
+}
+
+// Loading component
+function SearchLoading() {
+  return (
+    <div className="bg-gray-50 min-h-screen">
+      <div className="container mx-auto px-4 py-12">
+        <h1 className="text-4xl font-extrabold text-gray-900 uppercase tracking-wider mb-4">
+          Hasil Pencarian
+        </h1>
+        <p className="text-gray-600 mb-10">Mencari produk...</p>
+        <div className="flex justify-center items-center py-20">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Main component wrapped with Suspense
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<SearchLoading />}>
+      <SearchContent />
+    </Suspense>
   );
 }

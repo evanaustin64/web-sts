@@ -5,9 +5,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { catalogueData, Product, Category } from '@/app/data/catalogue-data';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
+import { use } from 'react';
 
-export default function ProductDetailPage({ params }: { params: { brand: string; category: string; productId: string; } }) {
-  const { brand, category, productId } = params;
+interface PageProps {
+  params: Promise<{
+    brand: string;
+    category: string;
+    productId: string;
+  }>;
+}
+
+export default function ProductDetailPage({ params }: PageProps) {
+  const { brand, category, productId } = use(params);
 
   const brandCategories = catalogueData[brand] || [];
   let product: Product | undefined;

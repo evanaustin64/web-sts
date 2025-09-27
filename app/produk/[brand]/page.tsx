@@ -3,13 +3,16 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { catalogueData } from '@/app/data/catalogue-data';
+import { use } from 'react';
 
 type BrandPageParams = {
-  params: { brand: string; }
+  params: Promise<{
+    brand: string;
+  }>;
 }
 
 export default function BrandPage({ params }: BrandPageParams) {
-  const { brand } = params;
+  const { brand } = use(params);
   const categories = catalogueData[brand] || [];
   const brandName = brand.charAt(0).toUpperCase() + brand.slice(1);
 
