@@ -94,12 +94,12 @@ export default function Header() {
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
-                <Link href="/produk" className="flex items-center gap-1 text-sm font-bold uppercase text-gray-800" onClick={(e) => e.preventDefault()}>
+                <button href="/produk" className="flex items-center gap-1 text-sm font-bold uppercase text-gray-800" onClick={(e) => e.preventDefault()}>
                   Produk 
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                   </svg>
-                </Link>
+                </button>
                 {isDropdownOpen && <DesktopDropdown />}
                 <span className="absolute bottom-0 left-0 w-full h-[3px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
               </li>
