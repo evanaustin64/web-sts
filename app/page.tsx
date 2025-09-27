@@ -58,9 +58,9 @@ function HeroSlider() {
   };
 
   const slides = [
-    { image: '/images/PT STS - Web Design - Header-02.png', title: 'TOOLS YOU CAN TRUST', subtitle: 'Hardware & Tools handal untuk kebutuhan Anda.', buttonText: 'Lihat Katalog', link: '/produk' },
-    { image: '/images/PT STS - Web Design - Header-01.png', title: 'YOUR PARTNER IN TOOLS', subtitle: 'Kualitas, presisi, dan daya tahan dalam setiap produk.', buttonText: 'Lihat Semua Produk', link: '/produk' },
-    { image: '/images/PT STS - Web Design - Header-03.png', title: 'POWER IN SAFETY', subtitle: 'Kualitas dalam perlindungan.', buttonText: 'Telusuri', link: '/produk' }
+    { image: '/Images/PT STS - Web Design - Header-02.png', title: 'TOOLS YOU CAN TRUST', subtitle: 'Hardware & Tools handal untuk kebutuhan Anda.', buttonText: 'Lihat Katalog', link: '/produk' },
+    { image: '/Images/PT STS - Web Design - Header-01.png', title: 'YOUR PARTNER IN TOOLS', subtitle: 'Kualitas, presisi, dan daya tahan dalam setiap produk.', buttonText: 'Lihat Semua Produk', link: '/produk' },
+    { image: '/Images/PT STS - Web Design - Header-03.png', title: 'POWER IN SAFETY', subtitle: 'Kualitas dalam perlindungan.', buttonText: 'Telusuri', link: '/produk' }
   ];
 
   return (
