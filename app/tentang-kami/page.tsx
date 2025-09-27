@@ -10,19 +10,19 @@ const teamMembers = [
   {
     name: 'Pak Hasan',
     role: 'Komisaris',
-    imageUrl: '/images/logo-sts.png', // Ganti dengan path foto tim Anda
+    imageUrl: '/Images/logo-sts.png', // Ganti dengan path foto tim Anda
     bio: 'Dengan pengalaman lebih dari 20 tahun di industri perkakas, Pak Hasan memimpin perusahaan dengan visi untuk menyediakan kualitas terbaik.'
   },
   {
     name: 'Jane Doe',
     role: 'Direktur',
-    imageUrl: '/images/logo-sts.png',
+    imageUrl: '/Images/logo-sts.png',
     bio: 'Jane memastikan setiap pelanggan mendapatkan solusi terbaik dan pelayanan yang memuaskan.'
   },
   {
     name: 'John Smith',
     role: 'Purchasing Manager',
-    imageUrl: '/images/logo-sts.png',
+    imageUrl: '/Images/logo-sts.png',
     bio: 'John bertanggung jawab atas efisiensi operasional, mulai dari gudang hingga pengiriman.'
   },
 ];
@@ -33,7 +33,7 @@ export default function AboutUsPage() {
       {/* 1. Hero Section */}
       <section className="relative h-80 bg-gray-900">
         <Image
-          src="/images/banner-tentang-kami.jpg" // Ganti dengan foto banner Anda
+          src="/Images/banner-tentang-kami.jpg" // Ganti dengan foto banner Anda
           alt="Tim PT. Samudra Teknik Sejahtera"
           layout="fill"
           objectFit="cover"
@@ -61,7 +61,7 @@ export default function AboutUsPage() {
           </div>
           <div className="w-full h-80 relative rounded-lg overflow-hidden shadow-xl">
              <Image
-                src="/images/download.jpg" // Ganti dengan foto sejarah Anda
+                src="/Images/download.jpg" // Ganti dengan foto sejarah Anda
                 alt="Toko pertama PT. STS"
                 layout="fill"
                 objectFit="cover"

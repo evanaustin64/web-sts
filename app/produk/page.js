@@ -10,19 +10,19 @@ export default function ProdukUtamaPage() {
     {
       name: 'OWNER',
       href: '/produk/owner',
-      image: '/images/Owner.png',
+      image: '/Images/Owner.png',
       bgColor: 'bg-yellow-400'
     },
     {
       name: 'YO-ZURI',
       href: '/produk/yozuri',
-      image: '/images/Yozuri.jpg',
+      image: '/Images/Yozuri.jpg',
       bgColor: 'bg-red-700'
     },
     {
       name: 'HELIOS',
       href: '/produk/helios',
-      image: '/images/Helios - Logo PNG-01 (1).png',
+      image: '/Images/Helios - Logo PNG-01 (1).png',
       bgColor: 'bg-white'
     }
   ];
