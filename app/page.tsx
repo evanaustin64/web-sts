@@ -58,8 +58,9 @@ function HeroSlider() {
   };
 
   const slides = [
-    { image: '/images/PT STS - Web Design - Header-02.png', title: 'TOOLS YOU CAN TRUST', subtitle: 'Hardware & Tools handal untuk kebutuhan Anda.', buttonText: 'Lihat Katalog    ', link: '/produk' },
-    { image: '/images/PT STS - Web Design - Header-01.png', title: 'YOUR PARTNER IN TOOLS', subtitle: 'Kualitas, presisi, dan daya tahan dalam setiap produk.', buttonText: 'Lihat Semua Produk', link: '/produk' }
+    { image: '/images/PT STS - Web Design - Header-02.png', title: 'TOOLS YOU CAN TRUST', subtitle: 'Hardware & Tools handal untuk kebutuhan Anda.', buttonText: 'Lihat Katalog', link: '/produk' },
+    { image: '/images/PT STS - Web Design - Header-01.png', title: 'YOUR PARTNER IN TOOLS', subtitle: 'Kualitas, presisi, dan daya tahan dalam setiap produk.', buttonText: 'Lihat Semua Produk', link: '/produk' },
+    { image: '/images/PT STS - Web Design - Header-03.png', title: 'POWER IN SAFETY', subtitle: 'Kualitas dalam perlindungan.', buttonText: 'Telusuri', link: '/produk' }
   ];
 
   return (
@@ -151,8 +152,8 @@ function DownloadCatalogueSection() {
       hover:scale-105 hover:-translate-y-1 /* <-- Tambahkan ini */
     "
           download="Katalog Produk PT STS - 2025.pdf"
-        >
-          Catalogue - Owner
+        > 
+          Catalogue - Owner 
         </a>
         <a
           href="/catalogue/katalog-samudra-teknik-sejahtera.pdf"
@@ -173,14 +174,14 @@ function DownloadCatalogueSection() {
 
 // Komponen FeaturedVideoSection dengan Tailwind CSS
 function FeaturedVideoSection() {
-  return (
+  return ( 
     <section className="bg-blue-500 text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-left">
-            <h2 className="text-3xl font-black uppercase">TEKNOLOGI TERDEPAN</h2>
-            <h3 className="text-xl font-bold opacity-90 mb-4">PISAU POTONG PALING CANGGIH</h3>
-            <p className="mb-8">Hanya kualitas terbaik yang digunakan dalam produksi alat kami. Teknologi laser canggih untuk performa dan keamanan terbaik. Direkayasa secara presisi dengan baja kualitas tertinggi.</p>
+            <h2 className="text-3xl font-black uppercase">PRESISI TAK TERTANDINGI</h2>
+            <h3 className="text-xl font-bold opacity-90 mb-4">UNTUK HASIL TERBAIK</h3>
+            <p className="mb-8">Saksikan Waterpass Magnet YO-ZURI terbaru dalam aksi! Dengan teknologi magnetik canggih dan desain ergonomis, alat ini memastikan pengukuran yang akurat dan pemasangan yang mudah di berbagai permukaan. Rasakan perbedaan presisi di setiap proyek Anda.</p>
             <a href="https://www.youtube.com/@officialpageyozuri" target="_blank" rel="noopener noreferrer" className="inline-block bg-yellow-500 text-black font-bold py-3 px-8 rounded hover:bg-yellow-600 transition-colors">
               Jelajahi Jangkauan
             </a>

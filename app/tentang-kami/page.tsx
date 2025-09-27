@@ -9,19 +9,19 @@ import { BuildingStorefrontIcon, ScaleIcon, UsersIcon } from '@heroicons/react/2
 const teamMembers = [
   {
     name: 'Pak Hasan',
-    role: 'Founder & CEO',
+    role: 'Komisaris',
     imageUrl: '/images/logo-sts.png', // Ganti dengan path foto tim Anda
     bio: 'Dengan pengalaman lebih dari 20 tahun di industri perkakas, Pak Hasan memimpin perusahaan dengan visi untuk menyediakan kualitas terbaik.'
   },
   {
     name: 'Jane Doe',
-    role: 'Head of Sales',
+    role: 'Direktur',
     imageUrl: '/images/logo-sts.png',
     bio: 'Jane memastikan setiap pelanggan mendapatkan solusi terbaik dan pelayanan yang memuaskan.'
   },
   {
     name: 'John Smith',
-    role: 'Operations Manager',
+    role: 'Purchasing Manager',
     imageUrl: '/images/logo-sts.png',
     bio: 'John bertanggung jawab atas efisiensi operasional, mulai dari gudang hingga pengiriman.'
   },
@@ -48,20 +48,20 @@ export default function AboutUsPage() {
       </section>
 
       {/* 2. Sejarah Perusahaan */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="container mx-auto px-4 py-16 bg-yellow-50">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Sejarah Kami</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Berawal dari sebuah toko kecil di tahun 2010, PT. Samudra Teknik Sejahtera didirikan atas dasar komitmen untuk menyediakan peralatan teknik yang andal dan tahan lama bagi para profesional di seluruh Indonesia.
+              PT. SAMUDRA TEKNIK SEJAHTERA, dalam kurun waktu kurang dari 2 (dua) tahun hingga sekarang telah berhasil melahirkan lebih dari 100 (seratus) produk terlaris. Untuk menjaga kepercayaan Customer yang telah terbangun, kami memastikan produk yang kami jual memiliki standar kualitas terjamin sehingga perusahaan kami menjadi distributor terpercaya untuk Customer kamu yang telah tersebar di seluruh Indonesia.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Selama lebih dari satu dekade, kami terus berinovasi dan memperluas jangkauan produk kami, bekerja sama dengan merek-merek terbaik seperti OWNER dan YO-ZURI untuk memastikan setiap pelanggan mendapatkan perkakas dengan standar kualitas tertinggi.
+              Memiliki lebih dari 20 tahun pengalaman, PT. SAMUDRA TEKNIK SEJAHTERA yang berlokasi di Tangerang, Indonesia, adalah perusahaan yang bergerak di bidang distribusi alat-alat Pertukangan, Perkakas dan Sanitary yang mengutamakan kualitas yang berawal dari 2 (dua) merk unggulannya OWNER & YO-ZURI.
             </p>
           </div>
           <div className="w-full h-80 relative rounded-lg overflow-hidden shadow-xl">
              <Image
-                src="/images/sejarah-perusahaan.jpg" // Ganti dengan foto sejarah Anda
+                src="/images/download.jpg" // Ganti dengan foto sejarah Anda
                 alt="Toko pertama PT. STS"
                 layout="fill"
                 objectFit="cover"
@@ -76,12 +76,15 @@ export default function AboutUsPage() {
           <div className="text-center md:text-left">
             <ScaleIcon className="h-12 w-12 text-yellow-500 mx-auto md:mx-0 mb-4" />
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Visi Kami</h3>
-            <p className="text-gray-600">Menjadi distributor peralatan teknik terdepan dan paling tepercaya di Indonesia, yang dikenal karena kualitas produk dan pelayanan pelanggan yang unggul.</p>
+            <p className="text-gray-600">Menjadi Perusahaan distributor Hardware & Tools berkualitas tinggi pilihan utama andalan masyarakat.</p>
           </div>
           <div className="text-center md:text-left">
              <BuildingStorefrontIcon className="h-12 w-12 text-yellow-500 mx-auto md:mx-0 mb-4" />
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Misi Kami</h3>
-            <p className="text-gray-600">Menyediakan akses mudah terhadap produk perkakas berkualitas tinggi, memberikan solusi inovatif, dan membangun hubungan jangka panjang dengan pelanggan.</p>
+            <p className="text-gray-600">- Memastikan standar kualitas produk terjamin.</p>
+            <p className="text-gray-600">- Menghasilkan SDM yang memiliki budaya profesional.</p>
+            <p className="text-gray-600">- Memperkenalkan merk ke seluruh masyarakat melalui platform/media yang tersedia.</p>
+            <p className="text-gray-600">- Mempererat dan memperluas relasi dan koneksi bisnis</p>
           </div>
         </div>
       </section>

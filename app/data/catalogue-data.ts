@@ -9,7 +9,7 @@ export type Product = {
   specifications?: { key: string; value: string }[]; // Spesifikasi produk (opsional)
   variations?: { id: string; name: string; image: string }[];  // Spesifikasi produk (opsional)
   features?: { text: string }[];
-  packagingDetails?: { size: string; innerBox: string; outerBox: string }[];
+  packagingDetails?: { size?: string; type?: string; innerBox?: string; outerBox?: string }[];
 };
 
 export type Category = {
@@ -35,9 +35,9 @@ export const catalogueData: Record<string, Category[]> = {
           specifications: [{ key: 'Ukuran Kepala', value: '8oz' }, { key: 'Material Gagang', value: 'Fiberglass' }],
           features: [{ text: 'Baja Kuat' }, { text: 'Gagang Nyaman' }],
           packagingDetails: [
-            { size: '8 OZ', innerBox: '6/box', outerBox: '48/ctn' },
-            { size: '12 OZ', innerBox: '6/box', outerBox: '36/ctn' },
-            { size: '16 OZ', innerBox: '6/box', outerBox: '24/ctn' },
+            { size: '8 OZ / 0,23 Lbs', innerBox: '6 Pcs/box', outerBox: '60/ctn' },
+            { size: '12 OZ / 0,375 Lbs', innerBox: '6 Pcs/box', outerBox: '48/ctn' },
+            { size: '16 OZ / 0,50 Lbs', innerBox: '6 Pcs/box', outerBox: '36/ctn' },
           ],
           variations: [{ id: 'own-002', name: 'Palu Kambing Rata', image: '/images/own/Owner - Palu Kambing Gagang Fiber - Non-Gerigi.png' }]
         },
@@ -49,8 +49,9 @@ export const catalogueData: Record<string, Category[]> = {
           specifications: [{ key: 'Ukuran Kepala', value: '8oz' }, { key: 'Material Gagang', value: 'Fiberglass' }],
           features: [{ text: 'Baja Tempa' }, { text: 'Gagang Fiber' }],
           packagingDetails: [
-            { size: '8 OZ', innerBox: '6/box', outerBox: '48/ctn' },
-            { size: '12 OZ', innerBox: '6/box', outerBox: '36/ctn' },
+            { size: '8 OZ / 0,23 Lbs', innerBox: '6 Pcs/box', outerBox: '60/ctn' },
+            { size: '12 OZ / 0,375 Lbs', innerBox: '6 Pcs/box', outerBox: '48/ctn' },
+            { size: '16 OZ / 0,50 Lbs', innerBox: '6 Pcs/box', outerBox: '36/ctn' },
           ],
           variations: [{ id: 'own-001', name: 'Palu Kambing Gerigi', image: '/images/own/Owner - Palu Kambing Gagang Fiber - Gerigi.png' }]
         },
@@ -62,8 +63,14 @@ export const catalogueData: Record<string, Category[]> = {
           specifications: [{ key: 'Berat', value: '3 kg' }, { key: 'Material Kepala', value: 'Baja Tempa' }],
           features: [{ text: 'Daya Hancur' }, { text: 'Heavy Duty' }],
           packagingDetails: [
-            { size: '3 KG', innerBox: '1/box', outerBox: '8/ctn' },
-            { size: '5 KG', innerBox: '1/box', outerBox: '6/ctn' },
+            { size: '2 Lbs', innerBox: '-', outerBox: '40/ctn' },
+            { size: '3 Lbs', innerBox: '-', outerBox: '24/ctn' },
+            { size: '6 Lbs', innerBox: '-', outerBox: '12/ctn' },
+            { size: '8 Lbs', innerBox: '-', outerBox: '10/ctn' },
+            { size: '10 Lbs', innerBox: '-', outerBox: '8/ctn' },
+            { size: '12 Lbs', innerBox: '-', outerBox: '6/ctn' },
+            { size: '14 Lbs', innerBox: '-', outerBox: '6/ctn' },
+            { size: '16 Lbs', innerBox: '-', outerBox: '4/ctn' },
           ],
         },
         {
@@ -74,8 +81,12 @@ export const catalogueData: Record<string, Category[]> = {
           specifications: [{ key: 'Material', value: 'Nilon 66' }, { key: 'Warna', value: 'Hitam, Putih' }],
           features: [{ text: 'Kuat Mengunci' }, { text: 'Fleksibel' }],
           packagingDetails: [
-            { size: '150mm', innerBox: '10/pack', outerBox: '200/pack' },
-            { size: '200mm', innerBox: '10/pack', outerBox: '150/pack' },
+            { size: '2,5x100 mm', innerBox: '10 Pax / Pouch', outerBox: '300 Pax / Pouch' },
+            { size: '3,6x150 mm', innerBox: '10 Pax / Pouch', outerBox: '300 Pax / Pouch' },
+            { size: '3,6x200 mm', innerBox: '10 Pax / Pouch', outerBox: '250 Pax / Pouch' },
+            { size: '3,6x250 mm', innerBox: '10 Pax / Pouch', outerBox: '200 Pax / Pouch' },
+            { size: '4,8x300 mm', innerBox: '10 Pax / Pouch', outerBox: '100 Pax / Pouch' },
+            { size: '4,8x400 mm', innerBox: '10 Pax / Pouch', outerBox: '100 Pax / Pouch' },
           ],
         },
         {
@@ -86,7 +97,7 @@ export const catalogueData: Record<string, Category[]> = {
           specifications: [{ key: 'Tipe', value: 'Kering (Dry Cut)' }, { key: 'Diameter', value: '4 inch' }],
           features: [{ text: 'Potongan Presisi' }, { text: 'Cepat & Bersih' }],
           packagingDetails: [
-            { size: '4"', innerBox: '1/box', outerBox: '100/ctn' },
+            { size: '4 Inch', innerBox: '10 Pcs / box', outerBox: '200 Pcs / Ctn' },
           ],
           variations: [{ id: 'own-006', name: 'Diamond Wheel Turbo', image: '/images/own/Owner - Diamond Wheel Turbo K Disc - Front.png' }]
         },
@@ -98,7 +109,7 @@ export const catalogueData: Record<string, Category[]> = {
           specifications: [{ key: 'Tipe', value: 'Turbo Rim' }, { key: 'Diameter', value: '4 inch' }],
           features: [{ text: 'Potongan Agresif' }, { text: 'Desain Pendingin' }],
           packagingDetails: [
-            { size: '4"', innerBox: '1/box', outerBox: '100/ctn' },
+            { size: '4 Inch', innerBox: '10 Pcs / box', outerBox: '200 Pcs / Ctn' },
           ],
           variations: [{ id: 'own-005', name: 'Diamond Wheel Dry', image: '/images/own/Owner - Diamond Wheel - Dry Yellow A.png' }]
         },
@@ -110,7 +121,7 @@ export const catalogueData: Record<string, Category[]> = {
           specifications: [{ key: 'Warna', value: 'Hitam' }, { key: 'Berat Gulungan', value: '1 kg' }],
           features: [{ text: 'Kuat & Tebal' }, { text: 'Serbaguna' }],
           packagingDetails: [
-            { size: '1 KG', innerBox: '1/roll', outerBox: '20/ctn' },
+            { size: '1 KG', innerBox: '-', outerBox: '15 Roll / ctn' },
           ],
         },
         {
@@ -147,7 +158,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Mudah Dibersihkan' },
           ],
           packagingDetails: [
-            { size: '9"', innerBox: '1/box', outerBox: '24/ctn' }, // SUDAH DIUBAH
+            { size: '9 Inch', innerBox: '-', outerBox: '24 Pcs / Ctn' }, // SUDAH DIUBAH
           ],
         },
         {
@@ -165,7 +176,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Hasil Halus' },
           ],
           packagingDetails: [
-            { size: '9"', innerBox: '1/pack', outerBox: '50/ctn' }, // SUDAH DIUBAH
+            { size: '9 Inch', innerBox: '-', outerBox: '24 Pcs / Ctn' }, // SUDAH DIUBAH
           ],
         },
         {
@@ -183,7 +194,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Untuk Cat Minyak' },
           ],
           packagingDetails: [
-            { size: '3"', innerBox: '1/pack', outerBox: '100/ctn' }, // SUDAH DIUBAH
+            { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '1.200 Pcs / Ctn' }, // SUDAH DIUBAH
           ],
         },
         {
@@ -201,7 +212,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Proyek Kreatif' },
           ],
           packagingDetails: [
-            { size: '4"', innerBox: '1/pack', outerBox: '80/ctn' }, // SUDAH DIUBAH
+            { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '1.200 Pcs / Ctn' }, // SUDAH DIUBAH
           ],
         },
         {
@@ -239,7 +250,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Untuk Cat Minyak' },
           ],
           packagingDetails: [
-            { size: '4"', innerBox: '1/box', outerBox: '48/ctn' }, // SUDAH DIUBAH
+            { type: 'Domba', innerBox: '12 Pcs / Pack', outerBox: '120 Pcs / Ctn' }, // SUDAH DIUBAH
           ],
           variations: [
             { id: 'own-paint-008', name: 'Kuas Roll Copot 4 Inch Garis', image: '/images/own/Owner - Kuas Roll Copot 4 Inch - Garis A.png' },
@@ -260,7 +271,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Proyek Kreatif' },
           ],
           packagingDetails: [
-            { size: '4"', innerBox: '1/box', outerBox: '48/ctn' }, // SUDAH DIUBAH
+            { type: 'Garis', innerBox: '12 Pcs / Pack', outerBox: '120 Pcs / Ctn' }, // SUDAH DIUBAH
           ],
           variations: [
             { id: 'own-paint-007', name: 'Kuas Roll Copot 4 Inch Domba', image: '/images/own/Owner - Kuas Roll Copot 4 Inch - Bulu Domba Merah A.png' },
@@ -290,8 +301,11 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Anti Karat' },
           ],
           packagingDetails: [
-            { size: '8x10 Inch', innerBox: '12/box', outerBox: '144/ctn' },
-            { size: '10x12 Inch', innerBox: '12/box', outerBox: '96/ctn' },
+            { size: '5x6 Inch', innerBox: '24 Pcs / Box', outerBox: '144 Pcs / Ctn' },
+            { size: '6x8 Inch', innerBox: '24 Pcs / Box', outerBox: '144 Pcs / Ctn' },
+            { size: '8x10 Inch', innerBox: '24 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { size: '10x12 Inch', innerBox: '24 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { size: '12x14 Inch', innerBox: '24 Pcs / Box', outerBox: '72 Pcs / Ctn' },
           ],
         },
         {
@@ -331,7 +345,8 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Bulu Kawat Kuat' },
           ],
           packagingDetails: [
-            { size: 'Standard', innerBox: '12/box', outerBox: '120/ctn' },
+            { type: '5 Row', innerBox: '12 Pcs / Ctn', outerBox: '180 Pcs / Ctn' },
+            { type: '6 Row', innerBox: '12 Pcs / Ctn', outerBox: '180 Pcs / Ctn' },
           ],
         },
         {
@@ -348,8 +363,11 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Tidak Mudah Dol' },
           ],
           packagingDetails: [
-            { size: 'S6', innerBox: '100/pack', outerBox: '1000/ctn' },
-            { size: 'S8', innerBox: '100/pack', outerBox: '800/ctn' },
+            { type: 'S5', innerBox: '100 Pcs / Box', outerBox: '200 Pcs / Ctn' },
+            { type: 'S6', innerBox: '100 Pcs / Box', outerBox: '200 Pcs / Ctn' },
+            { type: 'S8', innerBox: '100 Pcs / Box', outerBox: '100 Pcs / Ctn' },
+            { type: 'S10', innerBox: '50 PCs / Box', outerBox: '120 Pcs / Ctn' },
+            { type: 'S12', innerBox: '50 PCs / Box', outerBox: '120 Pcs / Ctn' },
           ],
           variations: [
             { id: 'own-layer-006', name: 'Fissher + Sekrup Set', image: '/images/own/Owner - Fissher+Sekrup.png' },
@@ -369,8 +387,11 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Ukuran Presisi' },
           ],
           packagingDetails: [
-            { size: 'S6', innerBox: '50/pack', outerBox: '500/ctn' },
-            { size: 'S8', innerBox: '50/pack', outerBox: '400/ctn' },
+            { type: 'S5', innerBox: '25 Pcs / Pack', outerBox: '240 Pcs / Box' },
+            { type: 'S6', innerBox: '25 Pcs / Pack', outerBox: '240 Pcs / Box' },
+            { type: 'S8', innerBox: '25 Pcs / Pack', outerBox: '200 Pcs / Box' },
+            { type: 'S10', innerBox: '10 PCs / Pack', outerBox: '200 Pcs / Box' },
+            { type: 'S12', innerBox: '10 PCs / Pack', outerBox: '200 Pcs / Box' },
           ],
           variations: [
             { id: 'own-layer-005', name: 'Fissher', image: '/images/own/Owner - Fissher A.png' },
@@ -391,7 +412,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Ringan & Kokoh' },
           ],
           packagingDetails: [
-            { size: 'Standard', innerBox: '1/unit', outerBox: '1/unit' },
+            { type: 'Ban Hidup', innerBox: '-', outerBox: '10 Set' },
           ],
         },
         {
@@ -408,8 +429,15 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Tahan Lama' },
           ],
           packagingDetails: [
-            { size: 'Grit 80', innerBox: '1/roll', outerBox: '10/ctn' },
-            { size: 'Grit 120', innerBox: '1/roll', outerBox: '10/ctn' },
+            { size: '60 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '80 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '100 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '120 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '150 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '180 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '240 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '320 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '400 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
           ],
           variations: [
             { id: 'own-layer-009', name: 'Amplas Roll 98', image: '/images/own/Owner - Abrasive Roll 98.png' },
@@ -429,8 +457,15 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Hasil Lebih Halus' },
           ],
           packagingDetails: [
-            { size: 'Grit 100', innerBox: '1/roll', outerBox: '10/ctn' },
-            { size: 'Grit 240', innerBox: '1/roll', outerBox: '10/ctn' },
+            { size: '60 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '80 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '100 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '120 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '150 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '180 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '240 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '320 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
+            { size: '400 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
           ],
           variations: [
             { id: 'own-layer-008', name: 'Amplas Roll PREMIUM', image: '/images/own/Owner - Abrasive Roll PREMUM.png' },
@@ -438,7 +473,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'own-layer-010',
-          name: 'Sendok Semen - Gagang Kayu',
+          name: 'Sendok Semen Lancip - Gagang Kayu',
           image: '/images/own/Owner - Sendok Semen Lancip - Gagang Kayu.png',
           description: 'Sendok semen (trowel) dengan gagang kayu yang nyaman. Terbuat dari plat baja yang kuat untuk mengaduk dan mengaplikasikan adukan semen.',
           specifications: [
@@ -450,7 +485,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Plat Baja Kuat' },
           ],
           packagingDetails: [
-            { size: '6"', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '6 Inch', innerBox: '12 Pcs / Ctn', outerBox: '120 Pcs / Ctn' },
+            { size: '7 Inch', innerBox: '12 Pcs / Ctn', outerBox: '120 Pcs / Ctn' },
+            { size: '8 Inch', innerBox: '12 Pcs / Ctn', outerBox: '120 Pcs / Ctn' },
           ],
         },
         {
@@ -467,8 +504,11 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Serbaguna' },
           ],
           packagingDetails: [
-            { size: '1.5 Inch', innerBox: '12/box', outerBox: '240/ctn' },
-            { size: '2 Inch', innerBox: '12/box', outerBox: '240/ctn' },
+            { size: '1.5 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { size: '2 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { size: '2,5 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { size: '3 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
           ],
         },
       ],
@@ -494,7 +534,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Keamanan Tinggi' },
           ],
           packagingDetails: [
-            { size: '60mm', innerBox: '1/box', outerBox: '120/ctn' },
+            { type: '4 Kunci', innerBox: '12 Sets / Box', outerBox: '120 Pcs / Ctn' },
           ],
         },
         {
@@ -512,7 +552,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Tahan Lama' },
           ],
           packagingDetails: [
-            { size: 'Standard', innerBox: '1/box', outerBox: '50/ctn' },
+            { type: '-', innerBox: '1 Set / Box', outerBox: '30 Sets / Ctn' },
           ],
         },
         {
@@ -530,7 +570,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Instalasi Mudah' },
           ],
           packagingDetails: [
-            { size: 'Standard', innerBox: '1/box', outerBox: '50/ctn' },
+            { type: '-', innerBox: '1 Set / Box', outerBox: '30 Sets / Ctn' },
           ],
         },
         {
@@ -548,7 +588,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Anti Macet & Karat' },
           ],
           packagingDetails: [
-            { size: '4"', innerBox: '24/pack', outerBox: '240/ctn' },
+            { type: '4 Inch', innerBox: '12 Sets / Box', outerBox: '480 Pcs / Ctn' },
           ],
         },
         {
@@ -565,8 +605,10 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Keamanan Terpercaya' },
           ],
           packagingDetails: [
-            { size: '30mm', innerBox: '12/box', outerBox: '120/ctn' },
-            { size: '40mm', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '30 mm', innerBox: '12 Pcs / Box', outerBox: '144 Pcs / Ctn' },
+            { size: '40 mm', innerBox: '12 Pcs / Box', outerBox: '96 Pcs / Ctn' },
+            { size: '50 mm', innerBox: '12 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { size: '60 mm', innerBox: '12 Pcs / Box', outerBox: '48 Pcs / Ctn' },
           ],
         },
         {
@@ -583,8 +625,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Keamanan Ekstra' },
           ],
           packagingDetails: [
-            { size: '50mm', innerBox: '6/box', outerBox: '60/ctn' },
-            { size: '60mm', innerBox: '6/box', outerBox: '48/ctn' },
+            { size: '74 mm', innerBox: '6 Pcs / Box', outerBox: '24 Pcs / Ctn' },
+            { size: '84 mm', innerBox: '6 Pcs / Box', outerBox: '24 Pcs / Ctn' },
+            { size: '94 mm', innerBox: '6 Pcs / Box', outerBox: '24 Pcs / Ctn' },
           ],
         },
       ],
@@ -610,7 +653,8 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Anti Karat & Tahan Lama' },
           ],
           packagingDetails: [
-            { size: '1/2 Inch', innerBox: '1/box', outerBox: '50/ctn' },
+            { type: 'Tipe F | 1 Cabang', innerBox: '80 Pcs / Box', outerBox: '160 Pcs / Box' },
+            { type: 'Tipe T | 2 Cabang', innerBox: '80 Pcs / Box', outerBox: '160 Pcs / Box' },
           ],
         },
         {
@@ -628,7 +672,8 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Instalasi Mudah' },
           ],
           packagingDetails: [
-            { size: '1/2 Inch', innerBox: '1/box', outerBox: '24/ctn' },
+            { type: 'Hitam | Dinding', innerBox: '6 Pcs / Box', outerBox: '54 Pcs / Ctn' },
+            { type: 'Silver | Dinding', innerBox: '6 Pcs / Box', outerBox: '54 Pcs / Ctn' },
           ],
           variations: [
             { id: 'own-sanitary-003', name: 'Kran Angsa Fleksibel - Bulat', image: '/images/own/Owner - Kran - Angsa Fleksibel - Bulat.png' },
@@ -649,7 +694,8 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Aliran Air Terfokus' },
           ],
           packagingDetails: [
-            { size: '1/2 Inch', innerBox: '1/box', outerBox: '24/ctn' },
+            { type: 'Hitam | Dinding', innerBox: '8 Pcs / Box', outerBox: '72 Pcs / Carbon' },
+            { type: 'Silver | Dinding', innerBox: '8 Pcs / Box', outerBox: '72 Pcs / Carbon' },
           ],
           variations: [
             { id: 'own-sanitary-002', name: 'Kran Angsa Fleksibel - Terompet', image: '/images/own/Owner - Kran - Angsa Fleksibel - Terompet.png' },
@@ -669,7 +715,8 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Harga Ekonomis' },
           ],
           packagingDetails: [
-            { size: '1/2 Inch', innerBox: '1/box', outerBox: '50/ctn' },
+            { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { type: 'Bulat | 1/2 - 3/4 Inch', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
           ],
         },
         {
@@ -686,7 +733,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Hemat Ruang' },
           ],
           packagingDetails: [
-            { size: '1/2 Inch', innerBox: '1/box', outerBox: '50/ctn' },
+            { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '10 Pcs / Box', outerBox: '80 Pcs / Ctn' },
           ],
         },
         {
@@ -703,7 +750,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Fleksibel & Kuat' },
           ],
           packagingDetails: [
-            { size: '12mm x 10m', innerBox: '12/box', outerBox: '240/ctn' },
+            { type: '1/2 Inch x 10 Meter', innerBox: '60 Pcs / Box', outerBox: '1.200 Pcs / Ctn' },
           ],
         },
         {
@@ -720,8 +767,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Anti Macet' },
           ],
           packagingDetails: [
-            { size: '1/2 Inch', innerBox: '12/box', outerBox: '120/ctn' },
-            { size: '3/4 Inch', innerBox: '12/box', outerBox: '96/ctn' },
+            { size: '1/2 Inch', innerBox: '24 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { size: '3/4 Inch', innerBox: '24 Pcs / Box', outerBox: '192 Pcs / Ctn' },
+            { size: '1 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
           ],
         },
         {
@@ -739,7 +787,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Cepat Kering' },
           ],
           packagingDetails: [
-            { size: '300ml', innerBox: '1/box', outerBox: '24/ctn' },
+            { type: 'Bening', innerBox: '-', outerBox: '24 Bottles / Ctn' },
+            { type: 'Hitam', innerBox: '-', outerBox: '24 Bottles / Ctn' },
+            { type: 'Putih', innerBox: '-', outerBox: '24 Bottles / Ctn' },
           ],
         },
         {
@@ -756,7 +806,8 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Tahan Cuaca' },
           ],
           packagingDetails: [
-            { size: '1/2 Inch', innerBox: '12/box', outerBox: '120/ctn' },
+            { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '24 Pcs / Box', outerBox: '480 Pcs / Ctn' },
+            { type: 'Topi | 1/2 - 3/4 Inch', innerBox: '24 Pcs / Box', outerBox: '480 Pcs / Ctn' },
           ],
         },
       ],
@@ -784,7 +835,8 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Nyaman Digunakan' },
           ],
           packagingDetails: [
-            { size: 'All Size', innerBox: '12/box', outerBox: '144/ctn' },
+            { type: 'Bening', innerBox: '12 Pcs / Box', outerBox: '480 Pcs / Ctn' },
+            { type: 'Hitam', innerBox: '12 Pcs / Box', outerBox: '480 Pcs / Ctn' },
           ],
         },
         {
@@ -803,7 +855,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Bahan Karet Tebal' },
           ],
           packagingDetails: [
-            { size: '39-43', innerBox: '0/box', outerBox: '12/ctn' },
+            { size: '39-43', innerBox: '-', outerBox: '12 Pairs / Ctn' },
           ],
         },
       ],
@@ -815,7 +867,7 @@ export const catalogueData: Record<string, Category[]> = {
       name: 'Power & Plumbing Tools | Peralatan Listrik & Perpipaan',
       image: '/images/Power & Plumbing Tools.png', // Ganti dengan gambar Anda
       // Di dalam catalogueData -> yozuri -> kategori 'power-plumbing-tools'
-      products: [
+        products: [
         {
           id: 'yoz-plumb-001',
           name: 'Kunci Inggris',
@@ -831,8 +883,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Adjustable' },
           ],
           packagingDetails: [
-            { size: '8 Inch', innerBox: '6/box', outerBox: '60/ctn' },
-            { size: '10 Inch', innerBox: '6/box', outerBox: '48/ctn' },
+            { size: '8 Inch', innerBox: '6 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { size: '10 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
+            { size: '12 Inch', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
           ],
         },
         {
@@ -849,14 +902,16 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Kekuatan Maksimal' },
           ],
           packagingDetails: [
-            { size: '2 LB', innerBox: '1/box', outerBox: '12/ctn' },
-            { size: '3 LB', innerBox: '1/box', outerBox: '12/ctn' },
+            { size: '32 0z / 2 Lbs', innerBox: '6 Pcs / Box', outerBox: '24 Pcs / Ctn' },
+            { size: '48 0z / 3 Lbs', innerBox: '6 Pcs / Box', outerBox: '12 Pcs / Ctn' },
+            { size: '64 0z / 4 Lbs', innerBox: '6 Pcs / Box', outerBox: '12 Pcs / Ctn' },
+            { size: '96 0z / 6 Lbs', innerBox: '6 Pcs / Box', outerBox: '12 Pcs / Ctn' },
           ],
         },
         {
           id: 'yoz-plumb-003',
           name: 'Palu Konde - Gagang Fiber',
-          image: '/images/yozuri/Yo-Zuri - Palu Konde - Gagang Fiber.png',
+          image: '/images/yozuri/Yo-Zuri - Palu Konde - Gagang Fiber A  .png',
           description: 'Palu konde (machinist hammer) dengan gagang fiberglass. Ujung bulat (konde) ideal untuk membentuk logam dan pekerjaan presisi lainnya.',
           specifications: [
             { key: 'Material Kepala', value: 'Baja Karbon' },
@@ -867,14 +922,17 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Gagang Fiber Nyaman' },
           ],
           packagingDetails: [
-            { size: '1 LB', innerBox: '6/box', outerBox: '48/ctn' },
-            { size: '2 LB', innerBox: '6/box', outerBox: '36/ctn' },
+            { size: '8 0z / 0,50 Lbs', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { size: '12 0z / 0,75 Lbs', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
+            { size: '16 0z / 1 Lbs', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
+            { size: '24 0z / 1,5 Lbs', innerBox: '6 Pcs / Box', outerBox: '36 Pcs / Ctn' },
+            { size: '32 0z / 2 Lbs', innerBox: '6 Pcs / Box', outerBox: '24 Pcs / Ctn' },
           ],
         },
         {
           id: 'yoz-plumb-004',
           name: 'Palu Kambing - Gagang Fiber',
-          image: '/images/yozuri/Yo-Zuri - Palu Kambing - Gagang Fiber.png',
+          image: '/images/yozuri/Yo-Zuri - Palu Kambing Polos - Gagang Fiber A.png',
           description: 'Palu kambing (claw hammer) Yo-Zuri dengan gagang fiber. Desain seimbang untuk memaku dan mencabut paku dengan efisien.',
           specifications: [
             { key: 'Material Gagang', value: 'Fiberglass' },
@@ -885,13 +943,14 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Gagang Anti-Slip' },
           ],
           packagingDetails: [
-            { size: '16 OZ', innerBox: '6/box', outerBox: '24/ctn' },
+            { size: '8 0z / 0,25 Lbs', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { size: '16 0z / 0,50 Lbs', innerBox: '6 Pcs / Box', outerBox: '36 Pcs / Ctn' },
           ],
         },
         {
           id: 'yoz-plumb-005',
           name: 'Palu Kambing Gerigi & Magnet - Gagang Fiber',
-          image: '/images/yozuri/Yo-Zuri - Palu Kambing - Gagang Fiber.png',
+          image: '/images/yozuri/Yo-Zuri - Palu Kambing Gerigi - Gagang Fiber A.png',
           description: 'Palu kambing inovatif dengan kepala gerigi dan magnet untuk menahan paku, memungkinkan pemakuan dengan satu tangan.',
           specifications: [
             { key: 'Material Gagang', value: 'Fiberglass' },
@@ -902,7 +961,8 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Pemakuan Satu Tangan' },
           ],
           packagingDetails: [
-            { size: '16 OZ', innerBox: '6/box', outerBox: '24/ctn' },
+            { size: '8 0z / 0,25 Lbs', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { size: '16 0z / 0,50 Lbs', innerBox: '6 Pcs / Box', outerBox: '36 Pcs / Ctn' },
           ],
         },
         {
@@ -919,7 +979,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Daya Hantam Tinggi' },
           ],
           packagingDetails: [
-            { size: '2 LB', innerBox: '1/box', outerBox: '12/ctn' },
+            { size: '32 0z / 2 Lbs', innerBox: '6 Pcs / Box', outerBox: '24 Pcs / Ctn' },
+            { size: '48 0z / 3 Lbs', innerBox: '6 Pcs / Box', outerBox: '12 Pcs / Ctn' },
+            { size: '64 0z / 4 Lbs', innerBox: '6 Pcs / Box', outerBox: '12 Pcs / Ctn' },
           ],
         },
         {
@@ -936,7 +998,11 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Gagang Kayu Nyaman' },
           ],
           packagingDetails: [
-            { size: '1 LB', innerBox: '6/box', outerBox: '48/ctn' },
+            { size: '8 0z / 0,50 Lbs', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { size: '12 0z / 0,75 Lbs', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
+            { size: '16 0z / 1 Lbs', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
+            { size: '24 0z / 1,5 Lbs', innerBox: '6 Pcs / Box', outerBox: '36 Pcs / Ctn' },
+            { size: '32 0z / 2 Lbs', innerBox: '6 Pcs / Box', outerBox: '24 Pcs / Ctn' },
           ],
         },
         {
@@ -953,7 +1019,8 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Kuat & Andal' },
           ],
           packagingDetails: [
-            { size: '16 OZ', innerBox: '6/box', outerBox: '24/ctn' },
+            { size: '8 0z / 0,25 Lbs', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { size: '16 0z / 0,50 Lbs', innerBox: '6 Pcs / Box', outerBox: '36 Pcs / Ctn' },
           ],
         },
         {
@@ -970,7 +1037,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Serbaguna (Multi-Purpose)' },
           ],
           packagingDetails: [
-            { size: '8"', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '7,5 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
           ],
         },
         {
@@ -987,7 +1054,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Gagang Isolasi' },
           ],
           packagingDetails: [
-            { size: '6"', innerBox: '6/box', outerBox: '72/ctn' },
+            { size: '6 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
         },
         {
@@ -1004,7 +1071,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Jangkauan Sempit' },
           ],
           packagingDetails: [
-            { size: '6"', innerBox: '6/box', outerBox: '72/ctn' },
+            { size: '6 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
         },
         {
@@ -1021,7 +1088,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Gerigi Kuat' },
           ],
           packagingDetails: [
-            { size: '7"', innerBox: '6/box', outerBox: '60/ctn' },
+            { size: '6 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
+            { size: '7 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
+            { size: '8 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
         },
         {
@@ -1038,7 +1107,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Baja Keras' },
           ],
           packagingDetails: [
-            { size: '6"', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '1.200 Pcs / Ctn' },
           ],
         },
         {
@@ -1055,7 +1124,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Kontrol Penuh' },
           ],
           packagingDetails: [
-            { size: '6"', innerBox: '6/box', outerBox: '72/ctn' },
+            { size: '4 Inch', innerBox: '-', outerBox: '400 Pcs / Ctn' },
           ],
         },
         {
@@ -1072,7 +1141,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Presisi Tinggi' },
           ],
           packagingDetails: [
-            { size: '6"', innerBox: '6/box', outerBox: '72/ctn' },
+            { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '400 Pcs / Ctn' },
           ],
         },
         {
@@ -1089,7 +1158,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Heavy Duty' },
           ],
           packagingDetails: [
-            { size: '8"', innerBox: '6/box', outerBox: '60/ctn' },
+            { size: '9 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
         },
         {
@@ -1106,8 +1175,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Adjustable' },
           ],
           packagingDetails: [
-            { size: '10"', innerBox: '1/box', outerBox: '12/ctn' },
-            { size: '12"', innerBox: '1/box', outerBox: '12/ctn' },
+            { size: '12 Inch', innerBox: '6 Pcs / Box', outerBox: '36 Pcs / Ctn' },
+            { size: '14 Inch', innerBox: '6 Pcs / Box', outerBox: '24 Pcs / Ctn' },
+            { size: '18 Inch', innerBox: '4 Pcs / Box', outerBox: '16 Pcs / Ctn' },
           ],
         },
       ], // Isi dengan produk-produk yang sesuai
@@ -1133,7 +1203,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Serbaguna Basah & Kering' },
           ],
           packagingDetails: [
-            { size: '4"', innerBox: '10/box', outerBox: '100/ctn' },
+            { size: '4 Inch / 105 mm', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
           ],
         },
         {
@@ -1151,7 +1221,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Anti Cuil (Chipping)' },
           ],
           packagingDetails: [
-            { size: '4"', innerBox: '10/box', outerBox: '100/ctn' },
+            { size: '4 Inch / 105 mm', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
           ],
         },
         {
@@ -1169,7 +1239,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Pendinginan Optimal' },
           ],
           packagingDetails: [
-            { size: '4"', innerBox: '10/box', outerBox: '100/ctn' },
+            { size: '4 Inch / 105 mm', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
           ],
         },
         {
@@ -1187,7 +1257,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Gesekan Minimal' },
           ],
           packagingDetails: [
-            { size: '4"', innerBox: '10/box', outerBox: '100/ctn' },
+            { size: '4 Inch / 105 mm', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
           ],
         },
         {
@@ -1205,7 +1275,8 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Performa Andal' },
           ],
           packagingDetails: [
-            { size: '4"', innerBox: '10/box', outerBox: '100/ctn' },
+            { size: 'Biru | 4 Inch', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
+            { size: 'Kering | 4 Inch', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
           ],
         },
         {
@@ -1223,8 +1294,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Untuk Potong Kayu' },
           ],
           packagingDetails: [
-            { size: '7" x 24T', innerBox: '1/box', outerBox: '50/ctn' },
-            { size: '7" x 40T', innerBox: '1/box', outerBox: '50/ctn' },
+            { size: '4 Inch / 105 mm', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
           ],
         },
         {
@@ -1242,7 +1312,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Kawat Kepang Anti Rontok' },
           ],
           packagingDetails: [
-            { size: '3"', innerBox: '1/box', outerBox: '50/ctn' },
+            { size: '3 Inch', innerBox: '-', outerBox: '100 Pcs / Ctn' },
           ],
         },
       ],
@@ -1251,13 +1321,342 @@ export const catalogueData: Record<string, Category[]> = {
       id: 'painting-tools',
       name: 'Painting Tools | Peralatan Cat',
       image: '/images/painting yozuri.png',
-      products: [],
+      // Di dalam catalogueData -> yozuri -> kategori 'painting-tools'
+      products: [
+        {
+          id: 'yoz-paint-001',
+          name: 'Paint Brush - Kuas Cat',
+          image: '/images/yozuri/Yo-Zuri - Kuas Cat Produk-produk A.png', // Ganti dengan path gambar Anda
+          description: 'Kuas cat serbaguna dengan bulu sintetis berkualitas tinggi untuk aplikasi cat yang halus dan merata pada berbagai permukaan.',
+          specifications: [
+            { key: 'Tipe Bulu', value: 'Sintetis' },
+            { key: 'Gagang', value: 'Kayu Ergonomis' },
+          ],
+          features: [
+            { text: 'Aplikasi Halus' },
+            { text: 'Tahan Lama' },
+          ],
+          packagingDetails: [
+            { size: '1"', innerBox: '12/pack', outerBox: '240/ctn' },
+            { size: '2"', innerBox: '12/pack', outerBox: '120/ctn' },
+            { size: '3"', innerBox: '6/pack', outerBox: '60/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-paint-002',
+          name: 'Kuas Roll - Premium',
+          image: '/images/yozuri/Yo-Zuri - Kuas Roll Copot - 9 Inch - Biru A.png',
+          description: 'Kuas roll premium untuk hasil akhir yang superior. Cocok untuk semua jenis cat dan permukaan, memberikan cakupan yang cepat dan merata.',
+          specifications: [
+            { key: 'Material Rol', value: 'Microfiber Premium' },
+            { key: 'Gagang', value: 'Plastik Ergonomis' },
+          ],
+          features: [
+            { text: 'Hasil Akhir Superior' },
+            { text: 'Cakupan Cepat' },
+          ],
+          packagingDetails: [
+            { size: '9 Inch', innerBox: '6/pack', outerBox: '60/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-paint-003',
+          name: 'Bulu Kuas Roll - Polos dan Garis',
+          image: '/images/yozuri/bulu-kuas-roll.png',
+          description: 'Refill bulu kuas roll tersedia dalam dua varian: polos untuk permukaan halus dan garis untuk permukaan kasar atau bertekstur.',
+          specifications: [
+            { key: 'Varian', value: 'Polos & Garis' },
+            { key: 'Ukuran', value: '9 Inch' },
+          ],
+          features: [
+            { text: 'Pilihan Sesuai Permukaan' },
+            { text: 'Mudah Diganti' },
+          ],
+          packagingDetails: [
+            { size: 'Polos 9"', innerBox: '12/pack', outerBox: '120/ctn' },
+            { size: 'Garis 9"', innerBox: '12/pack', outerBox: '120/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-paint-004',
+          name: 'Bak Cat - PVC',
+          image: '/images/yozuri/bak-cat-pvc.png',
+          description: 'Bak cat praktis berbahan PVC tahan lama, dilengkapi dengan area bertekstur untuk meratakan cat pada kuas roll dan kuas biasa.',
+          specifications: [
+            { key: 'Material', value: 'PVC' },
+            { key: 'Fitur', value: 'Tekstur Perataan' },
+          ],
+          features: [
+            { text: 'Tahan Lama' },
+            { text: 'Mudah Dibersihkan' },
+          ],
+          packagingDetails: [
+            { size: 'Standar', innerBox: '1/pack', outerBox: '20/ctn' },
+          ],
+        },
+      ],
     },
     {
       id: 'drilling-tools',
       name: 'Drilling Tools | Peralatan Bor',
       image: '/images/drlling yozuri.png',
-      products: [],
+      // Di dalam catalogueData -> yozuri -> kategori 'drilling-tools'
+      products: [
+        {
+          id: 'yoz-drill-001',
+          name: 'Mata Bor - Beton Super Merah',
+          image: '/images/yozuri/Yo-Zuri - Mata Bor Beton - Super Merah.png', // Ganti dengan path gambar Anda
+          description: 'Mata bor beton seri Super Merah dengan ujung carbide premium untuk pengeboran yang sangat cepat dan efisien pada beton keras.',
+          specifications: [
+            { key: 'Aplikasi', value: 'Beton, Tembok' },
+            { key: 'Material Ujung', value: 'Tungsten Carbide' },
+          ],
+          features: [
+            { text: 'Performa Pengeboran Cepat' },
+            { text: 'Ujung Carbide Premium' },
+          ],
+          packagingDetails: [
+            { size: '4mm', innerBox: '10/pack - 40/Inner', outerBox: '400/Outer' },
+            { size: '5mm', innerBox: '10/pack - 40/Inner', outerBox: '400/Outer' },
+            { size: '6mm', innerBox: '10/pack - 40/Inner', outerBox: '400/Outer' },
+            { size: '8mm', innerBox: '10/pack - 40/Inner', outerBox: '400/Outer' },
+            { size: '10mm', innerBox: '10/pack - 40/Inner', outerBox: '400/Outer' },
+            { size: '12mm', innerBox: '10/pack - 10/Inner', outerBox: '250/Outer' },
+            { size: '14mm', innerBox: '10/pack - 30/Inner', outerBox: '180/Outer' },
+          ],
+        },
+        {
+          id: 'yoz-drill-002',
+          name: 'Mata Bor - Beton Putih',
+          image: '/images/yozuri/Yo-Zuri - Mata Bor Beton - Putih Biru.png',
+          description: 'Mata bor beton standar berkualitas untuk berbagai keperluan pengeboran pada dinding bata dan beton ringan. Pilihan ekonomis dan andal.',
+          specifications: [
+            { key: 'Aplikasi', value: 'Beton Ringan, Bata' },
+            { key: 'Shank', value: 'Silinder' },
+          ],
+          features: [
+            { text: 'Ekonomis & Andal' },
+            { text: 'Serbaguna' },
+          ],
+          packagingDetails: [
+            { size: '4mm', innerBox: '10/pack - 40/Inner', outerBox: '400/Outer' },
+            { size: '5mm', innerBox: '10/pack - 40/Inner', outerBox: '400/Outer' },
+            { size: '6mm', innerBox: '10/pack - 40/Inner', outerBox: '400/Outer' },
+            { size: '8mm', innerBox: '10/pack - 40/Inner', outerBox: '400/Outer' },
+            { size: '10mm', innerBox: '10/pack - 40/Inner', outerBox: '400/Outer' },
+            { size: '12mm', innerBox: '10/pack - 10/Inner', outerBox: '240/Outer' },
+          ],
+        },
+        {
+          id: 'yoz-drill-003',
+          name: 'Mata Bor - Beton Multifungsi',
+          image: '/images/yozuri/Yo-Zuri - Mata Bor Beton - Multifungsi.png',
+          description: 'Satu mata bor untuk semua! Mata bor multifungsi yang dapat digunakan pada beton, keramik, kayu, dan logam tipis.',
+          specifications: [
+            { key: 'Aplikasi', value: 'Multi-Material (Beton, Kayu, Logam Tipis)' },
+            { key: 'Fitur', value: 'Ujung Tombak (Spear Head)' },
+          ],
+          features: [
+            { text: 'Satu Untuk Semua' },
+            { text: 'Pengeboran Presisi' },
+          ],
+          packagingDetails: [
+            { size: '5mm', innerBox: '10/pack - 50/Inner', outerBox: '500/Outer' },
+            { size: '6mm', innerBox: '10/pack - 50/Inner', outerBox: '500/Outer' },
+            { size: '8mm', innerBox: '10/pack - 50/Inner', outerBox: '500/Outer' },
+            { size: '10mm', innerBox: '10/pack - 50/Inner', outerBox: '500/Outer' },
+            { size: '12mm', innerBox: '10/pack - 25/Inner', outerBox: '250/Outer' },
+          ],
+        },
+        {
+          id: 'yoz-drill-004',
+          name: 'Mata Bor - Beton SDS Plus',
+          image: '/images/yozuri/Yo-Zuri - Mata Bor Beton - SDS Plus.png',
+          description: 'Mata bor khusus untuk mesin bor rotary hammer dengan sistem chuck SDS Plus. Mentransfer tenaga pukulan secara maksimal.',
+          specifications: [
+            { key: 'Shank', value: 'SDS Plus' },
+            { key: 'Aplikasi', value: 'Beton, Batu Alam' },
+          ],
+          features: [
+            { text: 'Untuk Rotary Hammer' },
+            { text: 'Transfer Tenaga Maksimal' },
+          ],
+          packagingDetails: [
+            { size: '6x160mm', innerBox: '10/pack - 20/Inner', outerBox: '320/Outer' },
+            { size: '8x160mm', innerBox: '10/pack - 20/Inner', outerBox: '320/Outer' },
+            { size: '10x160mm', innerBox: '10/pack - 20/Inner', outerBox: '320/Outer' },
+            { size: '12x160mm', innerBox: '10/pack - 20/Inner', outerBox: '320/Outer' },
+            { size: '14x160mm', innerBox: '10/pack - 2/Inner', outerBox: '320/Outer' },
+          ],
+        },
+        {
+          id: 'yoz-drill-005',
+          name: 'Mata Bor - Besi Super Merah',
+          image: '/images/yozuri/Yo-Zuri - Mata Bor Besi - Super Merah 2.png',
+          description: 'Mata bor besi HSS (High-Speed Steel) seri Super Merah, dilapisi untuk daya tahan ekstra dan performa tinggi pada pengeboran logam.',
+          specifications: [
+            { key: 'Material', value: 'HSS Coated' },
+            { key: 'Aplikasi', value: 'Besi, Baja, Aluminium' },
+          ],
+          features: [
+            { text: 'Performa Tinggi' },
+            { text: 'Lapisan Anti Panas' },
+          ],
+          packagingDetails: [
+            { size: '3mm', innerBox: '10/pack', outerBox: '1000/ctn' },
+            { size: '4mm', innerBox: '10/pack', outerBox: '1000/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-drill-006',
+          name: 'Mata Bor - Besi Cobalt',
+          image: '/images/yozuri/Yo-Zuri - Mata Bor Besi - Cobalt.png',
+          description: 'Mata bor besi dengan kandungan Cobalt 5% (HSS-Co M35), sangat keras dan tahan panas. Pilihan terbaik untuk mengebor stainless steel.',
+          specifications: [
+            { key: 'Material', value: 'HSS-Co M35 (5% Cobalt)' },
+            { key: 'Aplikasi', value: 'Stainless Steel, Logam Keras' },
+          ],
+          features: [
+            { text: 'Untuk Stainless Steel' },
+            { text: 'Sangat Tahan Panas' },
+          ],
+          packagingDetails: [
+            { size: '3mm', innerBox: '10/pack', outerBox: '1000/ctn' },
+            { size: '4mm', innerBox: '10/pack', outerBox: '1000/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-drill-007',
+          name: 'Mata Bor - Besi Kuning',
+          image: '/images/yozuri/Yo-Zuri - Mata Bor Besi - Kuning.png',
+          description: 'Mata bor besi HSS standar dengan lapisan Titanium Nitride (TiN) berwarna kuning untuk meningkatkan umur pakai dan mengurangi gesekan.',
+          specifications: [
+            { key: 'Material', value: 'HSS Tin Coated' },
+            { key: 'Aplikasi', value: 'Besi, Baja Ringan' },
+          ],
+          features: [
+            { text: 'Lapisan Titanium' },
+            { text: 'Mengurangi Gesekan' },
+          ],
+          packagingDetails: [
+            { size: '3mm', innerBox: '10/pack', outerBox: '1000/ctn' },
+            { size: '4mm', innerBox: '10/pack', outerBox: '1000/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-drill-008',
+          name: 'Mata Obeng - PH2',
+          image: '/images/yozuri/Yo-Zuri - Mata Obeng - Biru.png',
+          description: 'Mata obeng standar tipe PH2 (plus) yang paling umum digunakan untuk berbagai jenis sekrup.',
+          specifications: [
+            { key: 'Tipe', value: 'PH2' },
+            { key: 'Panjang', value: '65mm' },
+          ],
+          features: [
+            { text: 'Ukuran Universal' },
+            { text: 'Baja S2 Kuat' },
+          ],
+          packagingDetails: [
+            { size: 'PH2 x 65mm', innerBox: '10/pack', outerBox: '500/ctn' },
+          ],
+          variations: [{ id: 'yoz-drill-009', name: 'Mata Obeng Super - PH2', image: '/images/yozuri/Yo-Zuri - Mata Obeng - Super Merah.png' },
+          { id: 'yoz-drill-010', name: 'Mata Obeng Tornado - PH2', image: '/images/yozuri/Yo-Zuri - Mata Obeng - Tornado Gypsum.png' }]
+        },
+        {
+          id: 'yoz-drill-009',
+          name: 'Mata Obeng Super - PH2',
+          image: '/images/yozuri/Yo-Zuri - Mata Obeng - Super Merah.png',
+          description: 'Mata obeng PH2 seri Super dengan daya magnet yang lebih kuat dan presisi ujung yang ditingkatkan untuk mencegah kerusakan kepala sekrup.',
+          specifications: [
+            { key: 'Tipe', value: 'PH2' },
+            { key: 'Fitur', value: 'Daya Magnet Kuat' },
+          ],
+          features: [
+            { text: 'Magnet Super Kuat' },
+            { text: 'Anti-Slipping' },
+          ],
+          packagingDetails: [
+            { size: 'PH2 x 65mm', innerBox: '10/pack', outerBox: '500/ctn' },
+          ],
+          variations: [{ id: 'yoz-drill-008', name: 'Mata Obeng - PH2', image: '/images/yozuri/Yo-Zuri - Mata Obeng - Biru.png' },
+          { id: 'yoz-drill-010', name: 'Mata Obeng Tornado - PH2', image: '/images/yozuri/Yo-Zuri - Mata Obeng - Tornado Gypsum.png' }]
+        },
+        {
+          id: 'yoz-drill-010',
+          name: 'Mata Obeng Tornado - PH2',
+          image: '/images/yozuri/Yo-Zuri - Mata Obeng - Tornado Gypsum.png',
+          description: 'Mata obeng PH2 dengan desain ulir "Tornado" untuk cengkeraman sekrup yang lebih baik dan torsi yang lebih tinggi.',
+          specifications: [
+            { key: 'Tipe', value: 'PH2' },
+            { key: 'Desain', value: 'Tornado' },
+          ],
+          features: [
+            { text: 'Desain Ulir Tornado' },
+            { text: 'Torsi Tinggi' },
+          ],
+          packagingDetails: [
+            { size: 'PH2 x 65mm', innerBox: '10/pack', outerBox: '500/ctn' },
+          ],
+          variations: [{ id: 'yoz-drill-008', name: 'Mata Obeng - PH2', image: '/images/yozuri/Yo-Zuri - Mata Obeng - Biru.png' },
+          { id: 'yoz-drill-009', name: 'Mata Obeng Super - PH2', image: '/images/yozuri/Yo-Zuri - Mata Obeng - Super Merah.png' }]
+        },
+        {
+          id: 'yoz-drill-011',
+          name: 'Magnetic Hex Nut - Mata Shock Roofing - 8x45mm',
+          image: '/images/yozuri/Yo-Zuri - Mata Shock Roofing - 8x45mm B.png',
+          description: 'Mata shock (nut setter) heksagonal dengan magnet untuk memasang sekrup roofing (baut baja ringan) dengan cepat dan aman.',
+          specifications: [
+            { key: 'Tipe', value: 'Hex Nut Setter' },
+            { key: 'Fitur', value: 'Magnet' },
+          ],
+          features: [
+            { text: 'Untuk Baut Baja Ringan' },
+            { text: 'Magnet Kuat' },
+          ],
+          packagingDetails: [
+            { size: '8mm', innerBox: '10/pack', outerBox: '500/ctn' },
+            { size: '10mm', innerBox: '10/pack', outerBox: '500/ctn' },
+          ],
+          variations: [{ id: 'yoz-drill-013', name: 'Magnetic Hex Nut - Mata Shock Roofing - 8x65mm', image: '/images/yozuri/Yo-Zuri - Mata Shock Roofing - 8x65mm B.png' }]
+        },
+        {
+          id: 'yoz-drill-013',
+          name: 'Magnetic Hex Nut - Mata Shock Roofing - 8x65mm',
+          image: '/images/yozuri/Yo-Zuri - Mata Shock Roofing - 8x65mm B.png',
+          description: 'Mata shock (nut setter) heksagonal dengan magnet untuk memasang sekrup roofing (baut baja ringan) dengan cepat dan aman.',
+          specifications: [
+            { key: 'Tipe', value: 'Hex Nut Setter' },
+            { key: 'Fitur', value: 'Magnet' },
+          ],
+          features: [
+            { text: 'Untuk Baut Baja Ringan' },
+            { text: 'Magnet Kuat' },
+          ],
+          packagingDetails: [
+            { size: '8mm', innerBox: '10/pack', outerBox: '500/ctn' },
+            { size: '10mm', innerBox: '10/pack', outerBox: '500/ctn' },
+          ],
+          variations: [{ id: 'yoz-drill-011', name: 'Magnetic Hex Nut - Mata Shock Roofing - 8x45mm', image: '/images/yozuri/Yo-Zuri - Mata Shock Roofing - 8x45mm B.png' }]
+        },
+        {
+          id: 'yoz-drill-012',
+          name: 'Sekrup Gypsum',
+          image: '/images/yozuri/Yo-Zuri - Sekrup Gypsum.png',
+          description: 'Sekrup khusus gypsum dengan ujung yang tajam dan ulir yang kasar untuk pemasangan papan gypsum ke rangka metal atau kayu.',
+          specifications: [
+            { key: 'Aplikasi', value: 'Gypsum, Drywall' },
+            { key: 'Warna', value: 'Hitam (Black Phosphate)' },
+          ],
+          features: [
+            { text: 'Ujung Tajam & Cepat Masuk' },
+            { text: 'Anti Karat' },
+          ],
+          packagingDetails: [
+            { size: '6 x 1"', innerBox: '1/box (isi 1000)', outerBox: '20/ctn' },
+            { size: '6 x 1.5"', innerBox: '1/box (isi 500)', outerBox: '20/ctn' },
+          ],
+        },
+      ],
     },
     {
       id: 'bricklayering-plastering-tools',
@@ -1279,7 +1678,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Gagang Fiber Anti-Slip' },
           ],
           packagingDetails: [
-            { size: '6"', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '6 Inch', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '7 Inch', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '8 Inch', innerBox: '12/box', outerBox: '120/ctn' },
           ],
         },
         {
@@ -1296,7 +1697,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Gagang Fiber Nyaman' },
           ],
           packagingDetails: [
-            { size: '6"', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '6 Inch', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '7 Inch', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '8 Inch', innerBox: '12/box', outerBox: '120/ctn' },
           ],
         },
         {
@@ -1313,8 +1716,11 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Tidak Menggores' },
           ],
           packagingDetails: [
-            { size: '3 Inch', innerBox: '12/box', outerBox: '240/ctn' },
-            { size: '4 Inch', innerBox: '12/box', outerBox: '240/ctn' },
+            { size: '1.5 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { size: '2 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { size: '2,5 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { size: '3 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
           ],
         },
         {
@@ -1331,7 +1737,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Gagang Ergonomis' },
           ],
           packagingDetails: [
-            { size: 'Standard', innerBox: '1/box', outerBox: '50/ctn' },
+            { size: '280 x 110 mm', innerBox: '12 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
         },
         {
@@ -1348,7 +1754,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Ringan & Tahan Lama' },
           ],
           packagingDetails: [
-            { size: 'Standard', innerBox: '1/box', outerBox: '50/ctn' },
+            { size: '280 x 110 mm', innerBox: '12 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
         },
         {
@@ -1365,7 +1771,11 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Finishing Halus' },
           ],
           packagingDetails: [
-            { size: '8x10 Inch', innerBox: '12/box', outerBox: '144/ctn' },
+            { size: '120x170 Inch', innerBox: '24 Pcs / Box', outerBox: '200 Pcs / Ctn' },
+            { size: '155x220 Inch', innerBox: '24 Pcs / Box', outerBox: '144 Pcs / Ctn' },
+            { size: '190x270 Inch', innerBox: '24 Pcs / Box', outerBox: '144 Pcs / Ctn' },
+            { size: '220x320 Inch', innerBox: '24 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { size: '270x370 Inch', innerBox: '24 Pcs / Box', outerBox: '96 Pcs / Ctn' },
           ],
         },
         {
@@ -1402,7 +1812,7 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '1"', innerBox: '6/box', outerBox: '48/ctn' },
           ],
         },
-         {
+        {
           id: 'yoz-layer-014',
           name: 'Pahat Topi Jumbo - Concrete Chisel Lancip ',
           image: '/images/yozuri/Yo-Zuri - Pahat Topi Jumbo (+).png',
@@ -1433,7 +1843,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Untuk Caulking Gun' },
           ],
           packagingDetails: [
-            { size: '300ml', innerBox: '1/box', outerBox: '24/ctn' },
+            { type: 'Bening', innerBox: '-', outerBox: '24 Bottles / Ctn' },
+            { type: 'Hitam', innerBox: '-', outerBox: '24 Bottles / Ctn' },
+            { type: 'Putih', innerBox: '-', outerBox: '24 Bottles / Ctn' },
           ],
         },
         {
@@ -1468,8 +1880,8 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Pengunci Kuat' },
           ],
           packagingDetails: [
-            { size: '250mm', innerBox: '10/pack', outerBox: '100/pack' },
-            { size: '300mm', innerBox: '10/pack', outerBox: '80/pack' },
+            { type: 'Bening | 35gr', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { type: 'Bening | 85gr', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
           ],
         },
         {
@@ -1486,7 +1898,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Rangka Kokoh' },
           ],
           packagingDetails: [
-            { size: '10 KG', innerBox: '1/unit', outerBox: '1/unit' },
+            { type: 'Ban Hidup', innerBox: '-', outerBox: '10 Sets' },
           ],
         },
         {
@@ -1503,7 +1915,8 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Tidak Mudah Sobek' },
           ],
           packagingDetails: [
-            { size: '2" x 100y', innerBox: '6/slop', outerBox: '72/ctn' },
+            { size: '2 Inch x 40 Yard', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
+            { size: '2 Inch x 85 Yard', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
           ],
         },
         {
@@ -1520,7 +1933,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Tidak Mudah Sobek' },
           ],
           packagingDetails: [
-            { size: '2" x 100y', innerBox: '6/slop', outerBox: '72/ctn' },
+            { size: '2 Inch x 85 Yard', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
           ],
         },
         {
@@ -1537,7 +1950,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Tidak Mudah Sobek' },
           ],
           packagingDetails: [
-            { size: '2" x 100y', innerBox: '6/slop', outerBox: '72/ctn' },
+            { size: '2 Inch x 4 mm', innerBox: '-', outerBox: '72 Pcs / Ctn' },
           ],
         },
       ],
@@ -1570,7 +1983,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Gagang Karet Ergonomis' },
           ],
           packagingDetails: [
-            { size: '18"', innerBox: '6/box', outerBox: '60/ctn' },
+            { size: '18 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
         },
         {
@@ -1589,7 +2002,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Kontrol Penuh' },
           ],
           packagingDetails: [
-            { size: '12"', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '14 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
           ],
         },
       ],
@@ -1614,8 +2027,10 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Penguncian Manual Andal' },
           ],
           packagingDetails: [
-            { size: '5M', innerBox: '12/box', outerBox: '120/ctn' },
-            { size: '7.5M', innerBox: '12/box', outerBox: '96/ctn' },
+            { size: '3 Meter', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { size: '5 Meter', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { size: '7,5 Meter', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
+            { size: '10 Meter', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
         },
         {
@@ -1632,8 +2047,10 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Grip Karet Anti Slip' },
           ],
           packagingDetails: [
-            { size: '5M', innerBox: '12/box', outerBox: '120/ctn' },
-            { size: '7.5M', innerBox: '12/box', outerBox: '96/ctn' },
+            { size: '3 Meter', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { size: '5 Meter', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { size: '7,5 Meter', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
+            { size: '10 Meter', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
         },
         {
@@ -1650,8 +2067,10 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Tahan Benturan' },
           ],
           packagingDetails: [
-            { size: '5M', innerBox: '6/box', outerBox: '60/ctn' },
-            { size: '7.5M', innerBox: '6/box', outerBox: '48/ctn' },
+            { size: '3 Meter', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { size: '5 Meter', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { size: '7,5 Meter', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
+            { size: '10 Meter', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
         },
         {
@@ -1674,7 +2093,7 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-measure-005',
-          name: 'Siku Lubang - Stainless Steel',
+          name: 'Siku Tukang - Stainless Steel',
           image: '/images/yozuri/Yo-Zuri - Siku Tukang.png',
           description: 'Besi siku lubang serbaguna yang terbuat dari Stainless Steel murni, menjamin kekuatan dan ketahanan karat terbaik untuk jangka panjang.',
           specifications: [
@@ -1686,7 +2105,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Kekuatan Superior' },
           ],
           packagingDetails: [
-            { size: '3M', innerBox: '10/pack', outerBox: '50/ctn' },
+            { size: '12 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
           ],
         },
         {
@@ -1703,8 +2122,10 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Desain Seimbang' },
           ],
           packagingDetails: [
-            { size: '300g', innerBox: '1/box', outerBox: '100/ctn' },
-            { size: '500g', innerBox: '1/box', outerBox: '80/ctn' },
+            { size: '200 Gr', innerBox: '6 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { size: '300 Gr', innerBox: '6 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { size: '400 Gr', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
+            { size: '500 Gr', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
         },
         {
@@ -1722,7 +2143,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Dasar Magnetik Kuat' },
           ],
           packagingDetails: [
-            { size: '9"', innerBox: '1/box', outerBox: '50/ctn' },
+            { size: '9 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
           ],
         },
         {
@@ -1739,8 +2160,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Akurasi Terjamin' },
           ],
           packagingDetails: [
-            { size: '18 Inch', innerBox: '1/box', outerBox: '12/ctn' },
-            { size: '24 Inch', innerBox: '1/box', outerBox: '12/ctn' },
+            { size: '450 mm / 18 Inch', innerBox: '10 Pcs / Box', outerBox: '60 Pcs / Ctn' },
+            { size: '650 mm / 24 Inch', innerBox: '10 Pcs / Box', outerBox: '60 Pcs / Ctn' },
+            { size: '1.000 mm / 40 Inch', innerBox: '8 Pcs / Box', outerBox: '40 Pcs / Ctn' },
           ],
         },
       ],
@@ -1750,169 +2172,176 @@ export const catalogueData: Record<string, Category[]> = {
       name: 'Sanitary Equipments | Peralatan Sanitasi',
       image: '/images/sanitary yozuri.png',
       // Di dalam catalogueData -> yozuri -> kategori 'sanitary-equipments'
-products: [
-  { 
-    id: 'yoz-sanitary-001', 
-    name: 'Seal Tape - 100% P.T.F.E.', 
-    image: '/images/yozuri/Yo-Zuri - Seal Tape - PTFE A.png', // Ganti dengan path gambar Anda
-    description: 'Seal tape premium dari 100% P.T.F.E murni, menjamin sambungan drat bebas bocor. Elastis, kuat, dan mudah diaplikasikan.',
-    specifications: [
-      { key: 'Material', value: '100% P.T.F.E' },
-      { key: 'Kepadatan', value: 'Tinggi' },
-    ],
-    features: [
-      { text: 'Kualitas P.T.F.E Murni' },
-      { text: 'Anti Bocor' },
-    ],
-    packagingDetails: [
-      { size: '12mm x 10m', innerBox: '12/box', outerBox: '288/ctn' },
-    ],
-  },
-  { 
-    id: 'yoz-sanitary-002', 
-    name: 'Kran Taman Jumbo - PVC', 
-    image: '/images/yozuri/Yo-Zuri - Kran Taman Jumbo - PVC.png',
-    description: 'Kran taman ukuran jumbo berbahan PVC tebal dan tahan cuaca. Ukuran drat 3/4 inch untuk aliran air yang lebih deras.',
-    specifications: [
-      { key: 'Material', value: 'PVC' },
-      { key: 'Ukuran Drat', value: '3/4 Inch' },
-    ],
-    features: [
-      { text: 'Ukuran Jumbo' },
-      { text: 'Tahan Cuaca & UV' },
-    ],
-    packagingDetails: [
-      { size: '3/4"', innerBox: '12/box', outerBox: '96/ctn' },
-    ],
-  },
-  { 
-    id: 'yoz-sanitary-003', 
-    name: 'Kran Tembok Jumbo - PVC', 
-    image: '/images/yozuri/Yo-Zuri - Kran Tembok Jumbo - PVC.png',
-    description: 'Kran tembok PVC ukuran jumbo dengan desain modern. Cocok untuk area cuci atau garasi yang membutuhkan daya tahan ekstra.',
-    specifications: [
-      { key: 'Material', value: 'PVC' },
-      { key: 'Ukuran Drat', value: '1/2 Inch' },
-    ],
-    features: [
-      { text: 'Desain Modern' },
-      { text: 'Bahan PVC Tebal' },
-    ],
-    packagingDetails: [
-      { size: '1/2"', innerBox: '12/box', outerBox: '120/ctn' },
-    ],
-  },
-  { 
-    id: 'yoz-sanitary-004', 
-    name: 'Kran Bening - PVC', 
-    image: '/images/yozuri/Yo-Zuri - Kran - Transparan PVC Engkol+Bulat+Topi A.png',
-    description: 'Kran dinding dengan bodi PVC transparan yang unik, memberikan sentuhan estetika modern pada kamar mandi atau dapur Anda.',
-    specifications: [
-      { key: 'Material', value: 'PVC Transparan' },
-      { key: 'Ukuran Drat', value: '1/2 Inch' },
-    ],
-    features: [
-      { text: 'Desain Transparan Estetik' },
-      { text: 'Anti Korosi' },
-    ],
-    packagingDetails: [
-      { size: '1/2"', innerBox: '12/box', outerBox: '144/ctn' },
-    ],
-  },
-  { 
-    id: 'yoz-sanitary-005', 
-    name: 'Kran Angsa Kepala Kecil - Stainless Steel', 
-    image: '/images/yozuri/Yo-Zuri - Kran - Angsa Kepala Kecil - Stainless Steel.png',
-    description: 'Kran wastafel model angsa dengan material full stainless steel. Kepala kecil menghasilkan aliran air lurus dan presisi.',
-    specifications: [
-      { key: 'Material', value: 'Stainless Steel' },
-      { key: 'Model Kepala', value: 'Kecil / Lurus' },
-    ],
-    features: [
-      { text: 'Full Stainless Steel' },
-      { text: 'Desain Elegan' },
-    ],
-    packagingDetails: [
-      { size: '1/2"', innerBox: '1/box', outerBox: '24/ctn' },
-    ],
-  },
-  { 
-    id: 'yoz-sanitary-006', 
-    name: 'Ball Valve - PVC', 
-    image: '/images/yozuri/Yo-Zuri - Ball Valve Putih+Biru - PVC.png',
-    description: 'Stop kran (ball valve) Yo-Zuri dengan material PVC tebal dan mekanisme bola yang presisi, memastikan aliran tertutup sempurna tanpa bocor.',
-    specifications: [
-      { key: 'Material', value: 'PVC' },
-      { key: 'Tipe', value: 'Ball Valve' },
-    ],
-    features: [
-      { text: 'Tidak Mudah Macet' },
-      { text: 'Tahan Tekanan' },
-    ],
-    packagingDetails: [
-      { size: '1/2"', innerBox: '12/box', outerBox: '120/ctn' },
-      { size: '3/4"', innerBox: '12/box', outerBox: '96/ctn' },
-    ],
-  },
-  { 
-    id: 'yoz-sanitary-007', 
-    name: 'Water Mur - PVC', 
-    image: '/images/yozuri/Yo-Zuri - Water Mur - Putih A.png',
-    description: 'Water mur (union socket) PVC untuk membuat sambungan pipa yang bisa dilepas-pasang dengan mudah tanpa perlu memotong pipa.',
-    specifications: [
-      { key: 'Material', value: 'PVC' },
-      { key: 'Tipe', value: 'Union Socket' },
-    ],
-    features: [
-      { text: 'Sambungan Lepas-Pasang' },
-      { text: 'Instalasi Praktis' },
-    ],
-    packagingDetails: [
-      { size: '1/2"', innerBox: '24/box', outerBox: '240/ctn' },
-      { size: '3/4"', innerBox: '12/box', outerBox: '120/ctn' },
-    ],
-  },
-  { 
-    id: 'yoz-sanitary-008', 
-    name: 'Saringan Kamar Mandi - Floor Drainer', 
-    image: '/images/yozuri/Yo-Zuri - Saringan Kamar Mandi - Hitam+Packaging A.png',
-    description: 'Saringan pembuangan lantai (floor drainer) dari stainless steel. Mencegah rambut dan kotoran masuk ke saluran pipa, serta anti-bau.',
-    specifications: [
-      { key: 'Material', value: 'Stainless Steel' },
-      { key: 'Ukuran', value: '4 Inch' },
-    ],
-    features: [
-      { text: 'Anti-Bau & Anti-Serangga' },
-      { text: 'Material Stainless Steel' },
-    ],
-    packagingDetails: [
-      { size: '4"', innerBox: '1/box', outerBox: '50/ctn' },
-    ],
-  },
-],
+      products: [
+        {
+          id: 'yoz-sanitary-001',
+          name: 'Seal Tape - 100% P.T.F.E.',
+          image: '/images/yozuri/Yo-Zuri - Seal Tape - PTFE A.png', // Ganti dengan path gambar Anda
+          description: 'Seal tape premium dari 100% P.T.F.E murni, menjamin sambungan drat bebas bocor. Elastis, kuat, dan mudah diaplikasikan.',
+          specifications: [
+            { key: 'Material', value: '100% P.T.F.E' },
+            { key: 'Kepadatan', value: 'Tinggi' },
+          ],
+          features: [
+            { text: 'Kualitas P.T.F.E Murni' },
+            { text: 'Anti Bocor' },
+          ],
+          packagingDetails: [
+            { size: '12 | 1/2 x 10 Meter', innerBox: '200 Pcs / Box', outerBox: '1.200 Pcs / Ctn' },
+          ],
+        },
+        {
+          id: 'yoz-sanitary-002',
+          name: 'Kran Taman Jumbo - PVC',
+          image: '/images/yozuri/Yo-Zuri - Kran Taman Jumbo - PVC.png',
+          description: 'Kran taman ukuran jumbo berbahan PVC tebal dan tahan cuaca. Ukuran drat 3/4 inch untuk aliran air yang lebih deras.',
+          specifications: [
+            { key: 'Material', value: 'PVC' },
+            { key: 'Ukuran Drat', value: '3/4 Inch' },
+          ],
+          features: [
+            { text: 'Ukuran Jumbo' },
+            { text: 'Tahan Cuaca & UV' },
+          ],
+          packagingDetails: [
+            { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { type: 'Bulat | 1/2 - 3/4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+          ],
+        },
+        {
+          id: 'yoz-sanitary-003',
+          name: 'Kran Tembok Jumbo - PVC',
+          image: '/images/yozuri/Yo-Zuri - Kran Tembok Jumbo - PVC.png',
+          description: 'Kran tembok PVC ukuran jumbo dengan desain modern. Cocok untuk area cuci atau garasi yang membutuhkan daya tahan ekstra.',
+          specifications: [
+            { key: 'Material', value: 'PVC' },
+            { key: 'Ukuran Drat', value: '1/2 Inch' },
+          ],
+          features: [
+            { text: 'Desain Modern' },
+            { text: 'Bahan PVC Tebal' },
+          ],
+          packagingDetails: [
+            { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { type: 'Bulat | 1/2 - 3/4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+          ],
+        },
+        {
+          id: 'yoz-sanitary-004',
+          name: 'Kran Bening - PVC',
+          image: '/images/yozuri/Yo-Zuri - Kran - Transparan PVC Engkol+Bulat+Topi A.png',
+          description: 'Kran dinding dengan bodi PVC transparan yang unik, memberikan sentuhan estetika modern pada kamar mandi atau dapur Anda.',
+          specifications: [
+            { key: 'Material', value: 'PVC Transparan' },
+            { key: 'Ukuran Drat', value: '1/2 Inch' },
+          ],
+          features: [
+            { text: 'Desain Transparan Estetik' },
+            { text: 'Anti Korosi' },
+          ],
+          packagingDetails: [
+            { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '24 Pcs / Box', outerBox: '360 Pcs / Ctn' },
+            { type: 'Bulat | 1/2 - 3/4 Inch', innerBox: '24 Pcs / Box', outerBox: '360 Pcs / Ctn' },
+            { type: 'Topi | 1/2 - 3/4 Inch', innerBox: '24 Pcs / Box', outerBox: '360 Pcs / Ctn' },
+          ],
+        },
+        {
+          id: 'yoz-sanitary-005',
+          name: 'Kran Angsa Kepala Kecil - Stainless Steel',
+          image: '/images/yozuri/Yo-Zuri - Kran - Angsa Kepala Kecil - Stainless Steel.png',
+          description: 'Kran wastafel model angsa dengan material full stainless steel. Kepala kecil menghasilkan aliran air lurus dan presisi.',
+          specifications: [
+            { key: 'Material', value: 'Stainless Steel' },
+            { key: 'Model Kepala', value: 'Kecil / Lurus' },
+          ],
+          features: [
+            { text: 'Full Stainless Steel' },
+            { text: 'Desain Elegan' },
+          ],
+          packagingDetails: [
+            { type: 'Dinding', innerBox: '12 Pcs / Box', outerBox: '96 Pcs / Carton' },
+          ],
+        },
+        {
+          id: 'yoz-sanitary-006',
+          name: 'Ball Valve - PVC',
+          image: '/images/yozuri/Yo-Zuri - Ball Valve Putih+Biru - PVC.png',
+          description: 'Stop kran (ball valve) Yo-Zuri dengan material PVC tebal dan mekanisme bola yang presisi, memastikan aliran tertutup sempurna tanpa bocor.',
+          specifications: [
+            { key: 'Material', value: 'PVC' },
+            { key: 'Tipe', value: 'Ball Valve' },
+          ],
+          features: [
+            { text: 'Tidak Mudah Macet' },
+            { text: 'Tahan Tekanan' },
+          ],
+          packagingDetails: [
+            { size: '1/2 Inch', innerBox: '24 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { size: '3/4 Inch', innerBox: '24 Pcs / Box', outerBox: '192 Pcs / Ctn' },
+            { size: '1 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+          ],
+        },
+        {
+          id: 'yoz-sanitary-007',
+          name: 'Water Mur - PVC',
+          image: '/images/yozuri/Yo-Zuri - Water Mur - Putih A.png',
+          description: 'Water mur (union socket) PVC untuk membuat sambungan pipa yang bisa dilepas-pasang dengan mudah tanpa perlu memotong pipa.',
+          specifications: [
+            { key: 'Material', value: 'PVC' },
+            { key: 'Tipe', value: 'Union Socket' },
+          ],
+          features: [
+            { text: 'Sambungan Lepas-Pasang' },
+            { text: 'Instalasi Praktis' },
+          ],
+          packagingDetails: [
+            { size: '1/2 Inch', innerBox: '24 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { size: '3/4 Inch', innerBox: '24 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+          ],
+        },
+        {
+          id: 'yoz-sanitary-008',
+          name: 'Saringan Kamar Mandi - Floor Drainer',
+          image: '/images/yozuri/Yo-Zuri - Saringan Kamar Mandi - Hitam+Packaging A.png',
+          description: 'Saringan pembuangan lantai (floor drainer) dari stainless steel. Mencegah rambut dan kotoran masuk ke saluran pipa, serta anti-bau.',
+          specifications: [
+            { key: 'Material', value: 'Stainless Steel' },
+            { key: 'Ukuran', value: '4 Inch' },
+          ],
+          features: [
+            { text: 'Anti-Bau & Anti-Serangga' },
+            { text: 'Material Stainless Steel' },
+          ],
+          packagingDetails: [
+            { type: 'Oceanic', innerBox: '-', outerBox: '30 Pcs / Ctn' },
+            { type: 'Atlantic', innerBox: '-', outerBox: '30 Pcs / Ctn' },
+            { type: 'Hindia', innerBox: '-', outerBox: '30 Pcs / Ctn' },
+            { type: 'Pacific', innerBox: '-', outerBox: '30 Pcs / Ctn' },
+          ],
+        },
+      ],
     },
     {
       id: 'safety-equipments',
       name: 'Safety Equipments | Peralatan Keselamatan',
       image: '/images/safety yozuri.png',
-      products: [ {
-          id: 'yoz-safety-001',
-          name: 'Sepatu Karet Keselamatan',
-          image: '/images/yozuri/Yo-Zuri - Safety Rubber Boots.png',
-          description: 'Waterpass heavy duty dengan rangka aluminium tebal dan magnet super kuat. Dirancang untuk akurasi dan daya tahan di lingkungan kerja yang ekstrem.',
-          specifications: [
-            { key: 'Material', value: 'Aluminium' },
-            { key: 'Fitur', value: 'Magnet Super Kuat' },
-          ],
-          features: [
-            { text: 'Rangka Aluminium Tebal' },
-            { text: 'Akurasi Terjamin' },
-          ],
-          packagingDetails: [
-            { size: '18 Inch', innerBox: '1/box', outerBox: '12/ctn' },
-            { size: '24 Inch', innerBox: '1/box', outerBox: '12/ctn' },
-          ],
-        },
+      products: [{
+        id: 'yoz-safety-001',
+        name: 'Sepatu Karet Keselamatan',
+        image: '/images/yozuri/Yo-Zuri - Safety Rubber Boots.png',
+        description: 'Waterpass heavy duty dengan rangka aluminium tebal dan magnet super kuat. Dirancang untuk akurasi dan daya tahan di lingkungan kerja yang ekstrem.',
+        specifications: [
+          { key: 'Material', value: 'Aluminium' },
+          { key: 'Fitur', value: 'Magnet Super Kuat' },
+        ],
+        features: [
+          { text: 'Rangka Aluminium Tebal' },
+          { text: 'Akurasi Terjamin' },
+        ],
+        packagingDetails: [
+          { size: '39-43', innerBox: '-', outerBox: '12 Pairs / Ctn' },
+        ],
+      },
       ],
     },
   ],

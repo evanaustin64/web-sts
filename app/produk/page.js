@@ -22,7 +22,7 @@ export default function ProdukUtamaPage() {
     {
       name: 'HELIOS',
       href: '/produk/helios',
-      image: '/images/Helios.png',
+      image: '/images/Helios - Logo PNG-01 (1).png',
       bgColor: 'bg-white'
     }
   ];

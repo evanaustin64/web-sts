@@ -23,8 +23,8 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white text-lg mb-4 uppercase">Dukungan</h4>
             <ul className="space-y-2">
-              <li><Link href="#" className="hover:text-yellow-500 transition-colors">Hubungi Kami</Link></li>
-              <li><Link href="#" className="hover:text-yellow-500 transition-colors">Lokasi Service Center</Link></li>
+              <li><Link href="/hubungi-kami" className="hover:text-yellow-500 transition-colors">Hubungi Kami</Link></li>
+              <li><Link href="https://www.google.com/maps/place/PT.+SAMUDRA+TEKNIK+SEJAHTERA/@-6.1830436,106.6486135,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f9211d6e95dd:0x2e50689d1267987b!8m2!3d-6.1830436!4d106.6511884!16s%2Fg%2F11c5g6sh3j?entry=ttu&g_ep=EgoyMDI1MDkyMS4wIKXMDSoASAFQAw%3D%3D" className="hover:text-yellow-500 transition-colors">Lokasi Customer Care</Link></li>
               <li><Link href="#" className="hover:text-yellow-500 transition-colors">Garansi</Link></li>
               <li><Link href="#" className="hover:text-yellow-500 transition-colors">FAQ</Link></li>
             </ul>
