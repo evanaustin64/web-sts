@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { catalogueData, Product } from '@/app/data/catalogue-data';
+import { catalogueData, Product, Category } from '@/app/data/catalogue-data';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 
 export default function ProductDetailPage({ params }: { params: { brand: string; category: string; productId: string; } }) {
@@ -11,7 +11,7 @@ export default function ProductDetailPage({ params }: { params: { brand: string;
 
   const brandCategories = catalogueData[brand] || [];
   let product: Product | undefined;
-  let currentCategoryData: any;
+  let currentCategoryData: Category | undefined;
 
   for (const cat of brandCategories) {
     const foundProduct = cat.products.find(p => p.id === productId);
