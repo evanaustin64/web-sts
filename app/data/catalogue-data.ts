@@ -1661,7 +1661,7 @@ export const catalogueData: Record<string, Category[]> = {
     {
       id: 'bricklayering-plastering-tools',
       name: 'Bricklayering & Plastering Tools | Peralatan Tukang Batu & Plester',
-      image: '/Images/layering yozuri.png ',
+      image: '/Images/layering yozuri.png',
       // Di dalam catalogueData -> yozuri -> kategori 'layering-tools'
       products: [
         {
