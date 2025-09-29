@@ -12,10 +12,9 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white text-lg mb-4 uppercase">Produk</h4>
             <ul className="space-y-2">
-              <li><Link href="#" className="hover:text-yellow-500 transition-colors">Power Tools</Link></li>
-              <li><Link href="#" className="hover:text-yellow-500 transition-colors">Hand Tools</Link></li>
-              <li><Link href="#" className="hover:text-yellow-500 transition-colors">Aksesoris</Link></li>
-              <li><Link href="#" className="hover:text-yellow-500 transition-colors">Produk Baru</Link></li>
+              <li><Link href="/produk/owner" className="hover:text-yellow-500 transition-colors">OWNER</Link></li>
+              <li><Link href="/produk/yozuri" className="hover:text-yellow-500 transition-colors">YO-ZURI</Link></li>
+              <li><Link href="/produk/helios" className="hover:text-yellow-500 transition-colors">HELIOS</Link></li>
             </ul>
           </div>
 
@@ -34,7 +33,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white text-lg mb-4 uppercase">Perusahaan</h4>
             <ul className="space-y-2">
-              <li><Link href="#" className="hover:text-yellow-500 transition-colors">Tentang PT. STS</Link></li>
+              <li><Link href="/tentang-kami" className="hover:text-yellow-500 transition-colors">Tentang PT. STS</Link></li>
               <li><Link href="#" className="hover:text-yellow-500 transition-colors">Karir</Link></li>
               <li><Link href="#" className="hover:text-yellow-500 transition-colors">Blog</Link></li>
             </ul>

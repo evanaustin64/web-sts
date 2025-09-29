@@ -24,7 +24,7 @@ export default function CategoryProductsPage({ params }: CategoryProductsPagePar
   const categoryName = currentCategory?.name || '';
 
   return (
-     <div className="bg-gray-50 min-h-screen">
+    <div className="bg-gray-50 min-h-screen">
       <div className="container mx-auto px-4 py-12">
         <div className="text-sm text-gray-500 mb-2">
           <Link href="/" className="hover:underline text-yellow-500 hover:text-blue-800">Home</Link>
@@ -47,18 +47,27 @@ export default function CategoryProductsPage({ params }: CategoryProductsPagePar
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {allProducts.map((product) => (
-              // --- UBAH 'div' MENJADI 'Link' DI SINI ---
               <Link
                 key={product.id}
                 href={`/produk/${brand}/${category}/${product.id}`}
-                className="block bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm group hover:shadow-lg transition-shadow"
+                className="block bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm group relative"
               >
-                <div className="relative h-48 w-full ">
+                {/* Gambar Produk */}
+                <div className="relative h-48 w-full">
                   <Image src={product.image} alt={product.name} layout="fill" objectFit="contain" />
                 </div>
-                <div className="p-4 text-center ">
-                  <h3 className="font-bold text-gray-800 uppercase text-xm">{product.name}</h3>
-                  {/* SKU bisa ditambahkan kembali di sini jika Anda mau */}
+
+                {/* Kotak Teks Nama Produk yang Muncul dari Bawah */}
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gray-600 text-white
+                            transform translate-y-full group-hover:translate-y-0 opacity-0 group-hover:opacity-100
+                            transition-all duration-300 ease-in-out flex items-center justify-center min-h-[40px]"> {/* min-h untuk konsistensi tinggi */}
+
+                  {/* Teks Nama Produk dengan Efek Hover */}
+                  <h3 className="font-bold uppercase text-sm text-center
+                             transform group-hover:scale-105 group-hover:-translate-y-1
+                             transition-all duration-300 ease-out">
+                    {product.name}
+                  </h3>
                 </div>
               </Link>
             ))}

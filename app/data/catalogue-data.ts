@@ -911,7 +911,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-plumb-003',
           name: 'Palu Konde - Gagang Fiber',
-          image: '/Images/yozuri/Yo-Zuri - Palu Konde - Gagang Fiber A  .png',
+          image: '/Images/yozuri/Yo-Zuri - Palu Konde - Gagang Fiber A.png',
           description: 'Palu konde (machinist hammer) dengan gagang fiberglass. Ujung bulat (konde) ideal untuk membentuk logam dan pekerjaan presisi lainnya.',
           specifications: [
             { key: 'Material Kepala', value: 'Baja Karbon' },

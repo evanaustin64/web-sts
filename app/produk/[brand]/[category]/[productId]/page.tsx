@@ -63,7 +63,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
           {/* Kolom Kiri: Gambar Utama */}
           <div className="relative aspect-square bg-gray-100 rounded-lg border">
-            <Image src={product.image} alt={product.name} layout="fill" objectFit="contain" className="p-8" />
+            <Image src={product.image} alt={product.name} layout="fill" objectFit="contain" className="p-50" />
           </div>
 
           {/* Kolom Kanan: Semua Info Produk */}
