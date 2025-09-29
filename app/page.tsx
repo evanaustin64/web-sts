@@ -42,7 +42,7 @@ function PrevArrow(props: ArrowProps) {
     </div>
   );
 }
-// Komponen Hero (Banner Utama) dengan Tailwind CSS
+
 function HeroSlider() {
   const settings = {
     dots: true,
@@ -52,43 +52,42 @@ function HeroSlider() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    // --- PENGATURAN PANAH KUSTOM ---
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />
   };
 
+  // MODIFIKASI #1: Data disederhanakan, hanya butuh gambar dan link tujuan.
   const slides = [
-    { image: '/Images/PT STS - Web Design - Header-02.png', title: 'TOOLS YOU CAN TRUST', subtitle: 'Hardware & Tools handal untuk kebutuhan Anda.', buttonText: 'Lihat Katalog', link: '/produk' },
-    { image: '/Images/PT STS - Web Design - Header-01.png', title: 'YOUR PARTNER IN TOOLS', subtitle: 'Kualitas, presisi, dan daya tahan dalam setiap produk.', buttonText: 'Lihat Katalog', link: '/produk' },
-    { image: '/Images/PT STS - Web Design - Header-03.png', title: 'POWER IN SAFETY', subtitle: 'Kualitas dalam perlindungan.', buttonText: 'Telusuri', link: '/produk' }
+    { image: '/Images/PT STS - Web Design - Header-02.png', link: '/produk/owner' },
+    { image: '/Images/PT STS - Web Design - Header-01.png', link: '/produk/yozuri' },
+    { image: '/Images/PT STS - Web Design - Header-03.png', link: '/produk/helios' }
   ];
 
   return (
     <section className="w-full relative">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="relative h-[500px]">
-            <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
-            <div className="absolute inset-0  flex items-center">
-              <div className="container mx-auto px-28">
-                <div className="max-w-xl text-white">
-                  <h1 className="text-4xl md:text-6xl font-black uppercase mb-4">{slide.title}</h1>
-                  <p className="text-lg md:text-xl mb-8">{slide.subtitle}</p>
-                  <Link
-                    href={slide.link}
-                    className="bg-white text-gray-900 font-bold py-3 px-8 rounded hover:bg-gray-900 hover:text-white transition-all duration-300"
-                  >
-                    {slide.buttonText}
-                  </Link>
-                </div>
-              </div>
+          // MODIFIKASI #2: Seluruh area slide sekarang adalah sebuah link.
+          <Link key={index} href={slide.link}>
+            {/* Wadah ini tetap menggunakan 'aspect-[1920/600]' 
+              untuk menjaga rasio gambar agar tidak terpotong.
+            */}
+            <div className="relative w-full aspect-[1920/600] bg-gray-200">
+              <img 
+                src={slide.image} 
+                alt={`Banner slide ${index + 1}`} 
+                className="w-full h-full object-cover" 
+              />
             </div>
-          </div>
+          </Link>
         ))}
       </Slider>
     </section>
   );
 }
+
+// Komponen CatalogueSlider dengan Tailwind CSS
+// app/page.js -> Ganti komponen CatalogueSlider Anda dengan ini
 
 // Komponen CatalogueSlider dengan Tailwind CSS
 function CatalogueSlider() {
@@ -100,19 +99,29 @@ function CatalogueSlider() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    // --- TAMBAHKAN PANAH DI SINI ---
-    // nextArrow: <CatalogueNextArrow />,
-    // prevArrow: <CataloguePrevArrow />,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 3 } },
-      { breakpoint: 768, settings: { slidesToShow: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } }
+      {
+        breakpoint: 1024, // Untuk layar tablet (di bawah 1024px)
+        settings: {
+          slidesToShow: 2, // Tampilkan 3 item
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,  // Untuk layar mobile (di bawah 768px)
+        settings: {
+          slidesToShow: 2, // Tampilkan 2 item
+          slidesToScroll: 1,
+        }
+      }
     ]
   };
 
   const catalogueItems = [
-    { image: '/Images/Yo-Zuri - Product Pages-84.jpg', link: '/produk' }, { image: '/Images/Yo-Zuri - Product Pages-85.jpg', link: '/produk' },
-    { image: '/Images/Yo-Zuri - Product Pages-86.jpg', link: '/produk' }, { image: '/Images/Yo-Zuri - Product Pages-87.jpg', link: '/produk' },
+    { image: '/Images/Yo-Zuri - Product Pages-84.jpg', link: '/produk' },
+    { image: '/Images/Yo-Zuri - Product Pages-85.jpg', link: '/produk' },
+    { image: '/Images/Yo-Zuri - Product Pages-86.jpg', link: '/produk' },
+    { image: '/Images/Yo-Zuri - Product Pages-87.jpg', link: '/produk' },
     { image: '/Images/Yo-Zuri - Product Pages-88.jpg', link: '/produk' },
   ];
 
@@ -123,8 +132,29 @@ function CatalogueSlider() {
         <Slider {...settings}>
           {catalogueItems.map((item, index) => (
             <div key={index} className="px-2">
-              <Link href={item.link} className="block group relative h-96 overflow-hidden">
-                <img src={item.image} alt={`Catalogue item ${index + 1}`} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+              {/* MODIFIKASI #1:
+                - h-96 diganti 'aspect-square' agar wadah selalu persegi.
+                - Tambahkan 'bg-gray-100' untuk background card.
+                - 'flex items-center justify-center' untuk menengahkan gambar.
+                - 'p-6' untuk memberi jarak antara gambar dan tepi card.
+                - Efek hover diubah menjadi shadow agar lebih rapi.
+              */}
+              <Link 
+                href={item.link} 
+                className="group relative aspect-square rounded-lg
+                           overflow-hidden flex items-center justify-center
+                           transition-shadow duration-300 hover:shadow-xl"
+              >
+                {/* MODIFIKASI #2:
+                  - 'object-cover' diganti 'object-contain' agar seluruh gambar terlihat.
+                  - 'h-full' dan 'w-full' tetap agar gambar mengisi ruang yang tersedia di dalam padding.
+                  - Efek hover scale diubah, karena sudah ditangani oleh shadow di parent.
+                */}
+                <img 
+                  src={item.image} 
+                  alt={`Catalogue item ${index + 1}`} 
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" 
+                />
               </Link>
             </div>
           ))}
