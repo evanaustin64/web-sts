@@ -48,15 +48,15 @@ export default function ProductDetailPage({ params }: PageProps) {
     <div className="bg-white min-h-screen">
       <div className="container mx-auto px-4 py-12">
         <div className="text-sm text-gray-500 mb-4">
-          <Link href="/" className="hover:underline text-yellow-500 hover:text-blue-800">Home</Link>
+          <Link href="/" className="hover:underline text-yellow-500 hover:text-blue-800 font-helvetica-light uppercase">Home</Link>
           <span className="mx-2">/</span>
-          <Link href="/produk" className="hover:underline text-yellow-500 hover:text-blue-800">Merek</Link>
+          <Link href="/produk" className="hover:underline text-yellow-500 hover:text-blue-800 font-helvetica-light uppercase">Merek</Link>
           <span className="mx-2">/</span>
-          <Link href={`/produk/${brand}`} className="hover:underline text-yellow-500 hover:text-blue-800">{brandName}</Link>
+          <Link href={`/produk/${brand}`} className="hover:underline text-yellow-500 hover:text-blue-800 font-helvetica-light uppercase">{brandName}</Link>
           <span className="mx-2">/</span>
-          <Link href={`/produk/${brand}/${currentCategoryData?.id}`} className="hover:underline text-yellow-500 hover:text-blue-800">{currentCategoryData?.name}</Link>
+          <Link href={`/produk/${brand}/${currentCategoryData?.id}`} className="hover:underline text-yellow-500 hover:text-blue-800 font-helvetica-light uppercase">{currentCategoryData?.name}</Link>
           <span className="mx-2">/</span>
-          <span className="font-semibold text-gray-700">{product.name}</span>
+          <span className="font-helvetica-light uppercase text-gray-700">{product.name}</span>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
@@ -68,17 +68,17 @@ export default function ProductDetailPage({ params }: PageProps) {
 
           {/* Kolom Kanan: Semua Info Produk */}
           <div className="flex flex-col">
-            <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 uppercase tracking-wide">{product.name}</h1>
+            <h1 className="text-3xl lg:text-4xl font-helvetica-black text-gray-900 uppercase">{product.name}</h1>
 
             {/* BAGIAN BARU: UNGGULAN (IKON) */}
             {product.features && (
               <div className="mt-6">
-                <h2 className="text-lg font-bold text-gray-500 mb-3">KEUNGGULAN PRODUK :</h2>
+                <h2 className="text-lg font-helvetica-regular text-gray-500 mb-3">KEUNGGULAN PRODUK :</h2>
                 <ul className="space-y-2">
                   {product.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircleIcon className="h-6 w-6 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-600 uppercase">{feature.text}</span>
+                      <span className="text-gray-600 uppercase font-helvetica-light">{feature.text}</span>
                     </li>
                   ))}
                 </ul>
@@ -88,7 +88,7 @@ export default function ProductDetailPage({ params }: PageProps) {
             {/* BAGIAN VARIASI */}
 {product.variations && product.variations.length > 0 && (
   <div className="mt-6">
-    <h2 className="text-lg font-bold text-gray-500 uppercase tracking-wider mb-3">Variasi Lainnya</h2>
+    <h2 className="text-lg font-helvetica-regular text-gray-500 uppercase mb-3">Variasi Lainnya</h2>
     
     {/* Container Baru: Untuk menyatukan judul dengan daftar variasi */}
     <div className="flex flex-col sm:flex-row sm:items-start sm:gap-4"> {/* Mengatur layout horizontal untuk desktop, vertikal untuk mobile */}
@@ -105,7 +105,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                 <Image src={variant.image} alt={variant.name} layout="fill" objectFit="contain" />
               </div>
             </Link>
-            <p className="mt-2 text-sm font-medium text-gray-800 max-w-[90px] text-left">{variant.name}</p>
+            <p className="mt-2 text-sm font-helvetica-regular uppercase text-gray-800 max-w-[90px] text-left">{variant.name}</p>
           </div>
         ))}
       </div>
@@ -116,7 +116,7 @@ export default function ProductDetailPage({ params }: PageProps) {
             {/* BAGIAN TABEL SPESIFIKASI */}
             {product.packagingDetails && (
               <div className="mt-6">
-                <h2 className="text-base font-bold text-gray-500 uppercase tracking-wider mb-3">Ukuran & Kemasan</h2>
+                <h2 className="text-base font-helvetica-regular text-gray-500 uppercase mb-3">Ukuran & Kemasan</h2>
 
                 {/* 1. Cek dulu apakah ada data 'size' atau 'type' di dalam array */}
                 {(() => {
@@ -127,26 +127,26 @@ export default function ProductDetailPage({ params }: PageProps) {
                       <thead className="bg-yellow-300 rounded-lg">
                         <tr>
                           {/* 2. Tampilkan kolom 'Size' hanya jika 'hasSize' bernilai true */}
-                          {hasSize && <th className="p-2 rounded-l-lg">Size</th>}
+                          {hasSize && <th className="p-2 rounded-l-lg font-helvetica-black uppercase">Size</th>}
 
                           {/* 3. Tampilkan kolom 'Type' hanya jika 'hasType' bernilai true */}
-                          {hasType && <th className="p-2">Type</th>}
+                          {hasType && <th className="p-2 font-helvetica-black uppercase">Type</th>}
 
-                          <th className="p-2">Inner Box</th>
-                          <th className="p-2 rounded-r-lg">Outer Box</th>
+                          <th className="p-2 font-helvetica-black uppercase">Inner Box</th>
+                          <th className="p-2 rounded-r-lg font-helvetica-black uppercase">Outer Box</th>
                         </tr>
                       </thead>
                       <tbody>
                         {product.packagingDetails.map(detail => (
                           <tr key={`${detail.size || ''}-${detail.type || ''}`} className="border-b">
                             {/* 4. Tampilkan data 'size' hanya jika kolomnya ada */}
-                            {hasSize && <td className="p-2">{detail.size || '-'}</td>}
+                            {hasSize && <td className="p-2 font-helvetica-regular">{detail.size || '-'}</td>}
 
                             {/* 5. Tampilkan data 'type' hanya jika kolomnya ada */}
-                            {hasType && <td className="p-2">{detail.type || '-'}</td>}
+                            {hasType && <td className="p-2 font-helvetica-regular">{detail.type || '-'}</td>}
 
-                            <td className="p-2">{detail.innerBox}</td>
-                            <td className="p-2">{detail.outerBox}</td>
+                            <td className="p-2 font-helvetica-regular">{detail.innerBox}</td>
+                            <td className="p-2 font-helvetica-regular">{detail.outerBox}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -159,7 +159,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
             {/* Tombol WA dipindah ke paling bawah kolom */}
             <div className="mt-auto pt-6">
-              <button onClick={handleWhatsAppInquiry} className="w-full bg-green-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-black transition-colors uppercase">
+              <button onClick={handleWhatsAppInquiry} className="w-full bg-green-600 text-white font-helvetica-regular py-3 px-8 rounded-lg hover:bg-black transition-colors uppercase">
                 Hubungi Kami
               </button>
             </div>

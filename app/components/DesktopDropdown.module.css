@@ -11,7 +11,7 @@
 
 .dropdownMenu li a {
   @apply flex justify-between items-center px-5 py-3;
-  @apply text-gray-800 font-bold text-sm uppercase;
+  @apply font-helvetica-regular text-gray-800 font-bold text-sm uppercase;
   @apply border-b border-gray-200;
   @apply transition-colors duration-200;
 }

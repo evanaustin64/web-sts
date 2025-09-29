@@ -22,7 +22,7 @@ export default function DesktopDropdown() {
       title: 'YO-ZURI',
       href: '/produk/yozuri',
       subItems: [
-        { title: 'Power & Plumbing Tools | Peralatan Listrik & Perpipaan', href: '/produk/yozuri/power-plumbing-tools' },
+        { title: 'Hand & Plumbing Tools | Peralatan Listrik & Perpipaan', href: '/produk/yozuri/power-plumbing-tools' },
         { title: 'Diamond Wheels | Mata Gerinda', href: '/produk/yozuri/diamond-wheels' },
         { title: 'Painting Tools | Peralatan Cat', href: '/produk/yozuri/painting-tools' },
         { title: 'Drilling Tools | Peralatan Bor', href: '/produk/yozuri/drilling-tools' },

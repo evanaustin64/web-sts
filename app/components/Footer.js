@@ -10,41 +10,41 @@ export default function Footer() {
 
           {/* Kolom 1: Produk */}
           <div>
-            <h4 className="font-bold text-white text-lg mb-4 uppercase">Produk</h4>
+            <h4 className="font-helvetica-black text-white text-lg mb-4 uppercase">Produk</h4>
             <ul className="space-y-2">
-              <li><Link href="/produk/owner" className="hover:text-yellow-500 transition-colors">OWNER</Link></li>
-              <li><Link href="/produk/yozuri" className="hover:text-yellow-500 transition-colors">YO-ZURI</Link></li>
-              <li><Link href="/produk/helios" className="hover:text-yellow-500 transition-colors">HELIOS</Link></li>
+              <li><Link href="/produk/owner" className="hover:text-yellow-500 transition-colors font-helvetica-regular">OWNER</Link></li>
+              <li><Link href="/produk/yozuri" className="hover:text-yellow-500 transition-colors font-helvetica-regular">YO-ZURI</Link></li>
+              <li><Link href="/produk/helios" className="hover:text-yellow-500 transition-colors font-helvetica-regular">HELIOS</Link></li>
             </ul>
           </div>
 
           {/* Kolom 2: Dukungan */}
           <div>
-            <h4 className="font-bold text-white text-lg mb-4 uppercase">Dukungan</h4>
+            <h4 className="font-helvetica-black text-white text-lg mb-4 uppercase">Dukungan</h4>
             <ul className="space-y-2">
-              <li><Link href="/hubungi-kami" className="hover:text-yellow-500 transition-colors">Hubungi Kami</Link></li>
-              <li><Link href="https://www.google.com/maps/place/PT.+SAMUDRA+TEKNIK+SEJAHTERA/@-6.1830436,106.6486135,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f9211d6e95dd:0x2e50689d1267987b!8m2!3d-6.1830436!4d106.6511884!16s%2Fg%2F11c5g6sh3j?entry=ttu&g_ep=EgoyMDI1MDkyMS4wIKXMDSoASAFQAw%3D%3D" className="hover:text-yellow-500 transition-colors">Lokasi Customer Care</Link></li>
-              <li><Link href="#" className="hover:text-yellow-500 transition-colors">Garansi</Link></li>
-              <li><Link href="#" className="hover:text-yellow-500 transition-colors">FAQ</Link></li>
+              <li><Link href="/hubungi-kami" className="hover:text-yellow-500 transition-colors font-helvetica-regular">Hubungi Kami</Link></li>
+              <li><Link href="https://www.google.com/maps/place/PT.+SAMUDRA+TEKNIK+SEJAHTERA/@-6.1830436,106.6486135,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f9211d6e95dd:0x2e50689d1267987b!8m2!3d-6.1830436!4d106.6511884!16s%2Fg%2F11c5g6sh3j?entry=ttu&g_ep=EgoyMDI1MDkyMS4wIKXMDSoASAFQAw%3D%3D" className="hover:text-yellow-500 transition-colors font-helvetica-regular">Lokasi Customer Care</Link></li>
+              <li><Link href="#" className="hover:text-yellow-500 transition-colors font-helvetica-regular">Garansi</Link></li>
+              <li><Link href="#" className="hover:text-yellow-500 transition-colors font-helvetica-regular">FAQ</Link></li>
             </ul>
           </div>
 
           {/* Kolom 3: Perusahaan */}
           <div>
-            <h4 className="font-bold text-white text-lg mb-4 uppercase">Perusahaan</h4>
+            <h4 className="font-helvetica-black text-white text-lg mb-4 uppercase">Perusahaan</h4>
             <ul className="space-y-2">
-              <li><Link href="/tentang-kami" className="hover:text-yellow-500 transition-colors">Tentang PT. STS</Link></li>
-              <li><Link href="#" className="hover:text-yellow-500 transition-colors">Karir</Link></li>
-              <li><Link href="#" className="hover:text-yellow-500 transition-colors">Blog</Link></li>
+              <li><Link href="/tentang-kami" className="hover:text-yellow-500 transition-colors font-helvetica-regular">Tentang PT. STS</Link></li>
+              <li><Link href="#" className="hover:text-yellow-500 transition-colors font-helvetica-regular">Karir</Link></li>
+              <li><Link href="#" className="hover:text-yellow-500 transition-colors font-helvetica-regular">Blog</Link></li>
             </ul>
           </div>
 
           {/* Kolom 4: Info Perusahaan */}
           <div>
-            <h4 className="font-bold text-white text-lg mb-4 uppercase">PT. Samudra Teknik Sejahtera</h4>
-            <p className="leading-relaxed">Jl. Industri Utama No. 123, Jakarta, Indonesia.</p>
-            <p>Email: info@samudrateknik.co.id</p>
-            <p>Telp: (021) 1234-5678</p>
+            <h4 className="font-helvetica-black text-white text-lg mb-4 uppercase">PT. Samudra Teknik Sejahtera</h4>
+            <p className="leading-relaxed font-helvetica-regular">Jl. Industri Utama No. 123, Jakarta, Indonesia.</p>
+            <p className="leading-relaxed font-helvetica-regular">Email: info@samudrateknik.co.id</p>
+            <p className="leading-relaxed font-helvetica-regular">Telp: (021) 1234-5678</p>
           </div>
 
         </div>
@@ -68,7 +68,7 @@ export default function Footer() {
         </div>
 
         {/* Bagian Bawah Footer (Copyright) */}
-        <div className="border-t border-gray-700 mt-12 pt-8 text-center text-sm">
+        <div className="border-t border-gray-700 mt-12 pt-8 text-center text-sm font-helvetica-light">
           <p>&copy; 2025 PT. Samudra Teknik Sejahtera. Semua Hak Cipta Dilindungi.</p>
         </div>
       </div>

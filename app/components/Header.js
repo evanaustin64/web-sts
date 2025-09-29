@@ -80,7 +80,7 @@ export default function Header() {
                 width={60}
                 height={60}
               />
-              <span className="font-bold text-gray-800 text-lg sm:text-xl whitespace-nowrap">
+              <span className="font-helvetica-black-oblique text-gray-800 text-lg sm:text-xl whitespace-nowrap">
                 PT. SAMUDRA TEKNIK SEJAHTERA
               </span>
             </Link>
@@ -94,7 +94,7 @@ export default function Header() {
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
-                <button href="/produk" className="flex items-center gap-1 text-sm font-bold uppercase text-gray-800" onClick={(e) => e.preventDefault()}>
+                <button href="/produk" className="flex items-center gap-1 font-helvetica-regular uppercase text-gray-800" onClick={(e) => e.preventDefault()}>
                   Produk 
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -104,7 +104,7 @@ export default function Header() {
                 <span className="absolute bottom-0 left-0 w-full h-[3px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
               </li>
               <li className="relative h-full flex items-center group">
-                <Link href="/tentang-kami" className="text-sm font-bold uppercase text-gray-800">Tentang Kami</Link>
+                <Link href="/tentang-kami" className="font-helvetica-regular uppercase text-gray-800">Tentang Kami</Link>
                 <span className="absolute bottom-0 left-0 w-full h-[3px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
               </li>
               {/* <li className="relative h-full flex items-center group">
@@ -112,7 +112,7 @@ export default function Header() {
                 <span className="absolute bottom-0 left-0 w-full h-[3px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
               </li> */}
               <li className="relative h-full flex items-center group">
-                <Link href="/hubungi-kami" className="text-sm font-bold uppercase text-gray-800">Hubungi Kami</Link>
+                <Link href="/hubungi-kami" className="font-helvetica-regular uppercase text-gray-800">Hubungi Kami</Link>
                 <span className="absolute bottom-0 left-0 w-full h-[3px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
               </li>
             </ul>
@@ -127,7 +127,7 @@ export default function Header() {
                   placeholder="Search" 
                   value={searchTerm}
                   onChange={handleInputChange}
-                  className="border border-gray-300 rounded-md py-1.5 px-3 w-48 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                  className="border border-gray-300 rounded-md py-1.5 px-3 w-48 focus:outline-none focus:ring-2 focus:ring-yellow-400 font-helvetica-light"
                 />
                 <button type="submit" className="absolute top-1/2 right-3 -translate-y-1/2 text-gray-400">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>

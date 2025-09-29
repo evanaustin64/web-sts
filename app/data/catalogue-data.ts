@@ -864,7 +864,7 @@ export const catalogueData: Record<string, Category[]> = {
   yozuri: [
     {
       id: 'power-plumbing-tools',
-      name: 'Power & Plumbing Tools | Peralatan Listrik & Perpipaan',
+      name: 'Hand & Plumbing Tools | Peralatan Listrik & Perpipaan',
       image: '/Images/Power & Plumbing Tools.png', // Ganti dengan gambar Anda
       // Di dalam catalogueData -> yozuri -> kategori 'power-plumbing-tools'
         products: [

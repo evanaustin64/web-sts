@@ -127,7 +127,7 @@ function CatalogueSlider() {
 
   return (
     <section className="container mx-auto py-16 px-4">
-      <h2 className="text-4xl font-black text-center uppercase mb-12">Kategori</h2>
+      <h2 className="text-4xl font-helvetica-black text-center uppercase mb-12">Kategori</h2>
       <div className="-mx-2">
         <Slider {...settings}>
           {catalogueItems.map((item, index) => (
@@ -169,14 +169,14 @@ function DownloadCatalogueSection() {
   return (
     <section className="bg-gray-100 py-16">
       <div className="container mx-auto text-center px-4">
-        <h2 className="text-3xl font-black mb-4">Dapatkan Katalog Lengkap Kami</h2>
-        <p className="max-w-2xl mx-auto text-gray-600 mb-8">Unduh katalog produk terbaru kami dalam format PDF untuk melihat semua koleksi dan spesifikasi teknisnya.</p>
+        <h2 className="text-3xl font-helvetica-black-oblique mb-4">Dapatkan Katalog Lengkap Kami</h2>
+        <p className="max-w-2xl font-helvetica-regular mx-auto text-gray-600 mb-8">Unduh katalog produk terbaru kami dalam format PDF untuk melihat semua koleksi dan spesifikasi teknisnya.</p>
       </div>
       <div className='flex text-center justify-center gap-6'>
         <a
           href="/catalogue/katalog-samudra-teknik-sejahtera.pdf"
           className="
-      inline-block bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded 
+      inline-block bg-yellow-500 text-gray-900 font-helvetica-regular uppercase py-3 px-8 rounded 
       hover:bg-yellow-600 
       transition-all duration-300 ease-in-out /* <-- Tambahkan ini */
       hover:scale-105 hover:-translate-y-1 /* <-- Tambahkan ini */
@@ -188,7 +188,7 @@ function DownloadCatalogueSection() {
         <a
           href="/catalogue/katalog-samudra-teknik-sejahtera.pdf"
           className="
-      inline-block bg-red-500 text-white font-bold py-3 px-8 rounded 
+      inline-block bg-red-500 text-white font-helvetica-regular uppercase py-3 px-8 rounded 
       hover:bg-red-800 /* Perbaikan typo dari hover:bg-red- */
       transition-all duration-300 ease-in-out /* <-- Tambahkan ini */
       hover:scale-105 hover:-translate-y-1 /* <-- Tambahkan ini */
@@ -209,10 +209,10 @@ function FeaturedVideoSection() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-left">
-            <h2 className="text-3xl font-black uppercase">PRESISI TAK TERTANDINGI</h2>
-            <h3 className="text-xl font-bold opacity-90 mb-4">UNTUK HASIL TERBAIK</h3>
-            <p className="mb-8">Saksikan Waterpass Magnet YO-ZURI terbaru dalam aksi! Dengan teknologi magnetik canggih dan desain ergonomis, alat ini memastikan pengukuran yang akurat dan pemasangan yang mudah di berbagai permukaan. Rasakan perbedaan presisi di setiap proyek Anda.</p>
-            <a href="https://www.youtube.com/@officialpageyozuri" target="_blank" rel="noopener noreferrer" className="inline-block bg-yellow-500 text-black font-bold py-3 px-8 rounded hover:bg-yellow-600 transition-colors">
+            <h2 className="text-3xl font-helvetica-black-oblique uppercase">PRESISI TAK TERTANDINGI</h2>
+            <h3 className="text-xl font-helvetica-black-oblique opacity-90 mb-4">UNTUK HASIL TERBAIK</h3>
+            <p className="mb-8 font-helvetica-regular">Saksikan Waterpass Magnet YO-ZURI terbaru dalam aksi! Dengan teknologi magnetik canggih dan desain ergonomis, alat ini memastikan pengukuran yang akurat dan pemasangan yang mudah di berbagai permukaan. Rasakan perbedaan presisi di setiap proyek Anda.</p>
+            <a href="https://www.youtube.com/@officialpageyozuri" target="_blank" rel="noopener noreferrer" className="font-helvetica font-regular inline-block bg-yellow-500 text-black py-3 px-8 rounded hover:bg-yellow-600 transition-colors">
               Jelajahi Jangkauan
             </a>
           </div>

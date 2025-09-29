@@ -18,3 +18,35 @@ body {
   content: '' !important;
 }
 
+@font-face {
+  font-family: 'HelveticaBlackExtend';
+  src: url('./fonts/HelveticaBlackExtend.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaBlackExtendOblique';
+  src: url('./fonts/HelveticaBlackExtendOblique.otf') format('opentype');
+  font-weight: 900;
+  font-style: oblique;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaLightExtend';
+  src: url('./fonts/HelveticaLightExtend.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaRegularExtend';
+  src: url('./fonts/HelveticaRegularExtend.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+

@@ -27,21 +27,21 @@ export default function CategoryProductsPage({ params }: CategoryProductsPagePar
     <div className="bg-gray-50 min-h-screen">
       <div className="container mx-auto px-4 py-12">
         <div className="text-sm text-gray-500 mb-2">
-          <Link href="/" className="hover:underline text-yellow-500 hover:text-blue-800">Home</Link>
+          <Link href="/" className="hover:underline text-yellow-500 hover:text-blue-800 font-helvetica-light uppercase">Home</Link>
           <span className="mx-2">/</span>
-          <Link href="/produk" className="hover:underline text-yellow-500 hover:text-blue-800">Merek</Link>
+          <Link href="/produk" className="hover:underline text-yellow-500 hover:text-blue-800 font-helvetica-light uppercase">Merek</Link>
           <span className="mx-2">/</span>
-          <Link href={`/produk/${brand}`} className="hover:underline text-yellow-500 hover:text-blue-800">{brandName}</Link>
+          <Link href={`/produk/${brand}`} className="hover:underline text-yellow-500 hover:text-blue-800 font-helvetica-light uppercase">{brandName}</Link>
           <span className="mx-2">/</span>
-          <span>{categoryName}</span>
+          <span className='font-helvetica-light uppercase'>{categoryName}</span>
         </div>
-        <h1 className="text-4xl font-extrabold text-gray-900 uppercase tracking-wider mb-10">
+        <h1 className="text-4xl font-helvetica-black uppercase text-gray-900 mb-10">
           {categoryName}
         </h1>
 
         <main>
           <div className="mb-4">
-            <p className="text-gray-600">
+            <p className="text-gray-600 font-helvetica-light">
               Showing all {allProducts.length} results
             </p>
           </div>
@@ -63,7 +63,7 @@ export default function CategoryProductsPage({ params }: CategoryProductsPagePar
                             transition-all duration-300 ease-in-out flex items-center justify-center min-h-[40px]"> {/* min-h untuk konsistensi tinggi */}
 
                   {/* Teks Nama Produk dengan Efek Hover */}
-                  <h3 className="font-bold uppercase text-sm text-center
+                  <h3 className="font-helvetica-regular uppercase text-sm text-center
                              transform group-hover:scale-105 group-hover:-translate-y-1
                              transition-all duration-300 ease-out">
                     {product.name}

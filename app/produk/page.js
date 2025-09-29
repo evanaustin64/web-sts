@@ -31,12 +31,11 @@ export default function ProdukUtamaPage() {
     <div className="bg-white">
       <div className="container mx-auto px-4 py-12">
         <div className="breadcrumbs text-sm text-gray-500 mb-2">
-          <Link href="/" className="hover:underline text-yellow-500 hover:text-blue-800">Home</Link>
-          <span className="mx-2">/</span>
-          <span>Merk</span>
+          <Link href="/" className="hover:underline text-yellow-500 hover:text-blue-800 font-helvetica-light uppercase">Home</Link>
+          <span className="mx-2 font-helvetica-light uppercase">/</span>
+          <span className="font-helvetica-light uppercase">Merk</span>
         </div>
-
-        <h1 className="text-4xl font-black text-gray-900 uppercase mb-10">
+        <h1 className="text-4xl font-helvetica-black text-gray-900 uppercase mb-10">
           Merk Kami
         </h1>
 
