@@ -1361,8 +1361,8 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-paint-003',
-          name: 'Bulu Kuas Roll - Polos dan Garis',
-          image: '/Images/yozuri/bulu-kuas-roll.png',
+          name: 'Bulu Kuas Roll - Copot 9 Inch',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Bulu Roll Copot 9 Inch.png',
           description: 'Refill bulu kuas roll tersedia dalam dua varian: polos untuk permukaan halus dan garis untuk permukaan kasar atau bertekstur.',
           specifications: [
             { key: 'Varian', value: 'Polos & Garis' },
@@ -1380,7 +1380,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-paint-004',
           name: 'Bak Cat - PVC',
-          image: '/Images/yozuri/bak-cat-pvc.png',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Bak Cat.png',
           description: 'Bak cat praktis berbahan PVC tahan lama, dilengkapi dengan area bertekstur untuk meratakan cat pada kuas roll dan kuas biasa.',
           specifications: [
             { key: 'Material', value: 'PVC' },
@@ -1392,6 +1392,24 @@ export const catalogueData: Record<string, Category[]> = {
           ],
           packagingDetails: [
             { size: 'Standar', innerBox: '1/pack', outerBox: '20/ctn' },
+          ],
+        },
+        {
+          id: 'yoz-paint-005',
+          name: 'Bulu Kuas Roll - Domba 4 Inch',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Bulu Roll Domba 4 Inch.png',
+          description: 'Refill bulu kuas roll tersedia dalam dua varian: polos untuk permukaan halus dan garis untuk permukaan kasar atau bertekstur.',
+          specifications: [
+            { key: 'Varian', value: 'Polos & Garis' },
+            { key: 'Ukuran', value: '9 Inch' },
+          ],
+          features: [
+            { text: 'Pilihan Sesuai Permukaan' },
+            { text: 'Mudah Diganti' },
+          ],
+          packagingDetails: [
+            { size: 'Polos 9"', innerBox: '12/pack', outerBox: '120/ctn' },
+            { size: 'Garis 9"', innerBox: '12/pack', outerBox: '120/ctn' },
           ],
         },
       ],
@@ -1584,7 +1602,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-drill-010',
           name: 'Mata Obeng Tornado - PH2',
-          image: '/Images/yozuri/Yo-Zuri - Mata Obeng - Tornado Gypsum.png',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Mata Obeng Tornado.png',
           description: 'Mata obeng PH2 dengan desain ulir "Tornado" untuk cengkeraman sekrup yang lebih baik dan torsi yang lebih tinggi.',
           specifications: [
             { key: 'Tipe', value: 'PH2' },

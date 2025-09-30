@@ -159,7 +159,7 @@ export default function ProductDetailPage({ params }: PageProps) {
 
             {/* Tombol WA dipindah ke paling bawah kolom */}
             <div className="mt-auto pt-6">
-              <button onClick={handleWhatsAppInquiry} className="w-full bg-green-600 text-white font-helvetica-regular py-3 px-8 rounded-lg hover:bg-black transition-colors uppercase">
+              <button onClick={handleWhatsAppInquiry} className="w-full bg-blue-500 text-white font-helvetica-regular py-3 px-8 rounded-lg hover:bg-blue-700 transition-colors uppercase">
                 Hubungi Kami
               </button>
             </div>
