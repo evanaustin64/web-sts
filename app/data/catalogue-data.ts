@@ -1227,7 +1227,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-diamond-003',
           name: 'Diamond Wheel Turbo Batik - Wet & Dry Cutting',
-          image: '/Images/yozuri/diamond-batik.png',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Diamond Wheel Turbo Batik Type X & K.png',
           description: 'Mata gerinda potong dengan desain segmen "Batik" yang unik untuk pendinginan optimal dan pemotongan yang stabil pada berbagai material bangunan.',
           specifications: [
             { key: 'Tipe', value: 'Turbo Batik' },
@@ -1245,7 +1245,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-diamond-004',
           name: 'Diamond Wheel Turbo Super Thin - Dry Cutting',
-          image: '/Images/yozuri/diamond-super-thin.png',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Diamond Wheel Turbo Super Thin.png',
           description: 'Mata gerinda turbo super tipis untuk pemotongan kering yang sangat cepat dengan gesekan minimal. Ideal untuk pemotongan presisi.',
           specifications: [
             { key: 'Tipe', value: 'Turbo Super Thin' },
@@ -1263,7 +1263,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-diamond-005',
           name: 'Diamond Wheel - Dry Cutting',
-          image: '/Images/yozuri/diamond-dry.png',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Diamond Wheel A.png',
           description: 'Mata gerinda potong tipe segmented untuk pemotongan kering material bangunan secara umum. Memberikan durabilitas dan performa yang andal.',
           specifications: [
             { key: 'Tipe', value: 'Segmented' },
