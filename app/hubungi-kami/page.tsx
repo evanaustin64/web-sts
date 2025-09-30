@@ -9,16 +9,17 @@ export default function ContactUsPage() {
       {/* Bagian Judul */}
       <div className="bg-gradient-to-r from-yellow-300 to-orange-300 py-12">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-extrabold text-black uppercase tracking-wider">Hubungi Kami</h1>
-          <p className="mt-4 max-w-2xl mx-auto text-black">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-black uppercase tracking-wider">Hubungi Kami</h1>
+          <p className="mt-4 max-w-2xl mx-auto text-black text-base md:text-lg">
             Kami siap membantu Anda. Silakan isi formulir di bawah atau hubungi kami melalui detail kontak yang tersedia.
           </p>
         </div>
       </div>
 
       {/* Bagian Konten Utama */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 gap-12">
+      <div className="container mx-auto px-4 py-12 md:py-16">
+        {/* Grid: 1 kolom di mobile, 2 kolom di desktop (md) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
           
           {/* Kolom Kiri: Formulir Kontak */}
           <div>
@@ -86,9 +87,9 @@ export default function ContactUsPage() {
               <h2 className="text-2xl font-bold text-gray-800 mb-4">Lokasi Kami</h2>
               <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden border">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.822591325608!2d106.82715201477205!3d-6.1541319955441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2c6e1e1e8b2b2b!2sMonumen%20Nasional!5e0!3m2!1sen!2sid!4v1663242080000"
-                  width="600" 
-                  height="450" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322083!2d106.819597314769!3d-6.194741395514658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f428c4b8a213%3A0x59972322ac9a490!2sMonumen%20Nasional!5e0!3m2!1sen!2sid!4fv1631168489812!5m2!1sen!2sid"
+                  width="100%" 
+                  height="100%" 
                   style={{ border: 0 }} 
                   allowFullScreen={true}
                   loading="lazy"

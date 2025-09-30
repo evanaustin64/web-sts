@@ -5,27 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { BuildingStorefrontIcon, ScaleIcon, UsersIcon } from '@heroicons/react/24/outline';
 
-// Data Tim (Anda bisa menambah atau mengubahnya)
-const teamMembers = [
-  {
-    name: 'Pak Hasan',
-    role: 'Komisaris',
-    imageUrl: '/Images/logo-sts.png', // Ganti dengan path foto tim Anda
-    bio: 'Dengan pengalaman lebih dari 20 tahun di industri perkakas, Pak Hasan memimpin perusahaan dengan visi untuk menyediakan kualitas terbaik.'
-  },
-  {
-    name: 'Jane Doe',
-    role: 'Direktur',
-    imageUrl: '/Images/logo-sts.png',
-    bio: 'Jane memastikan setiap pelanggan mendapatkan solusi terbaik dan pelayanan yang memuaskan.'
-  },
-  {
-    name: 'John Smith',
-    role: 'Purchasing Manager',
-    imageUrl: '/Images/logo-sts.png',
-    bio: 'John bertanggung jawab atas efisiensi operasional, mulai dari gudang hingga pengiriman.'
-  },
-];
+// Data Tim (Anda bisa menambah atau mengubahnya
 
 export default function AboutUsPage() {
   return (
@@ -86,32 +66,6 @@ export default function AboutUsPage() {
             <p className="text-gray-600">- Memperkenalkan merk ke seluruh masyarakat melalui platform/media yang tersedia.</p>
             <p className="text-gray-600">- Mempererat dan memperluas relasi dan koneksi bisnis</p>
           </div>
-        </div>
-      </section>
-      
-      {/* 4. Tim Kami */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900">Tim Profesional Kami</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-gray-600">Kami didukung oleh tim yang bersemangat dan berdedikasi untuk memberikan yang terbaik.</p>
-        </div>
-        
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.map((person) => (
-                <div key={person.name} className="text-center">
-                    <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg">
-                        <Image
-                            src={person.imageUrl}
-                            alt={person.name}
-                            layout="fill"
-                            objectFit="cover"
-                        />
-                    </div>
-                    <h4 className="mt-6 text-xl font-bold text-gray-900">{person.name}</h4>
-                    <p className="text-yellow-600 font-semibold">{person.role}</p>
-                    <p className="mt-2 text-gray-500">{person.bio}</p>
-                </div>
-            ))}
         </div>
       </section>
     </div>

@@ -16,6 +16,7 @@ export default function Header() {
   const [searchTerm, setSearchTerm] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   const router = useRouter();
+  const [isMobileSearchOpen, setMobileSearchOpen] = useState(false);
 
   const allProductsWithContext = Object.entries(catalogueData).flatMap(([brandId, categories]) => 
     categories.flatMap(category => 
@@ -47,6 +48,7 @@ export default function Header() {
       router.push(`/search?q=${encodeURIComponent(searchTerm.trim())}`);
       setSearchTerm('');
       setSuggestions([]);
+      setMobileSearchOpen(false);
     }
   };
   
@@ -73,18 +75,28 @@ export default function Header() {
 
           {/* Logo (Tidak Diubah) */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center gap-4">
-              <Image
-                src="/Images/logo-sts.png"
-                alt="Logo PT. Samudra Teknik Sejahtera"
-                width={60}
-                height={60}
-              />
-              <span className="font-helvetica-black-oblique text-gray-800 text-lg sm:text-xl whitespace-nowrap">
-                PT. SAMUDRA TEKNIK SEJAHTERA
-              </span>
-            </Link>
-          </div>
+  <Link href="/" className="flex items-center gap-3 sm:gap-4">
+    <Image
+      src="/Images/logo-sts.png"
+      alt="Logo PT. Samudra Teknik Sejahtera"
+      width={60}
+      height={60}
+      className="h-14 w-14 flex-shrink-0" /* Ukuran gambar sedikit disesuaikan */
+    />
+    
+    <div>
+      {/* TAMPILAN MOBILE: Dibagi 2 baris, disembunyikan di layar 'sm' ke atas */}
+      <span className="block sm:hidden font-helvetica-black-oblique text-gray-800 text-base leading-tight">
+        PT. SAMUDRA<br />TEKNIK SEJAHTERA
+      </span>
+
+      {/* TAMPILAN DESKTOP: 1 baris, disembunyikan di bawah layar 'sm' */}
+      <span className="hidden sm:block font-helvetica-black-oblique text-gray-800 text-xl whitespace-nowrap">
+        PT. SAMUDRA TEKNIK SEJAHTERA
+      </span>
+    </div>
+  </Link>
+</div>
 
           {/* Navigasi Desktop (Tidak Diubah) */}
           <nav className="hidden lg:flex h-full">
@@ -150,10 +162,43 @@ export default function Header() {
                 </ul>
               )}
             </div>
-            <button className="lg:hidden text-gray-800" onClick={() => setMenuOpen(!isMenuOpen)}>☰</button>
+            <button className="md:hidden text-gray-800" onClick={() => setMobileSearchOpen(true)}>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+            </button>
+            <button className="lg:hidden text-gray-800" onClick={() => setMenuOpen(!isMenuOpen)}>
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-4 6h4"></path></svg>
+            </button>
           </div>
         </div>
       </header>
+
+       {isMobileSearchOpen && (
+        <div className="md:hidden fixed inset-0 bg-white z-50 p-4 flex flex-col">
+          <div className="flex justify-end mb-4">
+            <button onClick={() => setMobileSearchOpen(false)} className="text-3xl font-bold text-gray-600">&times;</button>
+          </div>
+          <form onSubmit={handleSearchSubmit} className="relative">
+            <input 
+              type="text" 
+              placeholder="Cari Produk..." 
+              value={searchTerm}
+              onChange={handleInputChange}
+              autoFocus
+              className="w-full border-2 border-gray-300 bg-white h-12 px-5 pr-12 rounded-full text-lg focus:outline-none focus:border-yellow-500"
+            />
+            <button type="submit" className="absolute right-0 top-0 mt-3 mr-4">
+              <svg className="text-gray-600 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </button>
+          </form>
+          {suggestions.length > 0 && (
+            <ul className="mt-4 bg-white border border-gray-200 rounded-lg shadow-lg max-h-80 overflow-y-auto">
+              {/* ... kode map suggestions Anda ... */}
+            </ul>
+          )}
+        </div>
+      )}
 
       {/* ======================= NAVIGASI MOBILE (YANG DITAMBAHKAN) ======================= */}
       <div className={`lg:hidden fixed top-24 left-0 w-full bg-white shadow-lg z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform translate-y-0' : 'transform -translate-y-full opacity-0'}`}>

@@ -212,7 +212,7 @@ function FeaturedVideoSection() {
             <h2 className="text-3xl font-helvetica-black-oblique uppercase">PRESISI TAK TERTANDINGI</h2>
             <h3 className="text-xl font-helvetica-black-oblique opacity-90 mb-4">UNTUK HASIL TERBAIK</h3>
             <p className="mb-8 font-helvetica-regular">Saksikan Waterpass Magnet YO-ZURI terbaru dalam aksi! Dengan teknologi magnetik canggih dan desain ergonomis, alat ini memastikan pengukuran yang akurat dan pemasangan yang mudah di berbagai permukaan. Rasakan perbedaan presisi di setiap proyek Anda.</p>
-            <a href="https://www.youtube.com/@officialpageyozuri" target="_blank" rel="noopener noreferrer" className="font-helvetica font-regular inline-block bg-yellow-500 text-black py-3 px-8 rounded hover:bg-yellow-600 transition-colors">
+            <a href="https://www.youtube.com/@officialpageyozuri" target="_blank" rel="noopener noreferrer" className="font-helvetica-regular uppercase inline-block bg-yellow-500 text-black py-3 px-8 rounded hover:bg-yellow-600 transition-colors">
               Jelajahi Jangkauan
             </a>
           </div>
