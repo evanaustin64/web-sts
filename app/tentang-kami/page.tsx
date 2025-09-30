@@ -21,8 +21,8 @@ export default function AboutUsPage() {
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
-            <h1 className="text-5xl md:text-7xl font-black uppercase">Tentang Kami</h1>
-            <p className="mt-4 text-lg md:text-xl">Mengenal Lebih Dekat Dedikasi Kami pada Kualitas</p>
+            <h1 className="text-5xl md:text-7xl font-helvetica-black uppercase">Tentang Kami</h1>
+            <p className="mt-4 text-lg md:text-xl font-helvetica-regular">Mengenal Lebih Dekat Dedikasi Kami pada Kualitas</p>
           </div>
         </div>
       </section>
@@ -31,11 +31,11 @@ export default function AboutUsPage() {
       <section className="container mx-auto px-4 py-16 bg-yellow-50">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Sejarah Kami</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <h2 className="text-3xl font-helvetica-black text-gray-900 mb-4">Sejarah Kami</h2>
+            <p className="text-gray-600 leading-relaxed mb-4 font-helvetica-regular">
               PT. SAMUDRA TEKNIK SEJAHTERA, dalam kurun waktu kurang dari 2 (dua) tahun hingga sekarang telah berhasil melahirkan lebih dari 100 (seratus) produk terlaris. Untuk menjaga kepercayaan Customer yang telah terbangun, kami memastikan produk yang kami jual memiliki standar kualitas terjamin sehingga perusahaan kami menjadi distributor terpercaya untuk Customer kamu yang telah tersebar di seluruh Indonesia.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed font-helvetica-regular">
               Memiliki lebih dari 20 tahun pengalaman, PT. SAMUDRA TEKNIK SEJAHTERA yang berlokasi di Tangerang, Indonesia, adalah perusahaan yang bergerak di bidang distribusi alat-alat Pertukangan, Perkakas dan Sanitary yang mengutamakan kualitas yang berawal dari 2 (dua) merk unggulannya OWNER & YO-ZURI.
             </p>
           </div>
@@ -55,16 +55,16 @@ export default function AboutUsPage() {
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12">
           <div className="text-center md:text-left">
             <ScaleIcon className="h-12 w-12 text-yellow-500 mx-auto md:mx-0 mb-4" />
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Visi Kami</h3>
-            <p className="text-gray-600">Menjadi Perusahaan distributor Hardware & Tools berkualitas tinggi pilihan utama andalan masyarakat.</p>
+            <h3 className="text-2xl font-helvetica-black text-gray-900 mb-2">Visi Kami</h3>
+            <p className="text-gray-600 font-helvetica-regular">Menjadi Perusahaan distributor Hardware & Tools berkualitas tinggi pilihan utama andalan masyarakat.</p>
           </div>
           <div className="text-center md:text-left">
              <BuildingStorefrontIcon className="h-12 w-12 text-yellow-500 mx-auto md:mx-0 mb-4" />
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Misi Kami</h3>
-            <p className="text-gray-600">- Memastikan standar kualitas produk terjamin.</p>
-            <p className="text-gray-600">- Menghasilkan SDM yang memiliki budaya profesional.</p>
-            <p className="text-gray-600">- Memperkenalkan merk ke seluruh masyarakat melalui platform/media yang tersedia.</p>
-            <p className="text-gray-600">- Mempererat dan memperluas relasi dan koneksi bisnis</p>
+            <h3 className="text-2xl font-helvetica-black text-gray-900 mb-2">Misi Kami</h3>
+            <p className="text-gray-600 font-helvetica-regular">- Memastikan standar kualitas produk terjamin.</p>
+            <p className="text-gray-600 font-helvetica-regular">- Menghasilkan SDM yang memiliki budaya profesional.</p>
+            <p className="text-gray-600 font-helvetica-regular">- Memperkenalkan merk ke seluruh masyarakat melalui platform/media yang tersedia.</p>
+            <p className="text-gray-600 font-helvetica-regular">- Mempererat dan memperluas relasi dan koneksi bisnis</p>
           </div>
         </div>
       </section>
