@@ -9,11 +9,64 @@ import react from 'react';
 
 // import { NextArrow, PrevArrow } from './components/SliderArrow';
 
+
+const PRODUK_UNGGULAN_SAYA = [
+  {
+    id: 1,
+    name: 'BEST SELLER',
+    category: '',
+    image: '/Images/PT STS - Web Design - Product Highlights 1290x840px - OWNER Reusable Paint Roller 001.png',
+    link: '/produk/yozuri/waterpass-magnet',
+  },
+  {
+    id: 2,
+    name: 'SIGNATURE PRODUCT',
+    category: 'New Arrival',
+    image: '/Images/PT STS - Web Design - Product Highlights 1290x840px - YO-ZURI Handle Door Lock 001-02.png',
+    link: '/produk/owner/pro-part-bag',
+  },
+];
+
+type Product = {
+  id: number;
+  name: string;
+  category: string;
+  image: string;
+  link: string;
+};
+
 type ArrowProps = {
   className?: string;
   style?: React.CSSProperties;
   onClick?: () => void;
 }
+
+const preventDefault = (e: React.MouseEvent) => e.preventDefault();
+
+const BannerProductCard = ({ product }: { product: Product }) => (
+  <a
+    href={product.link}
+    onClick={preventDefault}
+    className="relative block aspect-video md:aspect-[16/7] rounded-2xl overflow-hidden group shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-1"
+  >
+    <img
+      src={product.image}
+      alt={product.name}
+      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+    <div className="absolute bottom-0 left-0 p-6 md:p-8 text-white w-full">
+      <p className="text-sm font-helvetica-regular uppercase text-yellow-400">{product.category}</p>
+      <h1 className="text-xl md:text-3xl font-helvetica-black-oblique">{product.name}</h1>
+      <div className="mt-4 font-helvetica-light text-white inline-flex items-center gap-2 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+        Lihat Produk
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+        </svg>
+      </div>
+    </div>
+  </a>
+);
 
 function NextArrow(props: ArrowProps) {
   const { onClick } = props;
@@ -73,10 +126,10 @@ function HeroSlider() {
               untuk menjaga rasio gambar agar tidak terpotong.
             */}
             <div className="relative w-full aspect-[1920/600] bg-gray-200">
-              <img 
-                src={slide.image} 
-                alt={`Banner slide ${index + 1}`} 
-                className="w-full h-full object-cover" 
+              <img
+                src={slide.image}
+                alt={`Banner slide ${index + 1}`}
+                className="w-full h-full object-cover"
               />
             </div>
           </Link>
@@ -139,8 +192,8 @@ function CatalogueSlider() {
                 - 'p-6' untuk memberi jarak antara gambar dan tepi card.
                 - Efek hover diubah menjadi shadow agar lebih rapi.
               */}
-              <Link 
-                href={item.link} 
+              <Link
+                href={item.link}
                 className="group relative aspect-square rounded-lg
                            overflow-hidden flex items-center justify-center
                            transition-shadow duration-300 hover:shadow-xl"
@@ -150,10 +203,10 @@ function CatalogueSlider() {
                   - 'h-full' dan 'w-full' tetap agar gambar mengisi ruang yang tersedia di dalam padding.
                   - Efek hover scale diubah, karena sudah ditangani oleh shadow di parent.
                 */}
-                <img 
-                  src={item.image} 
-                  alt={`Catalogue item ${index + 1}`} 
-                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" 
+                <img
+                  src={item.image}
+                  alt={`Catalogue item ${index + 1}`}
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
                 />
               </Link>
             </div>
@@ -164,38 +217,63 @@ function CatalogueSlider() {
   );
 }
 
+function FeaturedProductsSection({ products }: { products: Product[] }) {
+  if (!products || products.length === 0) {
+    return null;
+  }
+
+  return (
+    <section className="bg-gray-50 py-16">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="bg-gradient-to-r from-blue-500 to-blue-900 text-transparent bg-clip-text font-bold text-4xl uppercase font-helvetica-black">Produk Pilihan</h2>
+          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto font-helvetica-regular">
+            Koleksi eksklusif yang kami rekomendasikan khusus untuk Anda.
+          </p>
+        </div>
+        {/* REVISI GRID: diubah menjadi 2 kolom untuk layout banner */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          {products.map((product) => (
+            <BannerProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // Komponen DownloadCatalogueSection dengan Tailwind CSS
 function DownloadCatalogueSection() {
   return (
     <section className="bg-gray-100 py-16">
       <div className="container mx-auto text-center px-4">
-        <h2 className="text-3xl font-helvetica-black-oblique mb-4">Dapatkan Katalog Lengkap Kami</h2>
+        <h2 className="text-3xl font-helvetica-black mb-4">Dapatkan Katalog Lengkap Kami</h2>
         <p className="max-w-2xl font-helvetica-regular mx-auto text-gray-600 mb-8">Unduh katalog produk terbaru kami dalam format PDF untuk melihat semua koleksi dan spesifikasi teknisnya.</p>
       </div>
       <div className='flex text-center justify-center gap-6'>
         <a
-          href="/catalogue/katalog-samudra-teknik-sejahtera.pdf"
+          href="data/Owner - Product E-Catalogue 2025 (V1).pdf"
           className="
       inline-block bg-yellow-500 text-gray-900 font-helvetica-regular uppercase py-3 px-8 rounded 
       hover:bg-yellow-600 
       transition-all duration-300 ease-in-out /* <-- Tambahkan ini */
       hover:scale-105 hover:-translate-y-1 /* <-- Tambahkan ini */
     "
-          download="Katalog Produk PT STS - 2025.pdf"
-        > 
-          Catalogue - Owner 
+          download="Owner - Product E-Catalogue 2025 (V1).pdf"
+        >
+          Catalogue - Owner
         </a>
         <a
-          href="/catalogue/katalog-samudra-teknik-sejahtera.pdf"
+          href="data/Yo-Zuri - Product E-Catalogue 2025 (V1).pdf"
           className="
       inline-block bg-red-500 text-white font-helvetica-regular uppercase py-3 px-8 rounded 
       hover:bg-red-800 /* Perbaikan typo dari hover:bg-red- */
       transition-all duration-300 ease-in-out /* <-- Tambahkan ini */
       hover:scale-105 hover:-translate-y-1 /* <-- Tambahkan ini */
     "
-          download="Katalog Produk PT STS - 2025.pdf"
+          download="Yo-Zuri - Product E-Catalogue 2025 (V1).pdf"
         >
-          Catalogue - Yozuri
+          Catalogue - Yo-Zuri
         </a>
       </div>
     </section>
@@ -204,7 +282,7 @@ function DownloadCatalogueSection() {
 
 // Komponen FeaturedVideoSection dengan Tailwind CSS
 function FeaturedVideoSection() {
-  return ( 
+  return (
     <section className="bg-blue-500 text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -233,12 +311,14 @@ function FeaturedVideoSection() {
   );
 }
 
+
 // Halaman Utama yang sudah menggunakan komponen Tailwind
 export default function HomePage() {
   return (
     <>
       <HeroSlider />
       <CatalogueSlider />
+      <FeaturedProductsSection products={PRODUK_UNGGULAN_SAYA} />
       <DownloadCatalogueSection />
       <FeaturedVideoSection />
     </>

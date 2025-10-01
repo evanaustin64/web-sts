@@ -5,11 +5,12 @@ export type Product = {
   id: string;
   name: string;
   image: string;
+  galleryImages?: string[];
   description?: string; // Deskripsi produk (opsional)
   specifications?: { key: string; value: string }[]; // Spesifikasi produk (opsional)
   variations?: { id: string; name: string; image: string }[];  // Spesifikasi produk (opsional)
   features?: { text: string }[];
-  packagingDetails?: { size?: string; type?: string; innerBox?: string; outerBox?: string }[];
+  packagingDetails?: { size?: string; type?: string; innerBox?: string; outerBox?: string; }[];
 };
 
 export type Category = {
@@ -1578,7 +1579,7 @@ export const catalogueData: Record<string, Category[]> = {
             { size: 'PH2 x 65mm', innerBox: '10/pack', outerBox: '500/ctn' },
           ],
           variations: [{ id: 'yoz-drill-009', name: 'Mata Obeng Super - PH2', image: '/Images/yozuri/Yo-Zuri - Mata Obeng - Super Merah.png' },
-          { id: 'yoz-drill-010', name: 'Mata Obeng Tornado - PH2', image: '/Images/yozuri/Yo-Zuri - Mata Obeng - Tornado Gypsum.png' }]
+          { id: 'yoz-drill-010', name: 'Mata Obeng Tornado - PH2', image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Mata Obeng Tornado.png' }]
         },
         {
           id: 'yoz-drill-009',
@@ -1597,7 +1598,7 @@ export const catalogueData: Record<string, Category[]> = {
             { size: 'PH2 x 65mm', innerBox: '10/pack', outerBox: '500/ctn' },
           ],
           variations: [{ id: 'yoz-drill-008', name: 'Mata Obeng - PH2', image: '/Images/yozuri/Yo-Zuri - Mata Obeng - Biru.png' },
-          { id: 'yoz-drill-010', name: 'Mata Obeng Tornado - PH2', image: '/Images/yozuri/Yo-Zuri - Mata Obeng - Tornado Gypsum.png' }]
+          { id: 'yoz-drill-010', name: 'Mata Obeng Tornado - PH2', image: '/Images/PT STS - YO-ZURI - Web Design - Catalogue - Mata Obeng Tornado.png' }]
         },
         {
           id: 'yoz-drill-010',
@@ -1700,6 +1701,9 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '7 Inch', innerBox: '12/box', outerBox: '120/ctn' },
             { size: '8 Inch', innerBox: '12/box', outerBox: '120/ctn' },
           ],
+          variations: [{  id: 'yoz-layer-002',
+          name: 'Sendok Semen Bulat - Gagang Fiber',
+          image: '/Images/yozuri/Yo-Zuri - Sendok Semen - Gagang Fiber Bulat.png' }]
         },
         {
           id: 'yoz-layer-002',
@@ -1719,6 +1723,9 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '7 Inch', innerBox: '12/box', outerBox: '120/ctn' },
             { size: '8 Inch', innerBox: '12/box', outerBox: '120/ctn' },
           ],
+          variations: [{ id: 'yoz-layer-001',
+          name: 'Sendok Semen Lancip - Gagang Fiber',
+          image: '/Images/yozuri/Yo-Zuri - Sendok Semen - Gagang Fiber Lancip.png' }]
         },
         {
           id: 'yoz-layer-003',
@@ -1757,6 +1764,9 @@ export const catalogueData: Record<string, Category[]> = {
           packagingDetails: [
             { size: '280 x 110 mm', innerBox: '12 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
+          variations: [{ id: 'yoz-layer-005',
+          name: 'Raskam PVC Tebal - Thickness 5mm',
+          image: '/Images/yozuri/Yo-Zuri - Raskam PVC - Hitam.png' }]
         },
         {
           id: 'yoz-layer-005',
@@ -1774,6 +1784,9 @@ export const catalogueData: Record<string, Category[]> = {
           packagingDetails: [
             { size: '280 x 110 mm', innerBox: '12 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
+          variations: [{ id: 'yoz-layer-004',
+          name: 'Raskam Besi - Gagang Kayu',
+          image: '/Images/yozuri/Yo-Zuri - Raskam Besi - Gagang Kayu.png' }]
         },
         {
           id: 'yoz-layer-006',
@@ -1829,6 +1842,9 @@ export const catalogueData: Record<string, Category[]> = {
           packagingDetails: [
             { size: '1"', innerBox: '6/box', outerBox: '48/ctn' },
           ],
+          variations: [{ id: 'yoz-layer-014',
+          name: 'Pahat Topi Jumbo - Concrete Chisel Lancip ',
+          image: '/Images/yozuri/Yo-Zuri - Pahat Topi Jumbo (+).png' }]
         },
         {
           id: 'yoz-layer-014',
@@ -1846,6 +1862,9 @@ export const catalogueData: Record<string, Category[]> = {
           packagingDetails: [
             { size: '1"', innerBox: '6/box', outerBox: '48/ctn' },
           ],
+          variations: [{ id: 'yoz-layer-008',
+          name: 'Pahat Topi Jumbo - Concrete Chisel Rata',
+          image: '/Images/yozuri/Yo-Zuri - Pahat Topi Jumbo (-).png' }]
         },
         {
           id: 'yoz-layer-009',
@@ -1887,7 +1906,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'yoz-layer-011',
           name: 'Kabel Ties - Hitam & Putih',
-          image: '/Images/yozuri/kabel-ties.png',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kabel Ties.png',
           description: 'Kabel ties Yo-Zuri dengan material nilon premium, memiliki daya kunci yang sangat kuat dan tidak mudah getas.',
           specifications: [
             { key: 'Material', value: 'Nilon Premium' },
@@ -1921,8 +1940,8 @@ export const catalogueData: Record<string, Category[]> = {
         },
         {
           id: 'yoz-layer-013',
-          name: 'Lakban Bening - Adhesive Tapes',
-          image: '/Images/yozuri/Yo-Zuri - Lakban Bening A.png',
+          name: 'Lakban - Adhesive Tapes',
+          image: '/Images/yozuri/Yo-Zuri - Lakban.png',
           description: 'Lakban perekat Yo-Zuri dengan daya rekat superior, tidak mudah sobek, dan ideal untuk semua kebutuhan pengepakan.',
           specifications: [
             { key: 'Warna', value: 'Coklat / Bening' },
@@ -1936,48 +1955,124 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '2 Inch x 40 Yard', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
             { size: '2 Inch x 85 Yard', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
           ],
-        },
-        {
-          id: 'yoz-layer-013',
-          name: 'Lakban Coklat - Adhesive Tapes',
-          image: '/Images/yozuri/Yo-Zuri - Lakban Coklat A.png',
-          description: 'Lakban perekat Yo-Zuri dengan daya rekat superior, tidak mudah sobek, dan ideal untuk semua kebutuhan pengepakan.',
-          specifications: [
-            { key: 'Warna', value: 'Coklat / Bening' },
-            { key: 'Lebar', value: '2 inch (48mm)' },
-          ],
-          features: [
-            { text: 'Daya Rekat Superior' },
-            { text: 'Tidak Mudah Sobek' },
-          ],
-          packagingDetails: [
-            { size: '2 Inch x 85 Yard', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
-          ],
-        },
-        {
-          id: 'yoz-layer-013',
-          name: 'Lakban Hitam - Adhesive Tapes',
-          image: '/Images/yozuri/Yo-Zuri - Lakban Hitam A.png',
-          description: 'Lakban perekat Yo-Zuri dengan daya rekat superior, tidak mudah sobek, dan ideal untuk semua kebutuhan pengepakan.',
-          specifications: [
-            { key: 'Warna', value: 'Coklat / Bening' },
-            { key: 'Lebar', value: '2 inch (48mm)' },
-          ],
-          features: [
-            { text: 'Daya Rekat Superior' },
-            { text: 'Tidak Mudah Sobek' },
-          ],
-          packagingDetails: [
-            { size: '2 Inch x 4 mm', innerBox: '-', outerBox: '72 Pcs / Ctn' },
-          ],
-        },
+        },       
       ],
     },
     {
       id: 'door-lock-equipments',
       name: 'Door Lock Equipments | Peralatan Kunci Pintu',
       image: '/Images/doorlock yozuri.png',
-      products: [],
+      // Di dalam catalogueData -> yozuri -> kategori 'door-lock-equipments'
+products: [
+  { 
+    id: 'yoz-lock-001', 
+    name: 'Kunci Pintu Besar', 
+    image: '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png', // Ganti dengan path gambar Anda
+    galleryImages: [
+      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png',
+      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar CHELSEA.png',
+      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar LIVERPOOL.png',
+      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar MANCHESTER.png',
+    ],
+    description: 'Handle pintu premium seri "Arsenal" dengan desain modern dan kokoh, memberikan sentuhan elegan dan keamanan pada pintu utama Anda.',
+    specifications: [
+      { key: 'Model', value: 'Arsenal' },
+      { key: 'Ukuran', value: 'Besar' },
+      { key: 'Material', value: 'Zinc Alloy' },
+    ],
+    features: [
+      { text: 'Desain Modern & Kokoh' },
+      { text: 'Finishing Tahan Lama' },
+      { text: 'Termasuk Body Kunci & Silinder' },
+    ],
+    packagingDetails: [
+      { size: 'Besar', innerBox: '1 set/box', outerBox: '20 set/ctn' },
+    ],
+  },
+  { 
+    id: 'yoz-lock-002', 
+    name: 'Kunci Pintu Kecil', 
+    image: '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png', // Ganti dengan path gambar Anda
+    galleryImages: [
+      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kecil ROMA.png',
+      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kecil JUVENTUS.png',
+    ],
+    description: 'Handle pintu premium seri "Arsenal" dengan desain modern dan kokoh, memberikan sentuhan elegan dan keamanan pada pintu utama Anda.',
+    specifications: [
+      { key: 'Model', value: 'Arsenal' },
+      { key: 'Ukuran', value: 'Besar' },
+      { key: 'Material', value: 'Zinc Alloy' },
+    ],
+    features: [
+      { text: 'Desain Modern & Kokoh' },
+      { text: 'Finishing Tahan Lama' },
+      { text: 'Termasuk Body Kunci & Silinder' },
+    ],
+    packagingDetails: [
+      { size: 'Besar', innerBox: '1 set/box', outerBox: '20 set/ctn' },
+    ],
+  },
+  { 
+    id: 'yoz-lock-003', 
+    name: 'Kunci Pintu Sedang', 
+    image: '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png', // Ganti dengan path gambar Anda
+    galleryImages: [
+      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang MILAN.png',
+      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang MADRID.png',
+      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang BARCELONA.png',
+    ],
+    description: 'Handle pintu premium seri "Arsenal" dengan desain modern dan kokoh, memberikan sentuhan elegan dan keamanan pada pintu utama Anda.',
+    specifications: [
+      { key: 'Model', value: 'Arsenal' },
+      { key: 'Ukuran', value: 'Besar' },
+      { key: 'Material', value: 'Zinc Alloy' },
+    ],
+    features: [
+      { text: 'Desain Modern & Kokoh' },
+      { text: 'Finishing Tahan Lama' },
+      { text: 'Termasuk Body Kunci & Silinder' },
+    ],
+    packagingDetails: [
+      { size: 'Besar', innerBox: '1 set/box', outerBox: '20 set/ctn' },
+    ],
+  },
+  { 
+    id: 'yoz-lock-004', 
+    name: 'Kunci Pintu BESAR PREMIUM', 
+    image: '/images/yozuri/kunci-chelsea.png',
+    description: 'Seri "Chelsea" menawarkan desain handle yang minimalis dan mewah, cocok untuk pintu dengan gaya kontemporer.',
+    specifications: [
+      { key: 'Model', value: 'Chelsea' },
+      { key: 'Ukuran', value: 'Besar' },
+      { key: 'Material', value: 'Zinc Alloy' },
+    ],
+    features: [
+      { text: 'Desain Minimalis & Mewah' },
+      { text: 'Pegangan Nyaman' },
+    ],
+    packagingDetails: [
+      { size: 'Besar', innerBox: '1 set/box', outerBox: '20 set/ctn' },
+    ],
+  },
+   { 
+    id: 'yoz-lock-006', 
+    name: 'Kunci Pintu SEDANG PREMIUM', 
+    image: '/images/yozuri/kunci-chelsea.png',
+    description: 'Seri "Chelsea" menawarkan desain handle yang minimalis dan mewah, cocok untuk pintu dengan gaya kontemporer.',
+    specifications: [
+      { key: 'Model', value: 'Chelsea' },
+      { key: 'Ukuran', value: 'Besar' },
+      { key: 'Material', value: 'Zinc Alloy' },
+    ],
+    features: [
+      { text: 'Desain Minimalis & Mewah' },
+      { text: 'Pegangan Nyaman' },
+    ],
+    packagingDetails: [
+      { size: 'Besar', innerBox: '1 set/box', outerBox: '20 set/ctn' },
+    ],
+  },
+],
     },
     {
       id: 'cutting-tools',
