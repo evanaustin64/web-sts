@@ -178,7 +178,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                     alt={product.name} 
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-contain p-4 md:p-8"
+                    className="object-contain"
                     priority
                   />
                 </div>

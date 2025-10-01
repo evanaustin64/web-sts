@@ -2072,7 +2072,7 @@ products: [
    { 
     id: 'yoz-lock-006', 
     name: 'Kunci Pintu SEDANG PREMIUM', 
-    image: '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang Cover.png',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang Cover.png',
     galleryImages: [
       '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang ARES.png',
       '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang POSEISON.png',
@@ -2096,6 +2096,215 @@ products: [
       { type: 'ATHENA', innerBox: '1 set/box', outerBox: '-' }
     ],
   },
+  {
+    id: 'yoz-lock-007',
+    name: 'Kunci Pintu Bulat - Stainless Steel',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kamar Mandi.png',
+    description: 'Handle pintu berbentuk bulan sabit dengan material full stainless steel, memberikan tampilan modern, minimalis, dan tahan karat untuk pintu interior Anda.',
+    specifications: [
+      { key: 'Model', value: 'Bulan Sabit (Crescent)' },
+      { key: 'Material', value: 'Stainless Steel SUS 304' },
+      { key: 'Finishing', value: 'Brushed Nickel' }
+    ],
+    features: [
+      { text: 'Desain Modern Minimalis' },
+      { text: 'Material Full Stainless Steel' },
+      { text: 'Tahan Karat & Tahan Lama' }
+    ],
+    packagingDetails: [
+      { type: 'Set', innerBox: '1 set/box', outerBox: '20 set/ctn' }
+    ]
+  },
+  {
+    id: 'yoz-lock-008',
+    name: 'Body Kunci Pintu',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Bodi Kunci Pintu.png',
+    description: 'Body kunci (lockcase) tipe lidah untuk pintu single swing. Mekanisme presisi yang menjamin penguncian yang mulus dan aman.',
+    specifications: [
+      { key: 'Tipe', value: 'Lidah (Latch Bolt)' },
+      { key: 'Material', value: 'Stainless Steel' },
+      { key: 'Aplikasi', value: 'Pintu Kayu / Besi' }
+    ],
+    features: [
+      { text: 'Mekanisme Mulus & Presisi' },
+      { text: 'Material Tahan Lama' },
+      { text: 'Standar Ukuran Umum' }
+    ],
+    packagingDetails: [
+      { type: 'Standard', innerBox: '1 pc/box', outerBox: '30 pcs/ctn' }
+    ]
+  },
+  {
+    id: 'yoz-lock-009',
+    name: 'Body Kunci Pelor',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Bodi Kunci Pelor.png',
+    description: 'Body kunci (lockcase) tipe pelor (roller) untuk pintu double swing (pintu koboi). Roller memastikan pintu bisa ditutup dengan mudah dari kedua arah.',
+    specifications: [
+      { key: 'Tipe', value: 'Pelor (Roller Latch)' },
+      { key: 'Material', value: 'Stainless Steel' },
+      { key: 'Aplikasi', value: 'Pintu Double Swing' }
+    ],
+    features: [
+      { text: 'Ideal Untuk Pintu Double Swing' },
+      { text: 'Roller Kuat & Lancar' },
+      { text: 'Instalasi Mudah' }
+    ],
+    packagingDetails: [
+      { type: 'Standard', innerBox: '1 pc/box', outerBox: '30 pcs/ctn' }
+    ]
+  },
+  {
+    id: 'yoz-lock-010',
+    name: 'Silinder Kunci Pintu',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Silinder Kunci Pintu.png',
+    description: 'Silinder kunci pintu dengan material kuningan untuk keamanan dan daya tahan maksimal. Dilengkapi dengan 3-5 anak kunci komputer yang sulit diduplikasi.',
+    specifications: [
+      { key: 'Material', value: 'Kuningan (Brass)' },
+      { key: 'Ukuran', value: '60mm - 70mm' },
+      { key: 'Anak Kunci', value: '3-5 Kunci Komputer' }
+    ],
+    features: [
+      { text: 'Material Anti Karat' },
+      { text: 'Keamanan Tinggi' },
+      { text: 'Anak Kunci Komputer' }
+    ],
+    packagingDetails: [
+      { type: 'Standard', innerBox: '1 pc/box', outerBox: '120 pcs/ctn' }
+    ]
+  },
+  {
+    id: 'yoz-lock-011',
+    name: 'Hak Angin Segi - Stainless Steel',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Hak Angin Segi.png',
+    description: 'Hak angin model segi dari bahan stainless steel tebal, berfungsi untuk menahan jendela agar tetap terbuka dengan aman dan stabil.',
+    specifications: [
+      { key: 'Model', value: 'Segi' },
+      { key: 'Material', value: 'Stainless Steel' },
+      { key: 'Panjang', value: '8 Inch / 10 Inch' }
+    ],
+    features: [
+      { text: 'Desain Modern & Kuat' },
+      { text: 'Stainless Steel Anti Karat' },
+      { text: 'Menahan Jendela dengan Aman' }
+    ],
+    packagingDetails: [
+      { type: 'Standard', innerBox: '1 pasang/pack', outerBox: '100 pasang/ctn' }
+    ]
+  },
+  {
+    id: 'yoz-lock-012',
+    name: 'Door Closer',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Door Closer.png',
+    description: 'Penutup pintu otomatis (door closer) hidrolik yang dapat diatur kecepatan menutupnya. Membuat pintu selalu tertutup rapat secara perlahan dan senyap.',
+    specifications: [
+      { key: 'Tipe', value: 'Hidrolik' },
+      { key: 'Kapasitas Beban', value: '40kg - 60kg' },
+      { key: 'Fitur', value: 'Adjustable Speed' }
+    ],
+    features: [
+      { text: 'Menutup Pintu Otomatis' },
+      { text: 'Gerakan Halus & Senyap' },
+      { text: 'Kecepatan Dapat Diatur' }
+    ],
+    packagingDetails: [
+      { type: 'Standard', innerBox: '1 set/box', outerBox: '10 set/ctn' }
+    ]
+  },
+  {
+    id: 'yoz-lock-013',
+    name: 'Engsel Pintu Besi - Thickness 4mm',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Engsel Pintu Besi Tebal.png',
+    description: 'Engsel pintu heavy duty dengan material besi setebal 4mm. Sangat kokoh untuk menopang pintu berat seperti pintu utama atau pintu garasi.',
+    specifications: [
+      { key: 'Material', value: 'Besi' },
+      { key: 'Ketebalan', value: '4 mm' },
+      { key: 'Ukuran', value: '5 Inch' }
+    ],
+    features: [
+      { text: 'Material Super Tebal' },
+      { text: 'Untuk Pintu Sangat Berat' },
+      { text: 'Bearing Kuat & Anti Macet' }
+    ],
+    packagingDetails: [
+      { type: 'Standard', innerBox: '1 pasang/box', outerBox: '50 pasang/ctn' }
+    ]
+  },
+  {
+    id: 'yoz-lock-014',
+    name: 'Engsel Pintu - Stainless Steel',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Engsel Stainless Steel.png',
+    description: 'Engsel pintu serbaguna dari material stainless steel yang tahan karat, cocok untuk segala jenis pintu interior maupun eksterior.',
+    specifications: [
+      { key: 'Material', value: 'Stainless Steel' },
+      { key: 'Ketebalan', value: '2.5 mm' },
+      { key: 'Ukuran', value: '4 Inch / 5 Inch' }
+    ],
+    features: [
+      { text: '100% Anti Karat' },
+      { text: 'Serbaguna & Tahan Lama' },
+      { text: 'Bearing Halus' }
+    ],
+    packagingDetails: [
+      { type: 'Standard', innerBox: '1 pasang/box', outerBox: '100 pasang/ctn' }
+    ]
+  },
+  {
+    id: 'yoz-lock-015',
+    name: 'Rel Pintu Geser - Sliding Door Track',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Rel Pintu Geser.png',
+    description: 'Set rel dan roda untuk pintu geser. Terbuat dari material baja berkualitas yang menjamin pergerakan pintu yang lancar dan tidak berisik.',
+    specifications: [
+      { key: 'Material Rel', value: 'Baja' },
+      { key: 'Material Roda', value: 'Nylon' },
+      { key: 'Panjang Rel', value: '1.5 Meter / 2 Meter' }
+    ],
+    features: [
+      { text: 'Pergerakan Pintu Lancar' },
+      { text: 'Roda Nylon Tidak Berisik' },
+      { text: 'Kuat Menopang Beban' }
+    ],
+    packagingDetails: [
+      { type: 'Set Lengkap', innerBox: '1 set/box', outerBox: '10 set/ctn' }
+    ]
+  },
+  {
+    id: 'yoz-lock-016',
+    name: 'Gembok Kuningan Panjang & Pendek',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Gembok Kuningan Leher Pendek & Panjang.png',
+    description: 'Gembok dengan bodi full kuningan yang sangat tahan karat dan cuaca. Tersedia dalam varian leher pendek untuk keamanan maksimal dan leher panjang untuk fleksibilitas.',
+    specifications: [
+      { key: 'Material Bodi', value: 'Kuningan (Brass)' },
+      { key: 'Material Leher', value: 'Baja Keras' },
+      { key: 'Varian', value: 'Leher Pendek & Leher Panjang' }
+    ],
+    features: [
+      { text: 'Full Kuningan Anti Karat' },
+      { text: 'Keamanan Terpercaya' },
+      { text: 'Tahan Potong & Gergaji' }
+    ],
+    packagingDetails: [
+      { type: 'Standard', innerBox: '6 pcs/box', outerBox: '60 pcs/ctn' }
+    ]
+  },
+  {
+    id: 'yoz-lock-017',
+    name: 'Grendel Pintu - Stainless Steel',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Grendel Stainless Steel.png',
+    description: 'Grendel pintu (door bolt) dari material stainless steel tebal, memberikan lapisan keamanan tambahan untuk pintu Anda. Mudah dipasang dan anti karat.',
+    specifications: [
+      { key: 'Material', value: 'Stainless Steel' },
+      { key: 'Ukuran', value: '3 Inch / 4 Inch / 5 Inch' },
+      { key: 'Finishing', value: 'Brushed' }
+    ],
+    features: [
+      { text: 'Keamanan Ekstra' },
+      { text: 'Material Stainless Tebal' },
+      { text: 'Pemasangan Mudah' }
+    ],
+    packagingDetails: [
+      { type: 'Standard', innerBox: '12 pcs/box', outerBox: '120 pcs/ctn' }
+    ]
+  }
 ],
     },
     {
