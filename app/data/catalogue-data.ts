@@ -1967,12 +1967,12 @@ products: [
   { 
     id: 'yoz-lock-001', 
     name: 'Kunci Pintu Besar', 
-    image: '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png', // Ganti dengan path gambar Anda
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png', // Ganti dengan path gambar Anda
     galleryImages: [
-      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png',
-      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar CHELSEA.png',
-      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar LIVERPOOL.png',
-      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar MANCHESTER.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar CHELSEA.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar LIVERPOOL.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar MANCHESTER.png',
     ],
     description: 'Handle pintu premium seri "Arsenal" dengan desain modern dan kokoh, memberikan sentuhan elegan dan keamanan pada pintu utama Anda.',
     specifications: [
@@ -1992,10 +1992,10 @@ products: [
   { 
     id: 'yoz-lock-002', 
     name: 'Kunci Pintu Kecil', 
-    image: '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png', // Ganti dengan path gambar Anda
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png', // Ganti dengan path gambar Anda
     galleryImages: [
-      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kecil ROMA.png',
-      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kecil JUVENTUS.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kecil ROMA.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kecil JUVENTUS.png',
     ],
     description: 'Handle pintu premium seri "Arsenal" dengan desain modern dan kokoh, memberikan sentuhan elegan dan keamanan pada pintu utama Anda.',
     specifications: [
@@ -2015,11 +2015,11 @@ products: [
   { 
     id: 'yoz-lock-003', 
     name: 'Kunci Pintu Sedang', 
-    image: '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png', // Ganti dengan path gambar Anda
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png', // Ganti dengan path gambar Anda
     galleryImages: [
-      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang MILAN.png',
-      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang MADRID.png',
-      '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang BARCELONA.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang MILAN.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang MADRID.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang BARCELONA.png',
     ],
     description: 'Handle pintu premium seri "Arsenal" dengan desain modern dan kokoh, memberikan sentuhan elegan dan keamanan pada pintu utama Anda.',
     specifications: [
@@ -2039,7 +2039,7 @@ products: [
   { 
     id: 'yoz-lock-004', 
     name: 'Kunci Pintu BESAR PREMIUM', 
-    image: '/images/yozuri/kunci-chelsea.png',
+    image: '/Images/yozuri/kunci-chelsea.png',
     description: 'Seri "Chelsea" menawarkan desain handle yang minimalis dan mewah, cocok untuk pintu dengan gaya kontemporer.',
     specifications: [
       { key: 'Model', value: 'Chelsea' },
