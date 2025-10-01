@@ -45,7 +45,7 @@ export default function CategoryProductsPage({ params }: CategoryProductsPagePar
               Showing all {allProducts.length} results
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-10 lg:grid-cols-10 xl:grid-cols-7 gap-8 md:gap-6">
             {allProducts.map((product) => (
               <Link
                 key={product.id}
@@ -54,7 +54,7 @@ export default function CategoryProductsPage({ params }: CategoryProductsPagePar
               >
                 {/* Gambar Produk */}
                 <div className="relative h-48 w-full">
-                  <Image src={product.image} alt={product.name} layout="fill" objectFit="contain" />
+                  <Image src={product.image} alt={product.name} layout="fill" objectFit="cover" />
                 </div>
 
                 {/* Kotak Teks Nama Produk yang Muncul dari Bawah */}

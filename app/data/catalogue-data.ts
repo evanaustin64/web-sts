@@ -1967,7 +1967,7 @@ products: [
   { 
     id: 'yoz-lock-001', 
     name: 'Kunci Pintu Besar', 
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png', // Ganti dengan path gambar Anda
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu BESAR Cover.png', // Ganti dengan path gambar Anda
     galleryImages: [
       '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png',
       '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar CHELSEA.png',
@@ -1986,13 +1986,16 @@ products: [
       { text: 'Termasuk Body Kunci & Silinder' },
     ],
     packagingDetails: [
-      { size: 'Besar', innerBox: '1 set/box', outerBox: '20 set/ctn' },
+      { type: 'ARSENAL', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'CHELSEA', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'LIVERPOOL', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'MANCHESTER', innerBox: '1 set/box', outerBox: '-' },
     ],
   },
   { 
     id: 'yoz-lock-002', 
     name: 'Kunci Pintu Kecil', 
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png', // Ganti dengan path gambar Anda
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu KECIL Cover.png', // Ganti dengan path gambar Anda
     galleryImages: [
       '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kecil ROMA.png',
       '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kecil JUVENTUS.png',
@@ -2009,13 +2012,14 @@ products: [
       { text: 'Termasuk Body Kunci & Silinder' },
     ],
     packagingDetails: [
-      { size: 'Besar', innerBox: '1 set/box', outerBox: '20 set/ctn' },
+      { type: 'ROMA', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'JUVENTUS', innerBox: '1 set/box', outerBox: '-' }
     ],
   },
   { 
     id: 'yoz-lock-003', 
     name: 'Kunci Pintu Sedang', 
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png', // Ganti dengan path gambar Anda
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu SEDANG Cover.png', // Ganti dengan path gambar Anda
     galleryImages: [
       '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang MILAN.png',
       '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang MADRID.png',
@@ -2033,13 +2037,21 @@ products: [
       { text: 'Termasuk Body Kunci & Silinder' },
     ],
     packagingDetails: [
-      { size: 'Besar', innerBox: '1 set/box', outerBox: '20 set/ctn' },
+      { type: 'MILAN', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'MADRID', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'BARCELONA', innerBox: '1 set/box', outerBox: '-' }
     ],
   },
   { 
     id: 'yoz-lock-004', 
     name: 'Kunci Pintu BESAR PREMIUM', 
-    image: '/Images/yozuri/kunci-chelsea.png',
+    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar Cover.png',
+    galleryImages: [
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar PLUTO.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar HERMES.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar HADES.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar APOLLO.png',
+    ],
     description: 'Seri "Chelsea" menawarkan desain handle yang minimalis dan mewah, cocok untuk pintu dengan gaya kontemporer.',
     specifications: [
       { key: 'Model', value: 'Chelsea' },
@@ -2051,13 +2063,22 @@ products: [
       { text: 'Pegangan Nyaman' },
     ],
     packagingDetails: [
-      { size: 'Besar', innerBox: '1 set/box', outerBox: '20 set/ctn' },
+      { type: 'PLUTO', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'HERMES', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'HADES', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'APOLLO', innerBox: '1 set/box', outerBox: '-' }
     ],
   },
    { 
     id: 'yoz-lock-006', 
     name: 'Kunci Pintu SEDANG PREMIUM', 
-    image: '/images/yozuri/kunci-chelsea.png',
+    image: '/images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang Cover.png',
+    galleryImages: [
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang ARES.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang POSEISON.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang HERCULES.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang ATHENA.png',
+    ],
     description: 'Seri "Chelsea" menawarkan desain handle yang minimalis dan mewah, cocok untuk pintu dengan gaya kontemporer.',
     specifications: [
       { key: 'Model', value: 'Chelsea' },
@@ -2069,7 +2090,10 @@ products: [
       { text: 'Pegangan Nyaman' },
     ],
     packagingDetails: [
-      { size: 'Besar', innerBox: '1 set/box', outerBox: '20 set/ctn' },
+      { type: 'ARES', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'POSEISON', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'HERCULES', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'ATHENA', innerBox: '1 set/box', outerBox: '-' }
     ],
   },
 ],

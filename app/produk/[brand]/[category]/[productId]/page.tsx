@@ -1,109 +1,110 @@
-// app/produk/[brand]/[category]/[productId]/page.tsx
 "use client";
 
 import Link from 'next/link';
 import Image from 'next/image';
 import { catalogueData, Product, Category } from '@/app/data/catalogue-data';
 import { CheckCircleIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
-import { use } from 'react';
-import Slider from 'react-slick';
+import { use, useState } from 'react';
 
-interface ArrowProps {
-  onClick?: () => void;
-}
-
-// Custom Arrow Components dengan Tailwind
-function NextArrow({ onClick }: ArrowProps) {
-  return (
-    <button
-      onClick={onClick}
-      className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg hover:bg-yellow-400 hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
-    >
-      <ChevronRightIcon className="w-6 h-6 text-gray-700 group-hover:text-white transition-colors" />
-    </button>
-  );
-}
-
-function PrevArrow({ onClick }: ArrowProps) {
-  return (
-    <button
-      onClick={onClick}
-      className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg hover:bg-yellow-400 hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
-    >
-      <ChevronLeftIcon className="w-6 h-6 text-gray-700 group-hover:text-white transition-colors" />
-    </button>
-  );
-}
-
+// Custom Image Slider dengan Tailwind CSS
 function ProductImageSlider({ images, productName }: { images: string[]; productName: string }) {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    dotsClass: "slick-dots",
-    appendDots: (dots: React.ReactNode) => (
-      <div className="mt-6">
-        <ul className="flex justify-center gap-3"> {dots} </ul>
-      </div>
-    ),
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState<'left' | 'right'>('right');
+
+  const goToSlide = (index: number) => {
+    setDirection(index > currentIndex ? 'right' : 'left');
+    setCurrentIndex(index);
+  };
+
+  const goToPrevious = () => {
+    setDirection('left');
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNext = () => {
+    setDirection('right');
+    setCurrentIndex((prevIndex) => 
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   return (
-    <div className="w-full">
-      <style jsx global>{`
-        .slick-dots li {
-          width: auto;
-          height: auto;
-          margin: 0;
-        }
-        .slick-dots li button {
-          width: 12px;
-          height: 12px;
-          padding: 0;
-        }
-        .slick-dots li button:before {
-          content: '';
-          width: 12px;
-          height: 12px;
-          background-color: #D1D5DB;
-          border-radius: 50%;
-          opacity: 1;
-          transition: all 0.3s ease;
-        }
-        .slick-dots li button:hover:before {
-          background-color: #9CA3AF;
-          transform: scale(1.2);
-        }
-        .slick-dots li.slick-active button:before {
-          background-color: #FACC15;
-          width: 14px;
-          border-radius: 6px;
-          transform: scale(1);
-        }
-        .slick-slider {
-          position: relative;
-        }
-      `}</style>
-      
-      <Slider {...settings}>
-        {images.map((img, index) => (
-          <div key={index}>
-            <div className="relative aspect-square bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl border-2 border-gray-200 shadow-sm overflow-hidden">
+    <div className="w-full max-w-full">
+      {/* Main Image Container */}
+      <div className="relative w-full aspect-square min-h-[300px] md:min-h-[400px] bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl md:rounded-2xl border border-gray-200 md:border-2 shadow-sm overflow-hidden group">
+        {/* Images with Animation */}
+        <div className="relative w-full h-full">
+          {images.map((img, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-all duration-500 ease-in-out ${
+                index === currentIndex
+                  ? 'opacity-100 translate-x-0'
+                  : index < currentIndex
+                  ? direction === 'right'
+                    ? 'opacity-0 -translate-x-full'
+                    : 'opacity-0 translate-x-full'
+                  : direction === 'right'
+                  ? 'opacity-0 translate-x-full'
+                  : 'opacity-0 -translate-x-full'
+              }`}
+            >
               <Image 
                 src={img} 
                 alt={`${productName} image ${index + 1}`} 
                 fill
-                className="object-contain p-8"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-contain p-4 md:p-8"
+                priority={index === 0}
               />
             </div>
+          ))}
+        </div>
+
+        {/* Left Arrow */}
+        {images.length > 1 && (
+          <button
+            onClick={goToPrevious}
+            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 bg-white rounded-full shadow-lg hover:bg-yellow-400 hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100"
+            aria-label="Previous image"
+          >
+            <ChevronLeftIcon className="w-5 h-5 md:w-6 md:h-6 text-gray-700 hover:text-white transition-colors" />
+          </button>
+        )}
+
+        {/* Right Arrow */}
+        {images.length > 1 && (
+          <button
+            onClick={goToNext}
+            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 bg-white rounded-full shadow-lg hover:bg-yellow-400 hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100"
+            aria-label="Next image"
+          >
+            <ChevronRightIcon className="w-5 h-5 md:w-6 md:h-6 text-gray-700 hover:text-white transition-colors" />
+          </button>
+        )}
+      </div>
+
+      {/* Dots Navigation */}
+      {images.length > 1 && (
+        <div className="mt-4 md:mt-6 pb-2">
+          <div className="flex justify-center gap-2 md:gap-3">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`transition-all duration-300 ${
+                  index === currentIndex
+                    ? 'w-6 md:w-8 h-2.5 md:h-3 bg-yellow-400 rounded-full'
+                    : 'w-2.5 md:w-3 h-2.5 md:h-3 bg-gray-300 rounded-full hover:bg-gray-400 hover:scale-125'
+                }`}
+                aria-label={`Go to image ${index + 1}`}
+              />
+            ))}
           </div>
-        ))}
-      </Slider>
+        </div>
+      )}
     </div>
   );
 }
@@ -170,13 +171,17 @@ export default function ProductDetailPage({ params }: PageProps) {
               <ProductImageSlider images={product.galleryImages} productName={product.name} />
             ) : (
               // Tampilkan gambar tunggal jika hanya 1 gambar atau menggunakan image biasa
-              <div className="relative aspect-square bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl border-2 border-gray-200 shadow-sm overflow-hidden">
-                <Image 
-                  src={product.galleryImages?.[0] || product.image} 
-                  alt={product.name} 
-                  fill
-                  className="object-contain p-8"
-                />
+              <div className="w-full">
+                <div className="relative w-full aspect-square min-h-[300px] md:min-h-[400px] bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl md:rounded-2xl border border-gray-200 md:border-2 shadow-sm overflow-hidden">
+                  <Image 
+                    src={product.galleryImages?.[0] || product.image} 
+                    alt={product.name} 
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-contain p-4 md:p-8"
+                    priority
+                  />
+                </div>
               </div>
             )}
           </div>
