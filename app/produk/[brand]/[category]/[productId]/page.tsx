@@ -8,9 +8,12 @@ import { CheckCircleIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/r
 import { use } from 'react';
 import Slider from 'react-slick';
 
+interface ArrowProps {
+  onClick?: () => void;
+}
+
 // Custom Arrow Components dengan Tailwind
-function NextArrow(props: any) {
-  const { onClick } = props;
+function NextArrow({ onClick }: ArrowProps) {
   return (
     <button
       onClick={onClick}
@@ -21,8 +24,7 @@ function NextArrow(props: any) {
   );
 }
 
-function PrevArrow(props: any) {
-  const { onClick } = props;
+function PrevArrow({ onClick }: ArrowProps) {
   return (
     <button
       onClick={onClick}
@@ -44,7 +46,7 @@ function ProductImageSlider({ images, productName }: { images: string[]; product
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     dotsClass: "slick-dots",
-    appendDots: (dots: any) => (
+    appendDots: (dots: React.ReactNode) => (
       <div className="mt-6">
         <ul className="flex justify-center gap-3"> {dots} </ul>
       </div>
