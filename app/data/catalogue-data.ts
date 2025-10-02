@@ -899,8 +899,9 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Material Gagang', value: 'Fiberglass' },
           ],
           features: [
-            { text: 'Gagang Fiber Anti Getar' },
+            { text: 'Gagang Fiber' },
             { text: 'Kekuatan Maksimal' },
+            { text: 'Kuat, tahan getaran, dan awet' },
           ],
           packagingDetails: [
             { size: '32 0z / 2 Lbs', innerBox: '6 Pcs / Box', outerBox: '24 Pcs / Ctn' },
@@ -921,6 +922,7 @@ export const catalogueData: Record<string, Category[]> = {
           features: [
             { text: 'Untuk Membentuk Logam' },
             { text: 'Gagang Fiber Nyaman' },
+            { text: 'Ringan, ergonomis, dan tidak mudah retak' },
           ],
           packagingDetails: [
             { size: '8 0z / 0,50 Lbs', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
@@ -940,7 +942,7 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Fitur', value: 'Kepala Rata & Pencabut Paku' },
           ],
           features: [
-            { text: 'Desain Seimbang' },
+            { text: 'Pukulan stabil, presisi, dan tahan lama' },
             { text: 'Gagang Anti-Slip' },
           ],
           packagingDetails: [
@@ -960,6 +962,7 @@ export const catalogueData: Record<string, Category[]> = {
           features: [
             { text: 'Fitur Magnetik' },
             { text: 'Pemakuan Satu Tangan' },
+            { text: 'Cengkraman lebih mantap, multifungsi' },
           ],
           packagingDetails: [
             { size: '8 0z / 0,25 Lbs', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
@@ -978,6 +981,7 @@ export const catalogueData: Record<string, Category[]> = {
           features: [
             { text: 'Gagang Kayu Klasik' },
             { text: 'Daya Hantam Tinggi' },
+            { text: 'Pukulan mantap, nyaman digenggam' },
           ],
           packagingDetails: [
             { size: '32 0z / 2 Lbs', innerBox: '6 Pcs / Box', outerBox: '24 Pcs / Ctn' },
@@ -997,6 +1001,7 @@ export const catalogueData: Record<string, Category[]> = {
           features: [
             { text: 'Kontrol Penuh' },
             { text: 'Gagang Kayu Nyaman' },
+            { text: 'Seimbang, klasik, dan ekonomis' },
           ],
           packagingDetails: [
             { size: '8 0z / 0,50 Lbs', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
@@ -1016,7 +1021,7 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Fitur', value: 'Kepala Rata & Pencabut Paku' },
           ],
           features: [
-            { text: 'Desain Tradisional' },
+            { text: 'Kokoh, natural grip, daya tahan teruji' },
             { text: 'Kuat & Andal' },
           ],
           packagingDetails: [
@@ -1036,6 +1041,7 @@ export const catalogueData: Record<string, Category[]> = {
           features: [
             { text: 'Sangat Tajam' },
             { text: 'Serbaguna (Multi-Purpose)' },
+            { text: 'Mata pisau baja super tajam & presisi' },
           ],
           packagingDetails: [
             { size: '7,5 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
@@ -1052,7 +1058,7 @@ export const catalogueData: Record<string, Category[]> = {
           ],
           features: [
             { text: 'Mata Potong Tajam' },
-            { text: 'Gagang Isolasi' },
+            { text: 'Gagang fiber ringan, kuat, dan anti-slip' },
           ],
           packagingDetails: [
             { size: '6 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
@@ -1068,8 +1074,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Gagang', value: 'Fiberglass' },
           ],
           features: [
-            { text: 'Ujung Presisi' },
-            { text: 'Jangkauan Sempit' },
+            { text: 'Ujung presisi untuk menjangkau area sempit' },
+            { text: 'Gagang fiber yang kokoh dan nyaman digenggam.' },
           ],
           packagingDetails: [
             { size: '6 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
@@ -1085,8 +1091,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Gagang', value: 'Fiberglass' },
           ],
           features: [
-            { text: '3-in-1 Serbaguna' },
-            { text: 'Gerigi Kuat' },
+            { text: 'Multi-fungsi: menjepit, memotong, dan memutar' },
+            { text: 'Gagang fiber memberikan kekuatan dan keringanan' },
           ],
           packagingDetails: [
             { size: '6 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
@@ -1105,7 +1111,7 @@ export const catalogueData: Record<string, Category[]> = {
           ],
           features: [
             { text: 'Untuk Sudut Tajam' },
-            { text: 'Baja Keras' },
+            { text: 'Bahan baja karbon tinggi, awet, dan mengikir lebih cepat.' },
           ],
           packagingDetails: [
             { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '1.200 Pcs / Ctn' },
@@ -1121,7 +1127,7 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Gagang', value: 'Karet (Rubber)' },
           ],
           features: [
-            { text: 'Gagang Karet Anti-Slip' },
+            { text: 'Genggaman mantap, anti-slip, dan nyaman' },
             { text: 'Kontrol Penuh' },
           ],
           packagingDetails: [
@@ -1138,7 +1144,7 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Gagang', value: 'Kayu' },
           ],
           features: [
-            { text: 'Gagang Kayu Klasik' },
+            { text: 'Genggaman klasik yang kokoh dan kuat' },
             { text: 'Presisi Tinggi' },
           ],
           packagingDetails: [
@@ -1155,8 +1161,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Gagang', value: 'Karet (Rubber)' },
           ],
           features: [
-            { text: 'Daya Ungkit Maksimal' },
-            { text: 'Heavy Duty' },
+            { text: 'Konstruksi baja Heavy Duty untuk pekerjaan berat' },
+            { text: ' Daya cengkram dan ungkit maksimal' },
           ],
           packagingDetails: [
             { size: '9 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
@@ -1172,8 +1178,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Material', value: 'Baja' },
           ],
           features: [
-            { text: 'Cengkeraman Pipa Kuat' },
-            { text: 'Adjustable' },
+            { text: 'Rahang baja bergerigi untuk cengkraman pipa anti-slip' },
+            { text: 'Handle kokoh untuk putaran (torsi) maksimal' },
           ],
           packagingDetails: [
             { size: '12 Inch', innerBox: '6 Pcs / Box', outerBox: '36 Pcs / Ctn' },
@@ -1200,8 +1206,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Diameter', value: '4 Inch' },
           ],
           features: [
-            { text: 'Pemotongan Cepat' },
-            { text: 'Serbaguna Basah & Kering' },
+            { text: 'Potongan cepat & minim gompel (chipping)' },
+            { text: 'Serbaguna, kinerja optimal untuk potong basah maupun kering' },
           ],
           packagingDetails: [
             { size: '4 Inch / 105 mm', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
@@ -1218,8 +1224,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Aplikasi', value: 'Porselen, Keramik Keras' },
           ],
           features: [
-            { text: 'Hasil Potongan Super Halus' },
-            { text: 'Anti Cuil (Chipping)' },
+            { text: 'Spesialis potong porselen & keramik super keras' },
+            { text: 'Hasil super halus & presisi tinggi (anti-gompal)' },
           ],
           packagingDetails: [
             { size: '4 Inch / 105 mm', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
@@ -1236,8 +1242,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Aplikasi', value: 'Beton, Tembok, Genteng' },
           ],
           features: [
-            { text: 'Desain Segmen Unik' },
-            { text: 'Pendinginan Optimal' },
+            { text: 'Desain Batik unik untuk pemotongan stabil & pendinginan ekstra.' },
+            { text: 'Sangat awet untuk memotong berbagai material bangunan' },
           ],
           packagingDetails: [
             { size: '4 Inch / 105 mm', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
@@ -1254,8 +1260,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Ketebalan', value: '1.2mm' },
           ],
           features: [
-            { text: 'Super Tipis & Cepat' },
-            { text: 'Gesekan Minimal' },
+            { text: 'Sangat tipis untuk potongan presisi, cepat, dan hemat material' },
+            { text: 'Ideal untuk pekerjaan yang menuntut kecepatan (khusus kering)' },
           ],
           packagingDetails: [
             { size: '4 Inch / 105 mm', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
@@ -1272,8 +1278,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Aplikasi', value: 'Beton, Batu Bata' },
           ],
           features: [
-            { text: 'Tahan Lama' },
-            { text: 'Performa Andal' },
+            { text: 'Mata potong diamond standar yang andal dan ekonomis' },
+            { text: 'Tahan lama untuk penggunaan potong kering pada umumnya' },
           ],
           packagingDetails: [
             { size: 'Biru | 4 Inch', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
@@ -1291,8 +1297,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Jumlah Mata', value: '24T / 40T' },
           ],
           features: [
-            { text: 'Ujung Mata TCT Kuat' },
-            { text: 'Untuk Potong Kayu' },
+            { text: 'Mata pisau TCT (Tungsten Carbide) super tajam' },
+            { text: 'Spesialis potong kayu dengan hasil yang sangat halus dan presisi' },
           ],
           packagingDetails: [
             { size: '4 Inch / 105 mm', innerBox: '10 Pcs / Box', outerBox: '200 Pcs / Ctn' },
@@ -1309,8 +1315,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Ukuran Drat', value: 'M10 x 1.5' },
           ],
           features: [
-            { text: 'Pembersihan Agresif' },
-            { text: 'Kawat Kepang Anti Rontok' },
+            { text: 'Kawat baja kepang (twisted) untuk pembersihan agresif' },
+            { text: 'Sangat kuat dan awet untuk buang karat berat & kerak cat' },
           ],
           packagingDetails: [
             { size: '3 Inch', innerBox: '-', outerBox: '100 Pcs / Ctn' },
@@ -1334,13 +1340,17 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Gagang', value: 'Kayu Ergonomis' },
           ],
           features: [
-            { text: 'Aplikasi Halus' },
-            { text: 'Tahan Lama' },
+            { text: 'Bulu kuas sintetis halus, tidak mudah rontok' },
+            { text: 'Menjamin hasil pengecatan lebih rata dan presisi' },
           ],
           packagingDetails: [
-            { size: '1"', innerBox: '12/pack', outerBox: '240/ctn' },
-            { size: '2"', innerBox: '12/pack', outerBox: '120/ctn' },
-            { size: '3"', innerBox: '6/pack', outerBox: '60/ctn' },
+            { size: '1 Inch', innerBox: '12 Pcs / Box', outerBox: '960 Pcs / Ctn' },
+            { size: '1,5 Inch', innerBox: '12 Pcs / Box', outerBox: '720 Pcs / Ctn' },
+            { size: '2 Inch', innerBox: '12/pack', outerBox: ' 600 Pcs / Ctn' },
+            { size: '2,5 Inch', innerBox: '12 Pcs / Box', outerBox: ' 480 Pcs / Ctn' },
+            { size: '3 Inch', innerBox: '12 Pcs / Box', outerBox: '432 Pcs / Ctn' },
+            { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '288 Pcs / Ctn' },
+            { size: '5 Inch', innerBox: '12 Pcs / Box', outerBox: '192 Pcs / Ctn' },
           ],
         },
         {
@@ -1353,11 +1363,13 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Gagang', value: 'Plastik Ergonomis' },
           ],
           features: [
-            { text: 'Hasil Akhir Superior' },
-            { text: 'Cakupan Cepat' },
+            { text: 'Daya serap cat maksimal untuk pengecatan lebih cepat' },
+            { text: 'hasil akhir super halus tanpa gelembung' },
           ],
           packagingDetails: [
-            { size: '9 Inch', innerBox: '6/pack', outerBox: '60/ctn' },
+            { size: '4 Inch', innerBox: '-', outerBox: '60 Pcs/ Ctn' },
+            { size: '9 Inch | BR', innerBox: '-', outerBox: '24 Pcs/ Ctn' },
+            { size: '9 Inch | OR', innerBox: '-', outerBox: '24 Pcs/ Ctn' },
           ],
         },
         {
@@ -1370,13 +1382,12 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Ukuran', value: '9 Inch' },
           ],
           features: [
-            { text: 'Pilihan Sesuai Permukaan' },
-            { text: 'Mudah Diganti' },
+            { text: 'Bulu tebal dan padat untuk cakupan luas' },
+            { text: 'tidak meninggalkan serat sisa pada dinding' },
           ],
           packagingDetails: [
-            { size: 'Polos 9"', innerBox: '12/pack', outerBox: '120/ctn' },
-            { size: 'Garis 9"', innerBox: '12/pack', outerBox: '120/ctn' },
-          ],
+            { size: 'OR/BR | 9 Inch', innerBox: '24 Pcs / Box', outerBox: '200 Pcs / Ctn' },
+          ], 
         },
         {
           id: 'yoz-paint-004',
@@ -1388,11 +1399,11 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Fitur', value: 'Tekstur Perataan' },
           ],
           features: [
-            { text: 'Tahan Lama' },
-            { text: 'Mudah Dibersihkan' },
+            { text: 'Bahan PVC tebal, kokoh, tidak mudah pecah' },
+            { text: 'sangat mudah dibersihkan setelah penggunaan' },
           ],
           packagingDetails: [
-            { size: 'Standar', innerBox: '1/pack', outerBox: '20/ctn' },
+            { type: 'HITAM', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
           ],
         },
         {
@@ -1405,12 +1416,12 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Ukuran', value: '9 Inch' },
           ],
           features: [
-            { text: 'Pilihan Sesuai Permukaan' },
-            { text: 'Mudah Diganti' },
+            { text: 'Bahan wol domba asli untuk daya serap superior' },
+            { text: 'hasil akhir paling halus, ideal untuk cat minyak' },
           ],
           packagingDetails: [
-            { size: 'Polos 9"', innerBox: '12/pack', outerBox: '120/ctn' },
-            { size: 'Garis 9"', innerBox: '12/pack', outerBox: '120/ctn' },
+            { size: 'Bulu domba 4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { size: 'Polyester 4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
           ],
         },
       ],
@@ -1431,8 +1442,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Material Ujung', value: 'Tungsten Carbide' },
           ],
           features: [
-            { text: 'Performa Pengeboran Cepat' },
-            { text: 'Ujung Carbide Premium' },
+            { text: 'melubangi beton bertulang lebih cepat dan sangat awet' },
+            { text: 'Ujung mata carbide super keras' },
           ],
           packagingDetails: [
             { size: '4mm', innerBox: '10/pack - 40/Inner', outerBox: '400/Outer' },
@@ -1455,7 +1466,7 @@ export const catalogueData: Record<string, Category[]> = {
           ],
           features: [
             { text: 'Ekonomis & Andal' },
-            { text: 'Serbaguna' },
+            { text: 'Kualitas andal untuk pengeboran presisi pada beton, tembok, dan batu bata standar' },
           ],
           packagingDetails: [
             { size: '4mm', innerBox: '10/pack - 40/Inner', outerBox: '400/Outer' },
@@ -1477,7 +1488,7 @@ export const catalogueData: Record<string, Category[]> = {
           ],
           features: [
             { text: 'Satu Untuk Semua' },
-            { text: 'Pengeboran Presisi' },
+            { text: 'Satu mata bor serbaguna untuk menembus berbagai material: beton, keramik, kayu, dan bata' },
           ],
           packagingDetails: [
             { size: '5mm', innerBox: '10/pack - 50/Inner', outerBox: '500/Outer' },
@@ -1497,8 +1508,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Aplikasi', value: 'Beton, Batu Alam' },
           ],
           features: [
-            { text: 'Untuk Rotary Hammer' },
-            { text: 'Transfer Tenaga Maksimal' },
+            { text: 'pengeboran beton lebih bertenaga dan efisien' },
+            { text: 'Shank SDS Plus untuk transfer tenaga maksimal' },
           ],
           packagingDetails: [
             { size: '6x160mm', innerBox: '10/pack - 20/Inner', outerBox: '320/Outer' },
@@ -1518,12 +1529,37 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Aplikasi', value: 'Besi, Baja, Aluminium' },
           ],
           features: [
-            { text: 'Performa Tinggi' },
+            { text: 'Bahan HSS (High-Speed Steel) tajam dan tahan lama untuk melubangi plat besi tebal' },
             { text: 'Lapisan Anti Panas' },
           ],
           packagingDetails: [
-            { size: '3mm', innerBox: '10/pack', outerBox: '1000/ctn' },
-            { size: '4mm', innerBox: '10/pack', outerBox: '1000/ctn' },
+            { size: '1 mm', innerBox: '10/pack - 200/Inner', outerBox: '4.000/ctn' },
+            { size: '1,5 mm', innerBox: '10/pack - 200/Inner', outerBox: '4.000/ctn' },
+            { size: '2 mm', innerBox: '10/pack - 200/Inner', outerBox: '4.000/ctn' },
+            { size: '2,5 mm', innerBox: '10/pack - 200/Inner', outerBox: '4.000/ctn' },
+            { size: '3 mm', innerBox: '10/pack - 200/Inner', outerBox: '4.000/ctn' },
+            { size: '3,5 mm', innerBox: '10/pack - 200/Inner', outerBox: '4.000/ctn' },
+            { size: '4 mm', innerBox: '10/pack - 200/Inner', outerBox: '4.000/ctn' },
+            { size: '4,5 mm', innerBox: '10/pack - 250/Inner', outerBox: '1.000/ctn' },
+            { size: '5 mm', innerBox: '10/pack - 100/Inner', outerBox: '1.200/ctn' },
+            { size: '5,5 mm', innerBox: '10/pack - 250/Inner', outerBox: '1000/ctn' },
+            { size: '6 mm', innerBox: '10/pack - 100/Inner', outerBox: '1.200/ctn' },
+            { size: '6,5 mm', innerBox: '10/pack - 200/Inner', outerBox: '800/ctn' },
+            { size: '7 mm', innerBox: '10/pack - 200/Inner', outerBox: '800/ctn' },
+            { size: '7,5 mm', innerBox: '5/pack - 50/Inner', outerBox: '600/ctn' },
+            { size: '8 mm', innerBox: '10/pack - 80/Inner', outerBox: '480/ctn' },
+            { size: '8,5 mm', innerBox: '10/pack - 100/Inner', outerBox: '400/ctn' },
+            { size: '9 mm', innerBox: '5/pack - 40/Inner', outerBox: '240/ctn' },
+            { size: '9,5 mm', innerBox: '5/pack - 40/Inner', outerBox: '240/ctn' },
+            { size: '10 mm', innerBox: '5/pack - 40/Inner', outerBox: '240/ctn' },
+            { size: '10,5 mm', innerBox: '5/pack - 40/Inner', outerBox: '240/ctn' },
+            { size: '11 mm', innerBox: '5/pack - -', outerBox: '200/ctn' },
+            { size: '11,5 mm', innerBox: '5/pack - -', outerBox: '200/ctn' },
+            { size: '12 mm', innerBox: '5/pack - 40/Inner', outerBox: '240/ctn' },
+            { size: '12,5mm', innerBox: '5/pack - 40/Inner', outerBox: '240/ctn' },
+            { size: '13 mm', innerBox: '5/pack - 40/Inner', outerBox: '240/ctn' },
+            { size: '13,5 mm', innerBox: '5/pack - 25/Inner', outerBox: '100/ctn' },
+            { size: '14 mm', innerBox: '- - -', outerBox: '40/ctn' },
           ],
         },
         {
@@ -1536,12 +1572,36 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Aplikasi', value: 'Stainless Steel, Logam Keras' },
           ],
           features: [
-            { text: 'Untuk Stainless Steel' },
-            { text: 'Sangat Tahan Panas' },
+            { text: 'Campuran Cobalt (HSS-Co) tahan panas' },
+            { text: 'solusi terbaik untuk material keras seperti stainless steel' },
           ],
           packagingDetails: [
-            { size: '3mm', innerBox: '10/pack', outerBox: '1000/ctn' },
-            { size: '4mm', innerBox: '10/pack', outerBox: '1000/ctn' },
+            { size: '1 mm', innerBox: '2/Pack - 250/Inner', outerBox: '1.000/ctn' },
+            { size: '1,5 mm', innerBox: '2/Pack - 250/Inner', outerBox: '1.000/ctn' },
+            { size: '2 mm', innerBox: '2/Pack - 250/Inner', outerBox: '1.000/ctn' },
+            { size: '2,5 mm', innerBox: '2/Pack - 250/Inner', outerBox: '1.000/ctn' },
+            { size: '3 mm', innerBox: '2/Pack - 250/Inner', outerBox: '1.000/ctn' },
+            { size: '3,5 mm', innerBox: '2/pack - 150/Inner', outerBox: '600/ctn' },
+            { size: '4 mm', innerBox: '2/pack - 150/Inner', outerBox: '600/ctn' },
+            { size: '4,5 mm', innerBox: '2/pack - 150/Inner', outerBox: '600/ctn' },
+            { size: '5 mm', innerBox: '2/pack - 150/Inner', outerBox: '600/ctn' },
+            { size: '5,5 mm', innerBox: '2/pack - 100/Inner', outerBox: '500/ctn' },
+            { size: '6 mm', innerBox: '2/pack - 150/Inner', outerBox: '600/ctn' },
+            { size: '6,5 mm', innerBox: '1/pack - 25/Inner', outerBox: '200/ctn' },
+            { size: '7 mm', innerBox: '1/pack - 50/Inner', outerBox: '800/ctn' },
+            { size: '7,5 mm', innerBox: '1/pack - 25/Inner', outerBox: '600/ctn' },
+            { size: '8 mm', innerBox: '1/pack - 50/Inner', outerBox: '480/ctn' },
+            { size: '8,5 mm', innerBox: '1/pack - 25/Inner', outerBox: '400/ctn' },
+            { size: '9 mm', innerBox: '1/pack - 25/Inner', outerBox: '100/ctn' },
+            { size: '9,5 mm', innerBox: '1/pack - 25/Inner', outerBox: '100/ctn' },
+            { size: '10 mm', innerBox: '1/pack - 25/Inner', outerBox: '100/ctn' },
+            { size: '10,5 mm', innerBox: '1/pack - 25/Inner', outerBox: '100/ctn' },
+            { size: '11 mm', innerBox: '1/pack - 25/Inner', outerBox: '100/ctn' },
+            { size: '11,5 mm', innerBox: '1/pack - 25/Inner', outerBox: '100/ctn' },
+            { size: '12 mm', innerBox: '1/pack - 25/Inner', outerBox: '100/ctn' },
+            { size: '12,5mm', innerBox: '1/pack - 425/Inner', outerBox: '100/ctn' },
+            { size: '13 mm', innerBox: '1/pack - 25/Inner', outerBox: '100/ctn' },
+            { size: '13,5 mm', innerBox: '1/pack - 25/Inner', outerBox: '100/ctn' },
           ],
         },
         {
@@ -1554,12 +1614,25 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Aplikasi', value: 'Besi, Baja Ringan' },
           ],
           features: [
-            { text: 'Lapisan Titanium' },
-            { text: 'Mengurangi Gesekan' },
+            { text: 'Lapisan Titanium mengurangi gesekan' },
+            { text: 'membuat pengeboran lebih licin dan 3x lebih awet' },
           ],
           packagingDetails: [
-            { size: '3mm', innerBox: '10/pack', outerBox: '1000/ctn' },
-            { size: '4mm', innerBox: '10/pack', outerBox: '1000/ctn' },
+            { size: '3 mm', innerBox: '10/Pack - 100/Inner', outerBox: '3.000/ctn' },
+            { size: '3,5 mm', innerBox: '10/pack - 100/Inner', outerBox: '3.000/ctn' },
+            { size: '4 mm', innerBox: '10/pack - 100/Inner', outerBox: '2.000/ctn' },
+            { size: '4,5 mm', innerBox: '10/pack - 100/Inner', outerBox: '1.500/ctn' },
+            { size: '5 mm', innerBox: '10/pack - 100/Inner', outerBox: '1.500/ctn' },
+            { size: '5,5 mm', innerBox: '10/pack - 100/Inner', outerBox: '1.500/ctn' },
+            { size: '6 mm', innerBox: '10/pack - 100/Inner', outerBox: '1.500/ctn' },
+            { size: '6,5 mm', innerBox: '10/pack - 100/Inner', outerBox: '800/ctn' },
+            { size: '7 mm', innerBox: '10/pack - 50/Inner', outerBox: '600/ctn' },
+            { size: '8 mm', innerBox: '10/pack - 50/Inner', outerBox: '600/ctn' },
+            { size: '9 mm', innerBox: '5/pack - 25/Inner', outerBox: '450/ctn' },
+            { size: '10 mm', innerBox: '5/pack - 25/Inner', outerBox: '450/ctn' },
+            { size: '11 mm', innerBox: '5/pack - 25/Inner', outerBox: '450/ctn' },
+            { size: '12 mm', innerBox: '5/pack - 25/Inner', outerBox: '450/ctn' },
+            { size: '13 mm', innerBox: '5/pack - 25/Inner', outerBox: '450/ctn' },
           ],
         },
         {
@@ -1572,11 +1645,11 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Panjang', value: '65mm' },
           ],
           features: [
-            { text: 'Ukuran Universal' },
-            { text: 'Baja S2 Kuat' },
+            { text: 'Ujung presisi dan pas' },
+            { text: 'mencegah kerusakan kepala sekrup (anti-slek) saat penyekrupan' },
           ],
           packagingDetails: [
-            { size: 'PH2 x 65mm', innerBox: '10/pack', outerBox: '500/ctn' },
+            { size: '2x45 mm', innerBox: '10 Pcs / Pack', outerBox: '150 Pcs / Ctn' },
           ],
           variations: [{ id: 'yoz-drill-009', name: 'Mata Obeng Super - PH2', image: '/Images/yozuri/Yo-Zuri - Mata Obeng - Super Merah.png' },
           { id: 'yoz-drill-010', name: 'Mata Obeng Tornado - PH2', image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Mata Obeng Tornado.png' }]
@@ -1591,11 +1664,11 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Fitur', value: 'Daya Magnet Kuat' },
           ],
           features: [
-            { text: 'Magnet Super Kuat' },
+            { text: 'Bahan Baja S2 super kuat dilengkapi magnet agar sekrup menempel sempurna' },
             { text: 'Anti-Slipping' },
           ],
           packagingDetails: [
-            { size: 'PH2 x 65mm', innerBox: '10/pack', outerBox: '500/ctn' },
+            { size: '2x45 mm', innerBox: '10 Pcs / Pack', outerBox: '150 Pcs / Ctn' },
           ],
           variations: [{ id: 'yoz-drill-008', name: 'Mata Obeng - PH2', image: '/Images/yozuri/Yo-Zuri - Mata Obeng - Biru.png' },
           { id: 'yoz-drill-010', name: 'Mata Obeng Tornado - PH2', image: '/Images/PT STS - YO-ZURI - Web Design - Catalogue - Mata Obeng Tornado.png' }]
@@ -1610,11 +1683,11 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Desain', value: 'Tornado' },
           ],
           features: [
-            { text: 'Desain Ulir Tornado' },
-            { text: 'Torsi Tinggi' },
+            { text: 'Desain Tornado dengan zona torsi' },
+            { text: 'lebih tahan hentakan mesin impact dan tidak mudah patah' },
           ],
           packagingDetails: [
-            { size: 'PH2 x 65mm', innerBox: '10/pack', outerBox: '500/ctn' },
+            { size: '2x45 mm', innerBox: '10 Pcs / Pack', outerBox: '150 Pcs / Ctn' },
           ],
           variations: [{ id: 'yoz-drill-008', name: 'Mata Obeng - PH2', image: '/Images/yozuri/Yo-Zuri - Mata Obeng - Biru.png' },
           { id: 'yoz-drill-009', name: 'Mata Obeng Super - PH2', image: '/Images/yozuri/Yo-Zuri - Mata Obeng - Super Merah.png' }]
@@ -1629,12 +1702,11 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Fitur', value: 'Magnet' },
           ],
           features: [
-            { text: 'Untuk Baut Baja Ringan' },
-            { text: 'Magnet Kuat' },
+            { text: 'Magnet super kuat menahan baut roofing' },
+            { text: 'pemasangan baja ringan lebih cepat dan aman' },
           ],
           packagingDetails: [
-            { size: '8mm', innerBox: '10/pack', outerBox: '500/ctn' },
-            { size: '10mm', innerBox: '10/pack', outerBox: '500/ctn' },
+            { size: '8x45 mm', innerBox: '10 Pcs / Pack', outerBox: '120 Pcs / Ctn' },
           ],
           variations: [{ id: 'yoz-drill-013', name: 'Magnetic Hex Nut - Mata Shock Roofing - 8x65mm', image: '/Images/yozuri/Yo-Zuri - Mata Shock Roofing - 8x65mm B.png' }]
         },
@@ -1648,12 +1720,11 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Fitur', value: 'Magnet' },
           ],
           features: [
-            { text: 'Untuk Baut Baja Ringan' },
-            { text: 'Magnet Kuat' },
+            { text: 'Magnet super kuat menahan baut roofing' },
+            { text: 'pemasangan baja ringan lebih cepat dan aman' },
           ],
           packagingDetails: [
-            { size: '8mm', innerBox: '10/pack', outerBox: '500/ctn' },
-            { size: '10mm', innerBox: '10/pack', outerBox: '500/ctn' },
+          { size: '8x65 mm', innerBox: '5 Pcs / Pack', outerBox: '200 Pcs / Ctn' },
           ],
           variations: [{ id: 'yoz-drill-011', name: 'Magnetic Hex Nut - Mata Shock Roofing - 8x45mm', image: '/Images/yozuri/Yo-Zuri - Mata Shock Roofing - 8x45mm B.png' }]
         },
@@ -1667,12 +1738,14 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Warna', value: 'Hitam (Black Phosphate)' },
           ],
           features: [
-            { text: 'Ujung Tajam & Cepat Masuk' },
-            { text: 'Anti Karat' },
+            { text: 'Ujung super tajam dan ulir kasar, menembus gypsum' },
+            { text: 'rangka metal dengan cepat tanpa bor' },
           ],
           packagingDetails: [
-            { size: '6 x 1"', innerBox: '1/box (isi 1000)', outerBox: '20/ctn' },
-            { size: '6 x 1.5"', innerBox: '1/box (isi 500)', outerBox: '20/ctn' },
+            { size: '1 Inch', innerBox: '7,5 Ons / Box', outerBox: '200 Box / Ctn' },
+            { size: '1 1/4 Inch', innerBox: '7,5 Ons / Box', outerBox: '200 Box / Ctn' },
+            { size: '1 1/2 Inch', innerBox: '7,5 Ons / Box', outerBox: '200 Box / Ctn' },
+            { size: '2 Inch', innerBox: '7,5 Ons / Box', outerBox: '200 Box / Ctn' },
           ],
         },
       ],
@@ -1693,13 +1766,13 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Material Gagang', value: 'Fiberglass' },
           ],
           features: [
-            { text: 'Ujung Presisi' },
-            { text: 'Gagang Fiber Anti-Slip' },
+            { text: 'Plat baja tebal anti-karat untuk adukan yang presisi' },
+            { text: 'Gagang fiber ringan, anti-slip, dan sangat nyaman digenggam' },
           ],
           packagingDetails: [
-            { size: '6 Inch', innerBox: '12/box', outerBox: '120/ctn' },
-            { size: '7 Inch', innerBox: '12/box', outerBox: '120/ctn' },
-            { size: '8 Inch', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '6 Inch', innerBox: '12 Pcs/ Box', outerBox: '120 Pcs / Ctn' },
+            { size: '7 Inch', innerBox: '12 Pcs/ Box', outerBox: '120 Pcs / Ctn' },
+            { size: '8 Inch', innerBox: '12 Pcs/ Box', outerBox: '120 Pcs / Ctn' },
           ],
           variations: [{  id: 'yoz-layer-002',
           name: 'Sendok Semen Bulat - Gagang Fiber',
@@ -1715,13 +1788,13 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Material Gagang', value: 'Fiberglass' },
           ],
           features: [
-            { text: 'Untuk Menghaluskan Plester' },
-            { text: 'Gagang Fiber Nyaman' },
+            { text: 'Plat baja tebal anti-karat untuk adukan yang presisi' },
+            { text: 'Gagang fiber ringan, anti-slip, dan sangat nyaman digenggam' },
           ],
           packagingDetails: [
-            { size: '6 Inch', innerBox: '12/box', outerBox: '120/ctn' },
-            { size: '7 Inch', innerBox: '12/box', outerBox: '120/ctn' },
-            { size: '8 Inch', innerBox: '12/box', outerBox: '120/ctn' },
+            { size: '6 Inch', innerBox: '12 Pcs/ Box', outerBox: '120 Pcs / Ctn' },
+            { size: '7 Inch', innerBox: '12 Pcs/ Box', outerBox: '120 Pcs / Ctn' },
+            { size: '8 Inch', innerBox: '12 Pcs/ Box', outerBox: '120 Pcs / Ctn' },
           ],
           variations: [{ id: 'yoz-layer-001',
           name: 'Sendok Semen Lancip - Gagang Fiber',
@@ -1737,8 +1810,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Material Gagang', value: 'Fiberglass' },
           ],
           features: [
-            { text: 'Bilah Fleksibel' },
-            { text: 'Tidak Menggores' },
+            { text: 'Karet fleksibel untuk meratakan kompon tanpa menggores permukaan' },
+            { text: 'Gagang fiber yang kokoh memberikan kontrol dan tekanan maksimal' },
           ],
           packagingDetails: [
             { size: '1.5 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
@@ -1758,8 +1831,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Gagang', value: 'Fiberglass' },
           ],
           features: [
-            { text: 'Permukaan Rata Sempurna' },
-            { text: 'Gagang Ergonomis' },
+            { text: 'Permukaan plat baja rata sempurna untuk hasil acian super halus' },
+            { text: 'Gagang kayu solid yang kokoh dan menyerap getaran' },
           ],
           packagingDetails: [
             { size: '280 x 110 mm', innerBox: '12 Pcs / Box', outerBox: '60 Pcs / Ctn' },
@@ -1778,8 +1851,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Ketebalan', value: '5 mm' },
           ],
           features: [
-            { text: 'Super Tebal & Kuat' },
-            { text: 'Ringan & Tahan Lama' },
+            { text: 'Bahan PVC tebal 5mm, sangat kuat, anti-pecah, dan anti-karat' },
+            { text: 'Lebih ringan dari raskam besi, membuat pekerjaan tidak cepat lelah' },
           ],
           packagingDetails: [
             { size: '280 x 110 mm', innerBox: '12 Pcs / Box', outerBox: '60 Pcs / Ctn' },
@@ -1798,8 +1871,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Model', value: 'Segi (Geometric)' },
           ],
           features: [
-            { text: 'Desain Modern' },
-            { text: 'Finishing Halus' },
+            { text: 'Bahan plat besi tebal, sangat kokoh untuk menahan beban berat' },
+            { text: 'Finishing powder coating yang rapi, anti gores, dan tahan karat' },
           ],
           packagingDetails: [
             { size: '120x170 Inch', innerBox: '24 Pcs / Box', outerBox: '200 Pcs / Ctn' },
@@ -1819,11 +1892,14 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Ketebalan', value: '2.0 mm' },
           ],
           features: [
-            { text: 'Ketebalan Premium' },
-            { text: 'Untuk Beban Berat' },
+            { text: 'Plat besi super tebal, tidak mudah bengkok untuk rak heavy duty' },
+            { text: 'Lubang presisi untuk perakitan yang mudah dan kencang' },
           ],
           packagingDetails: [
-            { size: '3M', innerBox: '10/pack', outerBox: '50/ctn' },
+            { size: '36mm x 36mm x 3m PUTIH | 21 kg', innerBox: '10 Pcs / Box', outerBox: '-' },
+            { size: '36mm x 36mm x 3m ABU | 21 kg', innerBox: '10 Pcs / Box', outerBox: '-' },
+            { size: '36mm x 36mm x 3m MERAH | 21 kg', innerBox: '10 Pcs / Box', outerBox: '-' },
+            { size: '36mm x 36mm x 3m HITAM | 21 kg', innerBox: '10 Pcs / Box', outerBox: '-' },
           ],
         },
         {
@@ -1836,11 +1912,13 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Model', value: 'Topi (Jumbo)' },
           ],
           features: [
-            { text: 'Daya Hancur Maksimal' },
-            { text: 'Material Heavy Duty' },
+            { text: 'Bahan baja CR-V (Chrome Vanadium) super keras, tidak mudah tumpul' },
+            { text: 'Dilengkapi pelindung tangan (topi) untuk keamanan ekstra dari pukulan' },
           ],
           packagingDetails: [
-            { size: '1"', innerBox: '6/box', outerBox: '48/ctn' },
+            { size: '6 Inch (-)', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
+            { size: '10 Inch (-)', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
+            { size: '12 Inch (-)', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
           ],
           variations: [{ id: 'yoz-layer-014',
           name: 'Pahat Topi Jumbo - Concrete Chisel Lancip ',
@@ -1856,11 +1934,13 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Model', value: 'Topi (Jumbo)' },
           ],
           features: [
-            { text: 'Daya Hancur Maksimal' },
-            { text: 'Material Heavy Duty' },
+            { text: 'Bahan baja CR-V (Chrome Vanadium) super keras, tidak mudah tumpul' },
+            { text: 'Dilengkapi pelindung tangan (topi) untuk keamanan ekstra dari pukulan' },
           ],
           packagingDetails: [
-            { size: '1"', innerBox: '6/box', outerBox: '48/ctn' },
+            { size: '6 Inch (^)', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
+            { size: '10 Inch (^)', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
+            { size: '12 Inch (^)', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
           ],
           variations: [{ id: 'yoz-layer-008',
           name: 'Pahat Topi Jumbo - Concrete Chisel Rata',
@@ -1876,8 +1956,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Volume', value: '300ml' },
           ],
           features: [
-            { text: 'Kedap Air & Fleksibel' },
-            { text: 'Untuk Caulking Gun' },
+            { text: 'Daya rekat super kuat pada kaca, keramik, dan aluminium' },
+            { text: 'Cepat kering, 100% tahan air, dan sangat elastis setelah kering' },
           ],
           packagingDetails: [
             { type: 'Bening', innerBox: '-', outerBox: '24 Bottles / Ctn' },
@@ -1896,11 +1976,12 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Volume', value: '600ml' },
           ],
           features: [
-            { text: 'Ukuran Besar' },
-            { text: 'Bening & Tidak Berbau' },
+            { text: 'Daya rekat super kuat pada kaca, keramik, dan aluminium' },
+            { text: 'Cepat kering, 100% tahan air, dan sangat elastis setelah kering' },
           ],
           packagingDetails: [
-            { size: '600ml', innerBox: '1/box', outerBox: '12/ctn' },
+            { type: 'BENING | 35 gr', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { type: 'BENING | 85 gr', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
           ],
         },
         {
@@ -1913,12 +1994,16 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Warna', value: 'Hitam & Putih' },
           ],
           features: [
-            { text: 'Material Premium' },
-            { text: 'Pengunci Kuat' },
+            { text: 'Material nilon kualitas tinggi, tidak mudah putus atau getas' },
+            { text: 'Gigi pengunci presisi, mengikat sangat kencang dan tidak melorot' },
           ],
           packagingDetails: [
-            { type: 'Bening | 35gr', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
-            { type: 'Bening | 85gr', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { size: '2,5x100 mm', innerBox: '10 Pax / Pouch', outerBox: '300 Pcs / Ctn' },
+            { size: '3,6x150 mm', innerBox: '10 Pax / Pouch', outerBox: '300 Pcs / Ctn' },
+            { size: '3,6x200 mm', innerBox: '10 Pax / Pouch', outerBox: '250 Pcs / Ctn' },
+            { size: '3,6x250 mm', innerBox: '10 Pax / Pouch', outerBox: '200 Pcs / Ctn' },
+            { size: '4,8x300 mm', innerBox: '10 Pax / Pouch', outerBox: '100 Pcs / Ctn' },
+            { size: '4,8x400 mm', innerBox: '10 Pax / Pouch', outerBox: '100 Pcs / Ctn' },
           ],
         },
         {
@@ -1931,8 +2016,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Berat', value: '10 kg' },
           ],
           features: [
-            { text: 'Manuver Mudah' },
-            { text: 'Rangka Kokoh' },
+            { text: 'Bak PVC tebal 10kg, anti-pecah, anti-karat, dan lebih ringan' },
+            { text: 'Rangka besi kokoh menopang beban berat dengan stabil' },
           ],
           packagingDetails: [
             { type: 'Ban Hidup', innerBox: '-', outerBox: '10 Sets' },
@@ -1948,12 +2033,18 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Lebar', value: '2 inch (48mm)' },
           ],
           features: [
-            { text: 'Daya Rekat Superior' },
-            { text: 'Tidak Mudah Sobek' },
+            { text: 'Daya rekat lem super lengket, menempel erat di segala permukaan' },
+            { text: 'Bahan lakban tebal dan kuat, tidak mudah sobek saat ditarik' },
           ],
           packagingDetails: [
-            { size: '2 Inch x 40 Yard', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
-            { size: '2 Inch x 85 Yard', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
+            { size: 'BENING | 2 Inch x 40 Yard', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
+            { size: 'BENING | 2 Inch x 85 Yard', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
+            { size: 'COKLAT | 2 Inch x 85 Yard', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
+            { size: 'HITAM | 2 Inch x 4m', innerBox: '-', outerBox: '72 Pcs / Ctn' },
+            { size: 'KERTAS | 1 Inch x 10m', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
+            { size: 'KERTAS | 2 Inch x 10m', innerBox: '6 Pcs / Ctn', outerBox: '72 Pcs / Ctn' },
+            { size: 'HIJAU | DOUBLE TAPE', innerBox: '-', outerBox: '126 Pcs / Ctn' },
+            { size: 'TEXTILE LEM | 3cm x 30m', innerBox: '-', outerBox: '200 Pcs / Ctn' },
           ],
         },       
       ],
@@ -1981,15 +2072,15 @@ products: [
       { key: 'Material', value: 'Zinc Alloy' },
     ],
     features: [
-      { text: 'Desain Modern & Kokoh' },
+      { text: 'Desain Handle Modern & Kokoh' },
       { text: 'Finishing Tahan Lama' },
-      { text: 'Termasuk Body Kunci & Silinder' },
+      { text: 'Mekanisme kunci presisi, pengoperasian halus dan anti-macetr' },
     ],
     packagingDetails: [
-      { type: 'ARSENAL', innerBox: '1 set/box', outerBox: '-' },
-      { type: 'CHELSEA', innerBox: '1 set/box', outerBox: '-' },
-      { type: 'LIVERPOOL', innerBox: '1 set/box', outerBox: '-' },
-      { type: 'MANCHESTER', innerBox: '1 set/box', outerBox: '-' },
+      { type: 'ARSENAL', innerBox: '1 Set / Box', outerBox: '-' },
+      { type: 'CHELSEA', innerBox: '1 Set / Box', outerBox: '-' },
+      { type: 'LIVERPOOL', innerBox: '1 Set / Box', outerBox: '-' },
+      { type: 'MANCHESTER', innerBox: '1 Set / Box', outerBox: '-' },
     ],
   },
   { 
@@ -2007,13 +2098,13 @@ products: [
       { key: 'Material', value: 'Zinc Alloy' },
     ],
     features: [
-      { text: 'Desain Modern & Kokoh' },
+      { text: 'Desain Handle Modern & Kokoh' },
       { text: 'Finishing Tahan Lama' },
-      { text: 'Termasuk Body Kunci & Silinder' },
+      { text: 'Mekanisme kunci presisi, pengoperasian halus dan anti-macet' },
     ],
     packagingDetails: [
-      { type: 'ROMA', innerBox: '1 set/box', outerBox: '-' },
-      { type: 'JUVENTUS', innerBox: '1 set/box', outerBox: '-' }
+      { type: 'ROMA', innerBox: '1 Set / Box', outerBox: '-' },
+      { type: 'JUVENTUS', innerBox: '1 Set / Box', outerBox: '-' }
     ],
   },
   { 
@@ -2032,14 +2123,14 @@ products: [
       { key: 'Material', value: 'Zinc Alloy' },
     ],
     features: [
-      { text: 'Desain Modern & Kokoh' },
+      { text: 'Desain handle Modern & Kokoh' },
       { text: 'Finishing Tahan Lama' },
-      { text: 'Termasuk Body Kunci & Silinder' },
+      { text: 'Mekanisme kunci presisi, pengoperasian halus dan anti-macet' },
     ],
     packagingDetails: [
-      { type: 'MILAN', innerBox: '1 set/box', outerBox: '-' },
-      { type: 'MADRID', innerBox: '1 set/box', outerBox: '-' },
-      { type: 'BARCELONA', innerBox: '1 set/box', outerBox: '-' }
+      { type: 'MILAN', innerBox: '1 Set / Box', outerBox: '-' },
+      { type: 'MADRID', innerBox: '1 Set / Box', outerBox: '-' },
+      { type: 'BARCELONA', innerBox: '1 Set / Box', outerBox: '-' }
     ],
   },
   { 
@@ -2059,14 +2150,14 @@ products: [
       { key: 'Material', value: 'Zinc Alloy' },
     ],
     features: [
-      { text: 'Desain Minimalis & Mewah' },
+      { text: 'finishing premium anti-gores' },
       { text: 'Pegangan Nyaman' },
     ],
     packagingDetails: [
-      { type: 'PLUTO', innerBox: '1 set/box', outerBox: '-' },
-      { type: 'HERMES', innerBox: '1 set/box', outerBox: '-' },
-      { type: 'HADES', innerBox: '1 set/box', outerBox: '-' },
-      { type: 'APOLLO', innerBox: '1 set/box', outerBox: '-' }
+      { type: 'PLUTO', innerBox: '1 Set / Box', outerBox: '12 Pcs / Ctn' },
+      { type: 'HERMES', innerBox: '1 Set / Box', outerBox: '12 Pcs / Ctn' },
+      { type: 'HADES', innerBox: '1 Set / Box', outerBox: '12 Pcs / Ctn' },
+      { type: 'APOLLO', innerBox: '1 Set / Box', outerBox: '12 Pcs / Ctn' }
     ],
   },
    { 
@@ -2086,14 +2177,14 @@ products: [
       { key: 'Material', value: 'Zinc Alloy' },
     ],
     features: [
-      { text: 'Desain Minimalis & Mewah' },
+      { text: 'finishing premium anti-gores' },
       { text: 'Pegangan Nyaman' },
     ],
     packagingDetails: [
-      { type: 'ARES', innerBox: '1 set/box', outerBox: '-' },
-      { type: 'POSEISON', innerBox: '1 set/box', outerBox: '-' },
-      { type: 'HERCULES', innerBox: '1 set/box', outerBox: '-' },
-      { type: 'ATHENA', innerBox: '1 set/box', outerBox: '-' }
+      { type: 'ARES', innerBox: '1 Set / Box', outerBox: '24 Pcs / Ctn' },
+      { type: 'POSEISON', innerBox: '1 Set / Box', outerBox: '24 Pcs / Ctn' },
+      { type: 'HERCULES', innerBox: '1 Set / Box', outerBox: '24 Pcs / Ctn' },
+      { type: 'ATHENA', innerBox: '1 Set / Box', outerBox: '24 Pcs / Ctn' }
     ],
   },
   {
@@ -2107,12 +2198,12 @@ products: [
       { key: 'Finishing', value: 'Brushed Nickel' }
     ],
     features: [
-      { text: 'Desain Modern Minimalis' },
-      { text: 'Material Full Stainless Steel' },
+      { text: 'Bahan 100% Stainless Steel, sangat kuat, anti-karat, dan tahan lama' },
+      { text: 'Desain simpel dan praktis, cocok untuk pintu kamar tidur atau kamar mandi' },
       { text: 'Tahan Karat & Tahan Lama' }
     ],
     packagingDetails: [
-      { type: 'Set', innerBox: '1 set/box', outerBox: '20 set/ctn' }
+      { type: 'STANDAR', innerBox: '-', outerBox: '24 Pcs / Ctn' }
     ]
   },
   {
@@ -2126,12 +2217,11 @@ products: [
       { key: 'Aplikasi', value: 'Pintu Kayu / Besi' }
     ],
     features: [
-      { text: 'Mekanisme Mulus & Presisi' },
-      { text: 'Material Tahan Lama' },
-      { text: 'Standar Ukuran Umum' }
+      { text: 'Komponen dalam dari baja berkualitas, menjamin mekanisme yang awet' },
+      { text: 'Lidah kunci bekerja mulus dan senyap saat pintu ditutup' },
     ],
     packagingDetails: [
-      { type: 'Standard', innerBox: '1 pc/box', outerBox: '30 pcs/ctn' }
+      { type: 'STANDAR', innerBox: '-', outerBox: '20 Pcs / Ctn' }
     ]
   },
   {
@@ -2145,12 +2235,12 @@ products: [
       { key: 'Aplikasi', value: 'Pintu Double Swing' }
     ],
     features: [
-      { text: 'Ideal Untuk Pintu Double Swing' },
-      { text: 'Roller Kuat & Lancar' },
+      { text: 'Mekanisme roller ball (pelor) membuat pintu lebih ringan saat didorong' },
+      { text: 'Ideal untuk pintu swing dua arah, pengoperasian sangat halus' },
       { text: 'Instalasi Mudah' }
     ],
     packagingDetails: [
-      { type: 'Standard', innerBox: '1 pc/box', outerBox: '30 pcs/ctn' }
+      { type: 'STANDAR', innerBox: '-', outerBox: '20 Pcs / Ctn' }
     ]
   },
   {
@@ -2166,10 +2256,10 @@ products: [
     features: [
       { text: 'Material Anti Karat' },
       { text: 'Keamanan Tinggi' },
-      { text: 'Anak Kunci Komputer' }
+      { text: 'Dilengkapi anak kunci komputer yang sulit diduplikasi' }
     ],
     packagingDetails: [
-      { type: 'Standard', innerBox: '1 pc/box', outerBox: '120 pcs/ctn' }
+      { size: '60mm', innerBox: ' 12 Pcs / Box', outerBox: '240 Pcs / Ctn' }
     ]
   },
   {
@@ -2184,11 +2274,12 @@ products: [
     ],
     features: [
       { text: 'Desain Modern & Kuat' },
-      { text: 'Stainless Steel Anti Karat' },
-      { text: 'Menahan Jendela dengan Aman' }
+      { text: 'Bahan Full Stainless Steel tebal, anti-karat dan tahan cuaca' },
+      { text: 'Sangat kokoh menahan jendela agar tidak terbanting oleh angin' }
     ],
     packagingDetails: [
-      { type: 'Standard', innerBox: '1 pasang/pack', outerBox: '100 pasang/ctn' }
+      { type: 'JUMBO | 8 Inch', innerBox: '12 Set / Box', outerBox: '240 Pcs / Ctn' },
+      { type: 'SUPER | 8 Inch', innerBox: '12 Set / Box', outerBox: '240 Pcs / Ctn' },
     ]
   },
   {
@@ -2202,12 +2293,13 @@ products: [
       { key: 'Fitur', value: 'Adjustable Speed' }
     ],
     features: [
-      { text: 'Menutup Pintu Otomatis' },
-      { text: 'Gerakan Halus & Senyap' },
+      { text: 'Sistem hidrolik (hydraulic) yang bisa diatur kecepatan tutupnya' },
+      { text: 'Menutup pintu secara otomatis, halus, dan tanpa suara benturan' },
       { text: 'Kecepatan Dapat Diatur' }
     ],
     packagingDetails: [
-      { type: 'Standard', innerBox: '1 set/box', outerBox: '10 set/ctn' }
+      { type: 'KECIl', innerBox: '1 Set / Box', outerBox: '20 Pcs / Ctn' },
+      { type: 'BESAR', innerBox: '1 Set / Box', outerBox: '20 Pcs / Ctn' }
     ]
   },
   {
@@ -2221,12 +2313,13 @@ products: [
       { key: 'Ukuran', value: '5 Inch' }
     ],
     features: [
-      { text: 'Material Super Tebal' },
-      { text: 'Untuk Pintu Sangat Berat' },
-      { text: 'Bearing Kuat & Anti Macet' }
+      { text: 'Plat besi super tebal 4mm, anti-bengkok untuk menopang pintu berat' },
+      { text: 'Dilengkapi ball bearing agar bukaan pintu sangat ringan dan halus' },
     ],
     packagingDetails: [
-      { type: 'Standard', innerBox: '1 pasang/box', outerBox: '50 pasang/ctn' }
+      { size: '3 Inch', innerBox: '12 Sets / Box', outerBox: '60 Pcs / Ctn' },
+      { size: '4 Inch', innerBox: '12 Sets / Box', outerBox: '60 Pcs / Ctn' },
+      { size: '5 Inch', innerBox: '12 Sets / Box', outerBox: '48 Pcs / Ctn' }
     ]
   },
   {
@@ -2240,12 +2333,13 @@ products: [
       { key: 'Ukuran', value: '4 Inch / 5 Inch' }
     ],
     features: [
-      { text: '100% Anti Karat' },
-      { text: 'Serbaguna & Tahan Lama' },
-      { text: 'Bearing Halus' }
+      { text: 'Bahan Full Stainless Steel, anti-karat permanen, cocok untuk outdoor' },
+      { text: 'Menggunakan ball bearing untuk putaran engsel yang senyap dan lancar' },
     ],
     packagingDetails: [
-      { type: 'Standard', innerBox: '1 pasang/box', outerBox: '100 pasang/ctn' }
+      { size: '3 Inch', innerBox: '36 Sets / Box', outerBox: '72 Pcs / Ctn' },
+      { size: '4 Inch', innerBox: '24 Sets / Box', outerBox: '48 Pcs / Ctn' },
+      { size: '5 Inch', innerBox: '24 Sets / Box', outerBox: '48 Pcs / Ctn' }
     ]
   },
   {
@@ -2259,12 +2353,13 @@ products: [
       { key: 'Panjang Rel', value: '1.5 Meter / 2 Meter' }
     ],
     features: [
-      { text: 'Pergerakan Pintu Lancar' },
-      { text: 'Roda Nylon Tidak Berisik' },
-      { text: 'Kuat Menopang Beban' }
+      { text: 'Track dari bahan tebal, lurus presisi dan tidak mudah melengkung' },
+      { text: 'Roda nilon dengan laher (bearing), menggeser pintu sangat ringan & senyap' },
     ],
     packagingDetails: [
-      { type: 'Set Lengkap', innerBox: '1 set/box', outerBox: '10 set/ctn' }
+      { size: '1,8 Meter', innerBox: '-', outerBox: '12 Pcs / Ctn' },
+      { size: '2,1 Meter', innerBox: '-', outerBox: '12 Pcs / Ctn' },
+      { size: '2,4 Meter', innerBox: '-', outerBox: '12 Pcs / Ctn' },
     ]
   },
   {
@@ -2278,12 +2373,15 @@ products: [
       { key: 'Varian', value: 'Leher Pendek & Leher Panjang' }
     ],
     features: [
-      { text: 'Full Kuningan Anti Karat' },
+      { text: 'Body dari kuningan asli, sangat tahan cuaca dan anti-karat' },
       { text: 'Keamanan Terpercaya' },
-      { text: 'Tahan Potong & Gergaji' }
+      { text: 'Leher (shackle) dari baja keras (hardened steel), anti-potong dan gergaji' }
     ],
     packagingDetails: [
-      { type: 'Standard', innerBox: '6 pcs/box', outerBox: '60 pcs/ctn' }
+      { size: '30 mm', innerBox: '12 Pcs / Box', outerBox: '144 Pcs / Ctn' },
+      { size: '40 mm', innerBox: '12 Pcs / Box', outerBox: '96 Pcs / Ctn' },
+      { size: '50 mm', innerBox: '12 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+      { size: '60 mm', innerBox: '12 Pcs / Box', outerBox: '48 Pcs / Ctn' },
     ]
   },
   {
@@ -2297,12 +2395,18 @@ products: [
       { key: 'Finishing', value: 'Brushed' }
     ],
     features: [
-      { text: 'Keamanan Ekstra' },
-      { text: 'Material Stainless Tebal' },
+      { text: 'Bahan Full Stainless Steel tebal, sangat kokoh, dan anti-karat' },
+      { text: 'Slot grendel bergerak mulus, mengunci dengan pas dan aman' },
       { text: 'Pemasangan Mudah' }
     ],
     packagingDetails: [
-      { type: 'Standard', innerBox: '12 pcs/box', outerBox: '120 pcs/ctn' }
+      { size: '2 Inch', innerBox: '24 Pcs / Box', outerBox: '480 Pcs / Ctn' },
+      { size: '3 Inch', innerBox: '12 Pcs / Box', outerBox: '360 Pcs / Ctn' },
+      { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '288 Pcs / Ctn' },
+      { size: '6 Inch', innerBox: '12 Pcs / Box', outerBox: '192 Pcs / Ctn' },
+      { size: '8 Inch', innerBox: '12 Pcs / Box', outerBox: '144 Pcs / Ctn' },
+      { size: '10 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+      { size: '12 Inch', innerBox: '12 Pcs / Box', outerBox: '96 Pcs / Ctn' },
     ]
   }
 ],
@@ -2324,9 +2428,8 @@ products: [
             { key: 'Material Gagang', value: 'Karet (Rubber Grip)' },
           ],
           features: [
-            { text: 'Mata Asah 3 Sisi' },
-            { text: 'Potongan Cepat & Bersih' },
-            { text: 'Gagang Karet Ergonomis' },
+            { text: 'Mata gergaji 3 sisi (Tri-Cut) sangat tajam, memotong kayu lebih cepat' },
+            { text: 'Gagang karet anti-slip, memberikan genggaman mantap dan nyaman' },
           ],
           packagingDetails: [
             { size: '18 Inch', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
@@ -2343,9 +2446,8 @@ products: [
             { key: 'Fitur', value: 'Ujung Lancip' },
           ],
           features: [
-            { text: 'Menjangkau Area Sulit' },
-            { text: 'Ideal untuk Drywall & Kayu' },
-            { text: 'Kontrol Penuh' },
+            { text: 'Ujung lancip dirancang khusus untuk membuat lubang dan potongan melengkung' },
+            { text: 'Gagang karet ergonomis untuk kontrol maksimal saat memotong detail' },
           ],
           packagingDetails: [
             { size: '14 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
@@ -2369,8 +2471,8 @@ products: [
             { key: 'Material Bodi', value: 'ABS Plastik' },
           ],
           features: [
-            { text: 'Desain Klasik & Kokoh' },
-            { text: 'Penguncian Manual Andal' },
+            { text: 'Plat meteran tebal dengan angka yang dicetak jelas dan anti-gores' },
+            { text: 'Body ABS kokoh, tahan banting dan benturan di lokasi proyek' },
           ],
           packagingDetails: [
             { size: '3 Meter', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
@@ -2389,8 +2491,8 @@ products: [
             { key: 'Material Bodi', value: 'ABS Lapis Karet' },
           ],
           features: [
-            { text: 'Fitur Autostop Praktis' },
-            { text: 'Grip Karet Anti Slip' },
+            { text: 'Fitur Auto Stop otomatis menahan plat, membuat pengukuran lebih praktis' },
+            { text: 'Body dilapisi karet (rubberized), nyaman digenggam dan lebih tahan banting' },
           ],
           packagingDetails: [
             { size: '3 Meter', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
@@ -2409,14 +2511,13 @@ products: [
             { key: 'Material Bodi', value: 'Full Rubber Body' },
           ],
           features: [
-            { text: 'Desain Premium' },
-            { text: 'Tahan Benturan' },
+            { text: 'Fitur auto stop otomatis' },
+            { text: 'Body dilapisi karet (rubberized)' },
           ],
           packagingDetails: [
             { size: '3 Meter', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
             { size: '5 Meter', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
             { size: '7,5 Meter', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
-            { size: '10 Meter', innerBox: '6 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
         },
         {
@@ -2429,12 +2530,13 @@ products: [
             { key: 'Fitur', value: 'Gagang Putar, Ujung Tancap' },
           ],
           features: [
-            { text: 'Pita Fiberglass Anti Melar' },
-            { text: 'Aman untuk Area Listrik' },
+            { text: 'Pita Fiberglass anti-mulur, anti-karat, dan tahan air untuk akurasi maksimal' },
+            { text: 'Ujung tancap runcing & tuas putar ringan untuk pengukuran jarak jauh' },
           ],
           packagingDetails: [
-            { size: '50 Meter', innerBox: '1/box', outerBox: '20/ctn' },
-            { size: '100 Meter', innerBox: '1/box', outerBox: '10/ctn' },
+            { size: '30 Meter', innerBox: '-', outerBox: '24 Pcs / Ctn' },
+            { size: '50 Meter', innerBox: '-', outerBox: '24 Pcs / Ctn' },
+            { size: '100 Meter', innerBox: '-', outerBox: '12 Pcs / Ctn' },
           ],
         },
         {
@@ -2447,8 +2549,8 @@ products: [
             { key: 'Panjang', value: '3 Meter' },
           ],
           features: [
-            { text: '100% Anti Karat' },
-            { text: 'Kekuatan Superior' },
+            { text: 'Bahan Full Stainless Steel tebal, anti-karat, dan tidak mudah bengkok' },
+            { text: 'Angka pengukuran digrafir (ukir), sangat jelas dan tidak akan pudar' },
           ],
           packagingDetails: [
             { size: '12 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
@@ -2464,8 +2566,8 @@ products: [
             { key: 'Berat', value: '300g / 500g' },
           ],
           features: [
-            { text: 'Akurasi Vertikal Tinggi' },
-            { text: 'Desain Seimbang' },
+            { text: 'Bahan besi padat dengan ujung presisi untuk titik vertikal yang akurat' },
+            { text: 'Dilengkapi benang kuat dan tutup penyimpan benang yang praktis' },
           ],
           packagingDetails: [
             { size: '200 Gr', innerBox: '6 Pcs / Box', outerBox: '120 Pcs / Ctn' },
@@ -2485,8 +2587,8 @@ products: [
             { key: 'Panjang', value: '9 Inch' },
           ],
           features: [
-            { text: 'Ukuran Ringkas' },
-            { text: 'Dasar Magnetik Kuat' },
+            { text: 'Tabung vial akrilik anti-pecah dengan gelembung yang sangat jelas' },
+            { text: 'Frame aluminium yang tebal namun ringan, presisi dan tidak melengkung' },
           ],
           packagingDetails: [
             { size: '9 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
@@ -2502,8 +2604,8 @@ products: [
             { key: 'Fitur', value: 'Magnet Super Kuat' },
           ],
           features: [
-            { text: 'Rangka Aluminium Tebal' },
-            { text: 'Akurasi Terjamin' },
+            { text: 'Magnet super kuat di bagian bawah, menempel erat pada permukaan besi' },
+            { text: 'Konstruksi Heavy Duty dengan ujung karet, sangat tahan benturan keras' },
           ],
           packagingDetails: [
             { size: '450 mm / 18 Inch', innerBox: '10 Pcs / Box', outerBox: '60 Pcs / Ctn' },
@@ -2520,8 +2622,82 @@ products: [
       // Di dalam catalogueData -> yozuri -> kategori 'sanitary-equipments'
       products: [
         {
+          id: 'yoz-sanitary-009',
+          name: 'Rainshower Set',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Rainshower Set A.png', // Ganti dengan path gambar Anda
+          galleryImages: [
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Rainshower Set B.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Rainshower Set C.png',
+    ],
+          description: 'Seal tape premium dari 100% P.T.F.E murni, menjamin sambungan drat bebas bocor. Elastis, kuat, dan mudah diaplikasikan.',
+          specifications: [
+            { key: 'Material', value: '100% P.T.F.E' },
+            { key: 'Kepadatan', value: 'Tinggi' },
+          ],
+          features: [
+            { text: 'Desain head shower lebar, modern, dan mewah' },
+            { text: 'Semburan air deras dan merata, memberikan efek relaksasi' },
+          ],
+          packagingDetails: [
+            { type: 'DIGITAL', innerBox: '1 Set', outerBox: '10 Sets' },
+            { type: 'NON-DIGITAL', innerBox: '1 Set', outerBox: '10 Sets' },
+          ],
+        },
+        {
+          id: 'yoz-sanitary-010',
+          name: 'Saringan Kamar Mandi - Hitam',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam A.png', // Ganti dengan path gambar Anda
+          galleryImages: [
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam B.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam C.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam D.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam E.png',
+    ],
+          description: 'Seal tape premium dari 100% P.T.F.E murni, menjamin sambungan drat bebas bocor. Elastis, kuat, dan mudah diaplikasikan.',
+          specifications: [
+            { key: 'Material', value: '100% P.T.F.E' },
+            { key: 'Kepadatan', value: 'Tinggi' },
+          ],
+          features: [
+            { text: 'Bahan stainless steel tebal, anti-karat dan kuat diinjak' },
+            { text: 'Menyaring kotoran secara efektif dan mencegah serangga masuk' },
+          ],
+          packagingDetails: [
+            { type: 'ATLANTIC', innerBox: '-', outerBox: '100 Pcs / Ctn' },
+            { type: 'OCEANIC', innerBox: '-', outerBox: '100 Pcs / Ctn' },
+            { type: 'PACIFIC', innerBox: '-', outerBox: '100 Pcs / Ctn' },
+            { type: 'HINDIA', innerBox: '-', outerBox: '100 Pcs / Ctn' },
+          ],
+        },
+        {
+          id: 'yoz-sanitary-011',
+          name: 'Saringan Kamar Mandi - Silver',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver A.png', // Ganti dengan path gambar Anda
+          galleryImages: [
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver B.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver C.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver D.png',
+      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver E.png',
+    ],
+          description: 'Seal tape premium dari 100% P.T.F.E murni, menjamin sambungan drat bebas bocor. Elastis, kuat, dan mudah diaplikasikan.',
+          specifications: [
+            { key: 'Material', value: '100% P.T.F.E' },
+            { key: 'Kepadatan', value: 'Tinggi' },
+          ],
+          features: [
+            { text: 'Bahan stainless steel tebal, anti-karat dan kuat diinjak' },
+            { text: 'Menyaring kotoran secara efektif dan mencegah serangga masuk' },
+          ],
+          packagingDetails: [
+            { type: 'ATLANTIC', innerBox: '-', outerBox: '100 Pcs / Ctn' },
+            { type: 'OCEANIC', innerBox: '-', outerBox: '100 Pcs / Ctn' },
+            { type: 'PACIFIC', innerBox: '-', outerBox: '100 Pcs / Ctn' },
+            { type: 'HINDIA', innerBox: '-', outerBox: '100 Pcs / Ctn' },
+          ],
+        },
+        {
           id: 'yoz-sanitary-001',
-          name: 'Seal Tape - 100% P.T.F.E.',
+          name: 'Seal Tape Putih - 100% P.T.F.E.',
           image: '/Images/yozuri/Yo-Zuri - Seal Tape - PTFE A.png', // Ganti dengan path gambar Anda
           description: 'Seal tape premium dari 100% P.T.F.E murni, menjamin sambungan drat bebas bocor. Elastis, kuat, dan mudah diaplikasikan.',
           specifications: [
@@ -2530,7 +2706,24 @@ products: [
           ],
           features: [
             { text: 'Kualitas P.T.F.E Murni' },
-            { text: 'Anti Bocor' },
+            { text: 'Efektif mencegah kebocoran pada sambungan drat pipa standar.' },
+          ],
+          packagingDetails: [
+            { size: '12 | 1/2 x 10 Meter', innerBox: '200 Pcs / Box', outerBox: '1.200 Pcs / Ctn' },
+          ],
+        },
+        {
+          id: 'yoz-sanitary-008',
+          name: 'Seal Tape Biru - 100% P.T.F.E.',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Seal Tape Biru.png',
+          description: 'Saringan pembuangan lantai (floor drainer) dari stainless steel. Mencegah rambut dan kotoran masuk ke saluran pipa, serta anti-bau.',
+          specifications: [
+            { key: 'Material', value: 'Stainless Steel' },
+            { key: 'Ukuran', value: '4 Inch' },
+          ],
+          features: [
+            { text: 'Kepadatan (density) lebih tinggi, anti-bocor maksimal untuk tekanan tinggi' },
+            { text: 'Lebih tebal sehingga pemakaian lebih hemat dan efisien' },
           ],
           packagingDetails: [
             { size: '12 | 1/2 x 10 Meter', innerBox: '200 Pcs / Box', outerBox: '1.200 Pcs / Ctn' },
@@ -2546,8 +2739,8 @@ products: [
             { key: 'Ukuran Drat', value: '3/4 Inch' },
           ],
           features: [
-            { text: 'Ukuran Jumbo' },
-            { text: 'Tahan Cuaca & UV' },
+            { text: 'Bahan PVC tebal kualitas terbaik, anti-pecah dan tahan cuaca' },
+            { text: 'Ukuran jumbo menghasilkan aliran air yang sangat deras dan kencang' },
           ],
           packagingDetails: [
             { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
@@ -2564,8 +2757,8 @@ products: [
             { key: 'Ukuran Drat', value: '1/2 Inch' },
           ],
           features: [
-            { text: 'Desain Modern' },
-            { text: 'Bahan PVC Tebal' },
+            { text: 'Desain Modern Ukuran jumbo' },
+            { text: 'Bahan PVC Tebal Kualitas terbaik, anti pecah dan tahan cuaca' },
           ],
           packagingDetails: [
             { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
@@ -2582,8 +2775,8 @@ products: [
             { key: 'Ukuran Drat', value: '1/2 Inch' },
           ],
           features: [
-            { text: 'Desain Transparan Estetik' },
-            { text: 'Anti Korosi' },
+            { text: 'Desain transparan yang unik dan modern, dapat melihat aliran air' },
+            { text: 'Mekanisme tuas putar yang ringan dan tidak mudah dol' },
           ],
           packagingDetails: [
             { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '24 Pcs / Box', outerBox: '360 Pcs / Ctn' },
@@ -2601,8 +2794,8 @@ products: [
             { key: 'Model Kepala', value: 'Kecil / Lurus' },
           ],
           features: [
-            { text: 'Full Stainless Steel' },
-            { text: 'Desain Elegan' },
+            { text: 'Bahan Full Stainless Steel SUS 304, anti-karat, aman dan elegan' },
+            { text: 'Leher angsa fleksibel, mudah diarahkan untuk mencuci piring' },
           ],
           packagingDetails: [
             { type: 'Dinding', innerBox: '12 Pcs / Box', outerBox: '96 Pcs / Carton' },
@@ -2618,8 +2811,8 @@ products: [
             { key: 'Tipe', value: 'Ball Valve' },
           ],
           features: [
-            { text: 'Tidak Mudah Macet' },
-            { text: 'Tahan Tekanan' },
+            { text: 'Sistem bola (ball) menutup aliran air dengan sangat rapat dan anti-bocor' },
+            { text: 'Bahan PVC tebal, tidak mudah retak oleh tekanan air tinggi' },
           ],
           packagingDetails: [
             { size: '1/2 Inch', innerBox: '24 Pcs / Box', outerBox: '240 Pcs / Ctn' },
@@ -2637,32 +2830,12 @@ products: [
             { key: 'Tipe', value: 'Union Socket' },
           ],
           features: [
-            { text: 'Sambungan Lepas-Pasang' },
-            { text: 'Instalasi Praktis' },
+            { text: 'Memudahkan bongkar-pasang sambungan pipa tanpa perlu memotong' },
+            { text: 'Dilengkapi seal karet tebal untuk sambungan yang 100% anti-bocor' },
           ],
           packagingDetails: [
             { size: '1/2 Inch', innerBox: '24 Pcs / Box', outerBox: '240 Pcs / Ctn' },
             { size: '3/4 Inch', innerBox: '24 Pcs / Box', outerBox: '240 Pcs / Ctn' },
-          ],
-        },
-        {
-          id: 'yoz-sanitary-008',
-          name: 'Saringan Kamar Mandi - Floor Drainer',
-          image: '/Images/yozuri/Yo-Zuri - Saringan Kamar Mandi - Hitam+Packaging A.png',
-          description: 'Saringan pembuangan lantai (floor drainer) dari stainless steel. Mencegah rambut dan kotoran masuk ke saluran pipa, serta anti-bau.',
-          specifications: [
-            { key: 'Material', value: 'Stainless Steel' },
-            { key: 'Ukuran', value: '4 Inch' },
-          ],
-          features: [
-            { text: 'Anti-Bau & Anti-Serangga' },
-            { text: 'Material Stainless Steel' },
-          ],
-          packagingDetails: [
-            { type: 'Oceanic', innerBox: '-', outerBox: '30 Pcs / Ctn' },
-            { type: 'Atlantic', innerBox: '-', outerBox: '30 Pcs / Ctn' },
-            { type: 'Hindia', innerBox: '-', outerBox: '30 Pcs / Ctn' },
-            { type: 'Pacific', innerBox: '-', outerBox: '30 Pcs / Ctn' },
           ],
         },
       ],
@@ -2681,8 +2854,8 @@ products: [
           { key: 'Fitur', value: 'Magnet Super Kuat' },
         ],
         features: [
-          { text: 'Rangka Aluminium Tebal' },
-          { text: 'Akurasi Terjamin' },
+          { text: 'Dilengkapi pelindung ujung baja, tahan benturan dan tekanan berat' },
+          { text: 'Bahan karet tebal anti-air dengan sol anti-slip untuk keamanan di area basah' },
         ],
         packagingDetails: [
           { size: '39-43', innerBox: '-', outerBox: '12 Pairs / Ctn' },
