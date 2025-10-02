@@ -138,8 +138,8 @@ export default function ProductDetailPage({ params }: PageProps) {
   }
 
   const handleWhatsAppInquiry = () => {
-    const phoneNumber = "6281289987829";
-    const message = `Halo, saya tertarik dengan produk ini:\nNama Produk: ${product.name}\nMohon informasinya. Terima kasih.`;
+    const phoneNumber = "6285176878892";
+    const message = `Halo, Saya tertarik dengan produk ini :\n${product.name}\nDimohon detail info produknya, Terima kasih.`;
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -231,7 +231,7 @@ export default function ProductDetailPage({ params }: PageProps) {
             {/* Tabel Spesifikasi */}
             {product.packagingDetails && (
               <div className="mt-6">
-                <h2 className="text-base font-helvetica-regular text-gray-500 uppercase mb-3">Ukuran & Kemasan</h2>
+                <h2 className="text-base font-helvetica-regular text-gray-500 uppercase mb-3">Rincian Produk</h2>
 
                 {(() => {
                   const hasSize = product.packagingDetails.some(detail => detail.size);

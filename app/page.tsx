@@ -248,30 +248,39 @@ function DownloadCatalogueSection() {
     <section className="bg-gray-100 py-16">
       <div className="container mx-auto text-center px-4">
         <h2 className="text-3xl font-helvetica-black mb-4">Dapatkan Katalog Lengkap Kami</h2>
-        <p className="max-w-2xl font-helvetica-regular mx-auto text-gray-600 mb-8">Unduh katalog produk terbaru kami dalam format PDF untuk melihat semua koleksi dan spesifikasi teknisnya.</p>
+        <p className="max-w-2xl font-helvetica-regular mx-auto text-gray-600 mb-8">
+          Unduh katalog produk terbaru kami dalam format PDF untuk melihat semua koleksi dan spesifikasi teknisnya.
+        </p>
       </div>
       <div className='flex text-center justify-center gap-6'>
         <a
-          href="data/Owner - Product E-Catalogue 2025 (V1).pdf"
+          // Ganti href dengan link Google Drive Anda menggunakan format /preview
+          href="https://drive.google.com/file/d/ID_FILE_OWNER_ANDA/preview" 
+          target="_blank" // <-- Tambahkan ini agar terbuka di tab baru
+          rel="noopener noreferrer" // <-- Tambahkan ini untuk keamanan
           className="
-      inline-block bg-yellow-500 text-gray-900 font-helvetica-regular uppercase py-3 px-8 rounded 
-      hover:bg-yellow-600 
-      transition-all duration-300 ease-in-out /* <-- Tambahkan ini */
-      hover:scale-105 hover:-translate-y-1 /* <-- Tambahkan ini */
-    "
-          download="Owner - Product E-Catalogue 2025 (V1).pdf"
+            inline-block bg-yellow-500 text-gray-900 font-helvetica-regular uppercase py-3 px-8 rounded 
+            hover:bg-yellow-600 
+            
+            transition-all duration-300 ease-in-out
+            hover:scale-105 hover:-translate-y-1
+          "
+          // Hapus atribut 'download' dari sini
         >
           Catalogue - Owner
         </a>
         <a
-          href="data/Yo-Zuri - Product E-Catalogue 2025 (V1).pdf"
+          // Ganti href dengan link Google Drive Anda menggunakan format /preview
+          href="https://drive.google.com/file/d/1JZ6ZJdXoF35fcAr0CSmA6q3ml1JRbKOj/view?usp=drive_link"
+          target="_blank" // <-- Tambahkan ini agar terbuka di tab baru
+          rel="noopener noreferrer" // <-- Tambahkan ini untuk keamanan
           className="
-      inline-block bg-red-500 text-white font-helvetica-regular uppercase py-3 px-8 rounded 
-      hover:bg-red-800 /* Perbaikan typo dari hover:bg-red- */
-      transition-all duration-300 ease-in-out /* <-- Tambahkan ini */
-      hover:scale-105 hover:-translate-y-1 /* <-- Tambahkan ini */
-    "
-          download="Yo-Zuri - Product E-Catalogue 2025 (V1).pdf"
+            inline-block bg-red-500 text-white font-helvetica-regular uppercase py-3 px-8 rounded 
+            hover:bg-red-800
+            transition-all duration-300 ease-in-out
+            hover:scale-105 hover:-translate-y-1
+          "
+          // Hapus atribut 'download' dari sini
         >
           Catalogue - Yo-Zuri
         </a>
