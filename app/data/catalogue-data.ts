@@ -284,7 +284,7 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Warna', value: 'Putih / Hitam' },
           ],
           features: [
-            { text: 'Beban Maksimal Kuat' },
+            { text: 'Kuat Beban Maksimal ' },
             { text: 'Anti Karat' },
           ],
           packagingDetails: [
@@ -346,7 +346,8 @@ export const catalogueData: Record<string, Category[]> = {
           ],
           features: [
             { text: 'Cengkeraman Kuat' },
-            { text: 'Tidak Mudah Dol' },
+            { text: 'Tahan tekanan tinggi' },
+            { text: 'Mudah dipasang dengan cepat' },
           ],
           packagingDetails: [
             { type: 'S5', innerBox: '100 Pcs / Box', outerBox: '200 Pcs / Ctn' },
@@ -369,8 +370,9 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Kepala Sekrup', value: 'Plus (+)' },
           ],
           features: [
-            { text: 'Praktis & Lengkap' },
-            { text: 'Ukuran Presisi' },
+            { text: 'Cengkeraman Kuat' },
+            { text: 'Tahan tekanan tinggi' },
+            { text: 'Mudah dipasang dengan cepat' },
           ],
           packagingDetails: [
             { type: 'S5', innerBox: '25 Pcs / Pack', outerBox: '240 Pcs / Box' },
@@ -424,7 +426,7 @@ export const catalogueData: Record<string, Category[]> = {
             { type: 'Ban Mati', innerBox: '-', outerBox: '10 Set' },
           ],
           variations: [
-            { id: 'own-layer-017', name: 'Gerobak Sorong - PVC (9kg)', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gerobak Sorong Bak PVC 9 Kg.png' },
+            { id: 'own-layer-007', name: 'Gerobak Sorong - PVC (9kg)', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gerobak Sorong Bak PVC 9 Kg.png' },
           ]
         },
         {
@@ -452,7 +454,7 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '400 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
           ],
           variations: [
-            { id: 'own-layer-009', name: 'Amplas Roll 98', image: '/Images/own/Owner - Abrasive Roll 98.png' },
+            { id: 'own-layer-009', name: 'Amplas Roll 98', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Amplas Roll 98.png' },
           ]
         },
         {
@@ -480,7 +482,7 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '400 Grit', innerBox: '-', outerBox: '5 Roll / Ctn' },
           ],
           variations: [
-            { id: 'own-layer-008', name: 'Amplas Roll PREMIUM', image: '/Images/own/Owner - Abrasive Roll PREMUM.png' },
+            { id: 'own-layer-008', name: 'Amplas Roll PREMIUM', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Amplas Roll PREMIUM.png' },
           ]
         },
         {
@@ -533,8 +535,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Gagang', value: 'Kayu' },
           ],
           features: [
-            { text: 'Plat Fleksibel' },
-            { text: 'Serbaguna' },
+            { text: 'Material Baja Kuat' },
+            { text: 'Nyaman Digunakan' },
           ],
           packagingDetails: [
             { size: '8 Inch (-)', innerBox: '12 Pcs / Box', outerBox: '72 Pcs / Ctn' },
@@ -552,8 +554,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Gagang', value: 'Kayu' },
           ],
           features: [
-            { text: 'Plat Fleksibel' },
-            { text: 'Serbaguna' },
+            { text: 'Membersihkan karat & kerak super cepat' },
+            { text: 'Kawat baja kuat' },
           ],
           packagingDetails: [
             { size: '3 Inch', innerBox: '1 Pcs / Box', outerBox: '100 Pcs / Ctn' },
@@ -569,8 +571,8 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Gagang', value: 'Kayu' },
           ],
           features: [
-            { text: 'Plat Fleksibel' },
-            { text: 'Serbaguna' },
+            { text: 'Pengasahan Cepat' },
+            { text: 'Dua Sisi' },
           ],
           packagingDetails: [
             { size: '6 Inch', innerBox: '1 Pcs / Box', outerBox: '50 Pcs / Ctn' },
@@ -588,7 +590,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-door-001',
           name: 'Silinder Kunci Pintu (Besar)',
-          image: '/Images/own/Owner - Silinder Kunci Pintu - Besar A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Silinder Kunci Pintu Besar.png',
           description: 'Silinder kunci pintu ukuran besar dengan material kuningan untuk keamanan dan daya tahan maksimal. Dilengkapi dengan 3-5 anak kunci.',
           specifications: [
             { key: 'Material', value: 'Kuningan (Brass)' },
@@ -606,7 +608,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-door-002',
           name: 'Body Kunci Lidah',
-          image: '/Images/own/Owner - Body Kunci - Lidah A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Bodi Kunci Lidah.png',
           description: 'Body kunci (lockcase) tipe lidah untuk pintu single swing. Mekanisme presisi yang menjamin penguncian yang mulus dan aman.',
           specifications: [
             { key: 'Tipe', value: 'Lidah (Latch Bolt)' },
@@ -624,7 +626,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-door-003',
           name: 'Body Kunci Pelor',
-          image: '/Images/own/Owner - Body Kunci - Pelor A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Bodi Kunci Pelor.png',
           description: 'Body kunci (lockcase) tipe pelor (roller) untuk pintu double swing (pintu koboi). Roller memastikan pintu bisa ditutup dengan mudah dari kedua arah.',
           specifications: [
             { key: 'Tipe', value: 'Pelor (Roller Latch)' },
@@ -642,7 +644,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-door-004',
           name: 'Engsel Pintu PVC - Thickness 2mm',
-          image: '/Images/own/Owner - Engsel PVC Putih+Coklat+Baut A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Engsel Pintu PVC.png',
           description: 'Engsel berkualitas untuk pintu PVC atau pintu ringan lainnya. Ketebalan 2mm memberikan kekuatan ekstra dan anti-macet.',
           specifications: [
             { key: 'Material', value: 'Stainless Steel' },
@@ -651,7 +653,7 @@ export const catalogueData: Record<string, Category[]> = {
           ],
           features: [
             { text: 'Material Tebal' },
-            { text: 'Anti Macet & Karat' },
+            { text: 'Anti Macet' },
           ],
           packagingDetails: [
             { type: '4 Inch', innerBox: '12 Sets / Box', outerBox: '480 Pcs / Ctn' },
@@ -660,7 +662,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-door-005',
           name: 'Gembok Nickel - Pendek & Panjang',
-          image: '/Images/own/Owner - Gembok Leher Pendek+Panjang+Kunci 60mm A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gembok Nickel Leher Pendek & Panjang.png',
           description: 'Gembok dengan finishing nickel yang elegan dan tahan karat. Tersedia dalam varian leher pendek untuk keamanan maksimal dan leher panjang untuk fleksibilitas.',
           specifications: [
             { key: 'Material', value: 'Besi dengan finishing Nickel' },
@@ -680,15 +682,16 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-door-006',
           name: 'Gembok Segi - Rectangular Padlock',
-          image: '/Images/own/Owner - Gembok Segi+Kunci 94mm A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gembok Segi.png',
           description: 'Gembok segi empat (rectangular) untuk keamanan ekstra pada pintu harmonika, pagar, dan gudang. Desain kokoh yang sulit dirusak.',
           specifications: [
             { key: 'Bentuk', value: 'Segi Empat' },
             { key: 'Material', value: 'Baja Keras' },
           ],
           features: [
-            { text: 'Desain Anti Rusak' },
-            { text: 'Keamanan Ekstra' },
+            { text: 'Bodi kokoh' },
+            { text: 'Tingkat keamanan tinggi' },
+            { text: 'Mekanisme kunci presisi' },
           ],
           packagingDetails: [
             { size: '74 mm', innerBox: '6 Pcs / Box', outerBox: '24 Pcs / Ctn' },
