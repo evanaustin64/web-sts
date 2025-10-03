@@ -18,8 +18,9 @@ export default function Header() {
   const router = useRouter();
   const [isMobileSearchOpen, setMobileSearchOpen] = useState(false);
 
-  const allProductsWithContext = Object.entries(catalogueData).flatMap(([brandId, categories]) => 
-    categories.flatMap(category => 
+  // ... (fungsi-fungsi lainnya tetap sama)
+  const allProductsWithContext = Object.entries(catalogueData).flatMap(([brandId, categories]) =>
+    categories.flatMap(category =>
       category.products.map(product => ({
         ...product,
         brandId: brandId,
@@ -51,15 +52,14 @@ export default function Header() {
       setMobileSearchOpen(false);
     }
   };
-  
+
   const handleAccordionToggle = (menuId) => {
     setOpenAccordion(openAccordion === menuId ? null : menuId);
   };
-  
+
   const menuData = [
-      { id: 'owner', title:' Owner', href: '/produk/owner' },
-      { id: 'yozuri', title: 'Yo-Zuri', href: '/produk/yozuri' },
-      { id: 'helios', title: 'Helios', href: '/produk/helios' },
+    { id: 'owner', title: ' Owner', href: '/produk/owner' },
+    { id: 'yozuri', title: 'Yo-Zuri', href: '/produk/yozuri' },
   ];
 
   useEffect(() => {
@@ -68,121 +68,119 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+
   return (
     <>
       <header className={`bg-white sticky top-0 z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : 'shadow-none'}`}>
-        <div className="container mx-auto flex justify-between items-center h-24 px-4 sm:px-28">
+        <div className="container mx-auto flex justify-between items-center h-24 px-4 sm:px-6 md:px-8">
 
-          {/* Logo (Tidak Diubah) */}
+          {/* Logo */}
           <div className="flex-shrink-0">
-  <Link href="/" className="flex items-center gap-3 sm:gap-4">
-    <Image
-      src="/Images/logo-sts.png"
-      alt="Logo PT. Samudra Teknik Sejahtera"
-      width={60}
-      height={60}
-      className="h-14 w-14 flex-shrink-0" /* Ukuran gambar sedikit disesuaikan */
-    />
-    
-    <div>
-      {/* TAMPILAN MOBILE: Dibagi 2 baris, disembunyikan di layar 'sm' ke atas */}
-      <span className="block sm:hidden font-helvetica-black-oblique text-gray-800 text-base leading-tight">
-        PT. SAMUDRA<br />TEKNIK SEJAHTERA
-      </span>
+            <Link href="/" className="flex items-center gap-3 sm:gap-4">
+              <Image
+                src="/Images/logo-sts.png"
+                alt="Logo PT. Samudra Teknik Sejahtera"
+                width={60}
+                height={60}
+                className="h-14 w-14 flex-shrink-0"
+              />
+              <div>
+                <span className="block sm:hidden font-helvetica-black-oblique text-gray-800 text-base leading-tight">
+                  PT. SAMUDRA<br />TEKNIK SEJAHTERA
+                </span>
+                <span className="hidden sm:block font-helvetica-black-oblique text-gray-800 text-xl whitespace-nowrap">
+                  PT. SAMUDRA TEKNIK SEJAHTERA
+                </span>
+              </div>
+            </Link>
+          </div>
 
-      {/* TAMPILAN DESKTOP: 1 baris, disembunyikan di bawah layar 'sm' */}
-      <span className="hidden sm:block font-helvetica-black-oblique text-gray-800 text-xl whitespace-nowrap">
-        PT. SAMUDRA TEKNIK SEJAHTERA
-      </span>
-    </div>
-  </Link>
-</div>
+          <div className="flex items-center gap-6">
+            <nav className="hidden xl:flex h-full">
+              <ul className="flex items-center gap-10 h-full">
+                <li
+                  className="relative h-full flex items-center group"
+                  onMouseEnter={() => setDropdownOpen(true)}
+                  onMouseLeave={() => setDropdownOpen(false)}
+                >
+                  <button href="/produk" className="flex items-center gap-1 font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300" onClick={(e) => e.preventDefault()}>
+                    Produk
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </button>
+                  {isDropdownOpen && <DesktopDropdown />}
+                  {/* <span className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span> */}
+                </li>
 
-          {/* Navigasi Desktop (Tidak Diubah) */}
-          <nav className="hidden lg:flex h-full">
-            <ul className="flex items-center gap-10 h-full">
-              <li
-                className="relative h-full flex items-center group"
-                onMouseEnter={() => setDropdownOpen(true)}
-                onMouseLeave={() => setDropdownOpen(false)}
-              >
-                <button href="/produk" className="flex items-center gap-1 font-helvetica-regular uppercase text-gray-800" onClick={(e) => e.preventDefault()}>
-                  Produk 
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
-                </button>
-                {isDropdownOpen && <DesktopDropdown />}
-                <span className="absolute bottom-0 left-0 w-full h-[3px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
-              </li>
-              <li className="relative h-full flex items-center group">
-                <Link href="/tentang-kami" className="font-helvetica-regular uppercase text-gray-800">Tentang Kami</Link>
-                <span className="absolute bottom-0 left-0 w-full h-[3px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
-              </li>
-              {/* <li className="relative h-full flex items-center group">
-                <Link href="#" className="text-sm font-bold uppercase text-gray-800">Komunitas</Link>
-                <span className="absolute bottom-0 left-0 w-full h-[3px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
-              </li> */}
-              <li className="relative h-full flex items-center group">
-                <Link href="/hubungi-kami" className="font-helvetica-regular uppercase text-gray-800">Hubungi Kami</Link>
-                <span className="absolute bottom-0 left-0 w-full h-[3px] bg-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
-              </li>
-            </ul>
-          </nav>
+                <li className="relative h-full flex items-center group">
+                  <Link href="/tentang-kami" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300">Tentang Kami</Link>
+                  {/* <span className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span> */}
+                </li>
 
-          {/* Actions Kanan (Tidak Diubah) */}
-          <div className="header-actions">
-            <div className="relative hidden md:block">
-              <form onSubmit={handleSearchSubmit}>
-                <input 
-                  type="text" 
-                  placeholder="Search" 
-                  value={searchTerm}
-                  onChange={handleInputChange}
-                  className="border border-gray-300 rounded-md py-1.5 px-3 w-48 focus:outline-none focus:ring-2 focus:ring-yellow-400 font-helvetica-light"
-                />
-                <button type="submit" className="absolute top-1/2 right-3 -translate-y-1/2 text-gray-400">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                </button>
-              </form>
-              {suggestions.length > 0 && (
-                <ul className="absolute top-full right-0 mt-2 w-72 bg-white border border-gray-200 rounded-lg shadow-lg z-50 max-h-80 overflow-y-auto">
-                  {suggestions.map((product) => (
-                    <li key={product.id}>
-                      <Link 
-                        href={`/produk/${product.brandId}/${product.categoryId}/${product.id}`}
-                        className="flex items-center gap-4 p-3 hover:bg-gray-100"
-                        onClick={() => { setSearchTerm(''); setSuggestions([]); }}
-                      >
-                        <Image src={product.image} alt={product.name} width={40} height={40} className="object-contain flex-shrink-0" />
-                        <span className="text-sm text-gray-800">{product.name}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
+                <li className="relative h-full flex items-center group">
+                  <Link href="/hubungi-kami" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300">Hubungi Kami</Link>
+                  {/* <span className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span> */}
+                </li>
+              </ul>
+            </nav>
+
+            <div className="flex items-center gap-4">
+              <div className="relative hidden xl:block">
+                <form onSubmit={handleSearchSubmit}>
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    value={searchTerm}
+                    onChange={handleInputChange}
+                    className="border border-gray-300 rounded-md py-1.5 px-3 w-48 focus:outline-none focus:ring-2 focus:ring-yellow-400 font-helvetica-light"
+                  />
+                  <button type="submit" className="absolute top-1/2 right-3 -translate-y-1/2 text-gray-400">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                  </button>
+                </form>
+                {suggestions.length > 0 && (
+                  <ul className="absolute top-full right-0 mt-2 w-72 bg-white border border-gray-200 rounded-lg shadow-lg z-50 max-h-80 overflow-y-auto">
+                    {suggestions.map((product) => (
+                      <li key={product.id}>
+                        <Link
+                          href={`/produk/${product.brandId}/${product.categoryId}/${product.id}`}
+                          className="flex items-center gap-4 p-3 hover:bg-gray-100"
+                          onClick={() => { setSearchTerm(''); setSuggestions([]); }}
+                        >
+                          <Image src={product.image} alt={product.name} width={40} height={40} className="object-contain flex-shrink-0" />
+                          <span className="text-sm text-gray-800">{product.name}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+
+              <button className="xl:hidden text-gray-800" onClick={() => setMobileSearchOpen(true)}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+              </button>
+
+              <button className="xl:hidden text-gray-800" onClick={() => setMenuOpen(!isMenuOpen)}>
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-4 6h4"></path></svg>
+              </button>
             </div>
-            <button className="md:hidden text-gray-800" onClick={() => setMobileSearchOpen(true)}>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-              </svg>
-            </button>
-            <button className="lg:hidden text-gray-800" onClick={() => setMenuOpen(!isMenuOpen)}>
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-4 6h4"></path></svg>
-            </button>
           </div>
         </div>
       </header>
 
-       {isMobileSearchOpen && (
-        <div className="md:hidden fixed inset-0 bg-white z-50 p-4 flex flex-col">
+      {/* Mobile Search Overlay */}
+      {isMobileSearchOpen && (
+        <div className="xl:hidden fixed inset-0 bg-white z-50 p-4 flex flex-col">
           <div className="flex justify-end mb-4">
             <button onClick={() => setMobileSearchOpen(false)} className="text-3xl font-bold text-gray-600">&times;</button>
           </div>
           <form onSubmit={handleSearchSubmit} className="relative">
-            <input 
-              type="text" 
-              placeholder="Cari Produk..." 
+            <input
+              type="text"
+              placeholder="Cari Produk..."
               value={searchTerm}
               onChange={handleInputChange}
               autoFocus
@@ -194,29 +192,38 @@ export default function Header() {
           </form>
           {suggestions.length > 0 && (
             <ul className="mt-4 bg-white border border-gray-200 rounded-lg shadow-lg max-h-80 overflow-y-auto">
-              {/* ... kode map suggestions Anda ... */}
+              {suggestions.map((product) => (
+                <li key={product.id}>
+                  <Link
+                    href={`/produk/${product.brandId}/${product.categoryId}/${product.id}`}
+                    className="flex items-center gap-4 p-3 hover:bg-gray-100"
+                    onClick={() => { setSearchTerm(''); setSuggestions([]); setMobileSearchOpen(false); }}
+                  >
+                    <Image src={product.image} alt={product.name} width={40} height={40} className="object-contain flex-shrink-0" />
+                    <span className="text-sm text-gray-800">{product.name}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           )}
         </div>
       )}
 
-      {/* ======================= NAVIGASI MOBILE (YANG DITAMBAHKAN) ======================= */}
-      <div className={`lg:hidden fixed top-24 left-0 w-full bg-white shadow-lg z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform translate-y-0' : 'transform -translate-y-full opacity-0'}`}>
+      <div className={`xl:hidden fixed top-24 left-0 w-full bg-white shadow-lg z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform translate-y-0' : 'transform -translate-y-full opacity-0'}`}>
         <ul className="flex flex-col">
-          {/* Menu Produk dengan Accordion */}
           <li>
-            <button 
+            <button
               onClick={() => handleAccordionToggle('produk')}
-              className="w-full flex justify-between items-center px-4 py-4 font-bold text-gray-800 border-b"
+              className="w-full flex justify-between items-center px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b"
             >
-              PRODUK
+              Produk
               <svg className={`w-5 h-5 transition-transform ${openAccordion === 'produk' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             {openAccordion === 'produk' && (
               <ul className="bg-gray-50">
                 {menuData.map(item => (
                   <li key={item.id}>
-                    <Link href={item.href} className="block px-8 py-3 text-sm text-gray-700 border-b hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+                    <Link href={item.href} className="block px-8 py-3 text-sm font-helvetica-regular text-gray-700 border-b hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
                       {item.title}
                     </Link>
                   </li>
@@ -224,11 +231,8 @@ export default function Header() {
               </ul>
             )}
           </li>
-          
-          {/* Menu Lainnya */}
-          <li><Link href="/tentang-kami" className="block px-4 py-4 font-bold text-gray-800 border-b hover:bg-gray-100" onClick={() => setMenuOpen(false)}>TENTANG KAMI</Link></li>
-          {/* <li><Link href="#" className="block px-4 py-4 font-bold text-gray-800 border-b hover:bg-gray-100" onClick={() => setMenuOpen(false)}>KOMUNITAS</Link></li> */}
-          <li><Link href="/hubungi-kami" className="block px-4 py-4 font-bold text-gray-800 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>HUBUNGI KAMI</Link></li>
+          <li><Link href="/tentang-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-gray-100" onClick={() => setMenuOpen(false)}>Tentang Kami</Link></li>
+          <li><Link href="/hubungi-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>Hubungi Kami</Link></li>
         </ul>
       </div>
     </>

@@ -2963,30 +2963,4 @@ export const catalogueData: Record<string, Category[]> = {
       ],
     },
   ],
-  helios: [
-    {
-      id: 'safety-equipments',
-      name: 'Safety Equipments | Peralatan Keselamatan',
-      image: '/Images/safety yozuri.png',
-      products: [{
-        id: "hel-safety-001",
-        name: "Helm Proyek",
-        image: "/Images/helios/Helios - Helm Proyek - Kuning A.png",
-        description: "Helm keselamatan (safety helmet) merk Helios yang dirancang untuk memberikan perlindungan maksimal pada kepala dari benturan, kejatuhan benda, dan risiko lainnya di area kerja proyek.",
-        specifications: [
-          { key: "Material", "value": "ABS (Acrylonitrile Butadiene Styrene)" },
-          { key: "Standar", "value": "SNI ISO 3873:2012" },
-          { key: "Tipe Suspensi", "value": "Suspensi Putar (Fast-Track Knob)" }
-        ],
-        features: [
-          { text: "Material ABS asli, sangat kuat dan tahan terhadap benturan keras" },
-          { text: "Dilengkapi suspensi putar (fast-track) untuk menyesuaikan ukuran dengan mudah dan cepat" },
-          { text: "Telah lulus uji Standar Nasional Indonesia (SNI), keamanan terjamin" }
-        ],
-        packagingDetails: [
-          { size: "All Size", "innerBox": "1 Pcs / Pcs", "outerBox": "40 Pcs / Ctn" }
-        ]
-      }],
-    },
-  ],
 };

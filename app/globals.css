@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* app/globals.css */
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 body {
   overflow-x: hidden; /* <-- TAMBAHKAN BARIS INI */

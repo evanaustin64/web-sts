@@ -74,7 +74,7 @@ export default function AboutUsPage() {
       {/* 1. Hero Section */}
       <section className="relative h-80 bg-gray-900">
         <Image
-          src="/Images/banner-tentang-kami.jpg" // Ganti dengan foto banner Anda
+          src="/Images/PT STS - Web Design - About Us Header B.png" // Ganti dengan foto banner Anda
           alt="Tim PT. Samudra Teknik Sejahtera"
           layout="fill"
           objectFit="cover"
@@ -103,7 +103,7 @@ export default function AboutUsPage() {
             </div>
             <div className="w-full h-80 relative rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/Images/download.jpg" // Ganti dengan foto sejarah Anda
+                src="/Images/PT STS - Web Design - Frame Office Building A.png" // Ganti dengan foto sejarah Anda
                 alt="Toko pertama PT. STS"
                 layout="fill"
                 objectFit="cover"

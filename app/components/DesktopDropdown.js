@@ -34,13 +34,6 @@ export default function DesktopDropdown() {
         { title: 'Safety Equipments | Peralatan Keselamatan', href: '/produk/yozuri/safety-equipments' },
       ]
     },
-    {
-      title: 'HELIOS',
-      href: '/produk/helios',
-      subItems: [
-        { title: 'Safety Equipments | Peralatan Keselamatan', href: '/produk/helios/safety-equipments' },
-      ]
-    },
   ];
 
   return (
