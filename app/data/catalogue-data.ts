@@ -31,10 +31,10 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-001',
           name: 'Palu Kambing Gerigi - Gagang Fiber',
-          image: '/Images/own/Owner - Palu Kambing Gagang Fiber - Gerigi.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Palu Kambing Gerigi Gagang Fiber.png',
           description: 'Palu kambing OWNER PRO series dengan kepala gerigi dirancang untuk daya cengkeram paku maksimal. Gagang fiber anti-slip memberikan kenyamanan dan keamanan ekstra saat digunakan.',
           specifications: [{ key: 'Ukuran Kepala', value: '8oz' }, { key: 'Material Gagang', value: 'Fiberglass' }],
-          features: [{ text: 'Baja Kuat' }, { text: 'Gagang Nyaman' }],
+          features: [{ text: 'Kepala gerigi anti-slip' }, { text: 'Gagang fiber peredam getaran' }],
           packagingDetails: [
             { size: '8 OZ / 0,23 Lbs', innerBox: '6 Pcs/box', outerBox: '60/ctn' },
             { size: '12 OZ / 0,375 Lbs', innerBox: '6 Pcs/box', outerBox: '48/ctn' },
@@ -45,10 +45,10 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-002',
           name: 'Palu Kambing - Gagang Fiber',
-          image: '/Images/own/Owner - Palu Kambing Gagang Fiber - Non-Gerigi.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Palu Kambing Polos Gagang Fiber.png',
           description: 'Palu kambing serbaguna dengan kepala rata, cocok untuk berbagai keperluan pertukangan dan proyek DIY. Gagang fiber yang ringan dan kuat.',
           specifications: [{ key: 'Ukuran Kepala', value: '8oz' }, { key: 'Material Gagang', value: 'Fiberglass' }],
-          features: [{ text: 'Baja Tempa' }, { text: 'Gagang Fiber' }],
+          features: [{ text: 'Kepala polos anti-gores' }, { text: 'Gagang fiber pukulan bertenaga' }],
           packagingDetails: [
             { size: '8 OZ / 0,23 Lbs', innerBox: '6 Pcs/box', outerBox: '60/ctn' },
             { size: '12 OZ / 0,375 Lbs', innerBox: '6 Pcs/box', outerBox: '48/ctn' },
@@ -59,10 +59,10 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-003',
           name: 'Palu Bodam - Tanpa Gagang',
-          image: '/Images/own/Owner - Palu Bodem Tanpa Gagang A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Palu Bodem Tanpa Gagang.png',
           description: 'Palu bodam (sledgehammer) dari baja tempa berkualitas tinggi, ideal untuk pekerjaan penghancuran berat seperti membongkar beton dan dinding.',
           specifications: [{ key: 'Berat', value: '3 kg' }, { key: 'Material Kepala', value: 'Baja Tempa' }],
-          features: [{ text: 'Daya Hancur' }, { text: 'Heavy Duty' }],
+          features: [{ text: 'Baja tempa super kuat' }, { text: 'Siap pasang gagang custom' }],
           packagingDetails: [
             { size: '2 Lbs', innerBox: '-', outerBox: '40/ctn' },
             { size: '3 Lbs', innerBox: '-', outerBox: '24/ctn' },
@@ -77,10 +77,10 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-004',
           name: 'Kabel Ties - Hitam & Putih',
-          image: '/Images/own/Owner - Kabel Ties B.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kabel Ties.png',
           description: 'Kabel ties serbaguna berbahan nilon kuat untuk mengikat dan merapikan kabel, selang, atau keperluan lainnya. Tahan lama dan tidak mudah putus.',
           specifications: [{ key: 'Material', value: 'Nilon 66' }, { key: 'Warna', value: 'Hitam, Putih' }],
-          features: [{ text: 'Kuat Mengunci' }, { text: 'Fleksibel' }],
+          features: [{ text: 'Material nilon alot, anti-putus' }, { text: 'Pengunci presisi, anti-melorot' }],
           packagingDetails: [
             { size: '2,5x100 mm', innerBox: '10 Pax / Pouch', outerBox: '300 Pax / Pouch' },
             { size: '3,6x150 mm', innerBox: '10 Pax / Pouch', outerBox: '300 Pax / Pouch' },
@@ -93,34 +93,34 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-005',
           name: 'Diamond Wheel Dry',
-          image: '/Images/own/Owner - Diamond Wheel - Dry Yellow A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Diamond Wheel Dry.png',
           description: 'Mata gerinda potong keramik tipe kering (dry) yang dirancang untuk pemotongan presisi dan cepat pada berbagai jenis keramik, granit, dan marmer.',
           specifications: [{ key: 'Tipe', value: 'Kering (Dry Cut)' }, { key: 'Diameter', value: '4 inch' }],
-          features: [{ text: 'Potongan Presisi' }, { text: 'Cepat & Bersih' }],
+          features: [{ text: 'Potongan kering cepat & awet' }, { text: 'Untuk potong beton & bata' }],
           packagingDetails: [
             { size: '4 Inch', innerBox: '10 Pcs / box', outerBox: '200 Pcs / Ctn' },
           ],
-          variations: [{ id: 'own-006', name: 'Diamond Wheel Turbo', image: '/Images/own/Owner - Diamond Wheel Turbo K Disc - Front.png' }]
+          variations: [{ id: 'own-006', name: 'Diamond Wheel Turbo', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Diamond Wheel Turbo Type X & K.png' }]
         },
         {
           id: 'own-006',
           name: 'Diamond Wheel Turbo',
-          image: '/Images/own/Owner - Diamond Wheel Turbo K Disc - Front.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Diamond Wheel Turbo Type X & K.png',
           description: 'Mata gerinda potong serbaguna dengan desain turbo rim untuk pendinginan lebih baik dan pemotongan yang lebih agresif. Cocok untuk beton dan batu alam.',
           specifications: [{ key: 'Tipe', value: 'Turbo Rim' }, { key: 'Diameter', value: '4 inch' }],
-          features: [{ text: 'Potongan Agresif' }, { text: 'Desain Pendingin' }],
+          features: [{ text: 'Desain Turbo, potong lebih cepat' }, { text: 'Mengurangi gompal (anti-chip)' }],
           packagingDetails: [
             { size: '4 Inch', innerBox: '10 Pcs / box', outerBox: '200 Pcs / Ctn' },
           ],
-          variations: [{ id: 'own-005', name: 'Diamond Wheel Dry', image: '/Images/own/Owner - Diamond Wheel - Dry Yellow A.png' }]
+          variations: [{ id: 'own-005', name: 'Diamond Wheel Dry', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Diamond Wheel Dry.png' }]
         },
         {
           id: 'own-007',
           name: 'Tali Rafia',
-          image: '/Images/own/Owner - Tali Rafia - Hitam.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Tali Rafia 1 Kg.png',
           description: 'Tali rafia berkualitas tinggi, kuat, dan tidak mudah berserabut. Cocok untuk berbagai keperluan pengemasan, pengikatan, dan kerajinan tangan.',
           specifications: [{ key: 'Warna', value: 'Hitam' }, { key: 'Berat Gulungan', value: '1 kg' }],
-          features: [{ text: 'Kuat & Tebal' }, { text: 'Serbaguna' }],
+          features: [{ text: 'Plastik super liat, anti-putus' }, { text: 'Gulungan panjang lebih hemat' }],
           packagingDetails: [
             { size: '1 KG', innerBox: '-', outerBox: '15 Roll / ctn' },
           ],
@@ -128,12 +128,17 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-008',
           name: 'Lakban - Adhesive Tapes',
-          image: '/Images/own/Owner - Lakban A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Adhesive Tapes.png',
           description: 'Lakban perekat serbaguna dengan daya rekat kuat, ideal untuk pengepakan kardus, penyegelan, dan berbagai keperluan rumah tangga maupun industri.',
           specifications: [{ key: 'Warna', value: 'Coklat' }, { key: 'Lebar', value: '2 inch (48mm)' }],
-          features: [{ text: 'Daya Rekat Kuat' }, { text: 'Serbaguna' }],
+          features: [{ text: 'Daya rekat super kuat' }, { text: 'Bahan tebal, anti-sobek' }],
           packagingDetails: [
-            { size: '2" x 100y', innerBox: '6/slop', outerBox: '72/ctn' },
+            { type: 'BENING | 40 YD & 85 YD', innerBox: '6 Roll / Pack', outerBox: '72 Pcs / Ctn' },
+            { type: 'COKLAT | 85 YD', innerBox: '6 Roll / Pack', outerBox: '72 Pcs / Ctn' },
+            { type: 'HITAM | 4 M', innerBox: '-', outerBox: '72 Pcs / Ctn' },
+            { type: 'KERTAS | 1"x10 M', innerBox: '-', outerBox: '72 Pcs / Ctn' },
+            { type: 'KERTAS | 2"x10 M', innerBox: '-', outerBox: '72 Pcs / Ctn' },
+            { type: 'HIJAU | 5 M DOUBLE TAPE', innerBox: '-', outerBox: '126 Pcs / Ctn' },
           ],
         },
       ],
@@ -147,7 +152,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-paint-001',
           name: 'Kuas Roll Copot 9 Inch',
-          image: '/Images/own/Owner - kuas roll .png', // TIDAK DIUBAH
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kuas Roll Copot 9 Inch.png', // TIDAK DIUBAH
           description: 'Kuas roll set 9 inch dengan gagang yang bisa dilepas untuk kemudahan pembersihan dan penggantian bulu roll. Cocok untuk pengecatan area luas seperti dinding dan langit-langit.',
           specifications: [
             { key: 'Ukuran', value: '9 Inch' },
@@ -165,7 +170,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-paint-003',
           name: 'Bulu Kuas Roll 9 Inch',
-          image: '/Images/own/Owner - 9 Inch Bulu Roll Copot - Orange.png', // TIDAK DIUBAH
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Bulu Roll Copot 9 Inch.png', // TIDAK DIUBAH
           description: 'Refill bulu kuas roll 9 inch berkualitas tinggi yang menyerap cat secara maksimal dan menghasilkan lapisan yang rata dan halus.',
           specifications: [
             { key: 'Ukuran', value: '9 Inch' },
@@ -183,7 +188,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-paint-004',
           name: 'Bulu Roll Domba 4 Inch',
-          image: '/Images/own/Owner - 4 Inch Bulu Roll Domba - Merah.png', // TIDAK DIUBAH
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Bulu Roll Domba 4 Inch.png', // TIDAK DIUBAH
           description: 'Refill bulu roll mini 3 inch terbuat dari bulu domba asli, memberikan hasil akhir yang sangat halus dan bebas gelembung. Ideal untuk cat minyak dan pernis.',
           specifications: [
             { key: 'Ukuran', value: '3 Inch' },
@@ -201,7 +206,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-paint-005',
           name: 'Bulu Roll Garis 4 Inch',
-          image: '/Images/own/Owner - 4 Inch Bulu Roll Kapal - Garis.png', // TIDAK DIUBAH
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Bulu Roll Garis 4 Inch.png', // TIDAK DIUBAH
           description: 'Refill bulu roll 4 inch dengan motif garis untuk menciptakan efek tekstur dekoratif pada dinding. Mudah digunakan untuk proyek kreatif.',
           specifications: [
             { key: 'Ukuran', value: '4 Inch' },
@@ -214,12 +219,13 @@ export const catalogueData: Record<string, Category[]> = {
           ],
           packagingDetails: [
             { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '1.200 Pcs / Ctn' }, // SUDAH DIUBAH
+            { size: '4 Inch', innerBox: '10 Pcs / Box', outerBox: '1.200 Pcs / Ctn' },
           ],
         },
         {
           id: 'own-paint-006',
           name: 'Kuas Cat 633',
-          image: '/Images/own/Owner - Kuas Cat 633 - All-Sizes.png', // TIDAK DIUBAH
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kuas Cat 633.png', // TIDAK DIUBAH
           description: 'Kuas cat seri 633 dengan bulu berkualitas yang tidak mudah rontok. Tersedia dalam berbagai ukuran untuk segala jenis pekerjaan pengecatan, dari detail hingga area sedang.',
           specifications: [
             { key: 'Seri', value: '633' },
@@ -231,15 +237,18 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Serbaguna' },
           ],
           packagingDetails: [
-            { size: '1 Inch', innerBox: '12/box', outerBox: '240/ctn' }, // SUDAH DIUBAH
-            { size: '1.5 Inch', innerBox: '12/box', outerBox: '180/ctn' }, // SUDAH DIUBAH
-            { size: '2 Inch', innerBox: '12/box', outerBox: '120/ctn' }, // SUDAH DIUBAH
+            { size: '1 Inch', innerBox: '12 Pcs / Box', outerBox: '1.200 Pcs / Ctn' }, // SUDAH DIUBAH
+            { size: '1.5 Inch', innerBox: '12 Pcs / Box', outerBox: '960 Pcs / Ctn' }, // SUDAH DIUBAH
+            { size: '2 Inch', innerBox: '12 Pcs / Box', outerBox: '720 Pcs / Ctn' }, // SUDAH DIUBAH
+            { size: '2,5 Inch', innerBox: '12 Pcs / Box', outerBox: '480 Pcs / Ctn' },
+            { size: '3 Inch', innerBox: '12 Pcs / Box', outerBox: '360 Pcs / Ctn' },
+            { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
           ],
         },
         {
           id: 'own-paint-007',
-          name: 'Kuas Roll Copot 4 Inch Domba',
-          image: '/Images/own/Owner - Kuas Roll Copot 4 Inch - Bulu Domba Merah A.png', // TIDAK DIUBAH
+          name: 'Kuas Roll Copot 4 Inch',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kuas Roll Copot 4 Inch.png', // TIDAK DIUBAH
           description: 'Kuas roll set 4 inch dengan bulu domba asli untuk hasil akhir super halus. Gagang bisa dilepas, ideal untuk aplikasi cat minyak, pernis, dan finishing.',
           specifications: [
             { key: 'Ukuran', value: '4 Inch' },
@@ -251,32 +260,9 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Untuk Cat Minyak' },
           ],
           packagingDetails: [
-            { type: 'Domba', innerBox: '12 Pcs / Pack', outerBox: '120 Pcs / Ctn' }, // SUDAH DIUBAH
+            { type: 'DOMBA', innerBox: '12 Pcs / Pack', outerBox: '120 Pcs / Ctn' }, // SUDAH DIUBAH
+             { type: 'GARIS', innerBox: '12 Pcs / Pack', outerBox: '120 Pcs / Ctn' },
           ],
-          variations: [
-            { id: 'own-paint-008', name: 'Kuas Roll Copot 4 Inch Garis', image: '/Images/own/Owner - Kuas Roll Copot 4 Inch - Garis A.png' },
-          ]
-        },
-        {
-          id: 'own-paint-008',
-          name: 'Kuas Roll Copot 4 Inch Garis',
-          image: '/Images/own/Owner - Kuas Roll Copot 4 Inch - Garis A.png', // TIDAK DIUBAH
-          description: 'Ciptakan efek dinding bertekstur garis dengan mudah menggunakan kuas roll set 4 inch ini. Gagang yang bisa dilepas memudahkan penggantian dan pembersihan.',
-          specifications: [
-            { key: 'Ukuran', value: '4 Inch' },
-            { key: 'Jenis', value: 'Set Roll Tekstur' },
-            { key: 'Motif', value: 'Garis (Stripe)' },
-          ],
-          features: [
-            { text: 'Efek Dinding Tekstur' },
-            { text: 'Proyek Kreatif' },
-          ],
-          packagingDetails: [
-            { type: 'Garis', innerBox: '12 Pcs / Pack', outerBox: '120 Pcs / Ctn' }, // SUDAH DIUBAH
-          ],
-          variations: [
-            { id: 'own-paint-007', name: 'Kuas Roll Copot 4 Inch Domba', image: '/Images/own/Owner - Kuas Roll Copot 4 Inch - Bulu Domba Merah A.png' },
-          ]
         },
       ],
     },
@@ -419,7 +405,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-layer-008',
           name: 'Amplas Roll PREMIUM',
-          image: '/Images/own/Owner - Abrasive Roll PREMUM.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Amplas Roll PREMIUM.png',
           description: 'Amplas roll serbaguna untuk menghaluskan permukaan kayu dan besi. Fleksibel dan mudah dipotong sesuai kebutuhan.',
           specifications: [
             { key: 'Tipe', value: 'Roll' },
@@ -447,7 +433,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-layer-009',
           name: 'Amplas Roll 98',
-          image: '/Images/own/Owner - Abrasive Roll 98.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Amplas Roll 98.png',
           description: 'Amplas roll seri 98 dengan kualitas premium untuk hasil pengamplasan yang lebih halus dan cepat. Backing kain yang kuat.',
           specifications: [
             { key: 'Tipe', value: 'Roll Seri 98' },

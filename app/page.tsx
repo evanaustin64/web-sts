@@ -147,11 +147,11 @@ function CatalogueSlider() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 1024, // Untuk layar tablet (di bawah 1024px)
@@ -171,11 +171,14 @@ function CatalogueSlider() {
   };
 
   const catalogueItems = [
-    { image: '/Images/Yo-Zuri - Product Pages-84.jpg', link: '/produk' },
-    { image: '/Images/Yo-Zuri - Product Pages-85.jpg', link: '/produk' },
-    { image: '/Images/Yo-Zuri - Product Pages-86.jpg', link: '/produk' },
-    { image: '/Images/Yo-Zuri - Product Pages-87.jpg', link: '/produk' },
-    { image: '/Images/Yo-Zuri - Product Pages-88.jpg', link: '/produk' },
+    { image: '/Images/PT STS - Web Design - YO-ZURI Categories - Hand & Plumbing Tools.png', link: '/produk' },
+    { image: '/Images/PT STS - Web Design - OWNER Categories 720px - Layering Tools.png', link: '/produk' },
+    { image: '/Images/PT STS - Web Design - YO-ZURI Categories - Drilling Tools.png', link: '/produk' },
+    { image: '/Images/PT STS - Web Design - OWNER Categories 720px - Door Lock Equipments.png', link: '/produk' },
+    { image: '/Images/PT STS - Web Design - YO-ZURI Categories - Diamond Wheels.png', link: '/produk' },
+    { image: '/Images/PT STS - Web Design - OWNER Categories 720px - Safety Equipments.png', link: '/produk' },
+    { image: '/Images/PT STS - Web Design - YO-ZURI Categories - Painting Tools.png', link: '/produk' },
+    { image: '/Images/PT STS - Web Design - OWNER Categories 720px - Sanitary Equipments.png', link: '/produk' },
   ];
 
   return (
@@ -185,24 +188,12 @@ function CatalogueSlider() {
         <Slider {...settings}>
           {catalogueItems.map((item, index) => (
             <div key={index} className="px-2">
-              {/* MODIFIKASI #1:
-                - h-96 diganti 'aspect-square' agar wadah selalu persegi.
-                - Tambahkan 'bg-gray-100' untuk background card.
-                - 'flex items-center justify-center' untuk menengahkan gambar.
-                - 'p-6' untuk memberi jarak antara gambar dan tepi card.
-                - Efek hover diubah menjadi shadow agar lebih rapi.
-              */}
               <Link
                 href={item.link}
                 className="group relative aspect-square rounded-lg
                            overflow-hidden flex items-center justify-center
                            transition-shadow duration-300 hover:shadow-xl"
               >
-                {/* MODIFIKASI #2:
-                  - 'object-cover' diganti 'object-contain' agar seluruh gambar terlihat.
-                  - 'h-full' dan 'w-full' tetap agar gambar mengisi ruang yang tersedia di dalam padding.
-                  - Efek hover scale diubah, karena sudah ditangani oleh shadow di parent.
-                */}
                 <img
                   src={item.image}
                   alt={`Catalogue item ${index + 1}`}
@@ -252,20 +243,23 @@ function DownloadCatalogueSection() {
           Unduh katalog produk terbaru kami dalam format PDF untuk melihat semua koleksi dan spesifikasi teknisnya.
         </p>
       </div>
-      <div className='flex text-center justify-center gap-6'>
+      <div className=' flex flex-col md:flex-row 
+        items-center justify-center 
+        gap-4 md:gap-6 
+        px-4 '>
         <a
           // Ganti href dengan link Google Drive Anda menggunakan format /preview
-          href="https://drive.google.com/file/d/ID_FILE_OWNER_ANDA/preview" 
+          href="https://drive.google.com/file/d/1NQaZzPGuQnH2IEgPKN0LsHukhKR7g5LN/view?usp=drive_link"
           target="_blank" // <-- Tambahkan ini agar terbuka di tab baru
           rel="noopener noreferrer" // <-- Tambahkan ini untuk keamanan
           className="
             inline-block bg-yellow-500 text-gray-900 font-helvetica-regular uppercase py-3 px-8 rounded 
             hover:bg-yellow-600 
-            
+
             transition-all duration-300 ease-in-out
             hover:scale-105 hover:-translate-y-1
           "
-          // Hapus atribut 'download' dari sini
+        // Hapus atribut 'download' dari sini
         >
           Catalogue - Owner
         </a>
@@ -280,7 +274,7 @@ function DownloadCatalogueSection() {
             transition-all duration-300 ease-in-out
             hover:scale-105 hover:-translate-y-1
           "
-          // Hapus atribut 'download' dari sini
+        // Hapus atribut 'download' dari sini
         >
           Catalogue - Yo-Zuri
         </a>
