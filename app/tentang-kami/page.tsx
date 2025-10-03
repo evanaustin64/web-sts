@@ -137,7 +137,7 @@ export default function AboutUsPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-helvetica-black text-gray-900 mb-4">Nilai-Nilai Perusahaan</h2>
           <p className="max-w-3xl mx-auto text-lg text-gray-600 mb-12 font-helvetica-regular">
-            Sembilan pilar yang menjadi landasan kami dalam bekerja dan melayani, yang terangkum dalam semangat <span className="font-helvetica-black text-yellow-500">"BERKUALITAS"</span>.
+            Sembilan pilar yang menjadi landasan kami dalam bekerja dan melayani, yang terangkum dalam semangat <span className="font-helvetica-black text-yellow-600">&quot;BERKUALITAS&quot;</span>.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {stsValues.map((value, index) => (
