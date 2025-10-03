@@ -711,7 +711,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-sanitary-001',
           name: 'Kran Shower',
-          image: '/Images/own/Owner - Kran Shower - Tipe F+Tipe T A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Shower.png',
           description: 'Kran shower minimalis dengan handle ergonomis untuk kontrol suhu dan aliran air yang mudah. Dilapisi chrome berkualitas tinggi yang anti karat.',
           specifications: [
             { key: 'Material', value: 'Kuningan Lapis Chrome' },
@@ -729,7 +729,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-sanitary-002',
           name: 'Kran Angsa Fleksibel - Terompet',
-          image: '/Images/own/Owner - Kran - Angsa Fleksibel - Terompet.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Angsa Fleksibel Terompet.png',
           description: 'Kran wastafel model angsa dengan leher fleksibel yang bisa diputar 360 derajat. Kepala output model terompet untuk aliran air yang lebih menyebar.',
           specifications: [
             { key: 'Model Leher', value: 'Fleksibel' },
@@ -745,13 +745,13 @@ export const catalogueData: Record<string, Category[]> = {
             { type: 'Silver | Dinding', innerBox: '6 Pcs / Box', outerBox: '54 Pcs / Ctn' },
           ],
           variations: [
-            { id: 'own-sanitary-003', name: 'Kran Angsa Fleksibel - Bulat', image: '/Images/own/Owner - Kran - Angsa Fleksibel - Bulat.png' },
+            { id: 'own-sanitary-003', name: 'Kran Angsa Fleksibel - Bulat', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Angsa Fleksibel Bulat.png' },
           ]
         },
         {
           id: 'own-sanitary-003',
           name: 'Kran Angsa Fleksibel - Bulat',
-          image: '/Images/own/Owner - Kran - Angsa Fleksibel - Bulat.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Angsa Fleksibel Bulat.png',
           description: 'Kran wastafel model angsa dengan leher fleksibel dan kepala output bulat yang menghasilkan aliran air terfokus. Cocok untuk bak cuci piring.',
           specifications: [
             { key: 'Model Leher', value: 'Fleksibel' },
@@ -767,13 +767,13 @@ export const catalogueData: Record<string, Category[]> = {
             { type: 'Silver | Dinding', innerBox: '8 Pcs / Box', outerBox: '72 Pcs / Carbon' },
           ],
           variations: [
-            { id: 'own-sanitary-002', name: 'Kran Angsa Fleksibel - Terompet', image: '/Images/own/Owner - Kran - Angsa Fleksibel - Terompet.png' },
+            { id: 'own-sanitary-002', name: 'Kran Angsa Fleksibel - Terompet', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Angsa Fleksibel Terompet.png' },
           ]
         },
         {
           id: 'own-sanitary-004',
           name: 'Kran Angsa PVC',
-          image: '/Images/own/Owner - Kran Angsa - PVC A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Angsa PVC.png',
           description: 'Kran angsa ekonomis berbahan PVC tebal yang anti korosi dan ringan. Pilihan praktis untuk dapur atau area cuci.',
           specifications: [
             { key: 'Material', value: 'PVC' },
@@ -784,14 +784,14 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Harga Ekonomis' },
           ],
           packagingDetails: [
-            { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
-            { type: 'Bulat | 1/2 - 3/4 Inch', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { type: 'Engkol | 1/2 Inch', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { type: 'Bulat | 1/2 Inch', innerBox: '6 Pcs / Box', outerBox: '72 Pcs / Ctn' },
           ],
         },
         {
           id: 'own-sanitary-005',
           name: 'Kran Cabang',
-          image: '/Images/own/Owner - Kran Cabang - Engkol.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Cabang.png',
           description: 'Kran cabang (double tap) untuk menghubungkan dua selang sekaligus, misalnya untuk shower dan keran biasa. Efisien dan praktis.',
           specifications: [
             { key: 'Material', value: 'Babet Lapis Chrome' },
@@ -802,13 +802,13 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Hemat Ruang' },
           ],
           packagingDetails: [
-            { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '10 Pcs / Box', outerBox: '80 Pcs / Ctn' },
+            { type: 'Engkol | 1/2 Inch', innerBox: '10 Pcs / Box', outerBox: '80 Pcs / Ctn' },
           ],
         },
         {
           id: 'own-sanitary-006',
           name: 'Seal Tape 100% P.T.F.E',
-          image: '/Images/own/Owner - Seal Tape PTFE - White A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Seal Tape Merah.png',
           description: 'Seal tape berkualitas tinggi terbuat dari 100% P.T.F.E murni untuk mencegah kebocoran pada sambungan pipa drat.',
           specifications: [
             { key: 'Material', value: '100% P.T.F.E' },
@@ -825,7 +825,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-sanitary-007',
           name: 'Ball Valve PVC',
-          image: '/Images/own/Owner - Ball Valve - Grey&Red.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Ball Valve PVC Abu&Merah.png',
           description: 'Ball valve (stop kran) PVC untuk membuka dan menutup aliran air dengan cepat. Awet, tahan tekanan, dan tidak mudah macet.',
           specifications: [
             { key: 'Material', value: 'PVC' },
@@ -844,7 +844,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-sanitary-008',
           name: 'Lem Sealant Botol - Acetic',
-          image: '/Images/own/Owner - Lem Sealant Botol C.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Lem Sealant Botol.png',
           description: 'Lem sealant silikon tipe acetic serbaguna dalam kemasan botol. Cocok untuk mengisi celah pada kaca, keramik, dan berbagai material lainnya. Cepat kering dan kedap air.',
           specifications: [
             { key: 'Tipe', value: 'Acetic Silicone Sealant' },
@@ -864,7 +864,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-sanitary-009',
           name: 'Kran Taman - Bening PVC',
-          image: '/Images/own/Owner - Kran - Transparan PVC Engkol+Topi A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Taman Bening PVC.png',
           description: 'Kran taman berbahan PVC transparan yang unik dan modern. Tahan cuaca dan tekanan, cocok untuk penggunaan luar ruangan.',
           specifications: [
             { key: 'Material', value: 'PVC Transparan' },
@@ -877,6 +877,25 @@ export const catalogueData: Record<string, Category[]> = {
           packagingDetails: [
             { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '24 Pcs / Box', outerBox: '480 Pcs / Ctn' },
             { type: 'Topi | 1/2 - 3/4 Inch', innerBox: '24 Pcs / Box', outerBox: '480 Pcs / Ctn' },
+          ],
+        },
+        {
+          id: 'own-sanitary-010',
+          name: 'Kran Wastafel',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Wastafel.png',
+          description: 'Kran taman berbahan PVC transparan yang unik dan modern. Tahan cuaca dan tekanan, cocok untuk penggunaan luar ruangan.',
+          specifications: [
+            { key: 'Material', value: 'PVC Transparan' },
+            { key: 'Aplikasi', value: 'Taman / Luar Ruangan' },
+          ],
+          features: [
+            { text: 'Desain Unik & Modern' },
+            { text: 'Material Anti Karat' },
+            { text: 'Kuat dan Tahan Cuaca' },
+          ],
+          packagingDetails: [
+            { type: 'UP & DOWN', innerBox: '12 Pcs / Box', outerBox: '96 Pcs / Ctn' },
+            { type: 'BALING', innerBox: '12 Pcs / Box', outerBox: '96 Pcs / Ctn' },
           ],
         },
       ],
