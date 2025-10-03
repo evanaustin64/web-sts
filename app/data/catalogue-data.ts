@@ -40,7 +40,7 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '12 OZ / 0,375 Lbs', innerBox: '6 Pcs/box', outerBox: '48/ctn' },
             { size: '16 OZ / 0,50 Lbs', innerBox: '6 Pcs/box', outerBox: '36/ctn' },
           ],
-          variations: [{ id: 'own-002', name: 'Palu Kambing Rata', image: '/Images/own/Owner - Palu Kambing Gagang Fiber - Non-Gerigi.png' }]
+          variations: [{ id: 'own-002', name: 'Palu Kambing Rata', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Palu Kambing Polos Gagang Fiber.png' }]
         },
         {
           id: 'own-002',
@@ -54,7 +54,7 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '12 OZ / 0,375 Lbs', innerBox: '6 Pcs/box', outerBox: '48/ctn' },
             { size: '16 OZ / 0,50 Lbs', innerBox: '6 Pcs/box', outerBox: '36/ctn' },
           ],
-          variations: [{ id: 'own-001', name: 'Palu Kambing Gerigi', image: '/Images/own/Owner - Palu Kambing Gagang Fiber - Gerigi.png' }]
+          variations: [{ id: 'own-001', name: 'Palu Kambing Gerigi', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Palu Kambing Gerigi Gagang Fiber.png' }]
         },
         {
           id: 'own-003',
@@ -276,7 +276,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-layer-001',
           name: 'Siku Rak',
-          image: '/Images/own/Yo-Zuri - Siku Rak - Putih.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Siku Rak.png',
           description: 'Siku rak besi tebal untuk menopang ambalan dinding dengan kokoh. Ideal untuk kebutuhan rumah tangga, gudang, dan display toko.',
           specifications: [
             { key: 'Material', value: 'Besi' },
@@ -298,7 +298,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-layer-002',
           name: 'Siku Lubang Tebal',
-          image: '/Images/own/Owner - Siku Lubang 4 Warna A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Siku Lubang Tebal.png',
           description: 'Besi siku lubang serbaguna dengan ketebalan ekstra untuk merakit rak custom, meja kerja, atau kerangka lainnya. Kuat dan mudah dirakit.',
           specifications: [
             { key: 'Material', value: 'Besi' },
@@ -310,17 +310,16 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Material Tebal & Kuat' },
           ],
           packagingDetails: [
-            { size: '3M', innerBox: '10/pack', outerBox: '100/ctn' },
+            { size: '36mm x 36mm x 3m | PUTIH 16 kg', innerBox: '-', outerBox: '10 Bars / Box' },
+            { size: '36mm x 36mm x 3m | ABU 16 kg', innerBox: '-', outerBox: '10 Bars / Box' },
+            { size: '36mm x 36mm x 3m | MERAH 16 kg', innerBox: '-', outerBox: '10 Bars / Box' },
+            { size: '36mm x 36mm x 3m | HAMMERTONE 16 kg', innerBox: '-', outerBox: '10 Bars / Box' },
           ],
         },
-        // { 
-        //   id: 'own-layer-003', 
-        //   name: 'Pahat Topi Jumbo (Concrete Chisel)', ...
-        // },
         {
           id: 'own-layer-004',
           name: 'Sikat Kawat',
-          image: '/Images/own/Owner - Sikat Kawat.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Sikat Kawat.png',
           description: 'Sikat kawat dengan gagang kayu untuk membersihkan karat, cat, kerak, dan kotoran membandel dari permukaan logam atau beton.',
           specifications: [
             { key: 'Material Kawat', value: 'Baja' },
@@ -339,7 +338,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-layer-005',
           name: 'Fissher',
-          image: '/Images/own/Owner - Fissher A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Fissher.png',
           description: 'Fissher (wall plug) berkualitas tinggi untuk pemasangan sekrup yang kuat dan aman pada dinding tembok atau beton.',
           specifications: [
             { key: 'Material', value: 'Plastik (Nylon)' },
@@ -357,13 +356,13 @@ export const catalogueData: Record<string, Category[]> = {
             { type: 'S12', innerBox: '50 PCs / Box', outerBox: '120 Pcs / Ctn' },
           ],
           variations: [
-            { id: 'own-layer-006', name: 'Fissher + Sekrup Set', image: '/Images/own/Owner - Fissher+Sekrup.png' },
+            { id: 'own-layer-006', name: 'Fissher + Sekrup Set', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Fissher+Sekrup.png' },
           ]
         },
         {
           id: 'own-layer-006',
           name: 'Fissher + Sekrup Set',
-          image: '/Images/own/Owner - Fissher+Sekrup.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Fissher+Sekrup.png',
           description: 'Paket lengkap fissher dan sekrup yang sudah serasi ukurannya, memudahkan pemasangan gantungan atau rak di dinding.',
           specifications: [
             { key: 'Isi Paket', value: 'Fissher + Sekrup' },
@@ -381,13 +380,13 @@ export const catalogueData: Record<string, Category[]> = {
             { type: 'S12', innerBox: '10 PCs / Pack', outerBox: '200 Pcs / Box' },
           ],
           variations: [
-            { id: 'own-layer-005', name: 'Fissher', image: '/Images/own/Owner - Fissher A.png' },
+            { id: 'own-layer-005', name: 'Fissher', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Fissher.png' },
           ]
         },
         {
           id: 'own-layer-007',
           name: 'Gerobak Sorong - PVC (9kg)',
-          image: '/Images/own/Owner - Gerobak Sorong - Bak PVC Putih - Ban Hidup.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gerobak Sorong Bak PVC 9 Kg.png',
           description: 'Gerobak sorong heavy duty dengan bak PVC tebal yang anti pecah dan anti karat. Ringan (9kg) namun kokoh untuk mengangkut material proyek.',
           specifications: [
             { key: 'Material Bak', value: 'PVC Tebal' },
@@ -400,7 +399,33 @@ export const catalogueData: Record<string, Category[]> = {
           ],
           packagingDetails: [
             { type: 'Ban Hidup', innerBox: '-', outerBox: '10 Set' },
+            { type: 'Ban Mati', innerBox: '-', outerBox: '10 Set' },
           ],
+          variations: [
+            { id: 'own-layer-012', name: 'Gerobak Sorong - BESI (9kg)', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gerobak Sorong Bak Besi 9 Kg.png' },
+          ]
+        },
+        {
+          id: 'own-layer-012',
+          name: 'Gerobak Sorong - BESI (9kg)',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gerobak Sorong Bak Besi 9 Kg.png',
+          description: 'Gerobak sorong heavy duty dengan bak PVC tebal yang anti pecah dan anti karat. Ringan (9kg) namun kokoh untuk mengangkut material proyek.',
+          specifications: [
+            { key: 'Material Bak', value: 'PVC Tebal' },
+            { key: 'Berat', value: '9 kg' },
+            { key: 'Rangka', value: 'Besi' },
+          ],
+          features: [
+            { text: 'Anti Karat & Pecah' },
+            { text: 'Ringan & Kokoh' },
+          ],
+          packagingDetails: [
+            { type: 'Ban Hidup', innerBox: '-', outerBox: '10 Set' },
+            { type: 'Ban Mati', innerBox: '-', outerBox: '10 Set' },
+          ],
+          variations: [
+            { id: 'own-layer-017', name: 'Gerobak Sorong - PVC (9kg)', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gerobak Sorong Bak PVC 9 Kg.png' },
+          ]
         },
         {
           id: 'own-layer-008',
@@ -461,7 +486,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-layer-010',
           name: 'Sendok Semen Lancip - Gagang Kayu',
-          image: '/Images/own/Owner - Sendok Semen Lancip - Gagang Kayu.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Sendok Semen Lancip Gagang Kayu.png',
           description: 'Sendok semen (trowel) dengan gagang kayu yang nyaman. Terbuat dari plat baja yang kuat untuk mengaduk dan mengaplikasikan adukan semen.',
           specifications: [
             { key: 'Material', value: 'Plat Baja' },
@@ -480,7 +505,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-layer-011',
           name: 'Kape - Gagang Kayu',
-          image: '/Images/own/Owner - Kape - Gagang Kayu.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kape Gagang Kayu.png',
           description: 'Kape (scrapper) dengan gagang kayu, alat esensial untuk membersihkan permukaan, mengerok cat lama, atau meratakan dempul.',
           specifications: [
             { key: 'Material', value: 'Plat Baja Fleksibel' },
@@ -496,6 +521,60 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '2,5 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
             { size: '3 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
             { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+          ],
+        },
+        {
+          id: 'own-layer-013',
+          name: 'PAHAT TOPI PLAT - CONCRETE CHISEL',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Pahat Topi Plat.png',
+          description: 'Kape (scrapper) dengan gagang kayu, alat esensial untuk membersihkan permukaan, mengerok cat lama, atau meratakan dempul.',
+          specifications: [
+            { key: 'Material', value: 'Plat Baja Fleksibel' },
+            { key: 'Gagang', value: 'Kayu' },
+          ],
+          features: [
+            { text: 'Plat Fleksibel' },
+            { text: 'Serbaguna' },
+          ],
+          packagingDetails: [
+            { size: '8 Inch (-)', innerBox: '12 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { size: '10 Inch (-)', innerBox: '12 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { size: '12 Inch (-)', innerBox: '12 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+          ],
+        },
+        {
+          id: 'own-layer-014',
+          name: 'SIKAT KAWAT MANGKOK - WIRE BRUSH CUP',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Sikat Kawat Mangkok.png',
+          description: 'Kape (scrapper) dengan gagang kayu, alat esensial untuk membersihkan permukaan, mengerok cat lama, atau meratakan dempul.',
+          specifications: [
+            { key: 'Material', value: 'Plat Baja Fleksibel' },
+            { key: 'Gagang', value: 'Kayu' },
+          ],
+          features: [
+            { text: 'Plat Fleksibel' },
+            { text: 'Serbaguna' },
+          ],
+          packagingDetails: [
+            { size: '3 Inch', innerBox: '1 Pcs / Box', outerBox: '100 Pcs / Ctn' },
+          ],
+        },
+        {
+          id: 'own-layer-015',
+          name: 'BATU ASAH',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Batu Asah 6 Inch & 8 Inch.png',
+          description: 'Kape (scrapper) dengan gagang kayu, alat esensial untuk membersihkan permukaan, mengerok cat lama, atau meratakan dempul.',
+          specifications: [
+            { key: 'Material', value: 'Plat Baja Fleksibel' },
+            { key: 'Gagang', value: 'Kayu' },
+          ],
+          features: [
+            { text: 'Plat Fleksibel' },
+            { text: 'Serbaguna' },
+          ],
+          packagingDetails: [
+            { size: '6 Inch', innerBox: '1 Pcs / Box', outerBox: '50 Pcs / Ctn' },
+            { size: '8 Inch', innerBox: '1 Pcs / Box', outerBox: '50 Pcs / Ctn' },
           ],
         },
       ],
