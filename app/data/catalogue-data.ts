@@ -261,7 +261,7 @@ export const catalogueData: Record<string, Category[]> = {
           ],
           packagingDetails: [
             { type: 'DOMBA', innerBox: '12 Pcs / Pack', outerBox: '120 Pcs / Ctn' }, // SUDAH DIUBAH
-             { type: 'GARIS', innerBox: '12 Pcs / Pack', outerBox: '120 Pcs / Ctn' },
+            { type: 'GARIS', innerBox: '12 Pcs / Pack', outerBox: '120 Pcs / Ctn' },
           ],
         },
       ],
@@ -910,7 +910,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-safety-001',
           name: 'Kacamata Proyek - Safety Glasses',
-          image: '/Images/own/Owner - Kacamata Safety - Bening+Hitam A.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kacamata Proyek.png',
           description: 'Kacamata pengaman untuk melindungi mata dari debu, serpihan, dan partikel berbahaya saat bekerja. Lensa polikarbonat jernih dan anti gores.',
           specifications: [
             { key: 'Material Lensa', value: 'Polikarbonat' },
@@ -918,7 +918,7 @@ export const catalogueData: Record<string, Category[]> = {
             { key: 'Standar', value: 'ANSI Z87.1' },
           ],
           features: [
-            { text: 'Perlindungan Maksimal' },
+            { text: 'Melindungin mata secara maksimal' },
             { text: 'Anti Gores & Anti Kabut' },
             { text: 'Nyaman Digunakan' },
           ],
@@ -930,7 +930,7 @@ export const catalogueData: Record<string, Category[]> = {
         {
           id: 'own-safety-002',
           name: 'Sepatu Boots Hitam - Safety Rubber Boots',
-          image: '/Images/own/Owner - Safety Rubber Boots.png',
+          image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Safety Rubber Boots Black.png',
           description: 'Sepatu boots pengaman berbahan karet tebal yang tahan air dan anti slip. Memberikan perlindungan dari genangan air, lumpur, dan benda tajam.',
           specifications: [
             { key: 'Material', value: 'Karet (Rubber)' },
@@ -943,7 +943,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Bahan Karet Tebal' },
           ],
           packagingDetails: [
-            { size: '39-43', innerBox: '-', outerBox: '12 Pairs / Ctn' },
+            { size: '39, 40, 41, 42, 43', innerBox: '-', outerBox: '12 Pairs / Ctn' },
           ],
         },
       ],
@@ -955,7 +955,7 @@ export const catalogueData: Record<string, Category[]> = {
       name: 'Hand & Plumbing Tools | Peralatan Listrik & Perpipaan',
       image: '/Images/Power & Plumbing Tools.png', // Ganti dengan gambar Anda
       // Di dalam catalogueData -> yozuri -> kategori 'power-plumbing-tools'
-        products: [
+      products: [
         {
           id: 'yoz-plumb-001',
           name: 'Kunci Inggris',
@@ -1474,7 +1474,7 @@ export const catalogueData: Record<string, Category[]> = {
           ],
           packagingDetails: [
             { size: 'OR/BR | 9 Inch', innerBox: '24 Pcs / Box', outerBox: '200 Pcs / Ctn' },
-          ], 
+          ],
         },
         {
           id: 'yoz-paint-004',
@@ -1811,7 +1811,7 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'pemasangan baja ringan lebih cepat dan aman' },
           ],
           packagingDetails: [
-          { size: '8x65 mm', innerBox: '5 Pcs / Pack', outerBox: '200 Pcs / Ctn' },
+            { size: '8x65 mm', innerBox: '5 Pcs / Pack', outerBox: '200 Pcs / Ctn' },
           ],
           variations: [{ id: 'yoz-drill-011', name: 'Magnetic Hex Nut - Mata Shock Roofing - 8x45mm', image: '/Images/yozuri/Yo-Zuri - Mata Shock Roofing - 8x45mm B.png' }]
         },
@@ -1861,9 +1861,11 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '7 Inch', innerBox: '12 Pcs/ Box', outerBox: '120 Pcs / Ctn' },
             { size: '8 Inch', innerBox: '12 Pcs/ Box', outerBox: '120 Pcs / Ctn' },
           ],
-          variations: [{  id: 'yoz-layer-002',
-          name: 'Sendok Semen Bulat - Gagang Fiber',
-          image: '/Images/yozuri/Yo-Zuri - Sendok Semen - Gagang Fiber Bulat.png' }]
+          variations: [{
+            id: 'yoz-layer-002',
+            name: 'Sendok Semen Bulat - Gagang Fiber',
+            image: '/Images/yozuri/Yo-Zuri - Sendok Semen - Gagang Fiber Bulat.png'
+          }]
         },
         {
           id: 'yoz-layer-002',
@@ -1883,9 +1885,11 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '7 Inch', innerBox: '12 Pcs/ Box', outerBox: '120 Pcs / Ctn' },
             { size: '8 Inch', innerBox: '12 Pcs/ Box', outerBox: '120 Pcs / Ctn' },
           ],
-          variations: [{ id: 'yoz-layer-001',
-          name: 'Sendok Semen Lancip - Gagang Fiber',
-          image: '/Images/yozuri/Yo-Zuri - Sendok Semen - Gagang Fiber Lancip.png' }]
+          variations: [{
+            id: 'yoz-layer-001',
+            name: 'Sendok Semen Lancip - Gagang Fiber',
+            image: '/Images/yozuri/Yo-Zuri - Sendok Semen - Gagang Fiber Lancip.png'
+          }]
         },
         {
           id: 'yoz-layer-003',
@@ -1924,9 +1928,11 @@ export const catalogueData: Record<string, Category[]> = {
           packagingDetails: [
             { size: '280 x 110 mm', innerBox: '12 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
-          variations: [{ id: 'yoz-layer-005',
-          name: 'Raskam PVC Tebal - Thickness 5mm',
-          image: '/Images/yozuri/Yo-Zuri - Raskam PVC - Hitam.png' }]
+          variations: [{
+            id: 'yoz-layer-005',
+            name: 'Raskam PVC Tebal - Thickness 5mm',
+            image: '/Images/yozuri/Yo-Zuri - Raskam PVC - Hitam.png'
+          }]
         },
         {
           id: 'yoz-layer-005',
@@ -1944,9 +1950,11 @@ export const catalogueData: Record<string, Category[]> = {
           packagingDetails: [
             { size: '280 x 110 mm', innerBox: '12 Pcs / Box', outerBox: '60 Pcs / Ctn' },
           ],
-          variations: [{ id: 'yoz-layer-004',
-          name: 'Raskam Besi - Gagang Kayu',
-          image: '/Images/yozuri/Yo-Zuri - Raskam Besi - Gagang Kayu.png' }]
+          variations: [{
+            id: 'yoz-layer-004',
+            name: 'Raskam Besi - Gagang Kayu',
+            image: '/Images/yozuri/Yo-Zuri - Raskam Besi - Gagang Kayu.png'
+          }]
         },
         {
           id: 'yoz-layer-006',
@@ -2007,9 +2015,11 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '10 Inch (-)', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
             { size: '12 Inch (-)', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
           ],
-          variations: [{ id: 'yoz-layer-014',
-          name: 'Pahat Topi Jumbo - Concrete Chisel Lancip ',
-          image: '/Images/yozuri/Yo-Zuri - Pahat Topi Jumbo (+).png' }]
+          variations: [{
+            id: 'yoz-layer-014',
+            name: 'Pahat Topi Jumbo - Concrete Chisel Lancip ',
+            image: '/Images/yozuri/Yo-Zuri - Pahat Topi Jumbo (+).png'
+          }]
         },
         {
           id: 'yoz-layer-014',
@@ -2029,9 +2039,11 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '10 Inch (^)', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
             { size: '12 Inch (^)', innerBox: '6 Pcs / Box', outerBox: '48 Pcs / Ctn' },
           ],
-          variations: [{ id: 'yoz-layer-008',
-          name: 'Pahat Topi Jumbo - Concrete Chisel Rata',
-          image: '/Images/yozuri/Yo-Zuri - Pahat Topi Jumbo (-).png' }]
+          variations: [{
+            id: 'yoz-layer-008',
+            name: 'Pahat Topi Jumbo - Concrete Chisel Rata',
+            image: '/Images/yozuri/Yo-Zuri - Pahat Topi Jumbo (-).png'
+          }]
         },
         {
           id: 'yoz-layer-009',
@@ -2133,7 +2145,7 @@ export const catalogueData: Record<string, Category[]> = {
             { size: 'HIJAU | DOUBLE TAPE', innerBox: '-', outerBox: '126 Pcs / Ctn' },
             { size: 'TEXTILE LEM | 3cm x 30m', innerBox: '-', outerBox: '200 Pcs / Ctn' },
           ],
-        },       
+        },
       ],
     },
     {
@@ -2141,362 +2153,362 @@ export const catalogueData: Record<string, Category[]> = {
       name: 'Door Lock Equipments | Peralatan Kunci Pintu',
       image: '/Images/doorlock yozuri.png',
       // Di dalam catalogueData -> yozuri -> kategori 'door-lock-equipments'
-products: [
-  { 
-    id: 'yoz-lock-001', 
-    name: 'Kunci Pintu Besar', 
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu BESAR Cover.png', // Ganti dengan path gambar Anda
-    galleryImages: [
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar CHELSEA.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar LIVERPOOL.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar MANCHESTER.png',
-    ],
-    description: 'Handle pintu premium seri "Arsenal" dengan desain modern dan kokoh, memberikan sentuhan elegan dan keamanan pada pintu utama Anda.',
-    specifications: [
-      { key: 'Model', value: 'Arsenal' },
-      { key: 'Ukuran', value: 'Besar' },
-      { key: 'Material', value: 'Zinc Alloy' },
-    ],
-    features: [
-      { text: 'Desain Handle Modern & Kokoh' },
-      { text: 'Finishing Tahan Lama' },
-      { text: 'Mekanisme kunci presisi, pengoperasian halus dan anti-macetr' },
-    ],
-    packagingDetails: [
-      { type: 'ARSENAL', innerBox: '1 Set / Box', outerBox: '-' },
-      { type: 'CHELSEA', innerBox: '1 Set / Box', outerBox: '-' },
-      { type: 'LIVERPOOL', innerBox: '1 Set / Box', outerBox: '-' },
-      { type: 'MANCHESTER', innerBox: '1 Set / Box', outerBox: '-' },
-    ],
-  },
-  { 
-    id: 'yoz-lock-002', 
-    name: 'Kunci Pintu Kecil', 
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu KECIL Cover.png', // Ganti dengan path gambar Anda
-    galleryImages: [
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kecil ROMA.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kecil JUVENTUS.png',
-    ],
-    description: 'Handle pintu premium seri "Arsenal" dengan desain modern dan kokoh, memberikan sentuhan elegan dan keamanan pada pintu utama Anda.',
-    specifications: [
-      { key: 'Model', value: 'Arsenal' },
-      { key: 'Ukuran', value: 'Besar' },
-      { key: 'Material', value: 'Zinc Alloy' },
-    ],
-    features: [
-      { text: 'Desain Handle Modern & Kokoh' },
-      { text: 'Finishing Tahan Lama' },
-      { text: 'Mekanisme kunci presisi, pengoperasian halus dan anti-macet' },
-    ],
-    packagingDetails: [
-      { type: 'ROMA', innerBox: '1 Set / Box', outerBox: '-' },
-      { type: 'JUVENTUS', innerBox: '1 Set / Box', outerBox: '-' }
-    ],
-  },
-  { 
-    id: 'yoz-lock-003', 
-    name: 'Kunci Pintu Sedang', 
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu SEDANG Cover.png', // Ganti dengan path gambar Anda
-    galleryImages: [
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang MILAN.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang MADRID.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang BARCELONA.png',
-    ],
-    description: 'Handle pintu premium seri "Arsenal" dengan desain modern dan kokoh, memberikan sentuhan elegan dan keamanan pada pintu utama Anda.',
-    specifications: [
-      { key: 'Model', value: 'Arsenal' },
-      { key: 'Ukuran', value: 'Besar' },
-      { key: 'Material', value: 'Zinc Alloy' },
-    ],
-    features: [
-      { text: 'Desain handle Modern & Kokoh' },
-      { text: 'Finishing Tahan Lama' },
-      { text: 'Mekanisme kunci presisi, pengoperasian halus dan anti-macet' },
-    ],
-    packagingDetails: [
-      { type: 'MILAN', innerBox: '1 Set / Box', outerBox: '-' },
-      { type: 'MADRID', innerBox: '1 Set / Box', outerBox: '-' },
-      { type: 'BARCELONA', innerBox: '1 Set / Box', outerBox: '-' }
-    ],
-  },
-  { 
-    id: 'yoz-lock-004', 
-    name: 'Kunci Pintu BESAR PREMIUM', 
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar Cover.png',
-    galleryImages: [
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar PLUTO.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar HERMES.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar HADES.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar APOLLO.png',
-    ],
-    description: 'Seri "Chelsea" menawarkan desain handle yang minimalis dan mewah, cocok untuk pintu dengan gaya kontemporer.',
-    specifications: [
-      { key: 'Model', value: 'Chelsea' },
-      { key: 'Ukuran', value: 'Besar' },
-      { key: 'Material', value: 'Zinc Alloy' },
-    ],
-    features: [
-      { text: 'finishing premium anti-gores' },
-      { text: 'Pegangan Nyaman' },
-    ],
-    packagingDetails: [
-      { type: 'PLUTO', innerBox: '1 Set / Box', outerBox: '12 Pcs / Ctn' },
-      { type: 'HERMES', innerBox: '1 Set / Box', outerBox: '12 Pcs / Ctn' },
-      { type: 'HADES', innerBox: '1 Set / Box', outerBox: '12 Pcs / Ctn' },
-      { type: 'APOLLO', innerBox: '1 Set / Box', outerBox: '12 Pcs / Ctn' }
-    ],
-  },
-   { 
-    id: 'yoz-lock-006', 
-    name: 'Kunci Pintu SEDANG PREMIUM', 
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang Cover.png',
-    galleryImages: [
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang ARES.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang POSEISON.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang HERCULES.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang ATHENA.png',
-    ],
-    description: 'Seri "Chelsea" menawarkan desain handle yang minimalis dan mewah, cocok untuk pintu dengan gaya kontemporer.',
-    specifications: [
-      { key: 'Model', value: 'Chelsea' },
-      { key: 'Ukuran', value: 'Besar' },
-      { key: 'Material', value: 'Zinc Alloy' },
-    ],
-    features: [
-      { text: 'finishing premium anti-gores' },
-      { text: 'Pegangan Nyaman' },
-    ],
-    packagingDetails: [
-      { type: 'ARES', innerBox: '1 Set / Box', outerBox: '24 Pcs / Ctn' },
-      { type: 'POSEISON', innerBox: '1 Set / Box', outerBox: '24 Pcs / Ctn' },
-      { type: 'HERCULES', innerBox: '1 Set / Box', outerBox: '24 Pcs / Ctn' },
-      { type: 'ATHENA', innerBox: '1 Set / Box', outerBox: '24 Pcs / Ctn' }
-    ],
-  },
-  {
-    id: 'yoz-lock-007',
-    name: 'Kunci Pintu Bulat - Stainless Steel',
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kamar Mandi.png',
-    description: 'Handle pintu berbentuk bulan sabit dengan material full stainless steel, memberikan tampilan modern, minimalis, dan tahan karat untuk pintu interior Anda.',
-    specifications: [
-      { key: 'Model', value: 'Bulan Sabit (Crescent)' },
-      { key: 'Material', value: 'Stainless Steel SUS 304' },
-      { key: 'Finishing', value: 'Brushed Nickel' }
-    ],
-    features: [
-      { text: 'Bahan 100% Stainless Steel, sangat kuat, anti-karat, dan tahan lama' },
-      { text: 'Desain simpel dan praktis, cocok untuk pintu kamar tidur atau kamar mandi' },
-      { text: 'Tahan Karat & Tahan Lama' }
-    ],
-    packagingDetails: [
-      { type: 'STANDAR', innerBox: '-', outerBox: '24 Pcs / Ctn' }
-    ]
-  },
-  {
-    id: 'yoz-lock-008',
-    name: 'Body Kunci Pintu',
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Bodi Kunci Pintu.png',
-    description: 'Body kunci (lockcase) tipe lidah untuk pintu single swing. Mekanisme presisi yang menjamin penguncian yang mulus dan aman.',
-    specifications: [
-      { key: 'Tipe', value: 'Lidah (Latch Bolt)' },
-      { key: 'Material', value: 'Stainless Steel' },
-      { key: 'Aplikasi', value: 'Pintu Kayu / Besi' }
-    ],
-    features: [
-      { text: 'Komponen dalam dari baja berkualitas, menjamin mekanisme yang awet' },
-      { text: 'Lidah kunci bekerja mulus dan senyap saat pintu ditutup' },
-    ],
-    packagingDetails: [
-      { type: 'STANDAR', innerBox: '-', outerBox: '20 Pcs / Ctn' }
-    ]
-  },
-  {
-    id: 'yoz-lock-009',
-    name: 'Body Kunci Pelor',
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Bodi Kunci Pelor.png',
-    description: 'Body kunci (lockcase) tipe pelor (roller) untuk pintu double swing (pintu koboi). Roller memastikan pintu bisa ditutup dengan mudah dari kedua arah.',
-    specifications: [
-      { key: 'Tipe', value: 'Pelor (Roller Latch)' },
-      { key: 'Material', value: 'Stainless Steel' },
-      { key: 'Aplikasi', value: 'Pintu Double Swing' }
-    ],
-    features: [
-      { text: 'Mekanisme roller ball (pelor) membuat pintu lebih ringan saat didorong' },
-      { text: 'Ideal untuk pintu swing dua arah, pengoperasian sangat halus' },
-      { text: 'Instalasi Mudah' }
-    ],
-    packagingDetails: [
-      { type: 'STANDAR', innerBox: '-', outerBox: '20 Pcs / Ctn' }
-    ]
-  },
-  {
-    id: 'yoz-lock-010',
-    name: 'Silinder Kunci Pintu',
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Silinder Kunci Pintu.png',
-    description: 'Silinder kunci pintu dengan material kuningan untuk keamanan dan daya tahan maksimal. Dilengkapi dengan 3-5 anak kunci komputer yang sulit diduplikasi.',
-    specifications: [
-      { key: 'Material', value: 'Kuningan (Brass)' },
-      { key: 'Ukuran', value: '60mm - 70mm' },
-      { key: 'Anak Kunci', value: '3-5 Kunci Komputer' }
-    ],
-    features: [
-      { text: 'Material Anti Karat' },
-      { text: 'Keamanan Tinggi' },
-      { text: 'Dilengkapi anak kunci komputer yang sulit diduplikasi' }
-    ],
-    packagingDetails: [
-      { size: '60mm', innerBox: ' 12 Pcs / Box', outerBox: '240 Pcs / Ctn' }
-    ]
-  },
-  {
-    id: 'yoz-lock-011',
-    name: 'Hak Angin Segi - Stainless Steel',
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Hak Angin Segi.png',
-    description: 'Hak angin model segi dari bahan stainless steel tebal, berfungsi untuk menahan jendela agar tetap terbuka dengan aman dan stabil.',
-    specifications: [
-      { key: 'Model', value: 'Segi' },
-      { key: 'Material', value: 'Stainless Steel' },
-      { key: 'Panjang', value: '8 Inch / 10 Inch' }
-    ],
-    features: [
-      { text: 'Desain Modern & Kuat' },
-      { text: 'Bahan Full Stainless Steel tebal, anti-karat dan tahan cuaca' },
-      { text: 'Sangat kokoh menahan jendela agar tidak terbanting oleh angin' }
-    ],
-    packagingDetails: [
-      { type: 'JUMBO | 8 Inch', innerBox: '12 Set / Box', outerBox: '240 Pcs / Ctn' },
-      { type: 'SUPER | 8 Inch', innerBox: '12 Set / Box', outerBox: '240 Pcs / Ctn' },
-    ]
-  },
-  {
-    id: 'yoz-lock-012',
-    name: 'Door Closer',
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Door Closer.png',
-    description: 'Penutup pintu otomatis (door closer) hidrolik yang dapat diatur kecepatan menutupnya. Membuat pintu selalu tertutup rapat secara perlahan dan senyap.',
-    specifications: [
-      { key: 'Tipe', value: 'Hidrolik' },
-      { key: 'Kapasitas Beban', value: '40kg - 60kg' },
-      { key: 'Fitur', value: 'Adjustable Speed' }
-    ],
-    features: [
-      { text: 'Sistem hidrolik (hydraulic) yang bisa diatur kecepatan tutupnya' },
-      { text: 'Menutup pintu secara otomatis, halus, dan tanpa suara benturan' },
-      { text: 'Kecepatan Dapat Diatur' }
-    ],
-    packagingDetails: [
-      { type: 'KECIl', innerBox: '1 Set / Box', outerBox: '20 Pcs / Ctn' },
-      { type: 'BESAR', innerBox: '1 Set / Box', outerBox: '20 Pcs / Ctn' }
-    ]
-  },
-  {
-    id: 'yoz-lock-013',
-    name: 'Engsel Pintu Besi - Thickness 4mm',
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Engsel Pintu Besi Tebal.png',
-    description: 'Engsel pintu heavy duty dengan material besi setebal 4mm. Sangat kokoh untuk menopang pintu berat seperti pintu utama atau pintu garasi.',
-    specifications: [
-      { key: 'Material', value: 'Besi' },
-      { key: 'Ketebalan', value: '4 mm' },
-      { key: 'Ukuran', value: '5 Inch' }
-    ],
-    features: [
-      { text: 'Plat besi super tebal 4mm, anti-bengkok untuk menopang pintu berat' },
-      { text: 'Dilengkapi ball bearing agar bukaan pintu sangat ringan dan halus' },
-    ],
-    packagingDetails: [
-      { size: '3 Inch', innerBox: '12 Sets / Box', outerBox: '60 Pcs / Ctn' },
-      { size: '4 Inch', innerBox: '12 Sets / Box', outerBox: '60 Pcs / Ctn' },
-      { size: '5 Inch', innerBox: '12 Sets / Box', outerBox: '48 Pcs / Ctn' }
-    ]
-  },
-  {
-    id: 'yoz-lock-014',
-    name: 'Engsel Pintu - Stainless Steel',
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Engsel Stainless Steel.png',
-    description: 'Engsel pintu serbaguna dari material stainless steel yang tahan karat, cocok untuk segala jenis pintu interior maupun eksterior.',
-    specifications: [
-      { key: 'Material', value: 'Stainless Steel' },
-      { key: 'Ketebalan', value: '2.5 mm' },
-      { key: 'Ukuran', value: '4 Inch / 5 Inch' }
-    ],
-    features: [
-      { text: 'Bahan Full Stainless Steel, anti-karat permanen, cocok untuk outdoor' },
-      { text: 'Menggunakan ball bearing untuk putaran engsel yang senyap dan lancar' },
-    ],
-    packagingDetails: [
-      { size: '3 Inch', innerBox: '36 Sets / Box', outerBox: '72 Pcs / Ctn' },
-      { size: '4 Inch', innerBox: '24 Sets / Box', outerBox: '48 Pcs / Ctn' },
-      { size: '5 Inch', innerBox: '24 Sets / Box', outerBox: '48 Pcs / Ctn' }
-    ]
-  },
-  {
-    id: 'yoz-lock-015',
-    name: 'Rel Pintu Geser - Sliding Door Track',
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Rel Pintu Geser.png',
-    description: 'Set rel dan roda untuk pintu geser. Terbuat dari material baja berkualitas yang menjamin pergerakan pintu yang lancar dan tidak berisik.',
-    specifications: [
-      { key: 'Material Rel', value: 'Baja' },
-      { key: 'Material Roda', value: 'Nylon' },
-      { key: 'Panjang Rel', value: '1.5 Meter / 2 Meter' }
-    ],
-    features: [
-      { text: 'Track dari bahan tebal, lurus presisi dan tidak mudah melengkung' },
-      { text: 'Roda nilon dengan laher (bearing), menggeser pintu sangat ringan & senyap' },
-    ],
-    packagingDetails: [
-      { size: '1,8 Meter', innerBox: '-', outerBox: '12 Pcs / Ctn' },
-      { size: '2,1 Meter', innerBox: '-', outerBox: '12 Pcs / Ctn' },
-      { size: '2,4 Meter', innerBox: '-', outerBox: '12 Pcs / Ctn' },
-    ]
-  },
-  {
-    id: 'yoz-lock-016',
-    name: 'Gembok Kuningan Panjang & Pendek',
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Gembok Kuningan Leher Pendek & Panjang.png',
-    description: 'Gembok dengan bodi full kuningan yang sangat tahan karat dan cuaca. Tersedia dalam varian leher pendek untuk keamanan maksimal dan leher panjang untuk fleksibilitas.',
-    specifications: [
-      { key: 'Material Bodi', value: 'Kuningan (Brass)' },
-      { key: 'Material Leher', value: 'Baja Keras' },
-      { key: 'Varian', value: 'Leher Pendek & Leher Panjang' }
-    ],
-    features: [
-      { text: 'Body dari kuningan asli, sangat tahan cuaca dan anti-karat' },
-      { text: 'Keamanan Terpercaya' },
-      { text: 'Leher (shackle) dari baja keras (hardened steel), anti-potong dan gergaji' }
-    ],
-    packagingDetails: [
-      { size: '30 mm', innerBox: '12 Pcs / Box', outerBox: '144 Pcs / Ctn' },
-      { size: '40 mm', innerBox: '12 Pcs / Box', outerBox: '96 Pcs / Ctn' },
-      { size: '50 mm', innerBox: '12 Pcs / Box', outerBox: '72 Pcs / Ctn' },
-      { size: '60 mm', innerBox: '12 Pcs / Box', outerBox: '48 Pcs / Ctn' },
-    ]
-  },
-  {
-    id: 'yoz-lock-017',
-    name: 'Grendel Pintu - Stainless Steel',
-    image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Grendel Stainless Steel.png',
-    description: 'Grendel pintu (door bolt) dari material stainless steel tebal, memberikan lapisan keamanan tambahan untuk pintu Anda. Mudah dipasang dan anti karat.',
-    specifications: [
-      { key: 'Material', value: 'Stainless Steel' },
-      { key: 'Ukuran', value: '3 Inch / 4 Inch / 5 Inch' },
-      { key: 'Finishing', value: 'Brushed' }
-    ],
-    features: [
-      { text: 'Bahan Full Stainless Steel tebal, sangat kokoh, dan anti-karat' },
-      { text: 'Slot grendel bergerak mulus, mengunci dengan pas dan aman' },
-      { text: 'Pemasangan Mudah' }
-    ],
-    packagingDetails: [
-      { size: '2 Inch', innerBox: '24 Pcs / Box', outerBox: '480 Pcs / Ctn' },
-      { size: '3 Inch', innerBox: '12 Pcs / Box', outerBox: '360 Pcs / Ctn' },
-      { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '288 Pcs / Ctn' },
-      { size: '6 Inch', innerBox: '12 Pcs / Box', outerBox: '192 Pcs / Ctn' },
-      { size: '8 Inch', innerBox: '12 Pcs / Box', outerBox: '144 Pcs / Ctn' },
-      { size: '10 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
-      { size: '12 Inch', innerBox: '12 Pcs / Box', outerBox: '96 Pcs / Ctn' },
-    ]
-  }
-],
+      products: [
+        {
+          id: 'yoz-lock-001',
+          name: 'Kunci Pintu Besar',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu BESAR Cover.png', // Ganti dengan path gambar Anda
+          galleryImages: [
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar ARSENAL.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar CHELSEA.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar LIVERPOOL.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Besar MANCHESTER.png',
+          ],
+          description: 'Handle pintu premium seri "Arsenal" dengan desain modern dan kokoh, memberikan sentuhan elegan dan keamanan pada pintu utama Anda.',
+          specifications: [
+            { key: 'Model', value: 'Arsenal' },
+            { key: 'Ukuran', value: 'Besar' },
+            { key: 'Material', value: 'Zinc Alloy' },
+          ],
+          features: [
+            { text: 'Desain Handle Modern & Kokoh' },
+            { text: 'Finishing Tahan Lama' },
+            { text: 'Mekanisme kunci presisi, pengoperasian halus dan anti-macetr' },
+          ],
+          packagingDetails: [
+            { type: 'ARSENAL', innerBox: '1 Set / Box', outerBox: '-' },
+            { type: 'CHELSEA', innerBox: '1 Set / Box', outerBox: '-' },
+            { type: 'LIVERPOOL', innerBox: '1 Set / Box', outerBox: '-' },
+            { type: 'MANCHESTER', innerBox: '1 Set / Box', outerBox: '-' },
+          ],
+        },
+        {
+          id: 'yoz-lock-002',
+          name: 'Kunci Pintu Kecil',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu KECIL Cover.png', // Ganti dengan path gambar Anda
+          galleryImages: [
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kecil ROMA.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kecil JUVENTUS.png',
+          ],
+          description: 'Handle pintu premium seri "Arsenal" dengan desain modern dan kokoh, memberikan sentuhan elegan dan keamanan pada pintu utama Anda.',
+          specifications: [
+            { key: 'Model', value: 'Arsenal' },
+            { key: 'Ukuran', value: 'Besar' },
+            { key: 'Material', value: 'Zinc Alloy' },
+          ],
+          features: [
+            { text: 'Desain Handle Modern & Kokoh' },
+            { text: 'Finishing Tahan Lama' },
+            { text: 'Mekanisme kunci presisi, pengoperasian halus dan anti-macet' },
+          ],
+          packagingDetails: [
+            { type: 'ROMA', innerBox: '1 Set / Box', outerBox: '-' },
+            { type: 'JUVENTUS', innerBox: '1 Set / Box', outerBox: '-' }
+          ],
+        },
+        {
+          id: 'yoz-lock-003',
+          name: 'Kunci Pintu Sedang',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu SEDANG Cover.png', // Ganti dengan path gambar Anda
+          galleryImages: [
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang MILAN.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang MADRID.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Sedang BARCELONA.png',
+          ],
+          description: 'Handle pintu premium seri "Arsenal" dengan desain modern dan kokoh, memberikan sentuhan elegan dan keamanan pada pintu utama Anda.',
+          specifications: [
+            { key: 'Model', value: 'Arsenal' },
+            { key: 'Ukuran', value: 'Besar' },
+            { key: 'Material', value: 'Zinc Alloy' },
+          ],
+          features: [
+            { text: 'Desain handle Modern & Kokoh' },
+            { text: 'Finishing Tahan Lama' },
+            { text: 'Mekanisme kunci presisi, pengoperasian halus dan anti-macet' },
+          ],
+          packagingDetails: [
+            { type: 'MILAN', innerBox: '1 Set / Box', outerBox: '-' },
+            { type: 'MADRID', innerBox: '1 Set / Box', outerBox: '-' },
+            { type: 'BARCELONA', innerBox: '1 Set / Box', outerBox: '-' }
+          ],
+        },
+        {
+          id: 'yoz-lock-004',
+          name: 'Kunci Pintu BESAR PREMIUM',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar Cover.png',
+          galleryImages: [
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar PLUTO.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar HERMES.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar HADES.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Besar APOLLO.png',
+          ],
+          description: 'Seri "Chelsea" menawarkan desain handle yang minimalis dan mewah, cocok untuk pintu dengan gaya kontemporer.',
+          specifications: [
+            { key: 'Model', value: 'Chelsea' },
+            { key: 'Ukuran', value: 'Besar' },
+            { key: 'Material', value: 'Zinc Alloy' },
+          ],
+          features: [
+            { text: 'finishing premium anti-gores' },
+            { text: 'Pegangan Nyaman' },
+          ],
+          packagingDetails: [
+            { type: 'PLUTO', innerBox: '1 Set / Box', outerBox: '12 Pcs / Ctn' },
+            { type: 'HERMES', innerBox: '1 Set / Box', outerBox: '12 Pcs / Ctn' },
+            { type: 'HADES', innerBox: '1 Set / Box', outerBox: '12 Pcs / Ctn' },
+            { type: 'APOLLO', innerBox: '1 Set / Box', outerBox: '12 Pcs / Ctn' }
+          ],
+        },
+        {
+          id: 'yoz-lock-006',
+          name: 'Kunci Pintu SEDANG PREMIUM',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang Cover.png',
+          galleryImages: [
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang ARES.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang POSEISON.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang HERCULES.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu PREMIUM Sedang ATHENA.png',
+          ],
+          description: 'Seri "Chelsea" menawarkan desain handle yang minimalis dan mewah, cocok untuk pintu dengan gaya kontemporer.',
+          specifications: [
+            { key: 'Model', value: 'Chelsea' },
+            { key: 'Ukuran', value: 'Besar' },
+            { key: 'Material', value: 'Zinc Alloy' },
+          ],
+          features: [
+            { text: 'finishing premium anti-gores' },
+            { text: 'Pegangan Nyaman' },
+          ],
+          packagingDetails: [
+            { type: 'ARES', innerBox: '1 Set / Box', outerBox: '24 Pcs / Ctn' },
+            { type: 'POSEISON', innerBox: '1 Set / Box', outerBox: '24 Pcs / Ctn' },
+            { type: 'HERCULES', innerBox: '1 Set / Box', outerBox: '24 Pcs / Ctn' },
+            { type: 'ATHENA', innerBox: '1 Set / Box', outerBox: '24 Pcs / Ctn' }
+          ],
+        },
+        {
+          id: 'yoz-lock-007',
+          name: 'Kunci Pintu Bulat - Stainless Steel',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Kunci Pintu Kamar Mandi.png',
+          description: 'Handle pintu berbentuk bulan sabit dengan material full stainless steel, memberikan tampilan modern, minimalis, dan tahan karat untuk pintu interior Anda.',
+          specifications: [
+            { key: 'Model', value: 'Bulan Sabit (Crescent)' },
+            { key: 'Material', value: 'Stainless Steel SUS 304' },
+            { key: 'Finishing', value: 'Brushed Nickel' }
+          ],
+          features: [
+            { text: 'Bahan 100% Stainless Steel, sangat kuat, anti-karat, dan tahan lama' },
+            { text: 'Desain simpel dan praktis, cocok untuk pintu kamar tidur atau kamar mandi' },
+            { text: 'Tahan Karat & Tahan Lama' }
+          ],
+          packagingDetails: [
+            { type: 'STANDAR', innerBox: '-', outerBox: '24 Pcs / Ctn' }
+          ]
+        },
+        {
+          id: 'yoz-lock-008',
+          name: 'Body Kunci Pintu',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Bodi Kunci Pintu.png',
+          description: 'Body kunci (lockcase) tipe lidah untuk pintu single swing. Mekanisme presisi yang menjamin penguncian yang mulus dan aman.',
+          specifications: [
+            { key: 'Tipe', value: 'Lidah (Latch Bolt)' },
+            { key: 'Material', value: 'Stainless Steel' },
+            { key: 'Aplikasi', value: 'Pintu Kayu / Besi' }
+          ],
+          features: [
+            { text: 'Komponen dalam dari baja berkualitas, menjamin mekanisme yang awet' },
+            { text: 'Lidah kunci bekerja mulus dan senyap saat pintu ditutup' },
+          ],
+          packagingDetails: [
+            { type: 'STANDAR', innerBox: '-', outerBox: '20 Pcs / Ctn' }
+          ]
+        },
+        {
+          id: 'yoz-lock-009',
+          name: 'Body Kunci Pelor',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Bodi Kunci Pelor.png',
+          description: 'Body kunci (lockcase) tipe pelor (roller) untuk pintu double swing (pintu koboi). Roller memastikan pintu bisa ditutup dengan mudah dari kedua arah.',
+          specifications: [
+            { key: 'Tipe', value: 'Pelor (Roller Latch)' },
+            { key: 'Material', value: 'Stainless Steel' },
+            { key: 'Aplikasi', value: 'Pintu Double Swing' }
+          ],
+          features: [
+            { text: 'Mekanisme roller ball (pelor) membuat pintu lebih ringan saat didorong' },
+            { text: 'Ideal untuk pintu swing dua arah, pengoperasian sangat halus' },
+            { text: 'Instalasi Mudah' }
+          ],
+          packagingDetails: [
+            { type: 'STANDAR', innerBox: '-', outerBox: '20 Pcs / Ctn' }
+          ]
+        },
+        {
+          id: 'yoz-lock-010',
+          name: 'Silinder Kunci Pintu',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Silinder Kunci Pintu.png',
+          description: 'Silinder kunci pintu dengan material kuningan untuk keamanan dan daya tahan maksimal. Dilengkapi dengan 3-5 anak kunci komputer yang sulit diduplikasi.',
+          specifications: [
+            { key: 'Material', value: 'Kuningan (Brass)' },
+            { key: 'Ukuran', value: '60mm - 70mm' },
+            { key: 'Anak Kunci', value: '3-5 Kunci Komputer' }
+          ],
+          features: [
+            { text: 'Material Anti Karat' },
+            { text: 'Keamanan Tinggi' },
+            { text: 'Dilengkapi anak kunci komputer yang sulit diduplikasi' }
+          ],
+          packagingDetails: [
+            { size: '60mm', innerBox: ' 12 Pcs / Box', outerBox: '240 Pcs / Ctn' }
+          ]
+        },
+        {
+          id: 'yoz-lock-011',
+          name: 'Hak Angin Segi - Stainless Steel',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Hak Angin Segi.png',
+          description: 'Hak angin model segi dari bahan stainless steel tebal, berfungsi untuk menahan jendela agar tetap terbuka dengan aman dan stabil.',
+          specifications: [
+            { key: 'Model', value: 'Segi' },
+            { key: 'Material', value: 'Stainless Steel' },
+            { key: 'Panjang', value: '8 Inch / 10 Inch' }
+          ],
+          features: [
+            { text: 'Desain Modern & Kuat' },
+            { text: 'Bahan Full Stainless Steel tebal, anti-karat dan tahan cuaca' },
+            { text: 'Sangat kokoh menahan jendela agar tidak terbanting oleh angin' }
+          ],
+          packagingDetails: [
+            { type: 'JUMBO | 8 Inch', innerBox: '12 Set / Box', outerBox: '240 Pcs / Ctn' },
+            { type: 'SUPER | 8 Inch', innerBox: '12 Set / Box', outerBox: '240 Pcs / Ctn' },
+          ]
+        },
+        {
+          id: 'yoz-lock-012',
+          name: 'Door Closer',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Door Closer.png',
+          description: 'Penutup pintu otomatis (door closer) hidrolik yang dapat diatur kecepatan menutupnya. Membuat pintu selalu tertutup rapat secara perlahan dan senyap.',
+          specifications: [
+            { key: 'Tipe', value: 'Hidrolik' },
+            { key: 'Kapasitas Beban', value: '40kg - 60kg' },
+            { key: 'Fitur', value: 'Adjustable Speed' }
+          ],
+          features: [
+            { text: 'Sistem hidrolik (hydraulic) yang bisa diatur kecepatan tutupnya' },
+            { text: 'Menutup pintu secara otomatis, halus, dan tanpa suara benturan' },
+            { text: 'Kecepatan Dapat Diatur' }
+          ],
+          packagingDetails: [
+            { type: 'KECIl', innerBox: '1 Set / Box', outerBox: '20 Pcs / Ctn' },
+            { type: 'BESAR', innerBox: '1 Set / Box', outerBox: '20 Pcs / Ctn' }
+          ]
+        },
+        {
+          id: 'yoz-lock-013',
+          name: 'Engsel Pintu Besi - Thickness 4mm',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Engsel Pintu Besi Tebal.png',
+          description: 'Engsel pintu heavy duty dengan material besi setebal 4mm. Sangat kokoh untuk menopang pintu berat seperti pintu utama atau pintu garasi.',
+          specifications: [
+            { key: 'Material', value: 'Besi' },
+            { key: 'Ketebalan', value: '4 mm' },
+            { key: 'Ukuran', value: '5 Inch' }
+          ],
+          features: [
+            { text: 'Plat besi super tebal 4mm, anti-bengkok untuk menopang pintu berat' },
+            { text: 'Dilengkapi ball bearing agar bukaan pintu sangat ringan dan halus' },
+          ],
+          packagingDetails: [
+            { size: '3 Inch', innerBox: '12 Sets / Box', outerBox: '60 Pcs / Ctn' },
+            { size: '4 Inch', innerBox: '12 Sets / Box', outerBox: '60 Pcs / Ctn' },
+            { size: '5 Inch', innerBox: '12 Sets / Box', outerBox: '48 Pcs / Ctn' }
+          ]
+        },
+        {
+          id: 'yoz-lock-014',
+          name: 'Engsel Pintu - Stainless Steel',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Engsel Stainless Steel.png',
+          description: 'Engsel pintu serbaguna dari material stainless steel yang tahan karat, cocok untuk segala jenis pintu interior maupun eksterior.',
+          specifications: [
+            { key: 'Material', value: 'Stainless Steel' },
+            { key: 'Ketebalan', value: '2.5 mm' },
+            { key: 'Ukuran', value: '4 Inch / 5 Inch' }
+          ],
+          features: [
+            { text: 'Bahan Full Stainless Steel, anti-karat permanen, cocok untuk outdoor' },
+            { text: 'Menggunakan ball bearing untuk putaran engsel yang senyap dan lancar' },
+          ],
+          packagingDetails: [
+            { size: '3 Inch', innerBox: '36 Sets / Box', outerBox: '72 Pcs / Ctn' },
+            { size: '4 Inch', innerBox: '24 Sets / Box', outerBox: '48 Pcs / Ctn' },
+            { size: '5 Inch', innerBox: '24 Sets / Box', outerBox: '48 Pcs / Ctn' }
+          ]
+        },
+        {
+          id: 'yoz-lock-015',
+          name: 'Rel Pintu Geser - Sliding Door Track',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Rel Pintu Geser.png',
+          description: 'Set rel dan roda untuk pintu geser. Terbuat dari material baja berkualitas yang menjamin pergerakan pintu yang lancar dan tidak berisik.',
+          specifications: [
+            { key: 'Material Rel', value: 'Baja' },
+            { key: 'Material Roda', value: 'Nylon' },
+            { key: 'Panjang Rel', value: '1.5 Meter / 2 Meter' }
+          ],
+          features: [
+            { text: 'Track dari bahan tebal, lurus presisi dan tidak mudah melengkung' },
+            { text: 'Roda nilon dengan laher (bearing), menggeser pintu sangat ringan & senyap' },
+          ],
+          packagingDetails: [
+            { size: '1,8 Meter', innerBox: '-', outerBox: '12 Pcs / Ctn' },
+            { size: '2,1 Meter', innerBox: '-', outerBox: '12 Pcs / Ctn' },
+            { size: '2,4 Meter', innerBox: '-', outerBox: '12 Pcs / Ctn' },
+          ]
+        },
+        {
+          id: 'yoz-lock-016',
+          name: 'Gembok Kuningan Panjang & Pendek',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Gembok Kuningan Leher Pendek & Panjang.png',
+          description: 'Gembok dengan bodi full kuningan yang sangat tahan karat dan cuaca. Tersedia dalam varian leher pendek untuk keamanan maksimal dan leher panjang untuk fleksibilitas.',
+          specifications: [
+            { key: 'Material Bodi', value: 'Kuningan (Brass)' },
+            { key: 'Material Leher', value: 'Baja Keras' },
+            { key: 'Varian', value: 'Leher Pendek & Leher Panjang' }
+          ],
+          features: [
+            { text: 'Body dari kuningan asli, sangat tahan cuaca dan anti-karat' },
+            { text: 'Keamanan Terpercaya' },
+            { text: 'Leher (shackle) dari baja keras (hardened steel), anti-potong dan gergaji' }
+          ],
+          packagingDetails: [
+            { size: '30 mm', innerBox: '12 Pcs / Box', outerBox: '144 Pcs / Ctn' },
+            { size: '40 mm', innerBox: '12 Pcs / Box', outerBox: '96 Pcs / Ctn' },
+            { size: '50 mm', innerBox: '12 Pcs / Box', outerBox: '72 Pcs / Ctn' },
+            { size: '60 mm', innerBox: '12 Pcs / Box', outerBox: '48 Pcs / Ctn' },
+          ]
+        },
+        {
+          id: 'yoz-lock-017',
+          name: 'Grendel Pintu - Stainless Steel',
+          image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Grendel Stainless Steel.png',
+          description: 'Grendel pintu (door bolt) dari material stainless steel tebal, memberikan lapisan keamanan tambahan untuk pintu Anda. Mudah dipasang dan anti karat.',
+          specifications: [
+            { key: 'Material', value: 'Stainless Steel' },
+            { key: 'Ukuran', value: '3 Inch / 4 Inch / 5 Inch' },
+            { key: 'Finishing', value: 'Brushed' }
+          ],
+          features: [
+            { text: 'Bahan Full Stainless Steel tebal, sangat kokoh, dan anti-karat' },
+            { text: 'Slot grendel bergerak mulus, mengunci dengan pas dan aman' },
+            { text: 'Pemasangan Mudah' }
+          ],
+          packagingDetails: [
+            { size: '2 Inch', innerBox: '24 Pcs / Box', outerBox: '480 Pcs / Ctn' },
+            { size: '3 Inch', innerBox: '12 Pcs / Box', outerBox: '360 Pcs / Ctn' },
+            { size: '4 Inch', innerBox: '12 Pcs / Box', outerBox: '288 Pcs / Ctn' },
+            { size: '6 Inch', innerBox: '12 Pcs / Box', outerBox: '192 Pcs / Ctn' },
+            { size: '8 Inch', innerBox: '12 Pcs / Box', outerBox: '144 Pcs / Ctn' },
+            { size: '10 Inch', innerBox: '12 Pcs / Box', outerBox: '120 Pcs / Ctn' },
+            { size: '12 Inch', innerBox: '12 Pcs / Box', outerBox: '96 Pcs / Ctn' },
+          ]
+        }
+      ],
     },
     {
       id: 'cutting-tools',
@@ -2713,9 +2725,9 @@ products: [
           name: 'Rainshower Set',
           image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Rainshower Set A.png', // Ganti dengan path gambar Anda
           galleryImages: [
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Rainshower Set B.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Rainshower Set C.png',
-    ],
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Rainshower Set B.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Rainshower Set C.png',
+          ],
           description: 'Seal tape premium dari 100% P.T.F.E murni, menjamin sambungan drat bebas bocor. Elastis, kuat, dan mudah diaplikasikan.',
           specifications: [
             { key: 'Material', value: '100% P.T.F.E' },
@@ -2735,11 +2747,11 @@ products: [
           name: 'Saringan Kamar Mandi - Hitam',
           image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam A.png', // Ganti dengan path gambar Anda
           galleryImages: [
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam B.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam C.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam D.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam E.png',
-    ],
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam B.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam C.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam D.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Hitam E.png',
+          ],
           description: 'Seal tape premium dari 100% P.T.F.E murni, menjamin sambungan drat bebas bocor. Elastis, kuat, dan mudah diaplikasikan.',
           specifications: [
             { key: 'Material', value: '100% P.T.F.E' },
@@ -2761,11 +2773,11 @@ products: [
           name: 'Saringan Kamar Mandi - Silver',
           image: '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver A.png', // Ganti dengan path gambar Anda
           galleryImages: [
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver B.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver C.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver D.png',
-      '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver E.png',
-    ],
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver B.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver C.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver D.png',
+            '/Images/yozuri/PT STS - YO-ZURI - Web Design - Catalogue - Saringan Kamar Mandi Silver E.png',
+          ],
           description: 'Seal tape premium dari 100% P.T.F.E murni, menjamin sambungan drat bebas bocor. Elastis, kuat, dan mudah diaplikasikan.',
           specifications: [
             { key: 'Material', value: '100% P.T.F.E' },
@@ -2956,7 +2968,25 @@ products: [
       id: 'safety-equipments',
       name: 'Safety Equipments | Peralatan Keselamatan',
       image: '/Images/safety yozuri.png',
-      products: [],
+      products: [{
+        id: "hel-safety-001",
+        name: "Helm Proyek",
+        image: "/Images/helios/Helios - Helm Proyek - Kuning A.png",
+        description: "Helm keselamatan (safety helmet) merk Helios yang dirancang untuk memberikan perlindungan maksimal pada kepala dari benturan, kejatuhan benda, dan risiko lainnya di area kerja proyek.",
+        specifications: [
+          { key: "Material", "value": "ABS (Acrylonitrile Butadiene Styrene)" },
+          { key: "Standar", "value": "SNI ISO 3873:2012" },
+          { key: "Tipe Suspensi", "value": "Suspensi Putar (Fast-Track Knob)" }
+        ],
+        features: [
+          { text: "Material ABS asli, sangat kuat dan tahan terhadap benturan keras" },
+          { text: "Dilengkapi suspensi putar (fast-track) untuk menyesuaikan ukuran dengan mudah dan cepat" },
+          { text: "Telah lulus uji Standar Nasional Indonesia (SNI), keamanan terjamin" }
+        ],
+        packagingDetails: [
+          { size: "All Size", "innerBox": "1 Pcs / Pcs", "outerBox": "40 Pcs / Ctn" }
+        ]
+      }],
     },
   ],
 };
