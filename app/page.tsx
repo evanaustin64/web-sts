@@ -13,16 +13,16 @@ import react from 'react';
 const PRODUK_UNGGULAN_SAYA = [
   {
     id: 1,
-    name: 'BEST SELLER',
+    name: '',
     category: '',
-    image: '/Images/PT STS - Web Design - Product Highlights 1290x840px - OWNER Reusable Paint Roller 001.png',
+    image: '/Images/PT STS - Web Design - Product Highlights 1290x840px - 001A.png',
     link: '/produk/owner/painting-tools/own-paint-001 ',
   },
   {
     id: 2,
-    name: 'SIGNATURE PRODUCT',
-    category: 'New Arrival',
-    image: '/Images/PT STS - Web Design - Product Highlights 1290x840px - YO-ZURI Handle Door Lock 001-02.png',
+    name: '',
+    category: '',
+    image: '/Images/PT STS - Web Design - Product Highlights 1290x840px - 002A.png',
     link: '/produk/yozuri/door-lock-equipments/yoz-lock-004',
   },
 ];
@@ -47,7 +47,7 @@ const BannerProductCard = ({ product }: { product: Product }) => (
   <a
     href={product.link}
     // onClick={preventDefault}
-    className="relative block aspect-video md:aspect-[16/7] rounded-2xl overflow-hidden group shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-1"
+    className="relative block aspect-[2/1] md:aspect-[16/7] rounded-2xl overflow-hidden group shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-1"
   >
     <img
       src={product.image}

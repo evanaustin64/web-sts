@@ -27,7 +27,7 @@ export default function BrandPage({ params }: BrandPageParams) {
           <span className="font-helvetica-light uppercase">{brandName}</span>
         </div>
         <h1 className="text-4xl font-helvetica-black uppercase text-gray-900 mb-10">
-          Kategori {brandName}
+          Produk {brandName}
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((cat) => (

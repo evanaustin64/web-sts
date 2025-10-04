@@ -2963,13 +2963,31 @@ export const catalogueData: Record<string, Category[]> = {
       ],
     },
   ],
-  helios: [
+  lainnya: [
     {
-      id: 'safety-equipments-helios',
-      name: 'Safety Equipments | Peralatan Keselamatan',
-      image: '/Images/Hand tools.png', // Ganti dengan gambar Anda
+      id: 'safety-equipments-lainnya',
+      name: 'HELIOS',
+      image: '/Images/Helios.png', // Ganti dengan gambar Anda
       // Di dalam catalogueData -> owner -> 'hand-power-tools'
-      products: []
+      products: [{
+          id: 'hel-safe-001',
+          name: 'Helm Proyek',
+          image: '/Images/yozuri/Yo-Zuri - Kran Tembok Jumbo - PVC.png',
+          description: 'Kran tembok PVC ukuran jumbo dengan desain modern. Cocok untuk area cuci atau garasi yang membutuhkan daya tahan ekstra.',
+          specifications: [
+            { key: 'Material', value: 'PVC' },
+            { key: 'Ukuran Drat', value: '1/2 Inch' },
+          ],
+          features: [
+            { text: 'Desain Modern Ukuran jumbo' },
+            { text: 'Bahan PVC Tebal Kualitas terbaik, anti pecah dan tahan cuaca' },
+          ],
+          packagingDetails: [
+            { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { type: 'Bulat | 1/2 - 3/4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+          ],
+        },
+      ]
     }
   ]
 };

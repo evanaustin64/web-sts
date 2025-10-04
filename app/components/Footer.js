@@ -40,7 +40,7 @@ export default function Footer() {
           <div>
             <h4 className="font-helvetica-black text-white text-lg mb-4 uppercase">PT. Samudra Teknik Sejahtera</h4>
             <p className="leading-relaxed font-helvetica-regular">Komplek Pergudangan Modern Business Park No.8i, Jl. KH. Hasyim Ashari No.79 A, RT.001/RW.004, Buaran Indah, Kec. Tangerang, Kota Tangerang, Banten 15119.</p>
-            <p className="leading-relaxed font-helvetica-regular">Email: info@samudrateknik.co.id</p>
+            <p className="leading-relaxed font-helvetica-regular">Email: cssamudra3@gmail.com</p>
             <p className="leading-relaxed font-helvetica-regular">Telp: (021) 55711055</p>
           </div>
 

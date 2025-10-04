@@ -18,12 +18,6 @@ export default function ProdukUtamaPage() {
       href: '/produk/yozuri',
       image: '/Images/Yozuri.jpg',
       bgColor: 'bg-red-700'
-    },
-    {
-      name: 'HELIOS',
-      href: '/produk/helios',
-      image: '/Images/Helios - Logo PNG-01 (1).png',
-      bgColor: 'bg-white'
     }
   ];
 

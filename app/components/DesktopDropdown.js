@@ -36,7 +36,7 @@ export default function DesktopDropdown() {
     },
     {
       title: 'PRODUK LAINNYA',
-      href: '/produk/produklainnya',
+      href: '/produk/lainnya',
     }
   ];
 
