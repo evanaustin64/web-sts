@@ -184,10 +184,10 @@ function CatalogueSlider() {
   return (
     <section className="container mx-auto py-16 px-4">
       <h2 className="text-4xl font-helvetica-black text-center uppercase mb-12">Kategori</h2>
-      <div className="-mx-2">
+      {/* <div className="-mx-2"> */}
         <Slider {...settings}>
           {catalogueItems.map((item, index) => (
-            <div key={index} className="px-2">
+            <div key={index}>
               <Link
                 href={item.link}
                 className="group relative aspect-square rounded-lg
@@ -203,7 +203,7 @@ function CatalogueSlider() {
             </div>
           ))}
         </Slider>
-      </div>
+      {/* </div> */}
     </section>
   );
 }
@@ -286,7 +286,8 @@ function DownloadCatalogueSection() {
 // Komponen FeaturedVideoSection dengan Tailwind CSS
 function FeaturedVideoSection() {
   return (
-    <section className="bg-blue-500 text-white py-16">
+    <div className="w-full bg-blue-800">
+    <section className=" text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-left">
@@ -311,6 +312,7 @@ function FeaturedVideoSection() {
         </div>
       </div>
     </section>
+  </div>
   );
 }
 

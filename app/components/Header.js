@@ -72,10 +72,10 @@ export default function Header() {
   return (
     <>
       <header className={`bg-white sticky top-0 z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : 'shadow-none'}`}>
-        <div className="container mx-auto flex justify-between items-center h-24 px-4 sm:px-6 md:px-8">
+        <div className="w-full flex justify-between items-center h-24 px-4 sm:px-6 md:px-8">
 
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div>
             <Link href="/" className="flex items-center gap-3 sm:gap-4">
               <Image
                 src="/Images/logo-sts.png"
@@ -84,11 +84,11 @@ export default function Header() {
                 height={60}
                 className="h-14 w-14 flex-shrink-0"
               />
-              <div>
-                <span className="block sm:hidden font-helvetica-black-oblique text-gray-800 text-base leading-tight">
+              <div className="min-w-0">
+                <span className="block sm:hidden font-helvetica-black-oblique text-gray-800 text-xs">
                   PT. SAMUDRA<br />TEKNIK SEJAHTERA
                 </span>
-                <span className="hidden sm:block font-helvetica-black-oblique text-gray-800 text-xl sm:whitespace-nowrap">
+                <span className="hidden sm:block font-helvetica-black-oblique text-gray-800 text-xl">
                   PT. SAMUDRA TEKNIK SEJAHTERA
                 </span>
               </div>
@@ -208,7 +208,7 @@ export default function Header() {
           )}
         </div>
       )}
-
+{isMenuOpen && (
       <div className={`laptop:hidden fixed top-24 left-0 w-full bg-white shadow-lg z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform translate-y-0' : 'transform -translate-y-full opacity-0'}`}>
         <ul className="flex flex-col">
           <li>
@@ -235,6 +235,7 @@ export default function Header() {
           <li><Link href="/hubungi-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>Hubungi Kami</Link></li>
         </ul>
       </div>
+)}
     </>
   );
 }

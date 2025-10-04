@@ -4,7 +4,7 @@ import { CartProvider } from './context/CartContext';
 import { Toaster } from 'react-hot-toast';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import localFont from 'next/font/local'
 
@@ -39,21 +39,21 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-     <html lang="id" className={`
+    <html lang="id" className={`
       ${helveticaLight.variable} 
       ${helveticaRegular.variable} 
       ${helveticaBlack.variable} 
       ${helveticaBlackOblique.variable}
     `}>
-      <body className="bg-white text-gray-800 flex flex-col min-h-screen">
+      <body className="bg-white text-gray-800 flex flex-col min-h-screen overflow-x-hidden">
         <CartProvider>
           <Toaster />
           <Header />
-          
-          <main className="flex-grow">
-            {children}
-          </main>
-
+          <div className="w-full overflow-x-hidden">
+            <main className="flex-grow">
+              {children}
+            </main>
+          </div>
           <Footer />
         </CartProvider>
       </body>
