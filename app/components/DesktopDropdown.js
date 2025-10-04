@@ -34,6 +34,10 @@ export default function DesktopDropdown() {
         { title: 'Safety Equipments | Peralatan Keselamatan', href: '/produk/yozuri/safety-equipments' },
       ]
     },
+    {
+      title: 'PRODUK LAINNYA',
+      href: '/produk/produklainnya',
+    }
   ];
 
   return (
@@ -43,7 +47,7 @@ export default function DesktopDropdown() {
           <Link href={item.href}>
             <span className={styles.itemText}>{item.title}</span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
 
           </Link>

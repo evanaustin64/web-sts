@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+{
+  outline: 10px solid red;
+}
+
 /* app/globals.css */
 img {
   max-width: 100%;

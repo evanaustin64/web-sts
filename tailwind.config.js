@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens:{
+      laptop: '1248px'
+    },
       fontFamily: {
         'helvetica-light': ['var(--font-helvetica-light)', 'Arial', 'sans-serif'],
         'helvetica-regular': ['var(--font-helvetica-regular)', 'Arial', 'sans-serif'],

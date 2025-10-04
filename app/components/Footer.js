@@ -14,6 +14,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="/produk/owner" className="hover:text-yellow-500 transition-colors font-helvetica-regular">OWNER</Link></li>
               <li><Link href="/produk/yozuri" className="hover:text-yellow-500 transition-colors font-helvetica-regular">YO-ZURI</Link></li>
+              <li><Link href="/produk/helios" className="hover:text-yellow-500 transition-colors font-helvetica-regular">PRODUK LAINNYA</Link></li>
             </ul>
           </div>
 
@@ -38,7 +39,7 @@ export default function Footer() {
           {/* Kolom 4: Info Perusahaan */}
           <div>
             <h4 className="font-helvetica-black text-white text-lg mb-4 uppercase">PT. Samudra Teknik Sejahtera</h4>
-            <p className="leading-relaxed font-helvetica-regular">Komplek Pergudangan Modern Business Park No.8I, Jl. KH. Hasyim Ashari No.79 A, RT.001/RW.004, Buaran Indah, Kec. Tangerang, Kota Tangerang, Banten 15141.</p>
+            <p className="leading-relaxed font-helvetica-regular">Komplek Pergudangan Modern Business Park No.8i, Jl. KH. Hasyim Ashari No.79 A, RT.001/RW.004, Buaran Indah, Kec. Tangerang, Kota Tangerang, Banten 15119.</p>
             <p className="leading-relaxed font-helvetica-regular">Email: info@samudrateknik.co.id</p>
             <p className="leading-relaxed font-helvetica-regular">Telp: (021) 55711055</p>
           </div>

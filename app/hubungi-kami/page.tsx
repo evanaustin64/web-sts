@@ -70,7 +70,7 @@ export default function ContactUsPage() {
               <div className="space-y-4 text-gray-600">
                 <div className="flex items-start gap-4 font-helvetica-regular">
                   <BuildingOffice2Icon className="h-6 w-6 text-yellow-600 flex-shrink-0" />
-                  <span>Komplek Pergudangan Modern Business Park No.8I, Jl. KH. Hasyim Ashari No.79 A, RT.001/RW.004, Buaran Indah, Kec. Tangerang, Kota Tangerang, Banten 15141</span>
+                  <span>Komplek Pergudangan Modern Business Park No.8i, Jl. KH. Hasyim Ashari No.79 A, RT.001/RW.004, Buaran Indah, Kec. Tangerang, Kota Tangerang, Banten 15119</span>
                 </div>
                 <div className="flex items-center gap-4 font-helvetica-regular">
                   <EnvelopeIcon className="h-6 w-6 text-yellow-600 flex-shrink-0" />

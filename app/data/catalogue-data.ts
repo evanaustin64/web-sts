@@ -2963,4 +2963,13 @@ export const catalogueData: Record<string, Category[]> = {
       ],
     },
   ],
+  helios: [
+    {
+      id: 'safety-equipments-helios',
+      name: 'Safety Equipments | Peralatan Keselamatan',
+      image: '/Images/Hand tools.png', // Ganti dengan gambar Anda
+      // Di dalam catalogueData -> owner -> 'hand-power-tools'
+      products: []
+    }
+  ]
 };

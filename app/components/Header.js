@@ -88,7 +88,7 @@ export default function Header() {
                 <span className="block sm:hidden font-helvetica-black-oblique text-gray-800 text-base leading-tight">
                   PT. SAMUDRA<br />TEKNIK SEJAHTERA
                 </span>
-                <span className="hidden sm:block font-helvetica-black-oblique text-gray-800 text-xl whitespace-nowrap">
+                <span className="hidden sm:block font-helvetica-black-oblique text-gray-800 text-xl sm:whitespace-nowrap">
                   PT. SAMUDRA TEKNIK SEJAHTERA
                 </span>
               </div>
@@ -96,7 +96,7 @@ export default function Header() {
           </div>
 
           <div className="flex items-center gap-6">
-            <nav className="hidden xl:flex h-full">
+            <nav className="hidden laptop:flex h-full">
               <ul className="flex items-center gap-10 h-full">
                 <li
                   className="relative h-full flex items-center group"
@@ -126,7 +126,7 @@ export default function Header() {
             </nav>
 
             <div className="flex items-center gap-4">
-              <div className="relative hidden xl:block">
+              <div className="relative hidden laptop:block">
                 <form onSubmit={handleSearchSubmit}>
                   <input
                     type="text"
@@ -157,13 +157,13 @@ export default function Header() {
                 )}
               </div>
 
-              <button className="xl:hidden text-gray-800" onClick={() => setMobileSearchOpen(true)}>
+              <button className="laptop:hidden text-gray-800" onClick={() => setMobileSearchOpen(true)}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                 </svg>
               </button>
 
-              <button className="xl:hidden text-gray-800" onClick={() => setMenuOpen(!isMenuOpen)}>
+              <button className="laptop:hidden text-gray-800" onClick={() => setMenuOpen(!isMenuOpen)}>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-4 6h4"></path></svg>
               </button>
             </div>
@@ -173,7 +173,7 @@ export default function Header() {
 
       {/* Mobile Search Overlay */}
       {isMobileSearchOpen && (
-        <div className="xl:hidden fixed inset-0 bg-white z-50 p-4 flex flex-col">
+        <div className="laptop:hidden fixed inset-0 bg-white z-50 p-4 flex flex-col">
           <div className="flex justify-end mb-4">
             <button onClick={() => setMobileSearchOpen(false)} className="text-3xl font-bold text-gray-600">&times;</button>
           </div>
@@ -209,7 +209,7 @@ export default function Header() {
         </div>
       )}
 
-      <div className={`xl:hidden fixed top-24 left-0 w-full bg-white shadow-lg z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform translate-y-0' : 'transform -translate-y-full opacity-0'}`}>
+      <div className={`laptop:hidden fixed top-24 left-0 w-full bg-white shadow-lg z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform translate-y-0' : 'transform -translate-y-full opacity-0'}`}>
         <ul className="flex flex-col">
           <li>
             <button
