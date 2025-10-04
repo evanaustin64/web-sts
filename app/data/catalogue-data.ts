@@ -2965,14 +2965,52 @@ export const catalogueData: Record<string, Category[]> = {
   ],
   lainnya: [
     {
-      id: 'safety-equipments-lainnya',
+      id: 'helios',
       name: 'HELIOS',
-      image: '/Images/Helios.png', // Ganti dengan gambar Anda
+      image: '/Images/Helios - Logo PNG-01 (1).png', // Ganti dengan gambar Anda
       // Di dalam catalogueData -> owner -> 'hand-power-tools'
       products: [{
           id: 'hel-safe-001',
-          name: 'Helm Proyek',
-          image: '/Images/yozuri/Yo-Zuri - Kran Tembok Jumbo - PVC.png',
+          name: 'Safety Helmet PUTAR',
+          image: '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet PUTAR.png',
+          galleryImages: [
+            '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet PUTAR Biru.png',
+            '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet PUTAR Hijau.png',
+            '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet PUTAR Kuning.png',
+            '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet PUTAR Merah.png',
+            '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet PUTAR Orange.png',
+            '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet PUTAR Putih.png',
+          ], 
+          description: 'Kran tembok PVC ukuran jumbo dengan desain modern. Cocok untuk area cuci atau garasi yang membutuhkan daya tahan ekstra.',
+          specifications: [
+            { key: 'Material', value: 'PVC' },
+            { key: 'Ukuran Drat', value: '1/2 Inch' },
+          ],
+          features: [
+            { text: 'Desain Modern Ukuran jumbo' },
+            { text: 'Bahan PVC Tebal Kualitas terbaik, anti pecah dan tahan cuaca' },
+          ],
+          packagingDetails: [
+            { type: 'Biru', innerBox: '-', outerBox: '-' },
+            { type: 'Hijau', innerBox: '-', outerBox: '-' },
+            { type: 'Kuning', innerBox: '-', outerBox: '-' },
+            { type: 'Merah', innerBox: '-', outerBox: '-' },
+            { type: 'Orange', innerBox: '-', outerBox: '-' },
+            { type: 'Putih', innerBox: '-', outerBox: '-' },
+          ],
+        },
+        {
+          id: 'hel-safe-002',
+          name: 'Safety helmet TEKAN',
+          image: '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet TEKAN.png',
+          galleryImages: [
+            '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet TEKAN Biru.png',
+            '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet TEKAN Hijau.png',
+            '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet TEKAN Kuning.png',
+            '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet TEKAN Merah.png',
+            '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet TEKAN Orange.png',
+            '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet TEKAN Putih.png',
+          ],
           description: 'Kran tembok PVC ukuran jumbo dengan desain modern. Cocok untuk area cuci atau garasi yang membutuhkan daya tahan ekstra.',
           specifications: [
             { key: 'Material', value: 'PVC' },

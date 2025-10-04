@@ -13,15 +13,11 @@ import react from 'react';
 const PRODUK_UNGGULAN_SAYA = [
   {
     id: 1,
-    name: '',
-    category: '',
     image: '/Images/PT STS - Web Design - Product Highlights 1290x840px - 001A.png',
     link: '/produk/owner/painting-tools/own-paint-001 ',
   },
   {
     id: 2,
-    name: '',
-    category: '',
     image: '/Images/PT STS - Web Design - Product Highlights 1290x840px - 002A.png',
     link: '/produk/yozuri/door-lock-equipments/yoz-lock-004',
   },
@@ -29,8 +25,6 @@ const PRODUK_UNGGULAN_SAYA = [
 
 type Product = {
   id: number;
-  name: string;
-  category: string;
   image: string;
   link: string;
 };
@@ -51,13 +45,12 @@ const BannerProductCard = ({ product }: { product: Product }) => (
   >
     <img
       src={product.image}
-      alt={product.name}
       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
     />
     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
     <div className="absolute bottom-0 left-0 p-6 md:p-8 text-white w-full">
-      <p className="text-sm font-helvetica-regular uppercase text-yellow-400">{product.category}</p>
-      <h1 className="text-xl md:text-3xl font-helvetica-black-oblique">{product.name}</h1>
+      {/* <p className="text-sm font-helvetica-regular uppercase text-yellow-400">{product.category}</p> */}
+      {/* <h1 className="text-xl md:text-3xl font-helvetica-black-oblique">{product.name}</h1> */}
       <div className="mt-4 font-helvetica-light text-white inline-flex items-center gap-2 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
         Lihat Produk
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -113,7 +106,7 @@ function HeroSlider() {
   const slides = [
     { image: '/Images/PT STS - Web Design - Header-02.png', link: '/produk/owner' },
     { image: '/Images/PT STS - Web Design - Header-01.png', link: '/produk/yozuri' },
-    { image: '/Images/PT STS - Web Design - Header-03.png', link: '/produk/helios' }
+    { image: '/Images/PT STS - Web Design - Header-03.png', link: '/produk/lainnya' }
   ];
 
   return (
@@ -294,7 +287,11 @@ function FeaturedVideoSection() {
             <h2 className="text-3xl font-helvetica-black-oblique uppercase">PRESISI TAK TERTANDINGI</h2>
             <h3 className="text-xl font-helvetica-black-oblique opacity-90 mb-4">UNTUK HASIL TERBAIK</h3>
             <p className="mb-8 font-helvetica-regular">Saksikan Waterpass Magnet YO-ZURI terbaru dalam aksi! Dengan teknologi magnetik canggih dan desain ergonomis, alat ini memastikan pengukuran yang akurat dan pemasangan yang mudah di berbagai permukaan. Rasakan perbedaan presisi di setiap proyek Anda.</p>
-            <a href="https://www.youtube.com/@officialpageyozuri" target="_blank" rel="noopener noreferrer" className="font-helvetica-regular uppercase inline-block bg-yellow-500 text-black py-3 px-8 rounded hover:bg-yellow-600 transition-colors">
+            <a href="https://www.youtube.com/@officialpageyozuri" target="_blank" rel="noopener noreferrer" className="font-helvetica-regular uppercase inline-block bg-yellow-500 text-gray-900 py-3 px-8 rounded 
+            hover:bg-yellow-600 
+
+            transition-all duration-300 ease-in-out
+            hover:scale-105 hover:-translate-y-1">
               Jelajahi Jangkauan
             </a>
           </div>

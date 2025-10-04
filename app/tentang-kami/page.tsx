@@ -95,7 +95,7 @@ export default function AboutUsPage() {
             <div>
               <h2 className="text-3xl font-helvetica-black text-white mb-4">Sejarah Kami</h2>
               <p className="text-white leading-relaxed mb-4 font-helvetica-regular">
-                PT. SAMUDRA TEKNIK SEJAHTERA, dalam kurun waktu kurang dari 2 (dua) tahun hingga sekarang telah berhasil melahirkan lebih dari 100 (seratus) produk terlaris. Untuk menjaga kepercayaan Customer yang telah terbangun, kami memastikan produk yang kami jual memiliki standar kualitas terjamin sehingga perusahaan kami menjadi distributor terpercaya untuk Customer kamu yang telah tersebar di seluruh Indonesia.
+                PT. SAMUDRA TEKNIK SEJAHTERA, dalam kurun waktu kurang dari 2 (dua) tahun telah berhasil melahirkan lebih dari 100 (seratus) produk terlaris. Untuk menjaga kepercayaan Customer yang telah terbangun, kami memastikan produk yang kami jual memiliki standar kualitas terjamin sehingga perusahaan kami menjadi distributor terpercaya untuk Customer kamu yang telah tersebar di seluruh Indonesia.
               </p>
               <p className="text-white leading-relaxed font-helvetica-regular">
                 Memiliki lebih dari 20 tahun pengalaman, PT. SAMUDRA TEKNIK SEJAHTERA yang berlokasi di Tangerang, Indonesia, adalah perusahaan yang bergerak di bidang distribusi alat-alat Pertukangan, Perkakas dan Sanitary yang mengutamakan kualitas yang berawal dari 2 (dua) merk unggulannya OWNER & YO-ZURI.
@@ -137,7 +137,7 @@ export default function AboutUsPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-helvetica-black text-gray-900 mb-4">Nilai-Nilai Perusahaan</h2>
           <p className="max-w-3xl mx-auto text-lg text-gray-600 mb-12 font-helvetica-regular">
-            Sembilan pilar yang menjadi landasan kami dalam bekerja dan melayani, yang terangkum dalam semangat <span className="font-helvetica-black text-yellow-600">&quot;BERKUALITAS&quot;</span>.
+            Sembilan pilar yang menjadi landasan kami dalam bekerja dan melayani, yang terangkum dalam semangat <span className="font-helvetica-black text-yellow-500">&quot;BERKUALITAS&quot;</span>.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {stsValues.map((value, index) => (

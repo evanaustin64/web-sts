@@ -115,7 +115,7 @@ export default function ContactUsPage() {
                 </div>
                 <div className="flex items-center gap-4 font-helvetica-regular">
                   <PhoneIcon className="h-6 w-6 text-yellow-600 flex-shrink-0" />
-                  <span>(021) 1234-5678</span>
+                  <span>(021) 55711055</span>
                 </div>
               </div>
             </div>
