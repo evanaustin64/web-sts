@@ -10,7 +10,7 @@ export type Product = {
   specifications?: { key: string; value: string }[]; // Spesifikasi produk (opsional)
   variations?: { id: string; name: string; image: string }[];  // Spesifikasi produk (opsional)
   features?: { text: string }[];
-  packagingDetails?: { size?: string; type?: string; innerBox?: string; outerBox?: string; }[];
+  packagingDetails?: { size?: string; type?: string; innerBox?: string; outerBox?: string; pack?:string}[];
 };
 
 export type Category = {
@@ -2972,7 +2972,7 @@ export const catalogueData: Record<string, Category[]> = {
       products: [{
           id: 'hel-safe-001',
           name: 'Safety Helmet PUTAR',
-          image: '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet PUTAR.png',
+          image: '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet PUTAR Cover.png',
           galleryImages: [
             '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet PUTAR Biru.png',
             '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet PUTAR Hijau.png',
@@ -2991,18 +2991,18 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Bahan PVC Tebal Kualitas terbaik, anti pecah dan tahan cuaca' },
           ],
           packagingDetails: [
-            { type: 'Biru', innerBox: '-', outerBox: '-' },
-            { type: 'Hijau', innerBox: '-', outerBox: '-' },
-            { type: 'Kuning', innerBox: '-', outerBox: '-' },
-            { type: 'Merah', innerBox: '-', outerBox: '-' },
-            { type: 'Orange', innerBox: '-', outerBox: '-' },
-            { type: 'Putih', innerBox: '-', outerBox: '-' },
+            { type: 'Biru', innerBox: '6 Pcs / Packs', outerBox: '6 Packs / Box' },
+            { type: 'Hijau', innerBox: '6 Pcs / Packs', outerBox: '6 Packs / Box' },
+            { type: 'Kuning', innerBox: '6 Pcs / Packs', outerBox: '6 Packs / Box' },
+            { type: 'Merah', innerBox: '6 Pcs / Packs', outerBox: '6 Packs / Box' },
+            { type: 'Orange', innerBox: '6 Pcs / Packs', outerBox: '6 Packs / Box' },
+            { type: 'Putih', innerBox: '6 Pcs / Packs', outerBox: '6 Packs / Box' },
           ],
         },
         {
           id: 'hel-safe-002',
           name: 'Safety helmet TEKAN',
-          image: '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet TEKAN.png',
+          image: '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet TEKAN Cover.png',
           galleryImages: [
             '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet TEKAN Biru.png',
             '/Images/helios/PT STS - OTHERS - Web Design - Catalogue - Safety Helmet TEKAN Hijau.png',
@@ -3021,11 +3021,281 @@ export const catalogueData: Record<string, Category[]> = {
             { text: 'Bahan PVC Tebal Kualitas terbaik, anti pecah dan tahan cuaca' },
           ],
           packagingDetails: [
-            { type: 'Engkol | 1/2 - 3/4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
-            { type: 'Bulat | 1/2 - 3/4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+            { type: 'Biru', innerBox: '6 Pcs / Packs', outerBox: '6 Packs / Box'},
+            { type: 'Hijau', innerBox: '6 Pcs / Packs', outerBox: '6 Packs / Box' },
+            { type: 'Kuning', innerBox: '6 Pcs / Packs', outerBox: '6 Packs / Box' },
+            { type: 'Merah', innerBox: '6 Pcs / Packs', outerBox: '6 Packs / Box' },
+            { type: 'Orange', innerBox: '6 Pcs / Packs', outerBox: '6 Packs / Box' },
+            { type: 'Putih', innerBox: '6 Pcs / Packs', outerBox: '6 Packs / Box' },
           ],
         },
       ]
+    },
+     {
+      id: 'smartchoice',
+      name: 'Smart Choice',
+      image: '/Images/SC/Smart Choice - Logo Vector-01.png', // Ganti dengan gambar Anda
+      // Di dalam catalogueData -> owner -> 'hand-power-tools'
+      products: [
+    {
+      id: 'sc-002',
+      name: 'Kran Angsa Flex SS Jumbo',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Kran Angsa Fleksibel Kepala  Besar.png',
+      galleryImages: [],
+      description: 'Kran wastafel model angsa dengan leher fleksibel ukuran jumbo. Terbuat dari Stainless Steel berkualitas, anti karat dan tahan lama. Memudahkan menjangkau seluruh area wastafel.',
+      specifications: [
+        { key: 'Material', value: 'Stainless Steel (SS)' },
+        { key: 'Ukuran Drat', value: '1/2 Inch' },
+        { key: 'Fitur', value: 'Leher Fleksibel' }
+      ],
+      features: [
+        { text: 'Leher fleksibel bisa diatur 360 derajat' },
+        { text: 'Bahan Stainless Steel anti karat dan tahan lama' },
+        { text: 'Ukuran jumbo untuk jangkauan maksimal' }
+      ],
+      packagingDetails: [
+        { type: 'Standard', innerBox: '12 pcs', outerBox: '48 pcs' }
+      ],
+      variations:[{id: 'sc-003',
+      name: 'Kran Angsa Flex SS Kecil',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Kran Angsa Fleksibel Kepala Kecil.png'}]
+    },
+    {
+      id: 'sc-003',
+      name: 'Kran Angsa Flex SS Kecil',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Kran Angsa Fleksibel Kepala Kecil.png',
+      galleryImages: [],
+      description: 'Versi compact dari kran angsa fleksibel, ideal untuk wastafel berukuran kecil atau dapur minimalis. Praktis dan hemat tempat.',
+      specifications: [
+        { key: 'Material', value: 'Stainless Steel (SS)' },
+        { key: 'Ukuran Drat', value: '1/2 Inch' },
+        { key: 'Fitur', value: 'Leher Fleksibel' }
+      ],
+      features: [
+        { text: 'Desain minimalis dan hemat tempat' },
+        { text: 'Leher fleksibel untuk kemudahan penggunaan' },
+        { text: 'Material Stainless Steel anti karat' }
+      ],
+      packagingDetails: [
+        { type: 'Standard', innerBox: '12 pcs', outerBox: '60 pcs' }
+      ],
+      variations:[{id: 'sc-002',
+      name: 'Kran Angsa Flex SS Jumbo',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Kran Angsa Fleksibel Kepala  Besar.png'}]
+    },
+    {
+      id: 'sc-004',
+      name: 'Kran Taman SS',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Kran Taman Stainless Steel.png',
+      galleryImages: [],
+      description: 'Kran taman serbaguna dari bahan Stainless Steel. Kuat, tahan cuaca, dan anti karat. Cocok untuk kebutuhan outdoor.',
+      specifications: [
+        { key: 'Material', value: 'Stainless Steel (SS)' },
+        { key: 'Ukuran Drat', value: '1/2 Inch' }
+      ],
+      features: [
+        { text: 'Bahan Stainless Steel penuh, anti karat' },
+        { text: 'Tuas engkol yang mudah digunakan' },
+        { text: 'Tahan terhadap perubahan cuaca' }
+      ],
+      packagingDetails: [
+        { type: 'Standard', innerBox: '24 pcs', outerBox: '120 pcs' }
+      ],
+      variations:[{id: 'sc-006',
+      name: 'Kran Tembok SS',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Kran Tembok Stainless Steel.png'}]
+    },
+    // {
+    //   id: 'sc-005',
+    //   name: 'Kran Taman SS HT',
+    //   image: '/Images/smartchoice/kran-taman-ss-ht.png',
+    //   galleryImages: [],
+    //   description: 'Kran taman Stainless Steel dengan finishing High-Texture (HT) yang elegan dan modern. Memberikan sentuhan kemewahan pada area outdoor Anda.',
+    //   specifications: [
+    //     { key: 'Material', value: 'Stainless Steel (SS)' },
+    //     { key: 'Ukuran Drat', value: '1/2 Inch' },
+    //     { key: 'Finishing', value: 'High-Texture (HT)' }
+    //   ],
+    //   features: [
+    //     { text: 'Desain modern dengan finishing High-Texture' },
+    //     { text: 'Material Stainless Steel anti karat' },
+    //     { text: 'Tahan lama untuk pemakaian outdoor' }
+    //   ],
+    //   packagingDetails: [
+    //     { type: 'Standard', innerBox: '20 pcs', outerBox: '100 pcs' }
+    //   ]
+    // },
+    {
+      id: 'sc-006',
+      name: 'Kran Tembok SS',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Kran Tembok Stainless Steel.png',
+      galleryImages: [],
+      description: 'Kran tembok minimalis berbahan Stainless Steel. Cocok untuk kamar mandi atau area cuci dengan instalasi pipa di dinding.',
+      specifications: [
+        { key: 'Material', value: 'Stainless Steel (SS)' },
+        { key: 'Ukuran Drat', value: '1/2 Inch' }
+      ],
+      features: [
+        { text: 'Model minimalis dan elegan' },
+        { text: 'Anti karat dan mudah dibersihkan' },
+        { text: 'Instalasi mudah pada dinding' }
+      ],
+      packagingDetails: [
+        { type: 'Standard', innerBox: '24 pcs', outerBox: '120 pcs' }
+      ],
+      variations:[{ id: 'sc-004',
+      name: 'Kran Taman SS',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Kran Taman Stainless Steel.png'}]
+    },
+    // {
+    //   id: 'sc-007',
+    //   name: 'Kran Tembok SS HT',
+    //   image: '/Images/smartchoice/kran-tembok-ss-ht.png',
+    //   galleryImages: [],
+    //   description: 'Kran tembok Stainless Steel dengan finishing High-Texture (HT) yang mewah. Memberikan tampilan premium untuk kamar mandi Anda.',
+    //   specifications: [
+    //     { key: 'Material', value: 'Stainless Steel (SS)' },
+    //     { key: 'Ukuran Drat', value: '1/2 Inch' },
+    //     { key: 'Finishing', value: 'High-Texture (HT)' }
+    //   ],
+    //   features: [
+    //     { text: 'Desain premium dengan finishing High-Texture' },
+    //     { text: 'Bahan Stainless Steel anti karat dan korosi' },
+    //     { text: 'Katup keramik berkualitas, anti bocor' }
+    //   ],
+    //   packagingDetails: [
+    //     { type: 'Standard', innerBox: '20 pcs', outerBox: '100 pcs' }
+    //   ]
+    // },
+    {
+      id: 'sc-008',
+      name: 'Lem Seal Botol',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Lem Sealant Botol.png',
+      galleryImages: [],
+      description: 'Lem sealant serbaguna berwarna bening untuk merekatkan dan mengisi celah. Tahan air dan cocok untuk interior maupun eksterior.',
+      specifications: [
+        { key: 'Tipe', value: 'Silicone Sealant' },
+        { key: 'Warna', value: 'Bening (Clear)' },
+        { key: 'Isi', value: '280ml' }
+      ],
+      features: [
+        { text: 'Daya rekat kuat pada berbagai permukaan' },
+        { text: 'Tahan air dan cuaca' },
+        { text: 'Tidak menyusut dan retak' }
+      ],
+      packagingDetails: [
+        { type: 'Bening', innerBox: '24 botol', outerBox: '48 botol' }
+      ]
+    },
+    // {
+    //   id: 'sc-009',
+    //   name: 'Lem Seal Botol Putih',
+    //   image: '/Images/smartchoice/lem-seal-botol-putih.png',
+    //   galleryImages: [],
+    //   description: 'Lem sealant serbaguna berwarna putih. Ideal untuk penggunaan pada area sanitasi seperti kamar mandi dan dapur agar terlihat bersih.',
+    //   specifications: [
+    //     { key: 'Tipe', value: 'Silicone Sealant' },
+    //     { key: 'Warna', value: 'Putih (White)' },
+    //     { key: 'Isi', value: '280ml' }
+    //   ],
+    //   features: [
+    //     { text: 'Anti jamur, cocok untuk area lembab' },
+    //     { text: 'Daya rekat kuat dan fleksibel' },
+    //     { text: 'Mudah diaplikasikan dan dibersihkan' }
+    //   ],
+    //   packagingDetails: [
+    //     { type: 'Putih', innerBox: '24 botol', outerBox: '48 botol' }
+    //   ]
+    // },
+    {
+      id: 'sc-010',
+      name: 'Selang M Cuci Out 3m',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Selang Mesin Cuci.png',
+      galleryImages: [],
+      description: 'Selang pembuangan air untuk mesin cuci dengan panjang 3 meter. Fleksibel dan kuat, tidak mudah terlipat atau bocor.',
+      specifications: [
+        { key: 'Panjang', value: '3 Meter' },
+        { key: 'Material', value: 'PVC Fleksibel' },
+        { key: 'Kompatibilitas', value: 'Universal untuk sebagian besar mesin cuci' }
+      ],
+      features: [
+        { text: 'Panjang 3 meter untuk jangkauan lebih' },
+        { text: 'Bahan tebal dan anti bocor' },
+        { text: 'Ujung selang universal, mudah dipasang' }
+      ],
+      packagingDetails: [
+        { type: 'Standard', innerBox: '-', outerBox: '50 pcs' }
+      ],
+      variations:[{id: 'sc-012',
+      name: 'Selang M Cuci Inlet',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Selang Inlet Mesin Cuci.png'}]
+    },
+    {
+      id: 'sc-012',
+      name: 'Selang M Cuci Inlet',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Selang Inlet Mesin Cuci.png',
+      galleryImages: [],
+      description: 'Selang pembuangan air untuk mesin cuci dengan panjang 3 meter. Fleksibel dan kuat, tidak mudah terlipat atau bocor.',
+      specifications: [
+        { key: 'Panjang', value: '3 Meter' },
+        { key: 'Material', value: 'PVC Fleksibel' },
+        { key: 'Kompatibilitas', value: 'Universal untuk sebagian besar mesin cuci' }
+      ],
+      features: [
+        { text: 'Panjang 3 meter untuk jangkauan lebih' },
+        { text: 'Bahan tebal dan anti bocor' },
+        { text: 'Ujung selang universal, mudah dipasang' }
+      ],
+      packagingDetails: [
+        { type: 'Standard', innerBox: '-', outerBox: '50 pcs' }
+      ],
+      variations:[{id: 'sc-010',
+      name: 'Selang M Cuci Out 3m',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Selang Mesin Cuci.png'}]
+    },
+    {
+      id: 'sc-011',
+      name: 'Ball Valve PVC',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Ball Valve PVC.png',
+      galleryImages: [],
+      description: 'Stop kran / Ball Valve dari bahan PVC tebal dan berkualitas. Berfungsi untuk membuka dan menutup aliran air dengan mudah. Tahan tekanan dan awet.',
+      specifications: [
+        { key: 'Material', value: 'PVC' },
+        { key: 'Ukuran Drat', value: '1/2 Inch & 3/4 Inch' },
+        { key: 'Tipe', value: 'Handle Engkol' }
+      ],
+      features: [
+        { text: 'Bahan PVC tebal, kuat dan tidak mudah pecah' },
+        { text: 'Tuas handle yang ringan dan mudah dioperasikan' },
+        { text: 'Tahan terhadap korosi dan bahan kimia ringan' }
+      ],
+      packagingDetails: [
+        { type: '1/2 Inch', innerBox: '24 pcs', outerBox: '144 pcs' },
+        { type: '3/4 Inch', innerBox: '12 pcs', outerBox: '72 pcs' }
+      ]
+},
+{
+      id: 'sc-012',
+      name: 'Avur selang PVC',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Avur Selang PVC.png',
+      galleryImages: [],
+      description: 'Stop kran / Ball Valve dari bahan PVC tebal dan berkualitas. Berfungsi untuk membuka dan menutup aliran air dengan mudah. Tahan tekanan dan awet.',
+      specifications: [
+        { key: 'Material', value: 'PVC' },
+        { key: 'Ukuran Drat', value: '1/2 Inch & 3/4 Inch' },
+        { key: 'Tipe', value: 'Handle Engkol' }
+      ],
+      features: [
+        { text: 'Bahan PVC tebal, kuat dan tidak mudah pecah' },
+        { text: 'Pemasangan Cepat' },
+        { text: 'Desain Modern' }
+      ],
+      packagingDetails: [
+        { type: '1/2 Inch', innerBox: '24 pcs', outerBox: '144 pcs' },
+        { type: '3/4 Inch', innerBox: '12 pcs', outerBox: '72 pcs' }
+      ]
+}
+]
     }
   ]
 };

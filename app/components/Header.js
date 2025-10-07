@@ -60,6 +60,7 @@ export default function Header() {
   const menuData = [
     { id: 'owner', title: ' Owner', href: '/produk/owner' },
     { id: 'yozuri', title: 'Yo-Zuri', href: '/produk/yozuri' },
+    { id: 'lainnya', title: 'Produk Lainnya', href: '/produk/lainnya'}
   ];
 
   useEffect(() => {
@@ -214,7 +215,7 @@ export default function Header() {
           <li>
             <button
               onClick={() => handleAccordionToggle('produk')}
-              className="w-full flex justify-between items-center px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b"
+              className="w-full flex justify-between items-center px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500"
             >
               Produk
               <svg className={`w-5 h-5 transition-transform ${openAccordion === 'produk' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -223,7 +224,7 @@ export default function Header() {
               <ul className="bg-gray-50">
                 {menuData.map(item => (
                   <li key={item.id}>
-                    <Link href={item.href} className="block px-8 py-3 text-sm font-helvetica-regular text-gray-700 border-b hover:bg-gray-100" onClick={() => setMenuOpen(false)}>
+                    <Link href={item.href} className="block px-8 py-3 text-sm font-helvetica-regular text-gray-700 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>
                       {item.title}
                     </Link>
                   </li>
@@ -231,8 +232,8 @@ export default function Header() {
               </ul>
             )}
           </li>
-          <li><Link href="/tentang-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-gray-100" onClick={() => setMenuOpen(false)}>Tentang Kami</Link></li>
-          <li><Link href="/hubungi-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 hover:bg-gray-100" onClick={() => setMenuOpen(false)}>Hubungi Kami</Link></li>
+          <li><Link href="/tentang-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Tentang Kami</Link></li>
+          <li><Link href="/hubungi-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Hubungi Kami</Link></li>
         </ul>
       </div>
 )}

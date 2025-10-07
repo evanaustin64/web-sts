@@ -1,20 +1,28 @@
 "use client";
-
+import Image from 'next/image';
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
 export default function ContactUsPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Bagian Judul */}
-      <div className="bg-gradient-to-r from-yellow-300 to-orange-300 py-12">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-helvetica-black text-black uppercase tracking-wider">Hubungi Kami</h1>
-          <p className="mt-4 max-w-2xl mx-auto text-black text-base md:text-lg font-helvetica-regular">
-            Kami siap membantu Anda. Silakan isi formulir di bawah atau hubungi kami melalui detail kontak yang tersedia.
-          </p>
-        </div>
-      </div>
-
+      <section className="relative w-full aspect-[1920/400] bg-gray-900">
+              <Image
+                src="/Images/PT STS - Web Design - Header 1920x400px-01 (1).png" // Ganti dengan foto banner Anda
+                alt="Tim PT. Samudra Teknik Sejahtera"
+                layout="fill"
+                objectFit="cover"
+                className="opacity-100"
+                quality={100}
+                priority
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center text-white">
+                  {/* <h1 className="text-5xl md:text-7xl font-helvetica-black uppercase">Hubungi Kami</h1> */}
+                  {/* <p className="mt-4 text-lg md:text-xl font-helvetica-regular">Kami siap membantu Anda. Silakan isi formulir di bawah atau hubungi kami melalui detail kontak yang tersedia.</p> */}
+                </div>
+              </div>
+            </section>
       {/* Bagian Konten Utama */}
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
@@ -92,7 +100,7 @@ export default function ContactUsPage() {
               <div>
                 <button 
                   type="submit" 
-                  className="w-full bg-gray-600 text-white font-helvetica-regular font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors duration-300 text-lg"
+                  className="w-full bg-yellow-500 text-white font-helvetica-regular font-bold py-3 px-6 rounded-lg hover:bg-yellow-800 transition-colors duration-300 text-lg"
                 >
                   Send Message
                 </button>

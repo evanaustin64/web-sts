@@ -18,6 +18,12 @@ export default function ProdukUtamaPage() {
       href: '/produk/yozuri',
       image: '/Images/Yozuri.jpg',
       bgColor: 'bg-red-700'
+    },
+    {
+      name: 'PRODUK LAINNYA',
+      href: '/produk/lainnya',
+      image: '/Images/Lainnya.png',
+      bgColor: 'bg-white'
     }
   ];
 

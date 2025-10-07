@@ -18,7 +18,7 @@ const PRODUK_UNGGULAN_SAYA = [
   },
   {
     id: 2,
-    image: '/Images/PT STS - Web Design - Product Highlights 1290x840px - 002A.png',
+    image: '/Images/PT STS - Web Design - Product Highlights 1290x840px-02.png',
     link: '/produk/yozuri/door-lock-equipments/yoz-lock-004',
   },
 ];
@@ -47,7 +47,7 @@ const BannerProductCard = ({ product }: { product: Product }) => (
       src={product.image}
       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
     />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+    <div className="absolute inset-0 "></div>
     <div className="absolute bottom-0 left-0 p-6 md:p-8 text-white w-full">
       {/* <p className="text-sm font-helvetica-regular uppercase text-yellow-400">{product.category}</p> */}
       {/* <h1 className="text-xl md:text-3xl font-helvetica-black-oblique">{product.name}</h1> */}
@@ -104,9 +104,9 @@ function HeroSlider() {
 
   // MODIFIKASI #1: Data disederhanakan, hanya butuh gambar dan link tujuan.
   const slides = [
-    { image: '/Images/PT STS - Web Design - Header-02.png', link: '/produk/owner' },
-    { image: '/Images/PT STS - Web Design - Header-01.png', link: '/produk/yozuri' },
-    { image: '/Images/PT STS - Web Design - Header-03.png', link: '/produk/lainnya' }
+    { image: '/Images/PT STS - Web Design - Header-05.png', link: '/produk/owner' },
+    { image: '/Images/PT STS - Web Design - Header-04.png', link: '/produk/yozuri' },
+    { image: '/Images/PT STS - Web Design - Header-06.png', link: '/produk/lainnya/helios' }
   ];
 
   return (
@@ -164,14 +164,14 @@ function CatalogueSlider() {
   };
 
   const catalogueItems = [
-    { image: '/Images/PT STS - Web Design - YO-ZURI Categories - Hand & Plumbing Tools.png', link: '/produk' },
-    { image: '/Images/PT STS - Web Design - OWNER Categories 720px - Layering Tools.png', link: '/produk' },
-    { image: '/Images/PT STS - Web Design - YO-ZURI Categories - Drilling Tools.png', link: '/produk' },
-    { image: '/Images/PT STS - Web Design - OWNER Categories 720px - Door Lock Equipments.png', link: '/produk' },
-    { image: '/Images/PT STS - Web Design - YO-ZURI Categories - Diamond Wheels.png', link: '/produk' },
-    { image: '/Images/PT STS - Web Design - OWNER Categories 720px - Safety Equipments.png', link: '/produk' },
-    { image: '/Images/PT STS - Web Design - YO-ZURI Categories - Painting Tools.png', link: '/produk' },
-    { image: '/Images/PT STS - Web Design - OWNER Categories 720px - Sanitary Equipments.png', link: '/produk' },
+    { image: '/Images/PT STS - Web Design - YO-ZURI Categories - Hand & Plumbing Tools.png', link: '/produk/yozuri/power-plumbing-tools' },
+    { image: '/Images/PT STS - Web Design - OWNER Categories 720px - Layering Tools.png', link: '/produk/owner/layering-tools' },
+    { image: '/Images/PT STS - Web Design - YO-ZURI Categories - Drilling Tools.png', link: '/produk/yozuri/drilling-tools' },
+    { image: '/Images/PT STS - Web Design - OWNER Categories 720px - Door Lock Equipments.png', link: '/produk/owner/door-lock-equipments' },
+    { image: '/Images/PT STS - Web Design - YO-ZURI Categories - Diamond Wheels.png', link: '/produk/yozuri/diamond-wheels' },
+    { image: '/Images/PT STS - Web Design - OWNER Categories 720px - Safety Equipments.png', link: '/produk/owner/safety-equipments' },
+    { image: '/Images/PT STS - Web Design - YO-ZURI Categories - Painting Tools.png', link: '/produk/yozuri/painting-tools' },
+    { image: '/Images/PT STS - Web Design - OWNER Categories 720px - Sanitary Equipments.png', link: '/produk/owner/sanitary-equipments' },
   ];
 
   return (

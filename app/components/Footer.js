@@ -14,7 +14,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="/produk/owner" className="hover:text-yellow-500 transition-colors font-helvetica-regular">OWNER</Link></li>
               <li><Link href="/produk/yozuri" className="hover:text-yellow-500 transition-colors font-helvetica-regular">YO-ZURI</Link></li>
-              <li><Link href="/produk/helios" className="hover:text-yellow-500 transition-colors font-helvetica-regular">PRODUK LAINNYA</Link></li>
+              <li><Link href="/produk/lainnya" className="hover:text-yellow-500 transition-colors font-helvetica-regular">PRODUK LAINNYA</Link></li>
             </ul>
           </div>
 
@@ -32,7 +32,7 @@ export default function Footer() {
             <h4 className="font-helvetica-black text-white text-lg mb-4 uppercase">Perusahaan</h4>
             <ul className="space-y-2">
               <li><Link href="/tentang-kami" className="hover:text-yellow-500 transition-colors font-helvetica-regular">Tentang Kami</Link></li>
-              <li><Link href="https://www.linkedin.com/company/pt-samudra-teknik-sejahtera/" className="hover:text-yellow-500 transition-colors font-helvetica-regular">Karir</Link></li>
+              <li><Link href="/karir" className="hover:text-yellow-500 transition-colors font-helvetica-regular">Karir</Link></li>
             </ul>
           </div>
 

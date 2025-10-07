@@ -72,19 +72,21 @@ export default function AboutUsPage() {
   return (
     <div className="bg-white">
       {/* 1. Hero Section */}
-      <section className="relative h-80 bg-gray-900">
+      <section className="relative w-full aspect-[1920/400]">
         <Image
-          src="/Images/PT STS - Web Design - About Us Header B.png" // Ganti dengan foto banner Anda
+          src="/Images/PT STS - Web Design - Header 1920x400px-03.png" // Ganti dengan foto banner Anda
           alt="Tim PT. Samudra Teknik Sejahtera"
           layout="fill"
           objectFit="cover"
-          className="opacity-40"
+          className="opacity-100"
+          quality={100}
+          priority
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-white">
+          {/* <div className="text-center text-white">
             <h1 className="text-5xl md:text-7xl font-helvetica-black uppercase">Tentang Kami</h1>
             <p className="mt-4 text-lg md:text-xl font-helvetica-regular">Mengenal Lebih Dekat Dedikasi Kami pada Kualitas</p>
-          </div>
+          </div> */}
         </div>
       </section>
 

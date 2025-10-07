@@ -33,10 +33,10 @@ function SearchContent() {
   return (
     <div className="bg-gray-50 min-h-screen">
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-extrabold text-gray-900 uppercase tracking-wider mb-4">
+        <h1 className="text-4xl font-helvetica-black-oblique text-gray-900 uppercase tracking-wider mb-4">
           Hasil Pencarian
         </h1>
-        <p className="text-gray-600 mb-10">
+        <p className="text-gray-600 mb-10 font-helvetica-light">
           {query && filteredProducts.length > 0
             ? `Menampilkan ${filteredProducts.length} hasil untuk "${query}"`
             : `Tidak ada hasil untuk "${query}". Coba kata kunci lain.`}
@@ -54,7 +54,7 @@ function SearchContent() {
                   <Image src={product.image} alt={product.name} layout="fill" objectFit="contain" className="p-4"/>
                 </div>
                 <div className="p-4 text-center">
-                  <h3 className="font-bold text-gray-800 uppercase text-sm">{product.name}</h3>
+                  <h3 className="font-helvetica-regular text-gray-800 uppercase text-sm">{product.name}</h3>
                 </div>
               </Link>
             ))}
