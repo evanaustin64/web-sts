@@ -19,7 +19,14 @@ export default function MaintenancePage() {
             <div className="fixed inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900" style={{
                 backgroundSize: '200% 200%',
                 animation: 'gradient-shift 5s ease infinite'
-            }}></div>
+            }}><Image
+        src="/Images/AI YO-ZURI - Bricklayering & Platering Tools - Wheelbarrow PVC Black A.jpg" // Ganti dengan path gambar Anda
+        alt="Background"
+        fill // Ini akan membuat gambar mengisi seluruh parent (div di atasnya)
+        priority // Opsional: Untuk memuat gambar lebih awal (penting untuk LCP)
+        className="object-cover -z-10" // object-cover agar menutupi dan -z-10 agar di paling belakang
+        sizes="100vw" // Penting untuk gambar fullscreen
+    /></div>
 
             {/* Animated Background Elements */}
             <div className="fixed inset-0 overflow-hidden pointer-events-none">
@@ -45,7 +52,7 @@ export default function MaintenancePage() {
                     <div className="mb-8 sm:mb-12 animate-float">
                         <div className="inline-flex items-center justify-center w-24 h-24 sm:w-32 sm:h-32 bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20">
                             <Image
-                                src="/Images/Profile Picture - PT Samudra Teknik Sejahtera (White Transparent).png" // Path ke gambar Anda di folder public
+                                src="/Images/Owner.png" // Path ke gambar Anda di folder public
                                 alt="Maintenance Icon"
                                 width={144} 
                                 height={144} 
