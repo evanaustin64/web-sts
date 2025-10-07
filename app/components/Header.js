@@ -5,10 +5,20 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import DesktopDropdown from './DesktopDropdown';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname  } from 'next/navigation';
 import { catalogueData } from '@/app/data/catalogue-data';
 
 export default function Header() {
+
+  const pathname = usePathname();
+  const isMaintenancePage = pathname?.startsWith('/maintenance');
+  
+  // Jika di halaman maintenance, jangan render header
+  if (isMaintenancePage) {
+    return null;
+  }
+
+
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);

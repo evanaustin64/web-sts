@@ -1,0 +1,26 @@
+// middleware.ts
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+
+export function middleware(request: NextRequest) {
+  // Cek environment variable
+  const isMaintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
+  
+  // Jangan redirect jika sudah di halaman maintenance atau asset
+  const isMaintenancePath = request.nextUrl.pathname.startsWith('/maintenance');
+  const isAsset = request.nextUrl.pathname.startsWith('/_next') || 
+                  request.nextUrl.pathname.startsWith('/api') ||
+                  request.nextUrl.pathname.includes('.');
+  
+  if (isMaintenanceMode && !isMaintenancePath && !isAsset) {
+    return NextResponse.redirect(new URL('/maintenance', request.url));
+  }
+  
+  return NextResponse.next();
+}
+
+export const config = {
+  matcher: [
+    '/((?!_next/static|_next/image|favicon.ico).*)',
+  ],
+};
