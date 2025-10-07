@@ -11,6 +11,17 @@ import { catalogueData } from '@/app/data/catalogue-data';
 export default function Header() {
 
   const pathname = usePathname();
+  const isMaintenanceModeActive = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
+
+  // 2. Lakukan pengecekan dan return null DI PALING AWAL.
+  // Ini memastikan komponen tidak akan merender apapun lebih lanjut jika
+  // maintenance mode aktif, sehingga menyelesaikan masalah "hydration mismatch".
+  if (isMaintenanceModeActive || pathname?.startsWith('/maintenance')) {
+    return null;
+  }
+
+  // 3. Semua hooks dan state lainnya sekarang aman untuk dideklarasikan di sini,
+  // karena bagian ini hanya akan berjalan jika BUKAN maintenance mode.
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,22 +31,13 @@ export default function Header() {
   const router = useRouter();
   const [isMobileSearchOpen, setMobileSearchOpen] = useState(false);
 
-  // LOGIKA KONDISIONAL SEKARANG SETELAH SEMUA HOOKS DIPANGGIL
- 
-
   useEffect(() => {
-    if (pathname?.startsWith('/maintenance')) return;
-
+    // useEffect untuk scroll tidak perlu lagi memeriksa pathname,
+    // karena komponen ini tidak akan pernah sampai ke titik ini jika di halaman maintenance.
     const handleScroll = () => setIsScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handleScroll);
-
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [pathname]);
-
-   const isMaintenancePage = pathname?.startsWith('/maintenance');
-  if (isMaintenancePage) {
-    return null; // Jangan render apapun jika ini halaman maintenance
-  }
+  }, []); // Dependency array bisa dikosongkan
 
   // ... (fungsi-fungsi lainnya tetap sama)
   const allProductsWithContext = Object.entries(catalogueData).flatMap(([brandId, categories]) =>
