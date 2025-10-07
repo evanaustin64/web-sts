@@ -5,12 +5,21 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import DesktopDropdown from './DesktopDropdown';
-import { useRouter, usePathname  } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { catalogueData } from '@/app/data/catalogue-data';
 
 export default function Header() {
+  // 1. Cek kondisi maintenance di paling awal.
+  const pathname = usePathname();
+  const isMaintenanceModeActive = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
 
- const pathname = usePathname();
+  // 2. Jika maintenance, JANGAN LANJUTKAN. Langsung return null.
+  if (isMaintenanceModeActive || pathname?.startsWith('/maintenance')) {
+    return null;
+  }
+
+  // 3. Semua hooks lainnya hanya akan berjalan jika BUKAN maintenance mode.
+  // Ini adalah struktur yang benar untuk menghindari error.
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,26 +29,13 @@ export default function Header() {
   const router = useRouter();
   const [isMobileSearchOpen, setMobileSearchOpen] = useState(false);
 
-  // useEffect juga merupakan Hook, jadi harus di atas juga
   useEffect(() => {
-    // Tambahkan pengecekan di dalam effect, bukan di luar
-    if (pathname?.startsWith('/maintenance')) return;
-
     const handleScroll = () => setIsScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handleScroll);
-
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [pathname]);
+  }, []);
 
-  // ==================================================================
-  // SETELAH SEMUA HOOKS, BARU LAKUKAN LOGIKA KONDISIONAL
-  // ==================================================================
-  const isMaintenancePage = pathname?.startsWith('/maintenance');
-  if (isMaintenancePage) {
-    return null; // Early return sekarang aman
-  }
-
-  // ... (fungsi-fungsi lainnya tetap sama)
+  // ... sisa kode Anda (fungsi handler dan JSX) tidak perlu diubah ...
   const allProductsWithContext = Object.entries(catalogueData).flatMap(([brandId, categories]) =>
     categories.flatMap(category =>
       category.products.map(product => ({
@@ -53,7 +49,6 @@ export default function Header() {
   const handleInputChange = (e) => {
     const query = e.target.value;
     setSearchTerm(query);
-
     if (query.length > 1) {
       const filteredSuggestions = allProductsWithContext.filter(product =>
         product.name.toLowerCase().includes(query.toLowerCase())
@@ -81,18 +76,14 @@ export default function Header() {
   const menuData = [
     { id: 'owner', title: ' Owner', href: '/produk/owner' },
     { id: 'yozuri', title: 'Yo-Zuri', href: '/produk/yozuri' },
-    { id: 'lainnya', title: 'Produk Lainnya', href: '/produk/lainnya'}
+    { id: 'lainnya', title: 'Produk Lainnya', href: '/produk/lainnya' }
   ];
-
- 
-
 
   return (
     <>
       <header className={`bg-white sticky top-0 z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : 'shadow-none'}`}>
+        {/* ... Sisa JSX Anda tidak perlu diubah ... */}
         <div className="w-full flex justify-between items-center h-24 px-4 sm:px-6 md:px-8">
-
-          {/* Logo */}
           <div>
             <Link href="/" className="flex items-center gap-3 sm:gap-4">
               <Image
@@ -112,7 +103,6 @@ export default function Header() {
               </div>
             </Link>
           </div>
-
           <div className="flex items-center gap-6">
             <nav className="hidden laptop:flex h-full">
               <ul className="flex items-center gap-10 h-full">
@@ -121,28 +111,22 @@ export default function Header() {
                   onMouseEnter={() => setDropdownOpen(true)}
                   onMouseLeave={() => setDropdownOpen(false)}
                 >
-                  <button href="/produk" className="flex items-center gap-1 font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300" onClick={(e) => e.preventDefault()}>
+                  <button className="flex items-center gap-1 font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300" onClick={(e) => e.preventDefault()}>
                     Produk
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4">
                       <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                     </svg>
                   </button>
                   {isDropdownOpen && <DesktopDropdown />}
-                  {/* <span className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span> */}
                 </li>
-
                 <li className="relative h-full flex items-center group">
                   <Link href="/tentang-kami" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300">Tentang Kami</Link>
-                  {/* <span className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span> */}
                 </li>
-
                 <li className="relative h-full flex items-center group">
                   <Link href="/hubungi-kami" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300">Hubungi Kami</Link>
-                  {/* <span className="absolute bottom-0 left-0 w-full h-[3px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span> */}
                 </li>
               </ul>
             </nav>
-
             <div className="flex items-center gap-4">
               <div className="relative hidden laptop:block">
                 <form onSubmit={handleSearchSubmit}>
@@ -174,13 +158,11 @@ export default function Header() {
                   </ul>
                 )}
               </div>
-
               <button className="laptop:hidden text-gray-800" onClick={() => setMobileSearchOpen(true)}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                 </svg>
               </button>
-
               <button className="laptop:hidden text-gray-800" onClick={() => setMenuOpen(!isMenuOpen)}>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-4 6h4"></path></svg>
               </button>
@@ -188,8 +170,6 @@ export default function Header() {
           </div>
         </div>
       </header>
-
-      {/* Mobile Search Overlay */}
       {isMobileSearchOpen && (
         <div className="laptop:hidden fixed inset-0 bg-white z-50 p-4 flex flex-col">
           <div className="flex justify-end mb-4">
@@ -226,34 +206,34 @@ export default function Header() {
           )}
         </div>
       )}
-{isMenuOpen && (
-      <div className={`laptop:hidden fixed top-24 left-0 w-full bg-white shadow-lg z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform translate-y-0' : 'transform -translate-y-full opacity-0'}`}>
-        <ul className="flex flex-col">
-          <li>
-            <button
-              onClick={() => handleAccordionToggle('produk')}
-              className="w-full flex justify-between items-center px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500"
-            >
-              Produk
-              <svg className={`w-5 h-5 transition-transform ${openAccordion === 'produk' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-            </button>
-            {openAccordion === 'produk' && (
-              <ul className="bg-gray-50">
-                {menuData.map(item => (
-                  <li key={item.id}>
-                    <Link href={item.href} className="block px-8 py-3 text-sm font-helvetica-regular text-gray-700 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>
-                      {item.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-          <li><Link href="/tentang-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Tentang Kami</Link></li>
-          <li><Link href="/hubungi-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Hubungi Kami</Link></li>
-        </ul>
-      </div>
-)}
+      {isMenuOpen && (
+        <div className={`laptop:hidden fixed top-24 left-0 w-full bg-white shadow-lg z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform translate-y-0' : 'transform -translate-y-full opacity-0'}`}>
+          <ul className="flex flex-col">
+            <li>
+              <button
+                onClick={() => handleAccordionToggle('produk')}
+                className="w-full flex justify-between items-center px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500"
+              >
+                Produk
+                <svg className={`w-5 h-5 transition-transform ${openAccordion === 'produk' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+              {openAccordion === 'produk' && (
+                <ul className="bg-gray-50">
+                  {menuData.map(item => (
+                    <li key={item.id}>
+                      <Link href={item.href} className="block px-8 py-3 text-sm font-helvetica-regular text-gray-700 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>
+                        {item.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+            <li><Link href="/tentang-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Tentang Kami</Link></li>
+            <li><Link href="/hubungi-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Hubungi Kami</Link></li>
+          </ul>
+        </div>
+      )}
     </>
   );
 }
