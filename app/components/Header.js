@@ -21,7 +21,18 @@ export default function Header() {
   const [isMobileSearchOpen, setMobileSearchOpen] = useState(false);
 
   // LOGIKA KONDISIONAL SEKARANG SETELAH SEMUA HOOKS DIPANGGIL
-  const isMaintenancePage = pathname?.startsWith('/maintenance');
+ 
+
+  useEffect(() => {
+    if (pathname?.startsWith('/maintenance')) return;
+
+    const handleScroll = () => setIsScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [pathname]);
+
+   const isMaintenancePage = pathname?.startsWith('/maintenance');
   if (isMaintenancePage) {
     return null; // Jangan render apapun jika ini halaman maintenance
   }
@@ -71,11 +82,7 @@ export default function Header() {
     { id: 'lainnya', title: 'Produk Lainnya', href: '/produk/lainnya'}
   ];
 
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 10);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+ 
 
 
   return (
