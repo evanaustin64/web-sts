@@ -1,7 +1,7 @@
 // app/karir/page.tsx
 "use client";
 import Image from 'next/image';
-import { BuildingOffice2Icon, EnvelopeIcon, CheckBadgeIcon } from '@heroicons/react/24/outline';
+import { EnvelopeIcon, CheckBadgeIcon } from '@heroicons/react/24/outline';
 
 // Data untuk posisi yang tersedia dan persyaratan
 const jobPositions = [

@@ -11,14 +11,6 @@ import { catalogueData } from '@/app/data/catalogue-data';
 export default function Header() {
 
   const pathname = usePathname();
-  const isMaintenancePage = pathname?.startsWith('/maintenance');
-  
-  // Jika di halaman maintenance, jangan render header
-  if (isMaintenancePage) {
-    return null;
-  }
-
-
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,6 +19,12 @@ export default function Header() {
   const [suggestions, setSuggestions] = useState([]);
   const router = useRouter();
   const [isMobileSearchOpen, setMobileSearchOpen] = useState(false);
+
+  // LOGIKA KONDISIONAL SEKARANG SETELAH SEMUA HOOKS DIPANGGIL
+  const isMaintenancePage = pathname?.startsWith('/maintenance');
+  if (isMaintenancePage) {
+    return null; // Jangan render apapun jika ini halaman maintenance
+  }
 
   // ... (fungsi-fungsi lainnya tetap sama)
   const allProductsWithContext = Object.entries(catalogueData).flatMap(([brandId, categories]) =>

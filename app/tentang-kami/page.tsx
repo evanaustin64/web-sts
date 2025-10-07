@@ -2,7 +2,6 @@
 "use client";
 
 import Image from 'next/image';
-import Link from 'next/link';
 // Tambahkan ikon-ikon baru yang akan kita gunakan
 import {
   BuildingStorefrontIcon,
