@@ -45,7 +45,7 @@ export default function MaintenancePage() {
                     <div className="mb-8 sm:mb-12 animate-float">
                         <div className="inline-flex items-center justify-center w-24 h-24 sm:w-32 sm:h-32 bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20">
                             <Image
-                                src="/Images/Profile Picture - PT Samudra Teknik Sejahtera (White Transparent).png" // Path ke gambar Anda di folder public
+                                src="public/Images/Profile Picture - PT Samudra Teknik Sejahtera (White Transparent).png" // Path ke gambar Anda di folder public
                                 alt="Maintenance Icon"
                                 width={144} 
                                 height={144} 
