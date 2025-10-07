@@ -47,9 +47,9 @@ export default function MaintenancePage() {
                             <Image
                                 src="/Images/Profile Picture - PT Samudra Teknik Sejahtera (White Transparent).png" // Path ke gambar Anda di folder public
                                 alt="Maintenance Icon"
-                                width={144} // Ukuran dasar (sama dengan w-16)
-                                height={144} // Ukuran dasar (sama dengan h-16)
-                                className="w-36 h-36" // Atur ukuran responsif di sini
+                                width={144} 
+                                height={144} 
+                                className="w-36 h-36" 
                             />
                         </div>
                     </div>
