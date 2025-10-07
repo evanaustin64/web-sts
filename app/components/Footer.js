@@ -1,7 +1,18 @@
 // app/components/Footer.js
+"use client"
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'; 
 
 export default function Footer() {
+
+const isMaintenanceModeActive = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
+  const pathname = usePathname();
+
+  if (isMaintenanceModeActive || pathname?.startsWith('/maintenance')) {
+    return null; // Jangan render apapun jika maintenance mode aktif
+  }
+
+
   return (
     <footer className="bg-gray-800 text-gray-400">
       <div className="container mx-auto px-4 py-16">
