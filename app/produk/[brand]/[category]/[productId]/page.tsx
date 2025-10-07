@@ -4,89 +4,139 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { catalogueData, Product, Category } from '@/app/data/catalogue-data';
 import { CheckCircleIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
-import { use, useState } from 'react';
+import { use, useState, useRef } from 'react';
 
+function CursorZoomImage({ src, alt, priority = false }: { src: string; alt: string; priority?: boolean }) {
+  const [zoom, setZoom] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const handleMouseEnter = () => {
+    setZoom(true);
+  };
+
+  const handleMouseLeave = () => {
+    setZoom(false);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (containerRef.current) {
+      const rect = containerRef.current.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      setPosition({ x, y });
+    }
+  };
+
+  return (
+    <div
+      ref={containerRef}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onMouseMove={handleMouseMove}
+      className="relative w-full aspect-square min-h-[300px] md:min-h-[400px] bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl md:rounded-2xl border border-gray-200 md:border-2 shadow-sm overflow-hidden"
+    >
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority={priority}
+        className="object-contain transition-transform duration-200 ease-out"
+        style={{
+          transform: zoom ? 'scale(2)' : 'scale(1)',
+          transformOrigin: `${position.x}% ${position.y}%`,
+        }}
+      />
+       <div className="absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md pointer-events-none">
+        <ZoomIcon className="w-5 h-5 text-gray-700" />
+      </div>
+    </div>
+  );
+}
 // Custom Image Slider dengan Tailwind CSS
 function ProductImageSlider({ images, productName }: { images: string[]; productName: string }) {
+  // State untuk slider
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState<'left' | 'right'>('right');
 
+  // State untuk logika zoom (dipindahkan ke sini)
+  const [zoom, setZoom] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Fungsi navigasi slider
   const goToSlide = (index: number) => {
-    setDirection(index > currentIndex ? 'right' : 'left');
     setCurrentIndex(index);
   };
-
   const goToPrevious = () => {
-    setDirection('left');
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+  const goToNext = () => {
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
-  const goToNext = () => {
-    setDirection('right');
-    setCurrentIndex((prevIndex) => 
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
+  // Fungsi event handler untuk zoom (sekarang menjadi bagian dari slider)
+  const handleMouseEnter = () => setZoom(true);
+  const handleMouseLeave = () => setZoom(false);
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (containerRef.current) {
+      const rect = containerRef.current.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      setPosition({ x, y });
+    }
   };
 
   return (
     <div className="w-full max-w-full">
-      {/* Main Image Container */}
-      <div className="relative w-full aspect-square min-h-[300px] md:min-h-[400px] bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl md:rounded-2xl border border-gray-200 md:border-2 shadow-sm overflow-hidden group">
-        {/* Images with Animation */}
-        <div className="relative w-full h-full">
-          {images.map((img, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-all duration-500 ease-in-out ${
-                index === currentIndex
-                  ? 'opacity-100 translate-x-0'
-                  : index < currentIndex
-                  ? direction === 'right'
-                    ? 'opacity-0 -translate-x-full'
-                    : 'opacity-0 translate-x-full'
-                  : direction === 'right'
-                  ? 'opacity-0 translate-x-full'
-                  : 'opacity-0 -translate-x-full'
-              }`}
+      {/* Kontainer utama ini sekarang yang menangani semua event mouse */}
+      <div
+        ref={containerRef}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        onMouseMove={handleMouseMove}
+        className="group relative w-full aspect-square min-h-[300px] md:min-h-[400px] bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl md:rounded-2xl border border-gray-200 md:border-2 shadow-sm overflow-hidden"
+      >
+        {/* Komponen Image dengan style dinamis untuk zoom */}
+        <Image
+          key={currentIndex} // Menambahkan key agar React me-render ulang saat gambar ganti
+          src={images[currentIndex]}
+          alt={`${productName} image ${currentIndex + 1}`}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          priority
+          className="object-contain p-4 md:p-8 transition-transform duration-200 ease-out"
+          style={{
+            transform: zoom ? 'scale(2)' : 'scale(1)',
+            transformOrigin: `${position.x}% ${position.y}%`,
+          }}
+        />
+
+        {/* Tombol navigasi (sekarang tidak akan menghalangi event mouse) */}
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={goToPrevious}
+              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 bg-white rounded-full shadow-lg hover:bg-yellow-400 hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100"
+              aria-label="Previous image"
             >
-              <Image 
-                src={img} 
-                alt={`${productName} image ${index + 1}`} 
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-contain p-4 md:p-8"
-                priority={index === 0}
-              />
-            </div>
-          ))}
+              <ChevronLeftIcon className="w-5 h-5 md:w-6 md:h-6 text-gray-700 hover:text-white transition-colors" />
+            </button>
+            <button
+              onClick={goToNext}
+              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 bg-white rounded-full shadow-lg hover:bg-yellow-400 hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100"
+              aria-label="Next image"
+            >
+              <ChevronRightIcon className="w-5 h-5 md:w-6 md:h-6 text-gray-700 hover:text-white transition-colors" />
+            </button>
+          </>
+        )}
+        <div className="absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md pointer-events-none">
+          <ZoomIcon className="w-5 =-5 text-gray-700" />
         </div>
-
-        {/* Left Arrow */}
-        {images.length > 1 && (
-          <button
-            onClick={goToPrevious}
-            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 bg-white rounded-full shadow-lg hover:bg-yellow-400 hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100"
-            aria-label="Previous image"
-          >
-            <ChevronLeftIcon className="w-5 h-5 md:w-6 md:h-6 text-gray-700 hover:text-white transition-colors" />
-          </button>
-        )}
-
-        {/* Right Arrow */}
-        {images.length > 1 && (
-          <button
-            onClick={goToNext}
-            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 bg-white rounded-full shadow-lg hover:bg-yellow-400 hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100"
-            aria-label="Next image"
-          >
-            <ChevronRightIcon className="w-5 h-5 md:w-6 md:h-6 text-gray-700 hover:text-white transition-colors" />
-          </button>
-        )}
       </div>
 
-      {/* Dots Navigation */}
+      {/* Dots Navigation (tidak ada perubahan) */}
       {images.length > 1 && (
         <div className="mt-4 md:mt-6 pb-2">
           <div className="flex justify-center gap-2 md:gap-3">
@@ -115,6 +165,29 @@ interface PageProps {
     category: string;
     productId: string;
   }>;
+}
+
+function ZoomIcon({ className }: { className?: string }) {
+  return (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      width="16" 
+      height="16" 
+      fill="currentColor" 
+      className={className}
+      viewBox="0 0 16 16"
+    >
+      <path 
+        fillRule="evenodd" 
+        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"
+      />
+      <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+      <path 
+        fillRule="evenodd" 
+        d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"
+      />
+    </svg>
+  );
 }
 
 export default function ProductDetailPage({ params }: PageProps) {
@@ -163,30 +236,20 @@ export default function ProductDetailPage({ params }: PageProps) {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
-
-          {/* Kolom Kiri: Gambar - Conditional Rendering */}
+          {/* Kolom Kiri: Gambar - Menggunakan komponen baru */}
           <div className="w-full">
             {product.galleryImages && product.galleryImages.length > 1 ? (
-              // Tampilkan Slider jika lebih dari 1 gambar
               <ProductImageSlider images={product.galleryImages} productName={product.name} />
             ) : (
-              // Tampilkan gambar tunggal jika hanya 1 gambar atau menggunakan image biasa
-              <div className="w-full">
-                <div className="relative w-full aspect-square min-h-[300px] md:min-h-[400px] bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl md:rounded-2xl border border-gray-200 md:border-2 shadow-sm overflow-hidden">
-                  <Image 
-                    src={product.galleryImages?.[0] || product.image} 
-                    alt={product.name} 
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-contain"
-                    priority
-                  />
-                </div>
-              </div>
+              <CursorZoomImage
+                src={product.galleryImages?.[0] || product.image}
+                alt={product.name}
+                priority
+              />
             )}
           </div>
 
-          {/* Kolom Kanan: Info Produk */}
+          {/* Kolom Kanan: Info Produk (Tidak ada perubahan di sini) */}
           <div className="flex flex-col">
             <h1 className="text-3xl lg:text-4xl font-helvetica-black text-gray-900 uppercase">{product.name}</h1>
 
@@ -209,7 +272,7 @@ export default function ProductDetailPage({ params }: PageProps) {
             {product.variations && product.variations.length > 0 && (
               <div className="mt-6">
                 <h2 className="text-lg font-helvetica-regular text-gray-500 uppercase mb-3">Variasi Lainnya</h2>
-                
+
                 <div className="flex flex-wrap gap-4 mt-3">
                   {product.variations.map((variant) => (
                     <div key={variant.id} className="flex flex-col items-center text-center">
@@ -265,8 +328,8 @@ export default function ProductDetailPage({ params }: PageProps) {
 
             {/* Tombol WhatsApp */}
             <div className="mt-auto pt-6">
-              <button 
-                onClick={handleWhatsAppInquiry} 
+              <button
+                onClick={handleWhatsAppInquiry}
                 className="w-full bg-blue-500 text-white font-helvetica-regular py-3 px-8 rounded-lg hover:bg-blue-700 transition-colors uppercase"
               >
                 Hubungi Kami

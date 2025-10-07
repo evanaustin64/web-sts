@@ -2173,7 +2173,7 @@ export const catalogueData: Record<string, Category[]> = {
           features: [
             { text: 'Desain Handle Modern & Kokoh' },
             { text: 'Finishing Tahan Lama' },
-            { text: 'Mekanisme kunci presisi, pengoperasian halus dan anti-macetr' },
+            { text: 'Mekanisme kunci presisi, pengoperasian halus dan anti-macet' },
           ],
           packagingDetails: [
             { type: 'ARSENAL', innerBox: '1 Set / Box', outerBox: '-' },
@@ -3054,7 +3054,7 @@ export const catalogueData: Record<string, Category[]> = {
         { text: 'Ukuran jumbo untuk jangkauan maksimal' }
       ],
       packagingDetails: [
-        { type: 'Standard', innerBox: '12 pcs', outerBox: '48 pcs' }
+        { type: 'BESAR', innerBox: '2 Pcs / Box', outerBox: '54 Pcs / Ctn' }
       ],
       variations:[{id: 'sc-003',
       name: 'Kran Angsa Flex SS Kecil',
@@ -3077,7 +3077,7 @@ export const catalogueData: Record<string, Category[]> = {
         { text: 'Material Stainless Steel anti karat' }
       ],
       packagingDetails: [
-        { type: 'Standard', innerBox: '12 pcs', outerBox: '60 pcs' }
+        { type: 'KECIL', innerBox: '2 Pcs / Box', outerBox: '54 Pcs / Ctn' }
       ],
       variations:[{id: 'sc-002',
       name: 'Kran Angsa Flex SS Jumbo',
@@ -3099,7 +3099,8 @@ export const catalogueData: Record<string, Category[]> = {
         { text: 'Tahan terhadap perubahan cuaca' }
       ],
       packagingDetails: [
-        { type: 'Standard', innerBox: '24 pcs', outerBox: '120 pcs' }
+        { type: 'SILVER', innerBox: '-', outerBox: '200 Pcs / Ctn' },
+        { type: 'HITAM', innerBox: '-', outerBox: '200 Pcs / Ctn' }
       ],
       variations:[{id: 'sc-006',
       name: 'Kran Tembok SS',
@@ -3141,7 +3142,8 @@ export const catalogueData: Record<string, Category[]> = {
         { text: 'Instalasi mudah pada dinding' }
       ],
       packagingDetails: [
-        { type: 'Standard', innerBox: '24 pcs', outerBox: '120 pcs' }
+        { type: 'SILVER', innerBox: '-', outerBox: '200 Pcs / Ctn' },
+        { type: 'HITAM', innerBox: '-', outerBox: '200 Pcs / Ctn' }
       ],
       variations:[{ id: 'sc-004',
       name: 'Kran Taman SS',
@@ -3184,7 +3186,9 @@ export const catalogueData: Record<string, Category[]> = {
         { text: 'Tidak menyusut dan retak' }
       ],
       packagingDetails: [
-        { type: 'Bening', innerBox: '24 botol', outerBox: '48 botol' }
+        { type: 'BENING', innerBox: '-', outerBox: '24 Pcs / Ctn' },
+        { type: 'HITAM', innerBox: '-', outerBox: '24 Pcs / Ctn' },
+        { type: 'PUTIH', innerBox: '-', outerBox: '24 Pcs / Ctn' },
       ]
     },
     // {
@@ -3209,7 +3213,7 @@ export const catalogueData: Record<string, Category[]> = {
     // },
     {
       id: 'sc-010',
-      name: 'Selang M Cuci Out 3m',
+      name: 'Selang M Cuci OUT',
       image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Selang Mesin Cuci.png',
       galleryImages: [],
       description: 'Selang pembuangan air untuk mesin cuci dengan panjang 3 meter. Fleksibel dan kuat, tidak mudah terlipat atau bocor.',
@@ -3224,7 +3228,9 @@ export const catalogueData: Record<string, Category[]> = {
         { text: 'Ujung selang universal, mudah dipasang' }
       ],
       packagingDetails: [
-        { type: 'Standard', innerBox: '-', outerBox: '50 pcs' }
+        { size: '1.5 Meter', innerBox: '-', outerBox: '50 Pcs / Ctn' },
+        { size: '2 Meter', innerBox: '-', outerBox: '50 Pcs / Ctn' },
+        { size: '3 Meter', innerBox: '-', outerBox: '50 Pcs / Ctn' },
       ],
       variations:[{id: 'sc-012',
       name: 'Selang M Cuci Inlet',
@@ -3232,7 +3238,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'sc-012',
-      name: 'Selang M Cuci Inlet',
+      name: 'Selang M Cuci IN',
       image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Selang Inlet Mesin Cuci.png',
       galleryImages: [],
       description: 'Selang pembuangan air untuk mesin cuci dengan panjang 3 meter. Fleksibel dan kuat, tidak mudah terlipat atau bocor.',
@@ -3247,7 +3253,9 @@ export const catalogueData: Record<string, Category[]> = {
         { text: 'Ujung selang universal, mudah dipasang' }
       ],
       packagingDetails: [
-        { type: 'Standard', innerBox: '-', outerBox: '50 pcs' }
+        { size: '1.5 Meter', innerBox: '-', outerBox: '40 Pcs / Ctn' },
+        { size: '2 Meter', innerBox: '-', outerBox: '25 Pcs / Ctn' },
+        { size: '3 Meter', innerBox: '-', outerBox: '20 Pcs / Ctn' },
       ],
       variations:[{id: 'sc-010',
       name: 'Selang M Cuci Out 3m',
@@ -3270,12 +3278,16 @@ export const catalogueData: Record<string, Category[]> = {
         { text: 'Tahan terhadap korosi dan bahan kimia ringan' }
       ],
       packagingDetails: [
-        { type: '1/2 Inch', innerBox: '24 pcs', outerBox: '144 pcs' },
-        { type: '3/4 Inch', innerBox: '12 pcs', outerBox: '72 pcs' }
+        { type: '1/2 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+        { type: '3/4 Inch', innerBox: '12 Pcs / Box', outerBox: '144 Pcs / Ctn' },
+        { type: '1 Inch', innerBox: '12 Pcs / Box', outerBox: '108 Pcs / Ctn' },
+        { type: '1 1/4 Inch', innerBox: '-', outerBox: '72 Pcs / Ctn' },
+        { type: '1 1/2 Inch', innerBox: '-', outerBox: '48 Pcs / Ctn' },
+        { type: '2 Inch', innerBox: '-', outerBox: '36 Pcs / Ctn' }
       ]
 },
 {
-      id: 'sc-012',
+      id: 'sc-013',
       name: 'Avur selang PVC',
       image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Avur Selang PVC.png',
       galleryImages: [],
@@ -3291,8 +3303,8 @@ export const catalogueData: Record<string, Category[]> = {
         { text: 'Desain Modern' }
       ],
       packagingDetails: [
-        { type: '1/2 Inch', innerBox: '24 pcs', outerBox: '144 pcs' },
-        { type: '3/4 Inch', innerBox: '12 pcs', outerBox: '72 pcs' }
+        { type: '1 1/4 Inch', innerBox: '-', outerBox: '150 Pcs / Ctn' },
+        { type: '1 1/2 Inch', innerBox: '-', outerBox: '150 Pcs / Ctn' }
       ]
 }
 ]
