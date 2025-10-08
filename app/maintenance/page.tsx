@@ -16,43 +16,23 @@ export default function MaintenancePage() {
     return (
         <div className="overflow-x-hidden">
             {/* Background dengan gradient (tanpa gambar dulu untuk testing) */}
-            <div
-                className="fixed inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900"
-                style={{
-                    backgroundSize: '200% 200%',
-                    animation: 'gradient-shift 5s ease infinite'
-                }}
-            />
+            <div className="fixed inset-0 bg-blue-900">
+                {/* --- BAGIAN YANG DIGANTI --- */}
+                <video 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover -z-10 opacity-30"
+                >
+                    <source src="/videos/AZkxbUomeCwKyfZBt0jCXw-AZkxbUonlPBruFUlvSxANw (1).mp4" type="video/mp4" />
+                    Browser Anda tidak mendukung tag video.
+                </video>
+                {/* --- AKHIR BAGIAN YANG DIGANTI --- */}
 
-            {/* JIKA mau pakai background image, gunakan cara ini: */}
-            {/* 
-            <div className="fixed inset-0 -z-10">
-                <Image
-                    src="/images/background.jpg"
-                    alt="Background"
-                    fill
-                    priority
-                    className="object-cover opacity-30"
-                    sizes="100vw"
-                />
+                {/* Gradient Overlay (Opsional, tapi bagus untuk menggelapkan video) */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-blue-800/70 to-slate-900/70"></div>
             </div>
-            */}
-
-            {/* Animated Background Elements */}
-            <div className="fixed inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-float"></div>
-                <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl animate-float-delayed"></div>
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
-            </div>
-
-            {/* Grid Pattern Overlay */}
-            <div
-                className="fixed inset-0 opacity-5 pointer-events-none"
-                style={{
-                    backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
-                    backgroundSize: '50px 50px'
-                }}
-            ></div>
 
             {/* Main Content */}
             <div className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
@@ -130,7 +110,7 @@ export default function MaintenancePage() {
                     </div>
 
                     {/* Main Heading */}
-                    <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight">
+                    <h1 className="text-4xl sm:text-5xl lg:text-5xl font-helvetica-black text-white mb-4 sm:mb-6 leading-tight">
                         Kami Sedang Melakukan
                         <br />
                         <span className="bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400 bg-clip-text text-transparent">
@@ -139,7 +119,7 @@ export default function MaintenancePage() {
                     </h1>
 
                     {/* Description */}
-                    <p className="text-lg sm:text-xl lg:text-2xl text-blue-100/80 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
+                    <p className="text-lg sm:text-xl lg:text-xl font-helvetica-regular text-blue-100/80 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
                         Website kami sedang dalam proses pembaruan untuk memberikan pengalaman yang lebih baik untuk Anda.
                     </p>
 
@@ -153,38 +133,16 @@ export default function MaintenancePage() {
                     </div>
 
                     {/* Info Cards */}
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16 px-4">
-                        {/* Card 1 */}
-                        <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                            <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
-                                <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <h3 className="text-white font-bold text-lg mb-2">Estimasi Waktu</h3>
-                            <p className="text-blue-200/70 text-sm">2-4 Jam</p>
-                        </div>
-
-                        {/* Card 2 */}
-                        <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div className="flex justify-center mb-12 sm:mb-16 px-4">
+                        {/* Card */}
+                        <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-10 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                             <div className="w-12 h-12 bg-yellow-400/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
-                                <svg className="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white" className="bi bi-info-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+</svg>
                             </div>
-                            <h3 className="text-white font-bold text-lg mb-2">Pembaruan</h3>
-                            <p className="text-blue-200/70 text-sm">Fitur Baru</p>
-                        </div>
-
-                        {/* Card 3 */}
-                        <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-                            <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4 mx-auto">
-                                <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                                </svg>
-                            </div>
-                            <h3 className="text-white font-bold text-lg mb-2">Keamanan</h3>
-                            <p className="text-blue-200/70 text-sm">Data Aman</p>
+                            <h3 className="text-white font-bold text-lg mb-2">Pembaruan Informasi</h3>
+                            <p className="text-blue-200/70 text-sm">Mohon Ditunggu...</p>
                         </div>
                     </div>
 
