@@ -11,15 +11,6 @@ import { catalogueData } from '@/app/data/catalogue-data';
 export default function Header() {
   // 1. Cek kondisi maintenance di paling awal.
   const pathname = usePathname();
-  const isMaintenanceModeActive = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
-
-  // 2. Jika maintenance, JANGAN LANJUTKAN. Langsung return null.
-  if (isMaintenanceModeActive || pathname?.startsWith('/maintenance')) {
-    return null;
-  }
-
-  // 3. Semua hooks lainnya hanya akan berjalan jika BUKAN maintenance mode.
-  // Ini adalah struktur yang benar untuk menghindari error.
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,10 +21,19 @@ export default function Header() {
   const [isMobileSearchOpen, setMobileSearchOpen] = useState(false);
 
   useEffect(() => {
+    if (pathname?.startsWith('/maintenance')) return;
     const handleScroll = () => setIsScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [pathname]);
+
+  // ==================================================================
+  // SETELAH SEMUA HOOKS, BARU LAKUKAN LOGIKA KONDISIONAL
+  // ==================================================================
+  const isMaintenanceModeActive = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
+  if (isMaintenanceModeActive || pathname?.startsWith('/maintenance')) {
+    return null; // Early return sekarang aman karena tidak ada hooks setelah ini
+  }
 
   // ... sisa kode Anda (fungsi handler dan JSX) tidak perlu diubah ...
   const allProductsWithContext = Object.entries(catalogueData).flatMap(([brandId, categories]) =>
