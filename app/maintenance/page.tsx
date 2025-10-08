@@ -60,14 +60,15 @@ export default function MaintenancePage() {
 
                     {/* Logo Section - FIXED */}
                     <div className="mb-8 sm:mb-12 animate-float">
-                        <div className="inline-flex items-center justify-center w-24 h-24 sm:w-32 sm:h-32 bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20 relative overflow-hidden">
-                            {/* Ganti path ke /images/ (huruf kecil) */}
-                            <Image
-                                src="/images/logo-maintenance.png"
+                        <div className="inline-flex items-center justify-center w-32 h-32 bg-gradient-to-br from-yellow-400/20 to-orange-500/20 backdrop-blur-lg rounded-3xl shadow-2xl border border-yellow-400/30 p-6">
+                            <img
+                                src="/Images/logo-maintenance.png"
                                 alt="Maintenance Icon"
-                                width={144}
-                                height={144}
-                                className="object-contain"
+                                className="w-full h-full object-contain"
+                                style={{
+                                    filter: 'invert(1) brightness(1.2) hue-rotate(30deg)',
+                                    // Atau coba: filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.8))'
+                                }}
                             />
                         </div>
                     </div>
