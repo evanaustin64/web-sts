@@ -175,7 +175,7 @@ export default function MaintenancePage() {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             {/* WhatsApp Button */}
                             <a
-                                href="https://api.whatsapp.com/send?phone=6285176878892&text=Halo,%20saya%20ingin%20bertanya"
+                                href="https://api.whatsapp.com/send?phone=6285176878892&text=Halo%20STS,%20ada%20yang%20ingin%20saya%20tanyakan"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-xl"
@@ -189,7 +189,7 @@ export default function MaintenancePage() {
 
                             {/* Email Button */}
                             <a
-                                href="mailto:info@ptsamudrateknik.com"
+                                href="mailto:cssamudra3@gmail.com"
                                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 hover:scale-105 hover:shadow-xl"
                             >
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
