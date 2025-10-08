@@ -15,18 +15,28 @@ export default function MaintenancePage() {
 
     return (
         <div className="overflow-x-hidden">
-            {/* Background */}
-            <div className="fixed inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900" style={{
-                backgroundSize: '200% 200%',
-                animation: 'gradient-shift 5s ease infinite'
-            }}><Image
-        src="/Images/AI YO-ZURI - Bricklayering & Platering Tools - Wheelbarrow PVC Black A.jpg" // Ganti dengan path gambar Anda
-        alt="Background"
-        fill // Ini akan membuat gambar mengisi seluruh parent (div di atasnya)
-        priority // Opsional: Untuk memuat gambar lebih awal (penting untuk LCP)
-        className="object-cover -z-10" // object-cover agar menutupi dan -z-10 agar di paling belakang
-        sizes="100vw" // Penting untuk gambar fullscreen
-    /></div>
+            {/* Background dengan gradient (tanpa gambar dulu untuk testing) */}
+            <div
+                className="fixed inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900"
+                style={{
+                    backgroundSize: '200% 200%',
+                    animation: 'gradient-shift 5s ease infinite'
+                }}
+            />
+
+            {/* JIKA mau pakai background image, gunakan cara ini: */}
+            {/* 
+            <div className="fixed inset-0 -z-10">
+                <Image
+                    src="/images/background.jpg"
+                    alt="Background"
+                    fill
+                    priority
+                    className="object-cover opacity-30"
+                    sizes="100vw"
+                />
+            </div>
+            */}
 
             {/* Animated Background Elements */}
             <div className="fixed inset-0 overflow-hidden pointer-events-none">
@@ -48,15 +58,16 @@ export default function MaintenancePage() {
             <div className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
                 <div className="max-w-4xl w-full text-center">
 
-                    {/* Logo Section */}
+                    {/* Logo Section - FIXED */}
                     <div className="mb-8 sm:mb-12 animate-float">
-                        <div className="inline-flex items-center justify-center w-24 h-24 sm:w-32 sm:h-32 bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20">
+                        <div className="inline-flex items-center justify-center w-24 h-24 sm:w-32 sm:h-32 bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20 relative overflow-hidden">
+                            {/* Ganti path ke /images/ (huruf kecil) */}
                             <Image
-                                src="/Images/logo-maintenance.png" // Path ke gambar Anda di folder public
+                                src="/images/logo-maintenance.png"
                                 alt="Maintenance Icon"
-                                width={144} 
-                                height={144} 
-                                className="w-36 h-36" 
+                                width={144}
+                                height={144}
+                                className="object-contain"
                             />
                         </div>
                     </div>
@@ -172,36 +183,36 @@ export default function MaintenancePage() {
             </div>
 
             <style jsx>{`
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-20px);
-          }
-        }
-        
-        .animate-float {
-          animation: float 3s ease-in-out infinite;
-        }
-        
-        .animate-float-delayed {
-          animation: float 3s ease-in-out 1s infinite;
-        }
-        
-        .animate-pulse-slow {
-          animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-        
-        @keyframes gradient-shift {
-          0%, 100% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-        }
-      `}</style>
+                @keyframes float {
+                    0%, 100% {
+                        transform: translateY(0px);
+                    }
+                    50% {
+                        transform: translateY(-20px);
+                    }
+                }
+                
+                .animate-float {
+                    animation: float 3s ease-in-out infinite;
+                }
+                
+                .animate-float-delayed {
+                    animation: float 3s ease-in-out 1s infinite;
+                }
+                
+                .animate-pulse-slow {
+                    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+                }
+                
+                @keyframes gradient-shift {
+                    0%, 100% {
+                        background-position: 0% 50%;
+                    }
+                    50% {
+                        background-position: 100% 50%;
+                    }
+                }
+            `}</style>
         </div>
     );
 }
