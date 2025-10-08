@@ -279,16 +279,16 @@ function DownloadCatalogueSection() {
 // Komponen FeaturedVideoSection dengan Tailwind CSS
 function FeaturedVideoSection() {
   return (
-    <div className="w-full bg-blue-800">
-    <section className=" text-white py-16">
+    <div className="w-full bg-cyan-500">
+    <section className=" text-gray-800 py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-left">
             <h2 className="text-3xl font-helvetica-black-oblique uppercase">PRESISI TAK TERTANDINGI</h2>
             <h3 className="text-xl font-helvetica-black-oblique opacity-90 mb-4">UNTUK HASIL TERBAIK</h3>
             <p className="mb-8 font-helvetica-regular">Saksikan Waterpass Magnet YO-ZURI terbaru dalam aksi! Dengan teknologi magnetik canggih dan desain ergonomis, alat ini memastikan pengukuran yang akurat dan pemasangan yang mudah di berbagai permukaan. Rasakan perbedaan presisi di setiap proyek Anda.</p>
-            <a href="https://www.youtube.com/@officialpageyozuri" target="_blank" rel="noopener noreferrer" className="font-helvetica-regular uppercase inline-block bg-yellow-500 text-gray-900 py-3 px-8 rounded 
-            hover:bg-yellow-600 
+            <a href="https://www.youtube.com/@officialpageyozuri" target="_blank" rel="noopener noreferrer" className="font-helvetica-regular uppercase inline-block bg-white text-gray-800 py-3 px-8 rounded 
+            hover:bg-gray-200 
 
             transition-all duration-300 ease-in-out
             hover:scale-105 hover:-translate-y-1">

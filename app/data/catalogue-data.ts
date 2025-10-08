@@ -3306,6 +3306,46 @@ export const catalogueData: Record<string, Category[]> = {
         { type: '1 1/4 Inch', innerBox: '-', outerBox: '150 Pcs / Ctn' },
         { type: '1 1/2 Inch', innerBox: '-', outerBox: '150 Pcs / Ctn' }
       ]
+},
+{
+      id: 'sc-014',
+      name: 'Sifon PVC',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Sifon PVC.png',
+      galleryImages: [],
+      description: 'Stop kran / Ball Valve dari bahan PVC tebal dan berkualitas. Berfungsi untuk membuka dan menutup aliran air dengan mudah. Tahan tekanan dan awet.',
+      specifications: [
+        { key: 'Material', value: 'PVC' },
+        { key: 'Ukuran Drat', value: '1/2 Inch & 3/4 Inch' },
+        { key: 'Tipe', value: 'Handle Engkol' }
+      ],
+      features: [
+        { text: 'Tahan Karat & Kimia' },
+        { text: 'Ringan & Mudah Dipasang' },
+      ],
+      packagingDetails: [
+        { type: ' SI7-22CH', innerBox: '-', outerBox: '50 Pcs / Ctn' }
+      ]
+},
+{
+      id: 'sc-015',
+      name: 'Water Mur PVC',
+      image: '/Images/SC/PT STS - OTHERS - Web Design - Catalogue - Water Mur PVC.png',
+      galleryImages: [],
+      description: 'Stop kran / Ball Valve dari bahan PVC tebal dan berkualitas. Berfungsi untuk membuka dan menutup aliran air dengan mudah. Tahan tekanan dan awet.',
+      specifications: [
+        { key: 'Material', value: 'PVC' },
+        { key: 'Ukuran Drat', value: '1/2 Inch & 3/4 Inch' },
+        { key: 'Tipe', value: 'Handle Engkol' }
+      ],
+      features: [
+        { text: 'Memudahkan Perawatan Pipa' },
+        { text: 'Anti Bocor & Kuat' },
+      ],
+      packagingDetails: [
+        { type: '1/2 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+        { type: '3/4 Inch', innerBox: '12 Pcs / Box', outerBox: '240 Pcs / Ctn' },
+        { type: '1 Inch', innerBox: '12 Pcs / Box', outerBox: '144 Pcs / Ctn' }
+      ]
 }
 ]
     }
