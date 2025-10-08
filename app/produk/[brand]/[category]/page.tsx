@@ -50,7 +50,7 @@ export default function CategoryProductsPage({ params }: CategoryProductsPagePar
               <Link
                 key={product.id}
                 href={`/produk/${brand}/${category}/${product.id}`}
-                className="block bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm group relative"
+                className="block bg-white rounded-lg overflow-hidden shadow-lg group relative"
               >
                 {/* Gambar Produk */}
                 <div className="relative h-48 w-full">

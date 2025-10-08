@@ -34,7 +34,7 @@ function CursorZoomImage({ src, alt, priority = false }: { src: string; alt: str
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onMouseMove={handleMouseMove}
-      className="relative w-full aspect-square min-h-[300px] md:min-h-[400px] bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl md:rounded-2xl border border-gray-200 md:border-2 shadow-sm overflow-hidden"
+      className="relative w-full aspect-square min-h-[300px] md:min-h-[400px] rounded-xl md:rounded-2xl overflow-hidden"
     >
       <Image
         src={src}
@@ -95,7 +95,7 @@ function ProductImageSlider({ images, productName }: { images: string[]; product
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onMouseMove={handleMouseMove}
-        className="group relative w-full aspect-square min-h-[300px] md:min-h-[400px] bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl md:rounded-2xl border border-gray-200 md:border-2 shadow-sm overflow-hidden"
+        className="group relative w-full aspect-square min-h-[300px] md:min-h-[400px] rounded-xl md:rounded-2xl overflow-hidden"
       >
         {/* Komponen Image dengan style dinamis untuk zoom */}
         <Image
