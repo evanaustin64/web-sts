@@ -60,7 +60,7 @@ export default function PromoPopup() {
                         className="block cursor-pointer"
                     >
                         <img
-                            src="/Images/iklan/PT STS - Web Design - Promo Landing Page (Promo Dapat Kualitas, Dapat Hadiahnya)-01.png"
+                            src="/Images/iklan/PT STS - Web Design - Promo Landing Page-02.png"
                             alt="Promo Iklan"
                             className="w-full h-auto object-contain"
                         />

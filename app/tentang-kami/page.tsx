@@ -104,7 +104,7 @@ export default function AboutUsPage() {
             </div>
             <div className="w-full h-80 relative rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/Images/PT STS - Web Design - Frame Office Building A.png" // Ganti dengan foto sejarah Anda
+                src="/Images/PT STS - Web Design - Frame Office Building A (1).png"
                 alt="Toko pertama PT. STS"
                 layout="fill"
                 objectFit="cover"

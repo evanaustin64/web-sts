@@ -105,6 +105,7 @@ function HeroSlider() {
   // MODIFIKASI #1: Data disederhanakan, hanya butuh gambar dan link tujuan.
   const slides = [
     { image: '/Images/PT STS - Web Design - Header Promo (September 2025)-01.png', link: '/produk/yozuri' },
+    { image: '/Images/PT STS - Web Design - Header Promo (September 2025)-02.png', link: '/produk/yozuri' },
     { image: '/Images/PT STS - Web Design - Header-05.png', link: '/produk/owner' },
     { image: '/Images/PT STS - Web Design - Header-04.png', link: '/produk/yozuri' },
     { image: '/Images/PT STS - Web Design - Header-06.png', link: '/produk/lainnya/helios' }
@@ -116,9 +117,6 @@ function HeroSlider() {
         {slides.map((slide, index) => (
           // MODIFIKASI #2: Seluruh area slide sekarang adalah sebuah link.
           <Link key={index} href={slide.link}>
-            {/* Wadah ini tetap menggunakan 'aspect-[1920/600]' 
-              untuk menjaga rasio gambar agar tidak terpotong.
-            */}
             <div className="relative w-full aspect-[1920/600] bg-gray-200">
               <img
                 src={slide.image}
