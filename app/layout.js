@@ -7,6 +7,9 @@ import Footer from './components/Footer';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import localFont from 'next/font/local'
+import PromoPopup from './components/PromoPopup';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
+
 
 const helveticaLight = localFont({
   src: './fonts/HelveticaLightExtend.otf',
@@ -49,6 +52,8 @@ export default function RootLayout({ children }) {
         <CartProvider>
           <Toaster />
           <Header />
+          <FloatingWhatsApp />
+          <PromoPopup />
           <div className="w-full overflow-x-hidden">
             <main className="flex-grow">
               {children}

@@ -4,7 +4,7 @@
 import Link from 'next/link';
 import Slider from 'react-slick';
 import react from 'react';
-
+import PartnerLogosSlider from './components/PartnerLogosSlider';
 // import { CatalogueNextArrow, CataloguePrevArrow } from '@/app/components/CatalogueArrows';
 
 // import { NextArrow, PrevArrow } from './components/SliderArrow';
@@ -104,6 +104,7 @@ function HeroSlider() {
 
   // MODIFIKASI #1: Data disederhanakan, hanya butuh gambar dan link tujuan.
   const slides = [
+    { image: '/Images/PT STS - Web Design - Header Promo (September 2025)-01.png', link: '/produk/yozuri' },
     { image: '/Images/PT STS - Web Design - Header-05.png', link: '/produk/owner' },
     { image: '/Images/PT STS - Web Design - Header-04.png', link: '/produk/yozuri' },
     { image: '/Images/PT STS - Web Design - Header-06.png', link: '/produk/lainnya/helios' }
@@ -227,54 +228,6 @@ function FeaturedProductsSection({ products }: { products: Product[] }) {
 }
 
 // Komponen DownloadCatalogueSection dengan Tailwind CSS
-function DownloadCatalogueSection() {
-  return (
-    <section className="bg-gray-100 py-16">
-      <div className="container mx-auto text-center px-4">
-        <h2 className="text-3xl font-helvetica-black mb-4">Dapatkan Katalog Lengkap Kami</h2>
-        <p className="max-w-2xl font-helvetica-regular mx-auto text-gray-600 mb-8">
-          Unduh katalog produk terbaru kami dalam format PDF untuk melihat semua koleksi dan spesifikasi teknisnya.
-        </p>
-      </div>
-      <div className=' flex flex-col md:flex-row 
-        items-center justify-center 
-        gap-4 md:gap-6 
-        px-4 '>
-        <a
-          // Ganti href dengan link Google Drive Anda menggunakan format /preview
-          href="https://drive.google.com/file/d/1NQaZzPGuQnH2IEgPKN0LsHukhKR7g5LN/view?usp=drive_link"
-          target="_blank" // <-- Tambahkan ini agar terbuka di tab baru
-          rel="noopener noreferrer" // <-- Tambahkan ini untuk keamanan
-          className="
-            inline-block bg-yellow-500 text-gray-900 font-helvetica-regular uppercase py-3 px-8 rounded 
-            hover:bg-yellow-600 
-
-            transition-all duration-300 ease-in-out
-            hover:scale-105 hover:-translate-y-1
-          "
-        // Hapus atribut 'download' dari sini
-        >
-          Catalogue - Owner
-        </a>
-        <a
-          // Ganti href dengan link Google Drive Anda menggunakan format /preview
-          href="https://drive.google.com/file/d/1JZ6ZJdXoF35fcAr0CSmA6q3ml1JRbKOj/view?usp=drive_link"
-          target="_blank" // <-- Tambahkan ini agar terbuka di tab baru
-          rel="noopener noreferrer" // <-- Tambahkan ini untuk keamanan
-          className="
-            inline-block bg-red-500 text-white font-helvetica-regular uppercase py-3 px-8 rounded 
-            hover:bg-red-800
-            transition-all duration-300 ease-in-out
-            hover:scale-105 hover:-translate-y-1
-          "
-        // Hapus atribut 'download' dari sini
-        >
-          Catalogue - Yo-Zuri
-        </a>
-      </div>
-    </section>
-  );
-}
 
 // Komponen FeaturedVideoSection dengan Tailwind CSS
 function FeaturedVideoSection() {
@@ -319,9 +272,9 @@ export default function HomePage() {
   return (
     <>
       <HeroSlider />
+      <PartnerLogosSlider />
       <CatalogueSlider />
       <FeaturedProductsSection products={PRODUK_UNGGULAN_SAYA} />
-      <DownloadCatalogueSection />
       <FeaturedVideoSection />
     </>
   );

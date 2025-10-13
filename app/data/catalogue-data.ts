@@ -24,7 +24,7 @@ export const catalogueData: Record<string, Category[]> = {
   owner: [
     {
       id: 'hand-power-tools',
-      name: 'Hand & Power Tools | Perkakas tangan & listrik',
+      name: 'Perkakas tangan & listrik',
       image: '/Images/Hand tools.png', // Ganti dengan gambar Anda
       // Di dalam catalogueData -> owner -> 'hand-power-tools'
       products: [
@@ -32,6 +32,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-001',
           name: 'Palu Kambing Gerigi - Gagang Fiber',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Palu Kambing Gerigi Gagang Fiber.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Palu Kambing Gerigi Gagang Fiber.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Palu Kambing Gerigi Gagang Fiber A.png'
+          ],
           description: 'Palu kambing OWNER PRO series dengan kepala gerigi dirancang untuk daya cengkeram paku maksimal. Gagang fiber anti-slip memberikan kenyamanan dan keamanan ekstra saat digunakan.',
           specifications: [{ key: 'Ukuran Kepala', value: '8oz' }, { key: 'Material Gagang', value: 'Fiberglass' }],
           features: [{ text: 'Kepala gerigi anti-slip' }, { text: 'Gagang fiber peredam getaran' }],
@@ -46,6 +50,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-002',
           name: 'Palu Kambing - Gagang Fiber',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Palu Kambing Polos Gagang Fiber.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Palu Kambing Polos Gagang Fiber.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Palu Kambing Polos Gagang Fiber A.png'
+          ],
           description: 'Palu kambing serbaguna dengan kepala rata, cocok untuk berbagai keperluan pertukangan dan proyek DIY. Gagang fiber yang ringan dan kuat.',
           specifications: [{ key: 'Ukuran Kepala', value: '8oz' }, { key: 'Material Gagang', value: 'Fiberglass' }],
           features: [{ text: 'Kepala polos anti-gores' }, { text: 'Gagang fiber pukulan bertenaga' }],
@@ -106,6 +114,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-006',
           name: 'Diamond Wheel Turbo',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Diamond Wheel Turbo Type X & K.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Diamond Wheel Turbo Type X & K.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Diamond Wheel Turbo Type X & K A.png'
+          ],
           description: 'Mata gerinda potong serbaguna dengan desain turbo rim untuk pendinginan lebih baik dan pemotongan yang lebih agresif. Cocok untuk beton dan batu alam.',
           specifications: [{ key: 'Tipe', value: 'Turbo Rim' }, { key: 'Diameter', value: '4 inch' }],
           features: [{ text: 'Desain Turbo, potong lebih cepat' }, { text: 'Mengurangi gompal (anti-chip)' }],
@@ -145,7 +157,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'painting-tools',
-      name: 'Painting Tools | Peralatan Cat',
+      name: 'Peralatan Cat',
       image: '/Images/Painting Tools.png', // Ganti dengan gambar Anda
       // Di dalam catalogueData -> owner -> kategori 'painting-tools'
       products: [
@@ -153,6 +165,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-paint-001',
           name: 'Kuas Roll Copot 9 Inch',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kuas Roll Copot 9 Inch.png', // TIDAK DIUBAH
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kuas Roll Copot 9 Inch.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kaus Roll Copot 9 Inch A.png'
+          ],
           description: 'Kuas roll set 9 inch dengan gagang yang bisa dilepas untuk kemudahan pembersihan dan penggantian bulu roll. Cocok untuk pengecatan area luas seperti dinding dan langit-langit.',
           specifications: [
             { key: 'Ukuran', value: '9 Inch' },
@@ -226,6 +242,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-paint-006',
           name: 'Kuas Cat 633',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kuas Cat 633.png', // TIDAK DIUBAH
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kuas Cat 633.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kuas Cat 633 A.png'
+          ],
           description: 'Kuas cat seri 633 dengan bulu berkualitas yang tidak mudah rontok. Tersedia dalam berbagai ukuran untuk segala jenis pekerjaan pengecatan, dari detail hingga area sedang.',
           specifications: [
             { key: 'Seri', value: '633' },
@@ -268,7 +288,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'layering-tools',
-      name: 'Plastering & Layering Tools | Peralatan plester & Pelapis',
+      name: 'Peralatan plester & Pelapis',
       image: '/Images/layering owner.png', // Ganti dengan gambar Anda
       // Di dalam catalogueData -> owner -> kategori 'layering-tools'
       // Di dalam catalogueData -> owner -> kategori 'layering-tools'
@@ -433,6 +453,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-layer-008',
           name: 'Amplas Roll PREMIUM',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Amplas Roll PREMIUM.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Amplas Roll PREMIUM.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Amplas Roll PREMIUM A.png'
+          ],
           description: 'Amplas roll serbaguna untuk menghaluskan permukaan kayu dan besi. Fleksibel dan mudah dipotong sesuai kebutuhan.',
           specifications: [
             { key: 'Tipe', value: 'Roll' },
@@ -461,6 +485,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-layer-009',
           name: 'Amplas Roll 98',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Amplas Roll 98.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Amplas Roll 98.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Amplas Roll 98 A.png'
+          ],
           description: 'Amplas roll seri 98 dengan kualitas premium untuk hasil pengamplasan yang lebih halus dan cepat. Backing kain yang kuat.',
           specifications: [
             { key: 'Tipe', value: 'Roll Seri 98' },
@@ -565,6 +593,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-layer-015',
           name: 'BATU ASAH',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Batu Asah 6 Inch & 8 Inch.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Batu Asah 6 Inch & 8 Inch.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Batu Asah 6 Inch & 8 Inch A.png'
+          ],
           description: 'Kape (scrapper) dengan gagang kayu, alat esensial untuk membersihkan permukaan, mengerok cat lama, atau meratakan dempul.',
           specifications: [
             { key: 'Material', value: 'Plat Baja Fleksibel' },
@@ -583,7 +615,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'door-lock-equipments',
-      name: 'door lock equipments | Peralatan Kunci Pintu',
+      name: 'Peralatan Kunci Pintu',
       image: '/Images/doorlock owner.png', // Ganti dengan gambar Anda
       // Di dalam catalogueData -> owner -> kategori 'door-lock-equipments'
       products: [
@@ -663,6 +695,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-door-005',
           name: 'Gembok Nickel - Pendek & Panjang',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gembok Nickel Leher Pendek & Panjang.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gembok Nickel Leher Pendek & Panjang.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gembok Nickel Leher Pendek & Panjang A.png'
+          ],
           description: 'Gembok dengan finishing nickel yang elegan dan tahan karat. Tersedia dalam varian leher pendek untuk keamanan maksimal dan leher panjang untuk fleksibilitas.',
           specifications: [
             { key: 'Material', value: 'Besi dengan finishing Nickel' },
@@ -683,6 +719,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-door-006',
           name: 'Gembok Segi - Rectangular Padlock',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gembok Segi.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gembok Segi.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Gembok Segi A.png'
+          ],
           description: 'Gembok segi empat (rectangular) untuk keamanan ekstra pada pintu harmonika, pagar, dan gudang. Desain kokoh yang sulit dirusak.',
           specifications: [
             { key: 'Bentuk', value: 'Segi Empat' },
@@ -703,7 +743,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'sanitary-equipments',
-      name: 'sanitary equipments | Peralatan Sanitasi',
+      name: 'Peralatan Sanitasi',
       image: '/Images/sanitary owner.png', // Ganti dengan gambar Anda
       // Di dalam catalogueData -> owner -> kategori 'sanitary-equipments'
       // Di dalam catalogueData -> owner -> kategori 'sanitary-equipments'
@@ -730,6 +770,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-sanitary-002',
           name: 'Kran Angsa Fleksibel - Terompet',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Angsa Fleksibel Terompet.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Angsa Fleksibel Terompet.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Angsa Fleksibel Terompet A.png'
+          ],
           description: 'Kran wastafel model angsa dengan leher fleksibel yang bisa diputar 360 derajat. Kepala output model terompet untuk aliran air yang lebih menyebar.',
           specifications: [
             { key: 'Model Leher', value: 'Fleksibel' },
@@ -752,6 +796,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-sanitary-003',
           name: 'Kran Angsa Fleksibel - Bulat',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Angsa Fleksibel Bulat.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Angsa Fleksibel Bulat.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Angsa Fleksibel Bulat A.png'
+          ],
           description: 'Kran wastafel model angsa dengan leher fleksibel dan kepala output bulat yang menghasilkan aliran air terfokus. Cocok untuk bak cuci piring.',
           specifications: [
             { key: 'Model Leher', value: 'Fleksibel' },
@@ -809,6 +857,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-sanitary-006',
           name: 'Seal Tape 100% P.T.F.E',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Seal Tape Merah.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Seal Tape Merah.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Seal Tape Merah A.png'
+          ],
           description: 'Seal tape berkualitas tinggi terbuat dari 100% P.T.F.E murni untuk mencegah kebocoran pada sambungan pipa drat.',
           specifications: [
             { key: 'Material', value: '100% P.T.F.E' },
@@ -826,6 +878,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-sanitary-007',
           name: 'Ball Valve PVC',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Ball Valve PVC Abu&Merah.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Ball Valve PVC Abu&Merah.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Ball Valve PVC Abu&Merah A.png'
+          ],
           description: 'Ball valve (stop kran) PVC untuk membuka dan menutup aliran air dengan cepat. Awet, tahan tekanan, dan tidak mudah macet.',
           specifications: [
             { key: 'Material', value: 'PVC' },
@@ -865,6 +921,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-sanitary-009',
           name: 'Kran Taman - Bening PVC',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Taman Bening PVC.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Taman Bening PVC.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kran Taman Bening PVC A.png'
+          ],
           description: 'Kran taman berbahan PVC transparan yang unik dan modern. Tahan cuaca dan tekanan, cocok untuk penggunaan luar ruangan.',
           specifications: [
             { key: 'Material', value: 'PVC Transparan' },
@@ -902,7 +962,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'safety-equipments',
-      name: 'safety equipments | Peralatan Keselamatan',
+      name: 'Peralatan Keselamatan',
       image: '/Images/Safety Owner.png', // Ganti dengan gambar Anda
       // Di dalam catalogueData -> owner -> kategori 'safety-equipments'
       // Di dalam catalogueData -> owner -> kategori 'safety-equipments'
@@ -911,6 +971,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-safety-001',
           name: 'Kacamata Proyek - Safety Glasses',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kacamata Proyek.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kacamata Proyek.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Kacamata Proyek A.png'
+          ],
           description: 'Kacamata pengaman untuk melindungi mata dari debu, serpihan, dan partikel berbahaya saat bekerja. Lensa polikarbonat jernih dan anti gores.',
           specifications: [
             { key: 'Material Lensa', value: 'Polikarbonat' },
@@ -931,6 +995,10 @@ export const catalogueData: Record<string, Category[]> = {
           id: 'own-safety-002',
           name: 'Sepatu Boots Hitam - Safety Rubber Boots',
           image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Safety Rubber Boots Black.png',
+          galleryImages: [
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Safety Rubber Boots Black.png',
+          '/Images/own/PT STS - OWNER - Web Design - Catalogue - Safety Rubber Boots Black A.png'
+          ],
           description: 'Sepatu boots pengaman berbahan karet tebal yang tahan air dan anti slip. Memberikan perlindungan dari genangan air, lumpur, dan benda tajam.',
           specifications: [
             { key: 'Material', value: 'Karet (Rubber)' },
@@ -952,7 +1020,7 @@ export const catalogueData: Record<string, Category[]> = {
   yozuri: [
     {
       id: 'power-plumbing-tools',
-      name: 'Hand & Plumbing Tools | Peralatan Listrik & Perpipaan',
+      name: 'Peralatan Listrik & Perpipaan',
       image: '/Images/Power & Plumbing Tools.png', // Ganti dengan gambar Anda
       // Di dalam catalogueData -> yozuri -> kategori 'power-plumbing-tools'
       products: [
@@ -1278,7 +1346,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'diamond-wheels',
-      name: 'Diamond Wheels | Mata Gerinda',
+      name: 'Mata Gerinda',
       image: '/Images/Diamond Wheel.png',
       // Di dalam catalogueData -> yozuri -> kategori 'diamond-wheels'
       products: [
@@ -1413,7 +1481,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'painting-tools',
-      name: 'Painting Tools | Peralatan Cat',
+      name: 'Peralatan Cat',
       image: '/Images/painting yozuri.png',
       // Di dalam catalogueData -> yozuri -> kategori 'painting-tools'
       products: [
@@ -1515,7 +1583,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'drilling-tools',
-      name: 'Drilling Tools | Peralatan Bor',
+      name: 'Peralatan Bor',
       image: '/Images/drlling yozuri.png',
       // Di dalam catalogueData -> yozuri -> kategori 'drilling-tools'
       products: [
@@ -1839,7 +1907,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'bricklayering-plastering-tools',
-      name: 'Bricklayering & Plastering Tools | Peralatan Tukang Batu & Plester',
+      name: 'Peralatan Tukang Batu & Plester',
       image: '/Images/layering yozuri.png',
       // Di dalam catalogueData -> yozuri -> kategori 'layering-tools'
       products: [
@@ -2150,7 +2218,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'door-lock-equipments',
-      name: 'Door Lock Equipments | Peralatan Kunci Pintu',
+      name: 'Peralatan Kunci Pintu',
       image: '/Images/doorlock yozuri.png',
       // Di dalam catalogueData -> yozuri -> kategori 'door-lock-equipments'
       products: [
@@ -2512,7 +2580,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'cutting-tools',
-      name: 'Cutting Tools | Peralatan Potong',
+      name: 'Peralatan Potong',
       image: '/Images/cutting yozuri.png',
       // Di dalam catalogueData -> yozuri -> kategori 'cutting-tools'
       products: [
@@ -2556,7 +2624,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'measuring-layout-tools',
-      name: 'Measuring & Layout Tools | Peralatan Ukur & Tata Letak',
+      name: 'Peralatan Ukur & Tata Letak',
       image: '/Images/measuring yozuri.png',
       // Di dalam catalogueData -> yozuri -> kategori 'measuring-layout-tools'
       products: [
@@ -2716,7 +2784,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'sanitary-equipments',
-      name: 'Sanitary Equipments | Peralatan Sanitasi',
+      name: 'Peralatan Sanitasi',
       image: '/Images/sanitary yozuri.png',
       // Di dalam catalogueData -> yozuri -> kategori 'sanitary-equipments'
       products: [
@@ -2941,7 +3009,7 @@ export const catalogueData: Record<string, Category[]> = {
     },
     {
       id: 'safety-equipments',
-      name: 'Safety Equipments | Peralatan Keselamatan',
+      name: 'Peralatan Keselamatan',
       image: '/Images/safety yozuri.png',
       products: [{
         id: 'yoz-safety-001',

@@ -9,7 +9,6 @@ import { useRouter, usePathname } from 'next/navigation';
 import { catalogueData } from '@/app/data/catalogue-data';
 
 export default function Header() {
-  // 1. Cek kondisi maintenance di paling awal.
   const pathname = usePathname();
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -27,15 +26,11 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [pathname]);
 
-  // ==================================================================
-  // SETELAH SEMUA HOOKS, BARU LAKUKAN LOGIKA KONDISIONAL
-  // ==================================================================
   const isMaintenanceModeActive = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
   if (isMaintenanceModeActive || pathname?.startsWith('/maintenance')) {
-    return null; // Early return sekarang aman karena tidak ada hooks setelah ini
+    return null;
   }
 
-  // ... sisa kode Anda (fungsi handler dan JSX) tidak perlu diubah ...
   const allProductsWithContext = Object.entries(catalogueData).flatMap(([brandId, categories]) =>
     categories.flatMap(category =>
       category.products.map(product => ({
@@ -82,7 +77,6 @@ export default function Header() {
   return (
     <>
       <header className={`bg-white sticky top-0 z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : 'shadow-none'}`}>
-        {/* ... Sisa JSX Anda tidak perlu diubah ... */}
         <div className="w-full flex justify-between items-center h-24 px-4 sm:px-6 md:px-8">
           <div>
             <Link href="/" className="flex items-center gap-3 sm:gap-4">
@@ -94,10 +88,10 @@ export default function Header() {
                 className="h-14 w-14 flex-shrink-0"
               />
               <div className="min-w-0">
-                <span className="block sm:hidden font-helvetica-black-oblique text-gray-800 text-xs">
+                <span className="block sm:hidden font-helvetica-black text-cyan-500 text-xs">
                   PT. SAMUDRA<br />TEKNIK SEJAHTERA
                 </span>
-                <span className="hidden sm:block font-helvetica-black-oblique text-gray-800 text-xl">
+                <span className="hidden sm:block font-helvetica-black text-cyan-500 text-xl">
                   PT. SAMUDRA TEKNIK SEJAHTERA
                 </span>
               </div>
@@ -118,6 +112,9 @@ export default function Header() {
                     </svg>
                   </button>
                   {isDropdownOpen && <DesktopDropdown />}
+                </li>
+                <li className="relative h-full flex items-center group">
+                  <Link href="/catalogue" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300">Catalogue</Link>
                 </li>
                 <li className="relative h-full flex items-center group">
                   <Link href="/tentang-kami" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300">Tentang Kami</Link>
@@ -229,6 +226,7 @@ export default function Header() {
                 </ul>
               )}
             </li>
+            <li><Link href="/catalogue" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Catalogue</Link></li>
             <li><Link href="/tentang-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Tentang Kami</Link></li>
             <li><Link href="/hubungi-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Hubungi Kami</Link></li>
           </ul>
