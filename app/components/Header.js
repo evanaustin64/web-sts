@@ -97,15 +97,15 @@ export default function Header() {
               </div>
             </Link>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3">
             <nav className="hidden laptop:flex h-full">
-              <ul className="flex items-center gap-10 h-full">
+              <ul className="flex items-center gap-5 h-full">
                 <li
                   className="relative h-full flex items-center group"
                   onMouseEnter={() => setDropdownOpen(true)}
                   onMouseLeave={() => setDropdownOpen(false)}
                 >
-                  <button className="flex items-center gap-1 font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300" onClick={(e) => e.preventDefault()}>
+                  <button className="flex items-center font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300 text-sm" onClick={(e) => e.preventDefault()}>
                     Produk
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4">
                       <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -114,13 +114,16 @@ export default function Header() {
                   {isDropdownOpen && <DesktopDropdown />}
                 </li>
                 <li className="relative h-full flex items-center group">
-                  <Link href="/catalogue" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300">Catalogue</Link>
+                  <Link href="/catalogue" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300 text-sm">Catalogue</Link>
                 </li>
                 <li className="relative h-full flex items-center group">
-                  <Link href="/tentang-kami" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300">Tentang Kami</Link>
+                  <Link href="/gallery" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300 text-sm">Gallery</Link>
                 </li>
                 <li className="relative h-full flex items-center group">
-                  <Link href="/hubungi-kami" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300">Hubungi Kami</Link>
+                  <Link href="/tentang-kami" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300 text-sm">Tentang Kami</Link>
+                </li>
+                <li className="relative h-full flex items-center group">
+                  <Link href="/hubungi-kami" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300 text-sm">Hubungi Kami</Link>
                 </li>
               </ul>
             </nav>
@@ -227,6 +230,7 @@ export default function Header() {
               )}
             </li>
             <li><Link href="/catalogue" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Catalogue</Link></li>
+            <li><Link href="/gallery" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Gallery</Link></li>
             <li><Link href="/tentang-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Tentang Kami</Link></li>
             <li><Link href="/hubungi-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Hubungi Kami</Link></li>
           </ul>
