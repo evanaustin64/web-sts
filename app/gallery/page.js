@@ -92,7 +92,7 @@ export default function GalleryPage() {
     },
     {
       id: 10,
-      src: '/Images/gallery/bansos 1.jpg',
+      src: '/Images/gallery/Bansos 1.jpg',
       alt: 'Event 4',
       category: 'events',
       title: 'Pemberian Bansos di wilayah sekitar 2025',
