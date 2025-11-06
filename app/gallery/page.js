@@ -171,7 +171,7 @@ export default function GalleryPage() {
       featured: false
     },
     {
-      id: 22,
+      id: 23,
       src: '/Images/gallery/pecang 1.jpg',
       alt: 'Event 3',
       category: 'events',
@@ -179,7 +179,7 @@ export default function GalleryPage() {
       featured: true
     },
     {
-      id: 22,
+      id: 24,
       src: '/Images/gallery/pecang 2.jpg',
       alt: 'Event 3',
       category: 'events',
@@ -187,7 +187,7 @@ export default function GalleryPage() {
       featured: false
     },
     {
-      id: 22,
+      id: 25,
       src: '/Images/gallery/pecang 3.jpg',
       alt: 'Event 3',
       category: 'events',
@@ -195,7 +195,7 @@ export default function GalleryPage() {
       featured: false
     },
     {
-      id: 22,
+      id: 26,
       src: '/Images/gallery/pecang 4.jpg',
       alt: 'Event 3',
       category: 'events',
@@ -203,7 +203,7 @@ export default function GalleryPage() {
       featured: false
     },
     {
-      id: 22,
+      id: 27,
       src: '/Images/gallery/pecang 5.jpg',
       alt: 'Event 3',
       category: 'events',
@@ -211,7 +211,7 @@ export default function GalleryPage() {
       featured: false
     },
     {
-      id: 22,
+      id: 28,
       src: '/Images/gallery/pecang 6.jpg',
       alt: 'Event 3',
       category: 'events',
