@@ -29,40 +29,40 @@ export default function GalleryPage() {
     {
       id: 5,
       src: '/Images/WS/Gudang 1.png',
-      alt: 'Workshop 1',
-      category: 'workshop',
-      title: 'Workshop Facility',
+      alt: 'warehouse 1',
+      category: 'warehouse',
+      title: 'WareHouse Facility',
       featured: false // Gambar besar/highlight
     },
     {
       id: 14,
       src: '/Images/WS/Gudang 2.png',
-      alt: 'Workshop 1',
-      category: 'workshop',
-      title: 'Workshop Facility',
+      alt: 'warehouse 1',
+      category: 'warehouse',
+      title: 'WareHouse Facility',
       featured: false // Gambar besar/highlight
     },
     {
       id: 15,
       src: '/Images/WS/Gudang 4.png',
-      alt: 'Workshop 1',
-      category: 'workshop',
-      title: 'Workshop Facility',
+      alt: 'warehouse 1',
+      category: 'warehouse',
+      title: 'WareHouse Facility',
       featured: false // Gambar besar/highlight
     },
     {
       id: 16,
       src: '/Images/WS/Gudang 5.png',
-      alt: 'Workshop 1',
-      category: 'workshop',
-      title: 'Workshop Facility',
+      alt: 'warehouse 1',
+      category: 'warehouse',
+      title: 'WareHouse Facility',
       featured: false // Gambar besar/highlight
     },
     {
       id: 6,
       src: '/Images/WS/Gudang 3.png',
-      alt: 'Workshop 2',
-      category: 'workshop',
+      alt: 'warehouse 2',
+      category: 'warehouse',
       title: 'Team at Work',
       featured: false
     },
@@ -92,10 +92,10 @@ export default function GalleryPage() {
     },
     {
       id: 10,
-      src: '/Images/gallery/PT STS - Ultah Komisaris Utama 2025 A.png',
+      src: '/Images/gallery/bansos 1.jpg',
       alt: 'Event 4',
       category: 'events',
-      title: 'Ultah Komisaris Utama 2025',
+      title: 'Pemberian Bansos di wilayah sekitar 2025',
       featured: false
     },
     {
@@ -120,6 +120,102 @@ export default function GalleryPage() {
       alt: 'Event 3',
       category: 'events',
       title: 'Berbagi Paket Ramadhan',
+      featured: false
+    },
+    {
+      id: 17,
+      src: '/Images/gallery/bansos 2.jpg',
+      alt: 'Event 3',
+      category: 'events',
+      title: 'Pemberian Bansos di wilayah sekitar 2025',
+      featured: false
+    },
+    {
+      id: 18,
+      src: '/Images/gallery/bansos 3.jpg',
+      alt: 'Event 3',
+      category: 'events',
+      title: 'Pemberian Bansos di wilayah sekitar 2025',
+      featured: false
+    },
+    {
+      id: 19,
+      src: '/Images/gallery/bansos 4.jpg',
+      alt: 'Event 3',
+      category: 'events',
+      title: 'Pemberian Bansos di wilayah sekitar 2025',
+      featured: false
+    },
+    {
+      id: 20,
+      src: '/Images/gallery/badmin1.jpg',
+      alt: 'Event 3',
+      category: 'events',
+      title: 'STS Badmintonan',
+      featured: false
+    },
+    {
+      id: 21,
+      src: '/Images/gallery/badmin 2.jpg',
+      alt: 'Event 3',
+      category: 'events',
+      title: 'STS Badmintonan',
+      featured: false
+    },
+    {
+      id: 22,
+      src: '/Images/gallery/badmin 3.jpg',
+      alt: 'Event 3',
+      category: 'events',
+      title: 'STS Badmintonan',
+      featured: false
+    },
+    {
+      id: 22,
+      src: '/Images/gallery/pecang 1.jpg',
+      alt: 'Event 3',
+      category: 'events',
+      title: 'Plesir Ujung Kulon 2025',
+      featured: true
+    },
+    {
+      id: 22,
+      src: '/Images/gallery/pecang 2.jpg',
+      alt: 'Event 3',
+      category: 'events',
+      title: 'Plesir Ujung Kulon 2025',
+      featured: false
+    },
+    {
+      id: 22,
+      src: '/Images/gallery/pecang 3.jpg',
+      alt: 'Event 3',
+      category: 'events',
+      title: 'Plesir Ujung Kulon 2025',
+      featured: false
+    },
+    {
+      id: 22,
+      src: '/Images/gallery/pecang 4.jpg',
+      alt: 'Event 3',
+      category: 'events',
+      title: 'Plesir Ujung Kulon 2025',
+      featured: false
+    },
+    {
+      id: 22,
+      src: '/Images/gallery/pecang 5.jpg',
+      alt: 'Event 3',
+      category: 'events',
+      title: 'Plesir Ujung Kulon 2025',
+      featured: false
+    },
+    {
+      id: 22,
+      src: '/Images/gallery/pecang 6.jpg',
+      alt: 'Event 3',
+      category: 'events',
+      title: 'Plesir Ujung Kulon 2025',
       featured: false
     }
   ];
