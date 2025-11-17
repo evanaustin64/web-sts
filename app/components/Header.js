@@ -117,6 +117,9 @@ export default function Header() {
                   <Link href="/catalogue" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300 text-sm">Catalogue</Link>
                 </li>
                 <li className="relative h-full flex items-center group">
+                  <Link href="/berita" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300 text-sm">Berita</Link>
+                </li>
+                <li className="relative h-full flex items-center group">
                   <Link href="/gallery" className="font-helvetica-regular uppercase text-gray-800 hover:text-blue-400 transition-colors duration-300 text-sm">Gallery</Link>
                 </li>
                 <li className="relative h-full flex items-center group">
@@ -230,6 +233,7 @@ export default function Header() {
               )}
             </li>
             <li><Link href="/catalogue" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Catalogue</Link></li>
+            <li><Link href="/berita" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Berita</Link></li>
             <li><Link href="/gallery" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Gallery</Link></li>
             <li><Link href="/tentang-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 border-b hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Tentang Kami</Link></li>
             <li><Link href="/hubungi-kami" className="block px-4 py-4 font-helvetica-regular uppercase text-gray-800 hover:bg-yellow-500" onClick={() => setMenuOpen(false)}>Hubungi Kami</Link></li>

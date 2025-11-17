@@ -148,7 +148,7 @@ export default function GalleryPage() {
     },
     {
       id: 20,
-      src: '/Images/gallery/badmin1.jpg',
+      src: '/Images/gallery/badmin.jpg',
       alt: 'Event 3',
       category: 'events',
       title: 'STS Badmintonan',
