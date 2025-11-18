@@ -152,14 +152,14 @@ const FullNewsArticle = ({ news, onImageClick }) => {
 
       {/* Kolom Kanan: Konten Teks (2/3 di layar besar) */}
       <div className="w-full laptop:w-3/5 p-6 sm:p-8 flex flex-col">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 leading-snug">
+        <h2 className="text-2xl sm:text-3xl font-helvetica-black text-gray-900 mb-2 leading-snug">
           {news.title}
         </h2>
 
         <div className="flex items-center text-sm text-gray-500 mb-6 space-x-4 border-b pb-4">
-          <span className="font-semibold text-cyan-600 uppercase">{news.category}</span>
+          <span className="font-helvetica-regular text-cyan-600 uppercase">{news.category}</span>
           <span>|</span>
-          <span>Dipublikasikan: {news.date}</span>
+          <span  className="font-helvetica-regular">Dipublikasikan: {news.date}</span>
         </div>
 
         <div className="text-gray-700 space-y-4">
@@ -169,10 +169,10 @@ const FullNewsArticle = ({ news, onImageClick }) => {
             if (typeof item === 'object' && item !== null && item.heading && item.points) {
               return (
                 <div key={index} className="space-y-2">
-                  <h3 className="text-lg font-semibold text-gray-800 pt-2 border-t mt-4 first:mt-0 first:border-t-0">
+                  <h3 className="text-lg font-helvetica-black text-gray-800 pt-2 border-t mt-4 first:mt-0 first:border-t-0">
                     {item.heading}
                   </h3>
-                  <ul className="list-disc list-inside space-y-1 ml-4">
+                  <ul className="list-disc list-inside space-y-1 ml-4 font-helvetica-regular">
                     {item.points.map((point, pIndex) => (
                       <li key={pIndex} className="leading-relaxed text-sm">{point}</li>
                     ))}
@@ -301,7 +301,7 @@ export default function NewsPage() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl pb-16">
 
         <div className="mb-10">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 border-l-4 border-yellow-500 pl-3">
+          <h2 className="text-3xl font-helvetica-regular text-gray-800 mb-8 border-l-4 border-yellow-500 pl-3">
             Artikel Terbaru (Halaman {currentPage} dari {totalPages})
           </h2>
         </div>
