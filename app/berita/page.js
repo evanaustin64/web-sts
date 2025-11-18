@@ -80,20 +80,74 @@ const newsData = [
   // }
 ];
 
+const ImageModal = ({ src, alt, onClose }) => {
+  if (!src) return null; // Jangan tampilkan jika tidak ada sumber gambar
+
+  return (
+    // ... (Overlay Modal tetap sama)
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 transition-opacity duration-300"
+      onClick={onClose}
+    >
+      {/* Kontainer Gambar */}
+      <div
+        className="relative w-11/12 h-5/6 max-w-4xl bg-transparent rounded-lg p-4 shadow-2xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-0 right-2 text-white text-3xl font-bold p-2 z-50 bg-red-600 rounded-lg hover:bg-red-800 transition"
+          aria-label="Tutup gambar"
+        >
+          &times;
+        </button>
+
+        {/* Gambar Full: Tambahkan visual debug border */}
+        <div className="relative w-full h-full">
+          <Image
+            // Cek apakah SRC sudah benar-benar berupa string yang valid
+            src={src}
+            alt={alt || "Gambar Berita Penuh"}
+            fill
+            priority
+            sizes="100vw"
+            // Pastikan object-contain digunakan
+            className="object-contain"
+            // Tambahkan onError untuk debugging di konsol
+            onError={(e) => console.error("Gagal memuat gambar di modal:", src, e)}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // 🚀 MODIFIKASI: Menambahkan logika untuk menangani dua tipe struktur konten
-const FullNewsArticle = ({ news }) => {
+const FullNewsArticle = ({ news, onImageClick }) => {
   return (
     <article className="bg-white rounded-xl shadow-xl overflow-hidden mb-12 flex flex-col laptop:flex-row border-l-4 border-cyan-500">
 
       {/* Kolom Kiri: Gambar (1/3 di layar besar) */}
-      <div className="relative w-full laptop:w-2/5 h-72 laptop:h-auto flex-shrink-0">
-        <Image
-          src={news.image}
-          alt={news.title}
-          fill
-          sizes="(max-width: 1024px) 100vw, 33vw"
-          className="object-cover" // Mengganti object-contain menjadi object-cover agar gambar penuh
-        />
+      <div className="relative w-full laptop:w-2/5 h-72 laptop:h-auto flex-shrink-0 p-4 bg-gray-100 flex items-center justify-center">
+
+        {/* onClick sekarang akan berfungsi karena onImageClick didefinisikan sebagai prop */}
+        <div
+          onClick={() => onImageClick(news.image, news.title)} // Ini yang memanggil prop
+          className="absolute inset-0 cursor-pointer group flex items-center justify-center"
+        >
+          <Image
+            src={news.image}
+            alt={news.title}
+            fill
+            sizes="(max-width: 1024px) 100vw, 33vw"
+            className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+          />
+          {/* Visual Hover: Ikon Zoom */}
+          <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+            <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+          </div>
+        </div>
+
       </div>
 
       {/* Kolom Kanan: Konten Teks (2/3 di layar besar) */}
@@ -166,9 +220,9 @@ const PaginationControls = ({ totalPages, currentPage, onPageChange }) => {
           onClick={() => onPageChange(page)}
           className={`px-4 py-2 text-sm font-medium rounded-lg transition 
               ${currentPage === page
-                ? 'bg-yellow-500 text-white shadow-lg'
-                : 'text-gray-700 bg-white border border-gray-300 hover:bg-gray-100'
-              }`}
+              ? 'bg-yellow-500 text-white shadow-lg'
+              : 'text-gray-700 bg-white border border-gray-300 hover:bg-gray-100'
+            }`}
         >
           {page}
         </button>
@@ -192,7 +246,19 @@ export default function NewsPage() {
   const [currentPage, setCurrentPage] = useState(1);
   // Tentukan jumlah artikel per halaman
   const ITEMS_PER_PAGE = 3;
+  const [modalImage, setModalImage] = useState(null);
+  const [modalAlt, setModalAlt] = useState('');
 
+  const handleImageClick = (src, alt) => {
+    setModalImage(src);
+    setModalAlt(alt);
+  };
+
+  // Handler untuk menutup modal
+  const handleCloseModal = () => {
+    setModalImage(null);
+    setModalAlt('');
+  };
   // 2. Hitung total halaman
   const totalPages = Math.ceil(newsData.length / ITEMS_PER_PAGE);
 
@@ -214,11 +280,10 @@ export default function NewsPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      
+
       {/* 🚀 MODIFIKASI: Hero Section / Banner dengan Background Image dan Overlay */}
-      <div 
-        className="relative py-20 mb-8 overflow-hidden" // Tambah relative dan overflow-hidden
-        style={{ height: '300px' }} // Atur tinggi agar gambar terlihat
+      <div
+        className="relative mb-8 overflow-hidden h-40 sm:h-60 laptop:h-80"
       >
         {/* Latar Belakang Gambar menggunakan Next/Image */}
         <div className="absolute inset-0">
@@ -228,21 +293,9 @@ export default function NewsPage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover opacity-100" // Gunakan opacity rendah agar teks tidak sulit dibaca
+            className="object-contain" // Gunakan opacity rendah agar teks tidak sulit dibaca
           />
         </div>
-
-        {/* Overlay gelap (jika diperlukan) - sudah diwakili oleh opacity rendah */}
-
-        {/* Konten Text (Pastikan berada di atas gambar) */}
-        {/* <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-          <h1 className="text-4xl sm:text-6xl font-extrabold text-white drop-shadow-lg uppercase">
-            Pusat Berita Perusahaan
-          </h1>
-          <p className="mt-4 text-xl text-white font-medium drop-shadow-md">
-            Baca semua berita terbaru kami langsung di sini.
-          </p>
-        </div> */}
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl pb-16">
@@ -255,7 +308,11 @@ export default function NewsPage() {
 
         {/* --- Daftar Berita Lengkap (Menggunakan currentNews) --- */}
         {currentNews.map(news => (
-          <FullNewsArticle key={news.id} news={news} />
+          <FullNewsArticle
+            key={news.id}
+            news={news}
+            onImageClick={handleImageClick} // Prop dikirim ke komponen anak
+          />
         ))}
 
         {/* --- Kontrol Pagination --- */}
@@ -268,6 +325,14 @@ export default function NewsPage() {
         )}
 
       </div>
+      {/* 🚀 INTEGRASI MODAL */}
+      {modalImage && (
+        <ImageModal
+          src={modalImage}
+          alt={modalAlt}
+          onClose={handleCloseModal}
+        />
+      )}
     </div>
   );
 }
