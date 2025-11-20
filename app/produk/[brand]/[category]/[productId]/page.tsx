@@ -42,7 +42,7 @@ function CursorZoomImage({ src, alt, priority = false }: { src: string; alt: str
         fill
         sizes="(max-width: 768px) 100vw, 50vw"
         priority={priority}
-        className="object-contain transition-transform duration-200 ease-out"
+        className="object-cover transition-transform duration-200 ease-out"
         style={{
           transform: zoom ? 'scale(2)' : 'scale(1)',
           transformOrigin: `${position.x}% ${position.y}%`,
@@ -105,7 +105,7 @@ function ProductImageSlider({ images, productName }: { images: string[]; product
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
           priority
-          className="object-contain p-4 md:p-8 transition-transform duration-200 ease-out"
+          className="object-cover p-4 md:p-8 transition-transform duration-200 ease-out"
           style={{
             transform: zoom ? 'scale(2)' : 'scale(1)',
             transformOrigin: `${position.x}% ${position.y}%`,
@@ -281,7 +281,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                         className="block border-2 rounded-lg p-2 hover:border-yellow-500 transition-colors"
                       >
                         <div className="relative w-20 h-20 flex-shrink-0">
-                          <Image src={variant.image} alt={variant.name} fill className="object-contain" />
+                          <Image src={variant.image} alt={variant.name} fill className="object-cover" />
                         </div>
                       </Link>
                       <p className="mt-2 text-sm font-helvetica-regular uppercase text-gray-800 max-w-[90px] text-left">{variant.name}</p>

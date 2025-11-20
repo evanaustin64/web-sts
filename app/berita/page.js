@@ -10,7 +10,7 @@ const newsData = [
     title: "OWNER Meluncurkan Identitas Baru yang Lebih Modern: Menggali Filosofi 'Craft, Create, and, Conquer with OWNER'",
     date: "10 November 2025",
     category: "Konsep LOGO",
-    image: "/Images/gallery/berita1.jpg",
+    image: "/Images/gallery/Berita2-03.png",
     content: [
       {
         heading: "Ide Sentral dan Komitmen Merek",
@@ -31,42 +31,60 @@ const newsData = [
       }
     ]
   },
-  // {
-  //   id: 2,
-  //   title: "Peluncuran Produk Yo-Zuri Terbaru: Lure Series 'Deep Diver'",
-  //   date: "28 September 2024",
-  //   category: "Produk Baru",
-  //   image: "/Images/news-lure.jpg",
-  //   content: [
-  //     "Bandung – Kabar gembira untuk komunitas pemancing di seluruh Indonesia! PT. STS, sebagai distributor resmi Yo-Zuri, hari ini resmi meluncurkan seri umpan tiruan terbaru: Yo-Zuri Deep Diver Series.",
-  //     "Lure ini dirancang secara khusus dengan teknologi aerodinamis untuk mencapai kedalaman air yang ekstrem dengan cepat. Cocok untuk memancing di perairan dalam dan menargetkan ikan pelagis besar.",
-  //     "Tersedia dalam lima pilihan warna neon yang telah teruji efektifitasnya. Segera kunjungi distributor resmi kami untuk mendapatkan seri Deep Diver ini sebelum kehabisan!"
-  //   ]
-  // },
-  // {
-  //   id: 3,
-  //   title: "Edukasi Keselamatan Kerja di Lingkungan Gudang",
-  //   date: "05 September 2024",
-  //   category: "Internal",
-  //   image: "/Images/news-safety.jpg",
-  //   content: [
-  //     "Surabaya – Dalam rangka menjaga standar Keselamatan dan Kesehatan Kerja (K3), PT. STS telah menyelesaikan program pelatihan intensif K3L untuk seluruh staf operasional gudang.",
-  //     "Pelatihan ini mencakup penanganan material berbahaya, prosedur evakuasi darurat, dan penggunaan alat pelindung diri (APD) terbaru. Kami percaya bahwa lingkungan kerja yang aman adalah kunci untuk produktivitas yang berkelanjutan."
-  //   ]
-  // },
+  {
+  id: 2,
+  title: "PT STS Raih 2nd Winner ONDA 2021 dan Apresiasi ONDA",
+  date: "18 November 2025",
+  category: "Pencapaian",
+  image: "/Images/award/award-onda1.png",
+  content: [
+    "Jakarta – PT Samudra Teknik Sejahtera (PT STS) berhasil meraih predikat 2nd Winner dalam ajang ONDA 2021 yang diselenggarakan oleh ONDA, melalui kinerja cemerlang Grup Merak.",
+    {
+      heading: "Pengakuan Kinerja Distribusi",
+      points: [
+        "Prestasi ini menegaskan posisi PT STS sebagai distributor terkemuka yang konsisten dan memiliki performa distribusi luar biasa sepanjang tahun 2021.",
+        "Hal ini menjadi bukti komitmen PT STS dalam mencapai target dan mendukung kemitraan strategis."
+      ]
+    },
+    {
+      heading: "Apresiasi Individu",
+      points: [
+        "Bapak Tjendra Simin dari PT STS juga menerima piagam Terima Kasih dari ONDA, yang diserahkan oleh Bapak Heri Sonianto Sudji (Direktur PT Central Cipta Selaras).",
+        "Penghargaan ini memotivasi seluruh tim untuk terus meningkatkan kualitas pelayanan dan kemitraan di sektor sanitari dan perkakas."
+      ]
+    }
+  ]
+},
+{
+  id: 3, // Sesuaikan dengan ID berikutnya yang tersedia
+  title: "Momen Kebersamaan: PT STS Buka Bersama Ramadhan 2025",
+  date: "18 November 2025", // Tanggal perkiraan Bukber
+  category: "Internal",
+  image: "/Images/gallery/PT STS - BukBer Ramadhan 2025 A.png", // Sesuaikan path gambar Anda
+  content: [
+    "Jakarta – Dalam rangka mempererat tali silaturahmi dan kebersamaan, PT Samudra Teknik Sejahtera (PT STS) sukses menggelar acara Buka Bersama (Bukber) Ramadhan 1446 H/2025.",
+    {
+      heading: "Semangat Kekeluargaan Tim",
+      points: [
+        "Acara ini dihadiri oleh seluruh karyawan dari berbagai divisi, menciptakan suasana hangat dan kekeluargaan di luar jam kerja formal.",
+        "Bukber Ramadhan menjadi tradisi tahunan PT STS untuk memperkuat sinergi tim dan menjalin komunikasi yang lebih akrab, yang diharapkan berdampak positif pada semangat kerja dan kolaborasi di masa mendatang.",
+        "Manajemen mengucapkan terima kasih atas kontribusi seluruh tim dan berharap semangat Ramadhan dapat membawa berkah bagi perusahaan dan karyawan."
+      ]
+    }
+  ]
+},
   // // Tambahkan beberapa dummy data lagi agar pagination terlihat. 
   // // Saya duplikasi dua artikel di bawah untuk simulasi.
-  // {
-  //   id: 4,
-  //   title: "Studi Kasus: Peningkatan Efisiensi Logistik 20%",
-  //   date: "10 Agustus 2024",
-  //   category: "Pencapaian",
-  //   image: "/Images/news-logistics.jpg",
-  //   content: [
-  //     "PT. STS berhasil memangkas waktu tunggu pengiriman sebesar 20% dalam kuartal terakhir berkat implementasi sistem manajemen gudang (WMS) yang baru. Ini membuktikan komitmen kami pada layanan cepat.",
-  //     "Direktur Operasional menyatakan bahwa kunci keberhasilan adalah kolaborasi tim dan investasi teknologi yang tepat sasaran."
-  //   ]
-  // },
+  {
+    id: 4,
+    title: "COMING SOON",
+    date: "-",
+    category: "-",
+    image: "/Images/COMING SOON-01.png",
+    content: [
+      "COMING SOON"
+    ]
+  },
   // {
   //   id: 5,
   //   title: "Yo-Zuri Menambah Varian Warna Untuk Minnow Series",
@@ -125,22 +143,22 @@ const ImageModal = ({ src, alt, onClose }) => {
 // 🚀 MODIFIKASI: Menambahkan logika untuk menangani dua tipe struktur konten
 const FullNewsArticle = ({ news, onImageClick }) => {
   return (
-    <article className="bg-white rounded-xl shadow-xl overflow-hidden mb-12 flex flex-col laptop:flex-row border-l-4 border-cyan-500">
+    <article className="bg-white rounded-xl shadow-xl overflow-hidden mb-12 flex flex-col border-l-4 border-cyan-500">
+      
+      {/* 1. Kolom Atas: Gambar - HAPUS PADDING p-4 */}
+      {/* Gambar sekarang menyentuh tepi container article, membuatnya tampak lebih terpisah dari teks di bawahnya */}
+      <div className="relative w-full h-72 flex-shrink-0 flex items-center justify-center"> 
 
-      {/* Kolom Kiri: Gambar (1/3 di layar besar) */}
-      <div className="relative w-full laptop:w-2/5 h-72 laptop:h-auto flex-shrink-0 p-4 bg-gray-100 flex items-center justify-center">
-
-        {/* onClick sekarang akan berfungsi karena onImageClick didefinisikan sebagai prop */}
         <div
-          onClick={() => onImageClick(news.image, news.title)} // Ini yang memanggil prop
+          onClick={() => onImageClick(news.image, news.title)} 
           className="absolute inset-0 cursor-pointer group flex items-center justify-center"
         >
           <Image
             src={news.image}
             alt={news.title}
             fill
-            sizes="(max-width: 1024px) 100vw, 33vw"
-            className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+            sizes="100vw" 
+            className="object-cover transition-transform duration-300 group-hover:scale-[1.02]" 
           />
           {/* Visual Hover: Ikon Zoom */}
           <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
@@ -150,49 +168,52 @@ const FullNewsArticle = ({ news, onImageClick }) => {
 
       </div>
 
-      {/* Kolom Kanan: Konten Teks (2/3 di layar besar) */}
-      <div className="w-full laptop:w-3/5 p-6 sm:p-8 flex flex-col">
-        <h2 className="text-2xl sm:text-3xl font-helvetica-black text-gray-900 mb-2 leading-snug">
-          {news.title}
-        </h2>
+{/* 2. Kolom Bawah: Konten Teks - Container ini tetap memiliki shadow/border */}
+      <div className="w-full p-4 sm:p-6 flex flex-col bg-white rounded-b-xl shadow-xl border-l-4 border-cyan-500 z-20">
+        
+        {/* 🚀 PERUBAHAN UTAMA: Tambahkan wrapper MAX-WIDTH di sini */}
+        <div className="max-w-4xl mx-auto w-full"> 
+            <h2 className="text-2xl sm:text-3xl font-helvetica-black text-gray-900 mb-2 leading-snug">
+                {news.title}
+            </h2>
 
-        <div className="flex items-center text-sm text-gray-500 mb-6 space-x-4 border-b pb-4">
-          <span className="font-helvetica-regular text-cyan-600 uppercase">{news.category}</span>
-          <span>|</span>
-          <span  className="font-helvetica-regular">Dipublikasikan: {news.date}</span>
+            <div className="flex items-center text-sm text-gray-500 mb-6 space-x-4 border-b pb-4">
+                <span className="font-helvetica-regular text-cyan-600 uppercase">{news.category}</span>
+                <span>|</span>
+                <span className="font-helvetica-regular">Dipublikasikan: {news.date}</span>
+            </div>
+
+            <div className="text-gray-700 space-y-4">
+
+                {news.content.map((item, index) => {
+                    // 1. Deteksi apakah item adalah objek (tipe terstruktur seperti di id=1)
+                    if (typeof item === 'object' && item !== null && item.heading && item.points) {
+                        return (
+                            <div key={index} className="space-y-2">
+                                <h3 className="text-lg font-helvetica-black text-gray-800 pt-2 border-t mt-4 first:mt-0 first:border-t-0">
+                                    {item.heading}
+                                </h3>
+                                <ul className="list-disc list-inside space-y-1 ml-4 font-helvetica-regular">
+                                    {item.points.map((point, pIndex) => (
+                                        <li key={pIndex} className="leading-relaxed text-sm">{point}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        );
+                    }
+
+                    // 2. Jika item adalah string (tipe paragraf biasa)
+                    else if (typeof item === 'string') {
+                        return (
+                            <p key={index} className="leading-relaxed">
+                                {item}
+                            </p>
+                        );
+                    }
+                    return null; 
+                })}
+            </div>
         </div>
-
-        <div className="text-gray-700 space-y-4">
-
-          {news.content.map((item, index) => {
-            // 1. Deteksi apakah item adalah objek (tipe terstruktur seperti di id=1)
-            if (typeof item === 'object' && item !== null && item.heading && item.points) {
-              return (
-                <div key={index} className="space-y-2">
-                  <h3 className="text-lg font-helvetica-black text-gray-800 pt-2 border-t mt-4 first:mt-0 first:border-t-0">
-                    {item.heading}
-                  </h3>
-                  <ul className="list-disc list-inside space-y-1 ml-4 font-helvetica-regular">
-                    {item.points.map((point, pIndex) => (
-                      <li key={pIndex} className="leading-relaxed text-sm">{point}</li>
-                    ))}
-                  </ul>
-                </div>
-              );
-            }
-
-            // 2. Jika item adalah string (tipe paragraf biasa)
-            else if (typeof item === 'string') {
-              return (
-                <p key={index} className="leading-relaxed">
-                  {item}
-                </p>
-              );
-            }
-            return null; // Fallback jika item tidak terdeteksi
-          })}
-        </div>
-
       </div>
     </article>
   );
@@ -280,7 +301,6 @@ export default function NewsPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-
       {/* 🚀 MODIFIKASI: Hero Section / Banner dengan Background Image dan Overlay */}
       <div
         className="relative mb-8 overflow-hidden h-40 sm:h-60 laptop:h-80"
