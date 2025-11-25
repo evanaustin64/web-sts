@@ -44,8 +44,7 @@ export default function ContactUsPage() {
                   required
                   className="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500" 
                 />
-              </div>
-
+              </div>z 
               {/* Email */}
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 font-helvetica-regular mb-1">Email</label>

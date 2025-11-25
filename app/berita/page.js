@@ -10,7 +10,7 @@ const newsData = [
     title: "OWNER Meluncurkan Identitas Baru yang Lebih Modern: Menggali Filosofi 'Craft, Create, and, Conquer with OWNER'",
     date: "10 November 2025",
     category: "Konsep LOGO",
-    image: "/Images/gallery/Berita2-03.png",
+    image: "/Images/gallery/berita4.png",
     content: [
       {
         heading: "Ide Sentral dan Komitmen Merek",
@@ -56,7 +56,34 @@ const newsData = [
   ]
 },
 {
-  id: 3, // Sesuaikan dengan ID berikutnya yang tersedia
+  id: 3,
+  title: "PT STS Dinobatkan sebagai TOP DISTRIBUTOR GOLD CATEGORY oleh Napoleon Light Industries",
+  date: "20 November 2025",
+  category: "Pencapaian",
+  image: "/Images/award/award2.png",
+  content: [
+    "PT Samudra Teknik Sejahtera (PT STS) meraih pengakuan ganda atas kinerja dan kualitasnya. Pencapaian ini menegaskan posisi PT STS sebagai mitra terdepan dan distributor terbaik di industri.",
+    {
+      heading: "Dua Penghargaan Bergengsi",
+      points: [
+        "PT STS secara resmi dinobatkan oleh PT Napoleon Light Industries sebagai TOP DISTRIBUTOR 2017 dengan predikat GOLD CATEGORY.",
+        "Penghargaan bergengsi ini mencerminkan kinerja penjualan dan operasional PT STS yang luar biasa di tahun tersebut.",
+        "Selain itu, PT STS juga menerima sertifikat pengakuan dari GRATVO sebagai bentuk apresiasi atas kontribusi positif perusahaan di pasar."
+      ]
+    },
+    {
+      heading: "Komitmen Kualitas",
+      points: [
+        "Manajemen mengucapkan terima kasih kepada seluruh tim dan pelanggan atas kepercayaan yang diberikan.",
+        "PT STS berkomitmen untuk terus mempertahankan dan meningkatkan standar 'GOLD CATEGORY' dalam setiap aspek layanan dan operasional perusahaan."
+      ]
+    }
+  ]
+},
+// Tambahkan beberapa dummy data lagi agar pagination terlihat. 
+  // // Saya duplikasi dua artikel di bawah untuk simulasi.
+  {
+    id: 4, // Sesuaikan dengan ID berikutnya yang tersedia
   title: "Momen Kebersamaan: PT STS Buka Bersama Ramadhan 2025",
   date: "18 November 2025", // Tanggal perkiraan Bukber
   category: "Internal",
@@ -72,11 +99,9 @@ const newsData = [
       ]
     }
   ]
-},
-  // // Tambahkan beberapa dummy data lagi agar pagination terlihat. 
-  // // Saya duplikasi dua artikel di bawah untuk simulasi.
+  },
   {
-    id: 4,
+    id: 5,
     title: "COMING SOON",
     date: "-",
     category: "-",
@@ -84,18 +109,7 @@ const newsData = [
     content: [
       "COMING SOON"
     ]
-  },
-  // {
-  //   id: 5,
-  //   title: "Yo-Zuri Menambah Varian Warna Untuk Minnow Series",
-  //   date: "25 Juli 2024",
-  //   category: "Produk Baru",
-  //   image: "/Images/news-lure-update.jpg",
-  //   content: [
-  //     "Sebagai respon atas permintaan pasar, Yo-Zuri telah merilis tiga varian warna eksklusif untuk seri umpan Minnow favorit. Varian baru ini difokuskan untuk kondisi air keruh.",
-  //     "Varian baru tersebut kini tersedia di semua jaringan distributor resmi PT. STS."
-  //   ]
-  // }
+  }
 ];
 
 const ImageModal = ({ src, alt, onClose }) => {
@@ -206,10 +220,10 @@ const FullNewsArticle = ({ news, onImageClick }) => {
                     else if (typeof item === 'string') {
                         return (
                             <p key={index} className="leading-relaxed">
-                                {item}
+                                {item}  
                             </p>
                         );
-                    }
+                    }w
                     return null; 
                 })}
             </div>
