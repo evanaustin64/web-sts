@@ -104,8 +104,8 @@ function HeroSlider() {
 
   // MODIFIKASI #1: Data disederhanakan, hanya butuh gambar dan link tujuan.
   const slides = [
-    { image: '/Images/PT STS - Web Design - Header Promo (September 2025)-01.png', link: '/produk/yozuri' },
-    { image: '/Images/PT STS - Web Design - Header Promo (September 2025)-02.png', link: '/produk/yozuri' },
+    // { image: '/Images/PT STS - Web Design - Header Promo (September 2025)-01.png', link: '/produk/yozuri' },
+    // { image: '/Images/PT STS - Web Design - Header Promo (September 2025)-02.png', link: '/produk/yozuri' },
     { image: '/Images/PT STS - Web Design - Header-05.png', link: '/produk/owner' },
     { image: '/Images/PT STS - Web Design - Header-04.png', link: '/produk/yozuri' },
     { image: '/Images/PT STS - Web Design - Header-06.png', link: '/produk/lainnya/helios' }

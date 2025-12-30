@@ -45,7 +45,7 @@ export const catalogueData: Record<string, Category[]> = {
             { size: '16 OZ / 0,50 Lbs', innerBox: '6 Pcs/box', outerBox: '36/ctn' },
           ],
           variations: [{ id: 'own-002', name: 'Palu Kambing Rata', image: '/Images/own/PT STS - OWNER - Web Design - Catalogue - Palu Kambing Polos Gagang Fiber.png' }]
-        },
+        },                                                                     
         {
           id: 'own-002',
           name: 'Palu Kambing - Gagang Fiber',
