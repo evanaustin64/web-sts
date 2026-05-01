@@ -54,3 +54,12 @@ body {
   font-display: swap;
 }
 
+/* Sembunyikan header bawaan Flowise di dalam chat window custom */
+flowise-fullchatbot {
+  --flowise-header-display: none;
+}
+
+flowise-fullchatbot::part(bot) {
+  padding-top: 0 !important;
+}
+

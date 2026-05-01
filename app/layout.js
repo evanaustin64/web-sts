@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import localFont from 'next/font/local'
 import PromoPopup from './components/PromoPopup';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import ChatWidget from './components/ChatWidget';
 
 
 const helveticaLight = localFont({
@@ -54,6 +55,7 @@ export default function RootLayout({ children }) {
           <Header />
           <FloatingWhatsApp />
           <PromoPopup />
+          <ChatWidget />
           <div className="w-full overflow-x-hidden">
             <main className="flex-grow">
               {children}

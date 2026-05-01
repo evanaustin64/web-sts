@@ -36,7 +36,7 @@
     "app/layout.js",
     "middleware.ts",
     ".next/dev/types/**/*.ts"
-  ],
+, "app/components/ChatWidget.js"  ],
   "exclude": [
     "node_modules"
   ]
